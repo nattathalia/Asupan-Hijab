@@ -1,0 +1,2 @@
+# sobat-tisu
+pikiran selangkangaan
