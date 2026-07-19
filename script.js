@@ -7,8 +7,9 @@ const videos = [
 
 {
 title:"Bu Guru Jilbab Syumilde Kena Doggy",
-<iframe src="https://luluvdo.com/e/x7pgxi7ejra8" scrolling="no" frameborder="0" width="640" height="360" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe},
-
+embed:"https://luluvdo.com/6mtdn8yfookj"
+},
+  
 {
 title:"Video 2",
 description:"Deskripsi video 2",
