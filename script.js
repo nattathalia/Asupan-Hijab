@@ -124,8 +124,33 @@ const videos = [
   title: "Enak Kalo Punya Pacar Tante Hijab Tiap Hari Dimanjain",
   embed: "https://luluvdo.com/e/lcghvu7n6v2e"
 },
+];
+
+const container = document.getElementById("videoContainer");
+
+videos.forEach(video => {
+  const card = document.createElement("div");
+  card.className = "video-card";
+
+  card.innerHTML = `
+    <h3>${video.title}</h3>
+    <iframe
+      src="${video.embed}"
+      width="100%"
+      height="360"
+      frameborder="0"
+      scrolling="no"
+      allowfullscreen
+      webkitallowfullscreen
+      mozallowfullscreen>
+    </iframe>
+  `;
+
+  container.appendChild(card);
+});
 {
   title: "Bu Guru Jilbab Syumilde Kena Doggy",
   embed: "https://luluvdo.com/e/x7pgxi7ejra8"
 }
 ];
+
