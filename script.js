@@ -3,7 +3,7 @@ const videos = [
 {
 title:"Video aneh",
 description:"Tes embed YouTube",
-embed:"https://luluvdo.com/6mtdn8yfookj"
+embed:"https://luluvdo.com/e/x7pgxi7ejra8"
 },
 
 {
