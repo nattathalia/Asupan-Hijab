@@ -1,7 +1,7 @@
 const videos = [
 
 {
-title:"Video Contoh 1",
+title:"Video aneh",
 description:"Tes embed YouTube",
 embed:"https://luluvdo.com/6mtdn8yfookj"
 },
