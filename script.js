@@ -1,7 +1,7 @@
 const videos = [ 
 {
   title:"Xvideos shake it first before putting it in SD",
-  embed:"https://luluvdo.com/embed/6mtdn8yfookj",
+  embed:"https://luluvdo.com/e/6mtdn8yfookj",
 },
 
 
