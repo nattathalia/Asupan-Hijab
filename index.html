@@ -88,89 +88,54 @@ placeholder="Cari video...">
 <!-- Video -->
 
 <main>
-
-<div id="videoContainer" class="video-grid">
-
-<!-- Video dimuat otomatis dari script.js -->
-
-</div>
-
+    <div id="videoContainer" class="video-grid">
+        <!-- Video dimuat otomatis dari script.js -->
+    </div>
 </main>
 
 <!-- Pagination -->
 
 <div class="pagination">
+    <button id="prevBtn">
+        <i class="fa-solid fa-angle-left"></i>
+        Sebelumnya
+    </button>
 
-<button id="prevBtn">
+    <span id="pageInfo">Halaman 1</span>
 
-<i class="fa-solid fa-angle-left"></i>
-
-Sebelumnya
-
-</button>
-
-<span id="pageInfo">
-
-Halaman 1
-
-</span>
-
-<button id="nextBtn">
-
-Berikutnya
-
-<i class="fa-solid fa-angle-right"></i>
-
-</button>
-
+    <button id="nextBtn">
+        Berikutnya
+        <i class="fa-solid fa-angle-right"></i>
+    </button>
 </div>
 
 <!-- Footer -->
 
 <footer>
+    <div class="footer-logo">
+        <img src="Asupan Hijab.png.jpg" alt="Logo">
+    </div>
 
-<div class="footer-logo">
-
-<img src="Asupan Hijab.png.jpg">
-
-</div>
-
-<p>
-
-© 2026 Asupan Hijab
-
-</p>
-
+    <p>© 2026 Asupan Hijab</p>
 </footer>
 
 <script src="script.js"></script>
 
 <script>
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
 
-const menuBtn=document.getElementById("menuBtn");
+menuBtn.onclick = function () {
+    sidebar.classList.add("active");
+    overlay.classList.add("active");
+};
 
-const sidebar=document.getElementById("sidebar");
-
-const overlay=document.getElementById("overlay");
-
-menuBtn.onclick=function(){
-
-sidebar.classList.add("active");
-
-overlay.classList.add("active");
-
-}
-
-overlay.onclick=function(){
-
-sidebar.classList.remove("active");
-
-overlay.classList.remove("active");
-
-}
-
+overlay.onclick = function () {
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+};
 </script>
 
 </body>
-
 </html>
