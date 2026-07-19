@@ -6,10 +6,8 @@
 const videos = [
 
 {
-title:"Video 1",
-description:"Deskripsi video 1",
-embed:"https://www.youtube.com/embed/dQw4w9WgXcQ"
-},
+title:"Bu Guru Jilbab Syumilde Kena Doggy",
+<iframe src="https://luluvdo.com/e/x7pgxi7ejra8" scrolling="no" frameborder="0" width="640" height="360" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe},
 
 {
 title:"Video 2",
