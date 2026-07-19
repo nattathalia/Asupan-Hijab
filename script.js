@@ -2,8 +2,8 @@ const videos = [
 
 {
 title:"Video aneh",
-description:"Tes embed YouTube",
-embed:"https://luluvdo.com/e/x7pgxi7ejra8"
+iframe:
+"iframe src="https://luluvdo.com/e/x7pgxi7ejra8" scrolling="no" frameborder="0" width="640" height="360" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe"
 },
 
 {
