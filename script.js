@@ -10,7 +10,7 @@ iframe:
 title:"Enak Kalo Punya Pacar Tante Hijab Tiap Hari Dimanjain",
 iframe:
 "iframe src="https://luluvdo.com/embeb/lcghvu7n6v2e" scrolling="no" frameborder="0" width="640" height="360" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe"
-}
+},
 
 ];
 
