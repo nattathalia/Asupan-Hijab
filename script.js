@@ -1,15 +1,15 @@
 const videos = [
 
 {
-title:"Video aneh",
+title:"Bu Guru Jilbab Syumilde Kena Doggy",
 iframe:
 "iframe src="https://luluvdo.com/embeb/x7pgxi7ejra8" scrolling="no" frameborder="0" width="640" height="360" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe"
 },
 
 {
-title:"Video Contoh 2",
-description:"Video contoh kedua",
-embed:"https://www.youtube.com/embed/dQw4w9WgXcQ"
+title:"Enak Kalo Punya Pacar Tante Hijab Tiap Hari Dimanjain",
+iframe:
+"iframe src="https://luluvdo.com/e/lcghvu7n6v2e" scrolling="no" frameborder="0" width="640" height="360" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe"
 }
 
 ];
