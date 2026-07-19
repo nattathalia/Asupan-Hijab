@@ -1,13 +1,13 @@
 const videos = [
 
 {
-title:"Bu Guru Jilbab Syumilde Kena Doggy",
-iframe:"https://luluvdo.com/embeb/x7pgxi7ejra8" scrolling="no" frameborder="0" width="640" height="360" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe"
+    title:"Bu Guru Jilbab Syumilde Kena Doggy",
+    iframe:"https://luluvdo.com/embeb/x7pgxi7ejra8"
 },
 
 {
-title:"Enak Kalo Punya Pacar Tante Hijab Tiap Hari Dimanjain",
-iframe:"https://luluvdo.com/embeb/lcghvu7n6v2e" scrolling="no" frameborder="0" width="640" height="360" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe"
+     title:"Enak Kalo Punya Pacar Tante Hijab Tiap Hari Dimanjain",
+     iframe:"https://luluvdo.com/embeb/lcghvu7n6v2e"
 },
 
 ];
