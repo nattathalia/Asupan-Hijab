@@ -102,7 +102,7 @@ const videos = [
 },
 {
   title: "Mahasiswi Jilbab Colmek Di Toilet Kampus",
-  embed: "https://luluvdo.com/e/hrryhgl22c82"
+  embed: "https://luluvdo.com/e/vyy8g41o78m9"
 },
 {
   title: "Hijabers Della Ajarin Pacar Belum Pernah Ngewe",
@@ -114,11 +114,11 @@ const videos = [
 },
 {
   title: "Hijab Kebaya Ungu Meki Gundul",
-  embed: "https://luluvdo.com/e/pa5ky1y6qgtt"
+  embed: "https://luluvdo.com/e/gqoksxhaubfm"
 },
 {
   title: "Gen-Z Main Diparkiran Malah Tambah Nafsu",
-  embed: "https://example.com/e/video30"
+  embed: "https://luluvdo.com/e/pa5ky1y6qgtt"
 },
 {
   title: "Enak Kalo Punya Pacar Tante Hijab Tiap Hari Dimanjain",
