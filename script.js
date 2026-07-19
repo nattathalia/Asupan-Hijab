@@ -1,36 +1,72 @@
 const videos = [
-
-{
-    title:"Bu Guru Jilbab Syumilde Kena Doggy",
-    iframe:"https://luluvdo.com/embeb/x7pgxi7ejra8"
-},
-
-{
-     title:"Enak Kalo Punya Pacar Tante Hijab Tiap Hari Dimanjain",
-     iframe:
-    "iframe src="https://luluvdo.com/e/lcghvu7n6v2e" scrolling="no" frameborder="0" width="640" height="360" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe"
-},
+  {
+    title: "Video 1",
+    iframe: "https://luluvdo.com/e/x7pgxi7ejra8",
+    description: "Deskripsi 1"
+  },
+  {
+    title: "Video 2",
+    iframe: "https://luluvdo.com/e/lcghvu7n6v2e",
+    description: "Deskripsi 2"
+  },
+  {
+    title: "Video 1",
+    iframe: "https://luluvdo.com/e/x7pgxi7ejra8",
+    description: "Deskripsi 1"
+  },
+  {
+    title: "Video 2",
+    iframe: "https://luluvdo.com/e/lcghvu7n6v2e",
+    description: "Deskripsi 2"
+  },
+  {
+    title: "Video 1",
+    iframe: "https://luluvdo.com/e/x7pgxi7ejra8",
+    description: "Deskripsi 1"
+  },
+  {
+    title: "Video 2",
+    iframe: "https://luluvdo.com/e/lcghvu7n6v2e",
+    description: "Deskripsi 2"
+  },
+  {
+    title: "Video 1",
+    iframe: "https://luluvdo.com/e/x7pgxi7ejra8",
+    description: "Deskripsi 1"
+  },
+  {
+    title: "Video 2",
+    iframe: "https://luluvdo.com/e/lcghvu7n6v2e",
+    description: "Deskripsi 2"
+  },
+  {
+    title: "Video 1",
+    iframe: "https://luluvdo.com/e/x7pgxi7ejra8",
+    description: "Deskripsi 1"
+  },
+  {
+    title: "Video 2",
+    iframe: "https://luluvdo.com/e/lcghvu7n6v2e",
+    description: "Deskripsi 2"
+  },
 
 ];
 
 const container = document.getElementById("videoContainer");
 
-videos.forEach(video=>{
+videos.forEach(video => {
+  container.innerHTML += `
+    <div class="video-card">
+      <iframe
+        src="${video.iframe}"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
 
-container.innerHTML += `
-<div class="video-card">
-
-<iframe
-src="${video.embed}"
-allowfullscreen>
-</iframe>
-
-<div class="video-info">
-<div class="video-title">${video.title}</div>
-<div class="video-desc">${video.description}</div>
-</div>
-
-</div>
-`;
-
+      <div class="video-info">
+        <div class="video-title">${video.title}</div>
+        <div class="video-desc">${video.description}</div>
+      </div>
+    </div>
+  `;
 });
