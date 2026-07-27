@@ -17,14 +17,37 @@
 
 <!-- OneSignal Push Notification -->
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+
 <script>
 window.OneSignalDeferred = window.OneSignalDeferred || [];
-OneSignalDeferred.push(async function(OneSignal) {
+
+OneSignalDeferred.push(async function (OneSignal) {
   await OneSignal.init({
     appId: "28e7496c-8076-4025-9816-b8fc49c398d3",
+
+    notifyButton: {
+      enable: true
+    },
+
+    autoResubscribe: true,
+
+    welcomeNotification: {
+      disable: false,
+      title: "🎉 Selamat Datang",
+      message: "Terima kasih telah mengaktifkan notifikasi Asupan Hijab."
+    },
+
+    promptOptions: {
+      slidedown: {
+        enabled: true,
+        autoPrompt: true,
+        timeDelay: 5,
+        pageViews: 1
+      }
+    }
   });
 });
-</script>
+    </script>
 
 </head>
 
