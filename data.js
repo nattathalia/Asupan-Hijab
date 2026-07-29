@@ -1,6 +1,3 @@
-// DATA VIDEO
-// ==========================
-
 const videos =  {
   remaja: [
     {
