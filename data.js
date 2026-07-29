@@ -113,7 +113,7 @@ const videos =  {
   "https://luluvdo.com/e/5p02q9p55jzw"
 },
     ],
-    Favorit: [
+    favorit: [
 {
   title: "Bokep Indo Hijab Kacamata SMA Batik Colmek",
   embed:
@@ -166,7 +166,7 @@ const videos =  {
 },
    ],
 
-   Sekolah : [
+   sekolah : [
 {
   title: "ABG Hijab Cakep Buka Jilbab Benerin Tetek",
   embed: 
