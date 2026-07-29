@@ -30,6 +30,8 @@ let videoList = videos[page] || [];
 
 const container = document.getElementById("videoContainer");
 
+alert(container);
+
 function renderVideos(list) {
 
     if (!container) return;
@@ -42,17 +44,16 @@ function renderVideos(list) {
         card.className = "video-card";
 
         card.innerHTML = `
-    <div style="padding:20px;background:red;color:white;">
-        ${video.title}
-    </div>
-`;
+            <div style="padding:20px;background:red;color:white;">
+                ${video.title}
+            </div>
+        `;
 
         container.appendChild(card);
 
     });
 
 }
-
 renderVideos(videoList);
 
 // ===============================
