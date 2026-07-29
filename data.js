@@ -206,30 +206,6 @@ const videos =  {
   embed:
   "https://luluvdo.com/e/lcghvu7n6v2e"
 },
-];
-
-const container = document.getElementById("videoContainer");
-
-videos.forEach(video => {
-  const card = document.createElement("div");
-  card.className = "video-card";
-
-  card.innerHTML = `
-    <h3>${video.title}</h3>
-    <iframe
-      src="${video.embed}"
-      width="100%"
-      height="360"
-      frameborder="0"
-      scrolling="no"
-      allowfullscreen
-      webkitallowfullscreen
-      mozallowfullscreen>
-    </iframe>
-  `;
-
-  container.appendChild(card);
-});
 
   remaja: [
     {
@@ -282,10 +258,10 @@ videos.forEach(video => {
   title:"Gadis Muslim disemprot sperma",
   embed:"https://luluvdo.com/e/pqt6vfbtoz8e"
 },
-  ],
+],
 
   bule: [
-    {
+{
   title:"Gadis Muslim disemprot sperma",
   embed:"https://luluvdo.com/e/pqt6vfbtoz8e"
 },
@@ -344,7 +320,7 @@ videos.forEach(video => {
   embed: 
   "https://luluvdo.com/e/5p02q9p55jzw"
 },
-    ],
+],
     favorit: [
 {
   title: "Bokep Indo Hijab Kacamata SMA Batik Colmek",
@@ -450,3 +426,4 @@ videos.forEach(video => {
   "https://luluvdo.com/e/lcghvu7n6v2e"
 },
     ],
+ },
