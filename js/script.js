@@ -21,11 +21,12 @@ if (menuBtn && sidebar && overlay) {
 // Menampilkan Video Sesuai Halaman
 // ===============================
 const page = document.body.dataset.page || "home";
-alert(Object.keys(videos));
-let videoList = videos[page] || [];
 
-alert("Halaman: " + page);
-alert("Jumlah video: " + videoList.length);
+alert(Object.keys(videos));
+alert("Page = " + page);
+alert("Data = " + JSON.stringify(videos[page]));
+
+let videoList = videos[page] || [];
 
 const container = document.getElementById("videoContainer");
 
