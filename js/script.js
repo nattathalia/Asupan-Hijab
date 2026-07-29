@@ -42,15 +42,10 @@ function renderVideos(list) {
         card.className = "video-card";
 
         card.innerHTML = `
-            <h3>${video.title}</h3>
-            <iframe
-                src="${video.embed}"
-                width="100%"
-                height="360"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
-        `;
+    <div style="padding:20px;background:red;color:white;">
+        ${video.title}
+    </div>
+`;
 
         container.appendChild(card);
 
