@@ -23,6 +23,9 @@ if (menuBtn && sidebar && overlay) {
 const page = document.body.dataset.page || "home";
 let videoList = videos[page] || [];
 
+alert("Halaman: " + page);
+alert("Jumlah video: " + videoList.length);
+
 const container = document.getElementById("videoContainer");
 
 function renderVideos(list) {
