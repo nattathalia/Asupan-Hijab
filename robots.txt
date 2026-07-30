@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://asupanhijab.nattathalia630.workers.dev/sitemap.xml
