@@ -24,9 +24,10 @@ const page = document.body.dataset.page || "home";
 
 let videoList = videos[page] || [];
 
-console.log(page);
-console.log(videos);
-console.log(videos[page]);
+console.log("Page =", page);
+console.log("Videos =", videos);
+console.log("VideoList =", videoList);
+console.log("Jumlah Video =", videoList.length);
 
 const container = document.getElementById("videoContainer");
 
