@@ -24,6 +24,10 @@ const page = document.body.dataset.page || "home";
 
 let videoList = videos[page] || [];
 
+console.log(page);
+console.log(videos);
+console.log(videos[page]);
+
 const container = document.getElementById("videoContainer");
 
 function renderVideos(list) {
