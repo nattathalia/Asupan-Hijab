@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Asupan Hijab</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<!-- OneSignal -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+window.OneSignalDeferred = window.OneSignalDeferred || [];
+OneSignalDeferred.push(async function(OneSignal) {
+  await OneSignal.init({
+    appId: "28e7496c-8076-4025-9816-b8fc49c398d3",
+  });
+});
+</script>
+
+</head>
+
+<body data-page="home">
+
+<!-- Overlay -->
+<div id="overlay"></div>
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<div class="sidebar-header">
+<h2>Kategori</h2>
+</div>
+
+<a href="index.html">Home</a>
+<a href="sekolah.html">Sekolah</a>
+<a href="remaja.html">Remaja</a>
+<a href="favorit.html">Favorit</a>
+<a href="bule.html">Bule</a>
+
+</div>
+
+<!-- Header -->
+<header>
+
+<button id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</button>
+
+<div class="logo">
+<img src="Asupan Hijab.png.jpg" alt="Asupan Hijab">
+</div>
+
+<div class="blank"></div>
+
+</header>
+
+<!-- Hero -->
+<section class="hero">
+
+<h1>Selamat Datang</h1>
+
+<p>
+Kumpulan vidio bokep hijab dari berbagai genre yang bisa kalian tonton
+</p>
+
+</section>
+
+<!-- Search -->
+<section class="search-area">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+id="searchInput"
+placeholder="Cari...">
+
+</div>
+
+</section>
+
+<!-- Video -->
+<main>
+
+<div id="videoContainer" class="video-grid"></div>
+
+</main>
+
+<!-- Pagination -->
+<div class="pagination">
+
+<button id="prevBtn">
+<i class="fa-solid fa-angle-left"></i>
+Sebelumnya
+</button>
+
+<span id="pageInfo">
+Halaman 1
+</span>
+
+<button id="nextBtn">
+Berikutnya
+<i class="fa-solid fa-angle-right"></i>
+</button>
+
+</div>
+
+<!-- Footer -->
+<footer>
+
+<div class="footer-logo">
+<img src="Asupan Hijab.png.jpg" alt="Logo">
+</div>
+
+<p>
+© 2026 Asupan Hijab
+</p>
+
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
