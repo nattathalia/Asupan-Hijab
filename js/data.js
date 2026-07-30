@@ -401,6 +401,31 @@ const videos =  {
 
    sekolah : [
 {
+  title:"Pacara Di Kamar Habis Pulang Sekolah",
+  embed:
+  "https://luluvdo.com/e/x9ssiiob3uta"
+},
+{
+  title:"Mungpung Di Rumah Sepi Colmek Dulu",
+  embed:
+  "https://luluvdo.com/e/gig1ydrvlair"
+},
+{
+  title:"Hadiah Kelulusan SMA Kepada Pacar",
+  embed:
+  "https://luluvdo.com/e/tg8cpegyt49w"
+},
+{
+  title:"Di Paksa Pacar",
+  embed:
+  "https://luluvdo.com/e/kwbip90e6tox"
+},
+{
+  title:"Demi Aku Bisa Lulus Aku Rela Di Ngentot Guru Kelasku",
+  embed:
+  "https://luluvdo.com/e/gixt7e6jo02a"
+},
+{
   title: "ABG Hijab Cakep Buka Jilbab Benerin Tetek",
   embed: 
   "https://luluvdo.com/e/jurphqq5sq5k"
