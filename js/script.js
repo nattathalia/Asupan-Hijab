@@ -22,9 +22,7 @@ if (menuBtn && sidebar && overlay) {
 // ===============================
 const page = document.body.dataset.page || "home";
 
-const videoList = videos.filter(video =>
-    video.category.includes(page)
-);
+let videoList = videos[page] || [];
 
 const container = document.getElementById("videoContainer");
 
