@@ -4,28 +4,232 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Artis</title>
-
-<link rel="stylesheet" href="style.css">
+<title>Daftar Negara</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html,body{
+height:100%;
+}
+
+body{
+display:flex;
+flex-direction:column;
+background:#f5f5f5;
+}
+
+/* HEADER */
+
+header{
+height:65px;
+background:#0d47a1;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 15px;
+color:#fff;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+#menuBtn{
+background:none;
+border:none;
+color:#fff;
+font-size:28px;
+cursor:pointer;
+}
+
+.logo img{
+height:45px;
+border-radius:50%;
+}
+
+.blank{
+width:28px;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+position:fixed;
+top:0;
+left:-260px;
+width:250px;
+height:100%;
+background:#0d47a1;
+transition:.3s;
+z-index:2000;
+padding-top:20px;
+}
+
+.sidebar.active{
+left:0;
+}
+
+.sidebar-header{
+text-align:center;
+color:#fff;
+padding:15px;
+border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.sidebar a{
+display:block;
+padding:15px 20px;
+text-decoration:none;
+color:#fff;
+transition:.3s;
+}
+
+.sidebar a:hover{
+background:#1565c0;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(135deg,#1565c0,#0d47a1);
+color:#fff;
+text-align:center;
+padding:40px 15px;
+}
+
+.hero h1{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:15px;
+}
+
+/* SEARCH */
+
+.search-area{
+padding:20px;
+display:flex;
+justify-content:center;
+}
+
+.search-box{
+width:100%;
+max-width:500px;
+display:flex;
+align-items:center;
+background:#fff;
+padding:12px 15px;
+border-radius:40px;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.search-box i{
+color:#666;
+margin-right:10px;
+}
+
+.search-box input{
+border:none;
+outline:none;
+width:100%;
+font-size:15px;
+}
+
+/* MAIN */
+
+main{
+flex:1;
+padding:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:#fff;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+th{
+background:#0d47a1;
+color:#fff;
+padding:12px;
+}
+
+td{
+padding:10px;
+border:1px solid #ddd;
+text-align:center;
+}
+
+.flag{
+width:50px;
+height:34px;
+object-fit:cover;
+border-radius:4px;
+}
+
+.gallery-img{
+width:90px;
+height:60px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.gallery-img:hover{
+transform:scale(1.08);
+transition:.3s;
+}
+
+/* FOOTER */
+
+.footer{
+margin-top:auto;
+background:#0d47a1;
+color:#fff;
+text-align:center;
+padding:25px;
+}
+
+.footer-logo img{
+width:70px;
+margin-bottom:10px;
+}
+
+.footer h3{
+margin-bottom:10px;
+}
+
+</style>
 </head>
+
+<body>
+
+<div id="sidebar" class="sidebar">
 
 <div class="sidebar-header">
 <h2>Kategori</h2>
 </div>
 
-<a href="index.html">Home</a>
-<a href="sekolah.html">Sekolah</a>
-<a href="remaja.html">Remaja</a>
-<a href="favorit.html">Favorit</a>
-<a href="bule.html">Bule</a>
+<a href="index.html">🏠 Home</a>
+<a href="asia.html">🌏 Asia</a>
+<a href="eropa.html">🌍 Eropa</a>
+<a href="amerika.html">🌎 Amerika</a>
+<a href="afrika.html">🌍 Afrika</a>
+<a href="oceania.html">🌏 Oceania</a>
 
 </div>
-
 
 <header>
 
@@ -34,19 +238,20 @@
 </button>
 
 <div class="logo">
-<img src="Asupan Hijab.png.jpg">
+<img src="logo.png" alt="Logo">
 </div>
 
 <div class="blank"></div>
 
 </header>
 
-
 <section class="hero">
-<h1>Video Bule</h1>
-<p>Daftar Rangking Negara Dan Jumlah Artis</p>
-</section>
 
+<h1>Daftar Negara</h1>
+
+<p>Ranking 30 Negara Berdasarkan Jumlah Penduduk</p>
+
+</section>
 
 <section class="search-area">
 
@@ -54,110 +259,306 @@
 
 <i class="fa-solid fa-magnifying-glass"></i>
 
-<input 
+<input
 id="searchInput"
 type="text"
-placeholder="Cari video...">
+placeholder="Cari negara...">
 
 </div>
 
 </section>
-  
-<style>
-body{font-family:Arial,sans-serif;background:#f4f4f4;margin:20px}
-table{width:100%;border-collapse:collapse;background:#fff}
-th,td{border:1px solid #ccc;padding:8px;text-align:center}
-th{background:#0d47a1;color:#fff}
-img.flag{width:48px;height:32px;object-fit:cover}
-button{padding:6px 10px}
-#modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5)}
-#box{background:#fff;max-width:700px;margin:60px auto;padding:20px}
-</style>
-</head>
-<body>
-<h2>Ranking 30 Negara Dan Artisnya</h2>
-<table>
-<thead><tr><th>Rank</th><th>Bendera</th><th>Negara</th><th>Penonton</th><th>Foto</th></tr></thead>
+
+<main>
+
+<h2 style="margin-bottom:20px;text-align:center;">
+Ranking 30 Negara
+</h2>
+
+<table id="myTable">
+
+<thead>
+
+<tr>
+
+<th>Rank</th>
+<th>Bendera</th>
+<th>Negara</th>
+<th>Penduduk</th>
+
+</tr>
+
+</thead>
+
 <tbody>
 
-<tr><td>1</td><td><img class="flag" src="https://flagcdn.com/w80/jp.png"></td><td>Jepang</td><td>99 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/jepang.webp" alt="Artis Jepang"></td></tr>
+<tr>
+<td>1</td>
+<td><img class="flag" src="https://flagcdn.com/w80/in.png"></td>
+<td>India</td>
+<td>1,43 Miliar</td>
+</tr>
 
-<tr><td>2</td><td><img class="flag" src="https://flagcdn.com/w80/fr.png"></td><td>Prancis</td><td>98 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/prancis.webp" alt="Artis Prancis"></td></tr>
+<tr>
+<td>2</td>
+<td><img class="flag" src="https://flagcdn.com/w80/cn.png"></td>
+<td>Tiongkok</td>
+<td>1,41 Miliar</td>
+</tr>
 
-<tr><td>3</td><td><img class="flag" src="https://flagcdn.com/w80/es.png"></td><td>Spanyol</td><td>97 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/spanyol.webp" alt="Artis Spanyol"></td></tr>
+<tr>
+<td>3</td>
+<td><img class="flag" src="https://flagcdn.com/w80/us.png"></td>
+<td>Amerika Serikat</td>
+<td>341 Juta</td>
+</tr>
 
-<tr><td>4</td><td><img class="flag" src="https://flagcdn.com/w80/it.png"></td><td>Italia</td><td>96 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/italia.webp" alt="Artis Italia"></td></tr>
+<tr>
+<td>4</td>
+<td><img class="flag" src="https://flagcdn.com/w80/id.png"></td>
+<td>Indonesia</td>
+<td>284 Juta</td>
+</tr>
 
-<tr><td>5</td><td><img class="flag" src="https://flagcdn.com/w80/us.png"></td><td>Amerika Serikat</td><td>95 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/amerika-serikat.webp" alt="Artis Amerika"></td></tr>
+<tr>
+<td>5</td>
+<td><img class="flag" src="https://flagcdn.com/w80/pk.png"></td>
+<td>Pakistan</td>
+<td>252 Juta</td>
+</tr>
 
-<tr><td>6</td><td><img class="flag" src="https://flagcdn.com/w80/ca.png"></td><td>Kanada</td><td>94 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/kanada.webp" alt="Artis Kanada"></td></tr>
+<tr>
+<td>6</td>
+<td><img class="flag" src="https://flagcdn.com/w80/ng.png"></td>
+<td>Nigeria</td>
+<td>232 Juta</td>
+</tr>
 
-<tr><td>7</td><td><img class="flag" src="https://flagcdn.com/w80/au.png"></td><td>Australia</td><td>93 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/australia.webp" alt="Artis Australia"></td></tr>
+<tr>
+<td>7</td>
+<td><img class="flag" src="https://flagcdn.com/w80/br.png"></td>
+<td>Brasil</td>
+<td>212 Juta</td>
+</tr>
 
-<tr><td>8</td><td><img class="flag" src="https://flagcdn.com/w80/de.png"></td><td>Jerman</td><td>92 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/jerman.webp" alt="Artis Jerman"></td></tr>
+<tr>
+<td>8</td>
+<td><img class="flag" src="https://flagcdn.com/w80/bd.png"></td>
+<td>Bangladesh</td>
+<td>174 Juta</td>
+</tr>
 
-<tr><td>9</td><td><img class="flag" src="https://flagcdn.com/w80/gb.png"></td><td>Inggris</td><td>91 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/inggris.webp" alt="Artis Inggris"></td></tr>
+<tr>
+<td>9</td>
+<td><img class="flag" src="https://flagcdn.com/w80/ru.png"></td>
+<td>Rusia</td>
+<td>144 Juta</td>
+</tr>
 
-<tr><td>10</td><td><img class="flag" src="https://flagcdn.com/w80/th.png"></td><td>Thailand</td><td>90 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/thailand.webp" alt="Artis Thailand"></td></tr>
+<tr>
+<td>10</td>
+<td><img class="flag" src="https://flagcdn.com/w80/mx.png"></td>
+<td>Meksiko</td>
+<td>131 Juta</td>
+</tr>
 
-<tr><td>11</td><td><img class="flag" src="https://flagcdn.com/w80/sg.png"></td><td>Singapura</td><td>89 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/singapura.webp"></td></tr>
+<tr>
+<td>11</td>
+<td><img class="flag" src="https://flagcdn.com/w80/jp.png"></td>
+<td>Jepang</td>
+<td>123 Juta</td>
+</tr>
 
-<tr><td>12</td><td><img class="flag" src="https://flagcdn.com/w80/my.png"></td><td>Malaysia</td><td>88 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/malaysia.webp"></td></tr>
+<tr>
+<td>12</td>
+<td><img class="flag" src="https://flagcdn.com/w80/ph.png"></td>
+<td>Filipina</td>
+<td>116 Juta</td>
+</tr>
 
-<tr><td>13</td><td><img class="flag" src="https://flagcdn.com/w80/id.png"></td><td>Indonesia</td><td>87 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/indonesia.webp"></td></tr>
+<tr>
+<td>13</td>
+<td><img class="flag" src="https://flagcdn.com/w80/et.png"></td>
+<td>Ethiopia</td>
+<td>110 Juta</td>
+</tr>
 
-<tr><td>14</td><td><img class="flag" src="https://flagcdn.com/w80/kr.png"></td><td>Korea Selatan</td><td>86 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/korea-selatan.webp"></td></tr>
+<tr>
+<td>14</td>
+<td><img class="flag" src="https://flagcdn.com/w80/vn.png"></td>
+<td>Vietnam</td>
+<td>101 Juta</td>
+</tr>
 
-<tr><td>15</td><td><img class="flag" src="https://flagcdn.com/w80/cn.png"></td><td>Tiongkok</td><td>85 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/tiongkok.webp"></td></tr>
+<tr>
+<td>15</td>
+<td><img class="flag" src="https://flagcdn.com/w80/de.png"></td>
+<td>Jerman</td>
+<td>84 Juta</td>
+</tr>
 
-<tr><td>16</td><td><img class="flag" src="https://flagcdn.com/w80/in.png"></td><td>India</td><td>84 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/india.webp"></td></tr>
+<tr>
+<td>16</td>
+<td><img class="flag" src="https://flagcdn.com/w80/tr.png"></td>
+<td>Turki</td>
+<td>87 Juta</td>
+</tr>
 
-<tr><td>17</td><td><img class="flag" src="https://flagcdn.com/w80/nl.png"></td><td>Belanda</td><td>83 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/belanda.webp"></td></tr>
+<tr>
+<td>17</td>
+<td><img class="flag" src="https://flagcdn.com/w80/fr.png"></td>
+<td>Prancis</td>
+<td>68 Juta</td>
+</tr>
 
-<tr><td>18</td><td><img class="flag" src="https://flagcdn.com/w80/ch.png"></td><td>Swiss</td><td>82 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/swiss.webp"></td></tr>
+<tr>
+<td>18</td>
+<td><img class="flag" src="https://flagcdn.com/w80/gb.png"></td>
+<td>Inggris</td>
+<td>68 Juta</td>
+</tr>
 
-<tr><td>19</td><td><img class="flag" src="https://flagcdn.com/w80/at.png"></td><td>Austria</td><td>81 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/austria.webp"></td></tr>
+<tr>
+<td>19</td>
+<td><img class="flag" src="https://flagcdn.com/w80/it.png"></td>
+<td>Italia</td>
+<td>59 Juta</td>
+</tr>
 
-<tr><td>20</td><td><img class="flag" src="https://flagcdn.com/w80/pt.png"></td><td>Portugal</td><td>80 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/portugal.webp"></td></tr>
+<tr>
+<td>20</td>
+<td><img class="flag" src="https://flagcdn.com/w80/kr.png"></td>
+<td>Korea Selatan</td>
+<td>52 Juta</td>
+</tr>
 
-<tr><td>21</td><td><img class="flag" src="https://flagcdn.com/w80/no.png"></td><td>Norwegia</td><td>79 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/norwegia.webp"></td></tr>
+<tr>
+<td>21</td>
+<td><img class="flag" src="https://flagcdn.com/w80/es.png"></td>
+<td>Spanyol</td>
+<td>49 Juta</td>
+</tr>
 
-<tr><td>22</td><td><img class="flag" src="https://flagcdn.com/w80/se.png"></td><td>Swedia</td><td>78 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/swedia.webp"></td></tr>
+<tr>
+<td>22</td>
+<td><img class="flag" src="https://flagcdn.com/w80/ca.png"></td>
+<td>Kanada</td>
+<td>41 Juta</td>
+</tr>
 
-<tr><td>23</td><td><img class="flag" src="https://flagcdn.com/w80/fi.png"></td><td>Finlandia</td><td>77 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/finlandia.webp"></td></tr>
+<tr>
+<td>23</td>
+<td><img class="flag" src="https://flagcdn.com/w80/au.png"></td>
+<td>Australia</td>
+<td>27 Juta</td>
+</tr>
 
-<tr><td>24</td><td><img class="flag" src="https://flagcdn.com/w80/dk.png"></td><td>Denmark</td><td>76 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/denmark.webp"></td></tr>
+<tr>
+<td>24</td>
+<td><img class="flag" src="https://flagcdn.com/w80/pl.png"></td>
+<td>Polandia</td>
+<td>38 Juta</td>
+</tr>
 
-<tr><td>25</td><td><img class="flag" src="https://flagcdn.com/w80/pl.png"></td><td>Polandia</td><td>75 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/polandia.webp"></td></tr>
+<tr>
+<td>25</td>
+<td><img class="flag" src="https://flagcdn.com/w80/nl.png"></td>
+<td>Belanda</td>
+<td>18 Juta</td>
+</tr>
 
-<tr><td>26</td><td><img class="flag" src="https://flagcdn.com/w80/cz.png"></td><td>Ceko</td><td>74 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/ceko.webp"></td></tr>
+<tr>
+<td>26</td>
+<td><img class="flag" src="https://flagcdn.com/w80/se.png"></td>
+<td>Swedia</td>
+<td>11 Juta</td>
+</tr>
 
-<tr><td>27</td><td><img class="flag" src="https://flagcdn.com/w80/hu.png"></td><td>Hungaria</td><td>73 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/hungaria.webp"></td></tr>
+<tr>
+<td>27</td>
+<td><img class="flag" src="https://flagcdn.com/w80/no.png"></td>
+<td>Norwegia</td>
+<td>5,6 Juta</td>
+</tr>
 
-<tr><td>28</td><td><img class="flag" src="https://flagcdn.com/w80/br.png"></td><td>Brasil</td><td>72 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/brasil.webp"></td></tr>
+<tr>
+<td>28</td>
+<td><img class="flag" src="https://flagcdn.com/w80/fi.png"></td>
+<td>Finlandia</td>
+<td>5,6 Juta</td>
+</tr>
 
-<tr><td>29</td><td><img class="flag" src="https://flagcdn.com/w80/ar.png"></td><td>Argentina</td><td>71 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/argentina.webp"></td></tr>
+<tr>
+<td>29</td>
+<td><img class="flag" src="https://flagcdn.com/w80/dk.png"></td>
+<td>Denmark</td>
+<td>6 Juta</td>
+</tr>
 
-<tr><td>30</td><td><img class="flag" src="https://flagcdn.com/w80/mx.png"></td><td>Meksiko</td><td>70 juta</td><td><img class="gallery-img" src="https://cdn.jsdelivr.net/gh/USERNAME/REPOSITORY/images/meksiko.webp"></td></tr>
+<tr>
+<td>30</td>
+<td><img class="flag" src="https://flagcdn.com/w80/ch.png"></td>
+<td>Swiss</td>
+<td>9 Juta</td>
+</tr>
 
 </tbody>
+</table>
 
- <!-- FOOTER -->
+</main>
+
 <footer class="footer">
-    <div class="footer-logo">
-        <img src="Asupan Hijab.png.jpg" alt="Logo">
-    </div>
 
-    <h3>Asupan Hijab</h3>
+<div class="footer-logo">
+<img src="logo.png" alt="Logo">
+</div>
 
-    <p class="copyright">
-        © 2026 Asupan Hijab.
-   </p>
-</footer> 
+<h3>Daftar Negara</h3>
 
-  
+<p>
+© 2026 Daftar Negara. All Rights Reserved.
+</p>
+
+</footer>
+
 <script>
-function show(n){document.getElementById('title').textContent=n;document.getElementById('modal').style.display='block';}
-function hide(){document.getElementById('modal').style.display='none';}
+
+const menuBtn=document.getElementById("menuBtn");
+const sidebar=document.getElementById("sidebar");
+
+menuBtn.addEventListener("click",function(){
+sidebar.classList.toggle("active");
+});
+
+document.addEventListener("click",function(e){
+
+if(!sidebar.contains(e.target) &&
+!menuBtn.contains(e.target)){
+
+sidebar.classList.remove("active");
+
+}
+
+});
+
+const searchInput=document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup",function(){
+
+let filter=this.value.toUpperCase();
+
+let tr=document.querySelectorAll("#myTable tbody tr");
+
+tr.forEach(function(row){
+
+let text=row.textContent.toUpperCase();
+
+row.style.display=text.indexOf(filter)>-1 ? "" : "none";
+
+});
+
+});
+
 </script>
-</body></html>
+
+</body>
+</html>
