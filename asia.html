@@ -5,11 +5,142 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<body>
+
+<div id="sidebar" class="sidebar">
+
+    <div class="sidebar-header">
+        <h2>Kategori</h2>
+    </div>
+
+    <a href="index.html">🏠 Home</a>
+    <a href="asia.html">🌏 Asia</a>
+    <a href="eropa.html">🌍 Eropa</a>
+    <a href="amerika.html">🌎 Amerika</a>
+    <a href="afrika.html">🌍 Afrika</a>
+    <a href="oceania.html">🌏 Oceania</a>
+
+</div>
+
+<header>
+
+    <button id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="logo">
+        <img src="https://asupanhijab.nattathalia630.workers.dev/Asupan%20Hijab.png.jpg" alt="Logo">
+    </div>
+
+    <div class="blank"></div>
+
+</header>
+
+<section class="hero">
+
+    <h1>Daftar Artis Asia</h1>
+
+    <p>
+        Kumpulan 100 Artis Asia Terpopuler lengkap dengan profil,
+        biodata, negara asal, profesi dan informasi singkat.
+    </p>
+
+</section>
+
+<section class="search-area">
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            id="searchInput"
+            type="text"
+            placeholder="Cari artis Asia...">
+
+    </div>
+
+</section>
+
+<main>
+
+<h2 style="text-align:center;margin-bottom:30px;">
+Daftar Artis Asia
+</h2>
 <title>Daftar Artis Asia</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <script>
+
+// ================= SIDEBAR =================
+
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.getElementById("sidebar");
+
+menuBtn.addEventListener("click", function () {
+    sidebar.classList.toggle("active");
+});
+
+document.addEventListener("click", function (e) {
+
+    if (
+        !sidebar.contains(e.target) &&
+        !menuBtn.contains(e.target)
+    ) {
+        sidebar.classList.remove("active");
+    }
+
+});
+
+// ================= SEARCH ARTIST =================
+
+const searchInput = document.getElementById("searchInput");
+
+if (searchInput) {
+
+    searchInput.addEventListener("keyup", function () {
+
+        const keyword = this.value.toUpperCase();
+
+        const cards = document.querySelectorAll(".artist-card");
+
+        cards.forEach(function(card){
+
+            const text = card.innerText.toUpperCase();
+
+            if(text.indexOf(keyword) > -1){
+                card.style.display="block";
+            }else{
+                card.style.display="none";
+            }
+
+        });
+
+    });
+
+}
+
+// ================= HEADER SHADOW =================
+
+window.addEventListener("scroll",function(){
+
+    const header=document.querySelector("header");
+
+    if(window.scrollY>50){
+        header.style.boxShadow="0 5px 18px rgba(0,0,0,.25)";
+    }else{
+        header.style.boxShadow="0 2px 8px rgba(0,0,0,.15)";
+    }
+
+});
+
+</script>
+
+</body>
+</html>
 
 <style>
 
