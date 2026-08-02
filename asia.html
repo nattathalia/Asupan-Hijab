@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daftar Artis Asia</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html,
+body{
+height:100%;
+scroll-behavior:smooth;
+}
+
+body{
+display:flex;
+flex-direction:column;
+background:#f5f5f5;
+color:#333;
+overflow-x:hidden;
+}
+
+/* ================= ARTIST CARD ================= */
+
+.artist-card{
+max-width:720px;
+margin:30px auto;
+background:#dff5fb;
+border-radius:20px;
+padding:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.artist-title{
+background:#f35ab9;
+color:#000;
+font-size:32px;
+font-weight:700;
+padding:12px 20px;
+border-radius:40px;
+box-shadow:-6px 6px 0 #1487b7;
+margin-bottom:20px;
+font-family:Georgia,serif;
+text-align:center;
+}
+
+.artist-photo{
+display:flex;
+justify-content:center;
+margin-bottom:20px;
+}
+
+.artist-photo img{
+width:360px;
+max-width:100%;
+border:6px solid #0d47a1;
+border-radius:30px;
+object-fit:cover;
+transition:.3s;
+}
+
+.artist-photo img:hover{
+transform:scale(1.03);
+}
+
+.artist-info{
+background:#f35ab9;
+padding:25px;
+border-radius:20px;
+font-size:18px;
+line-height:1.8;
+font-weight:500;
+color:#000;
+}
+
+.artist-info h3{
+margin-bottom:15px;
+font-size:26px;
+text-align:center;
+}
+
+.artist-info p{
+margin-bottom:10px;
+}
+
+/* ================= HEADER ================= */
+
+header{
+height:65px;
+background:#0d47a1;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 15px;
+position:sticky;
+top:0;
+z-index:1000;
+color:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+#menuBtn{
+background:none;
+border:none;
+color:#fff;
+font-size:28px;
+cursor:pointer;
+transition:.3s;
+}
+
+#menuBtn:hover{
+transform:scale(1.08);
+}
+
+.logo{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.logo img{
+width:180px;
+height:55px;
+object-fit:contain;
+display:block;
+}
+
+.blank{
+width:28px;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar{
+position:fixed;
+top:0;
+left:-260px;
+width:250px;
+height:100%;
+background:#0d47a1;
+overflow-y:auto;
+transition:.3s;
+z-index:2000;
+}
+
+.sidebar.active{
+left:0;
+}
+
+.sidebar-header{
+padding:20px;
+text-align:center;
+color:#fff;
+border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.sidebar-header h2{
+font-size:22px;
+font-weight:600;
+}
+
+.sidebar a{
+display:block;
+padding:15px 20px;
+color:#fff;
+text-decoration:none;
+transition:.3s;
+font-size:15px;
+}
+
+.sidebar a:hover{
+background:#1565c0;
+padding-left:28px;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+background:linear-gradient(135deg,#1565c0,#0d47a1);
+padding:45px 20px;
+text-align:center;
+color:#fff;
+}
+
+.hero h1{
+font-size:30px;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:15px;
+opacity:.95;
+}
+
+/* ================= SEARCH ================= */
+
+.search-area{
+padding:20px;
+display:flex;
+justify-content:center;
+}
+
+.search-box{
+width:100%;
+max-width:550px;
+background:#fff;
+display:flex;
+align-items:center;
+padding:12px 18px;
+border-radius:50px;
+box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.search-box i{
+margin-right:10px;
+color:#666;
+font-size:18px;
+}
+
+.search-box input{
+border:none;
+outline:none;
+width:100%;
+font-size:15px;
+background:none;
+}
+
+/* ================= MAIN ================= */
+
+main{
+flex:1;
+padding:20px;
+}
+
+main h2{
+text-align:center;
+margin-bottom:25px;
+font-size:28px;
+color:#0d47a1;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+margin-top:auto;
+background:#0d47a1;
+color:#fff;
+text-align:center;
+padding:25px;
+}
+
+.footer img{
+width:70px;
+height:70px;
+object-fit:contain;
+display:block;
+margin:0 auto 10px;
+}
+
+.footer p{
+font-size:14px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:24px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.logo img{
+width:170px;
+height:50px;
+}
+
+.artist-title{
+font-size:22px;
+padding:10px 15px;
+}
+
+.artist-photo img{
+width:250px;
+border-radius:20px;
+}
+
+.artist-info{
+font-size:16px;
+padding:18px;
+}
+
+.artist-info h3{
+font-size:22px;
+}
+
+}
+
+</style>
+
+</head>
+<main>
+
+<h2>Daftar Artis Asia</h2>
+<div class="artist-card">
+
+<div class="artist-title">
+#1 Bae Suzy
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/1.jpg" alt="Bae Suzy">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Bae Suzy</p>
+<p><b>• Negara:</b> Korea Selatan</p>
+<p><b>• Profesi:</b> Aktris, Penyanyi, Model</p>
+<p><b>• Tahun Aktif:</b> 2010–Sekarang</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#2 IU
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/2.jpg" alt="IU">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> IU (Lee Ji-eun)</p>
+<p><b>• Negara:</b> Korea Selatan</p>
+<p><b>• Profesi:</b> Penyanyi, Aktris</p>
+<p><b>• Tahun Aktif:</b> 2008–Sekarang</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#3 Jennie
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/3.jpg" alt="Jennie">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Jennie Kim</p>
+<p><b>• Negara:</b> Korea Selatan</p>
+<p><b>• Profesi:</b> Penyanyi, Rapper</p>
+<p><b>• Grup:</b> BLACKPINK</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#4 Jisoo
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/4.jpg" alt="Jisoo">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Kim Ji-soo</p>
+<p><b>• Negara:</b> Korea Selatan</p>
+<p><b>• Profesi:</b> Penyanyi, Aktris</p>
+<p><b>• Grup:</b> BLACKPINK</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#5 Lisa
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/5.jpg" alt="Lisa">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Lalisa Manobal</p>
+<p><b>• Negara:</b> Thailand</p>
+<p><b>• Profesi:</b> Penyanyi, Rapper, Penari</p>
+<p><b>• Grup:</b> BLACKPINK</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#6 Rose
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/6.jpg" alt="Rose">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Roseanne Park</p>
+<p><b>• Negara:</b> Korea Selatan</p>
+<p><b>• Profesi:</b> Penyanyi</p>
+<p><b>• Grup:</b> BLACKPINK</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#7 Song Hye Kyo
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/7.jpg" alt="Song Hye Kyo">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Song Hye Kyo</p>
+<p><b>• Negara:</b> Korea Selatan</p>
+<p><b>• Profesi:</b> Aktris</p>
+<p><b>• Tahun Aktif:</b> 1996–Sekarang</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#8 Kim Yoo Jung
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/8.jpg" alt="Kim Yoo Jung">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Kim Yoo Jung</p>
+<p><b>• Negara:</b> Korea Selatan</p>
+<p><b>• Profesi:</b> Aktris</p>
+<p><b>• Tahun Aktif:</b> 2003–Sekarang</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#9 Kim So Hyun
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/9.jpg" alt="Kim So Hyun">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Kim So Hyun</p>
+<p><b>• Negara:</b> Korea Selatan</p>
+<p><b>• Profesi:</b> Aktris</p>
+<p><b>• Tahun Aktif:</b> 2006–Sekarang</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#10 Han So Hee
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/10.jpg" alt="Han So Hee">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Han So Hee</p>
+<p><b>• Negara:</b> Korea Selatan</p>
+<p><b>• Profesi:</b> Aktris, Model</p>
+<p><b>• Tahun Aktif:</b> 2017–Sekarang</p>
+</div>
+
+</div>
+<div class="artist-card">
+
+<div class="artist-title">
+#11 Park Min Young
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/11.jpg" alt="Park Min Young">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Park Min Young</p>
+<p><b>• Negara:</b> Korea Selatan</p>
+<p><b>• Profesi:</b> Aktris, Model</p>
+<p><b>• Tahun Aktif:</b> 2006–Sekarang</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#12 Shin Min Ah
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/12.jpg" alt="Shin Min Ah">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Shin Min Ah</p>
+<p><b>• Negara:</b> Korea Selatan</p>
+<p><b>• Profesi:</b> Aktris, Model</p>
+<p><b>• Tahun Aktif:</b> 1998–Sekarang</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#13 Kim Ji Won
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/13.jpg" alt="Kim Ji Won">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Kim Ji Won</p>
+<p><b>• Negara:</b> Korea Selatan</p>
+<p><b>• Profesi:</b> Aktris</p>
+<p><b>• Tahun Aktif:</b> 2010–Sekarang</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#14 Go Yoon Jung
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/14.jpg" alt="Go Yoon Jung">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Go Yoon Jung</p>
+<p><b>• Negara:</b> Korea Selatan</p>
+<p><b>• Profesi:</b> Aktris, Model</p>
+<p><b>• Tahun Aktif:</b> 2019–Sekarang</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#15 Dilraba Dilmurat
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/15.jpg" alt="Dilraba Dilmurat">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Dilraba Dilmurat</p>
+<p><b>• Negara:</b> Tiongkok</p>
+<p><b>• Profesi:</b> Aktris, Model, Penyanyi</p>
+<p><b>• Tahun Aktif:</b> 2013–Sekarang</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#16 Yang Mi
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/16.jpg" alt="Yang Mi">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Yang Mi</p>
+<p><b>• Negara:</b> Tiongkok</p>
+<p><b>• Profesi:</b> Aktris, Penyanyi</p>
+<p><b>• Tahun Aktif:</b> 1990–Sekarang</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#17 Zhao Lusi
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/17.jpg" alt="Zhao Lusi">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Zhao Lusi</p>
+<p><b>• Negara:</b> Tiongkok</p>
+<p><b>• Profesi:</b> Aktris, Penyanyi</p>
+<p><b>• Tahun Aktif:</b> 2017–Sekarang</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#18 Bai Lu
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/18.jpg" alt="Bai Lu">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Bai Lu</p>
+<p><b>• Negara:</b> Tiongkok</p>
+<p><b>• Profesi:</b> Aktris, Model</p>
+<p><b>• Tahun Aktif:</b> 2016–Sekarang</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#19 Ju Jingyi
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/19.jpg" alt="Ju Jingyi">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Ju Jingyi</p>
+<p><b>• Negara:</b> Tiongkok</p>
+<p><b>• Profesi:</b> Aktris, Penyanyi</p>
+<p><b>• Tahun Aktif:</b> 2013–Sekarang</p>
+</div>
+
+</div>
+
+<div class="artist-card">
+
+<div class="artist-title">
+#20 Angelababy
+</div>
+
+<div class="artist-photo">
+<img src="images/asia/20.jpg" alt="Angelababy">
+</div>
+
+<div class="artist-info">
+<h3>• Profil dan Biodata</h3>
+<p><b>• Nama:</b> Angela Yeung Wing</p>
+<p><b>• Nama Panggung:</b> Angelababy</p>
+<p><b>• Negara:</b> Tiongkok</p>
+<p><b>• Profesi:</b> Aktris, Model, Presenter</p>
+<p><b>• Tahun Aktif:</b> 2003–Sekarang</p>
+</div>
+
+</div>
+
+</main>
+
+<footer class="footer">
+
+<img src="https://asupanhijab.nattathalia630.workers.dev/Asupan%20Hijab.png.jpg" alt="Logo">
+
+<p>© 2026 Asupan Hijab. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+// ================= MENU SIDEBAR =================
+
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.getElementById("sidebar");
+
+menuBtn.addEventListener("click", function () {
+    sidebar.classList.toggle("active");
+});
+
+document.addEventListener("click", function (e) {
+
+    if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
+        sidebar.classList.remove("active");
+    }
+
+});
+
+// ================= PENCARIAN ARTIS =================
+
+const searchInput = document.getElementById("searchInput");
+
+if(searchInput){
+
+searchInput.addEventListener("keyup", function(){
+
+let filter = this.value.toUpperCase();
+
+let cards = document.querySelectorAll(".artist-card");
+
+cards.forEach(function(card){
+
+let text = card.textContent.toUpperCase();
+
+if(text.indexOf(filter) > -1){
+card.style.display = "";
+}else{
+card.style.display = "none";
+}
+
+});
+
+});
+
+}
+
+// ================= SCROLL KE ATAS =================
+
+window.addEventListener("scroll", function(){
+
+if(window.scrollY > 150){
+
+document.querySelector("header").style.boxShadow="0 4px 15px rgba(0,0,0,.25)";
+
+}else{
+
+document.querySelector("header").style.boxShadow="0 2px 8px rgba(0,0,0,.15)";
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
