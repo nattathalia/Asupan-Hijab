@@ -186,44 +186,62 @@ margin:auto;
 padding:0 15px;
 }
 
+/* ==========================
+   VIDEO GRID
+========================== */
+
 .video-grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:18px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+    margin-top:20px;
 }
+
+/* ==========================
+   VIDEO CARD
+========================== */
 
 .video-card{
     background:transparent;
-    border:none;
     box-shadow:none;
-    border-radius:0;
-    overflow:visible;
-    transition:.3s;
+    border:none;
+    padding:0;
 }
 
-.video-card:hover{
-    transform:translateY(-3px);
-}
-
-.video-card iframe{
-width:100%;
-height:220px;
-border:none;
-display:block;
-}
-
-.video-info{
-padding:14px;
-}
+/* ==========================
+   JUDUL VIDEO
+========================== */
 
 .video-title{
-    margin-bottom:12px;
-    padding:0;
+    background:none;
     border:none;
-    text-align:center;
-    font-size:22px;
+    padding:0;
+    margin-bottom:12px;
+    font-size:28px;
     font-weight:700;
+    text-align:center;
     color:#111;
+}
+
+/* ==========================
+   FRAME VIDEO
+========================== */
+
+.video-frame{
+    border:3px solid #222;
+    border-radius:4px;
+    overflow:hidden;
+    background:#fff;
+}
+
+.video-frame iframe{
+    width:100%;
+    height:220px;
+    display:block;
+    border:none;
+}
+.video-info{
+padding:14px;
 }
 
 .video-desc{
@@ -243,15 +261,46 @@ padding:35px 20px;
 flex-wrap:wrap;
 }
 
+.pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:35px 0;
+}
+
 .pagination button{
-background:#111;
-color:#fff;
-border:none;
-padding:10px 18px;
-border-radius:30px;
-cursor:pointer;
-font-size:14px;
-transition:.3s;
+
+    width:42px;
+    height:42px;
+
+    background:#111;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:6px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+.pagination button.active{
+
+    background:#ff2d55;
+
+}
+
+.pagination button:hover{
+
+    background:#333;
+
 }
 
 .pagination button:hover{
@@ -323,7 +372,39 @@ transition:.3s ease;
 
 /* Responsive HP */
 
-@media(max-width:768px){
+@media (max-width:768px){
+
+.video-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.video-title{
+
+    font-size:20px;
+
+    margin-bottom:8px;
+
+}
+
+.video-frame iframe{
+
+    height:140px;
+
+}
+
+.pagination button{
+
+    width:40px;
+
+    height:40px;
+
+}
+
+}
 
 header{
 height:90px;
