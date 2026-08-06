@@ -192,9 +192,10 @@ padding:0 15px;
 
 .video-grid{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:22px;
-    margin-top:20px;
+    grid-template-columns:1fr;
+    gap:25px;
+    max-width:850px;
+    margin:20px auto 0;
 }
 
 /* ==========================
@@ -778,9 +779,11 @@ main{
 
 .video-grid{
 display:grid;
-grid-template-columns:repeat(2,1fr);
+grid-template-columns:1fr;
 gap:25px;
 align-items:start;
+max-width:850px;
+margin:auto;
 }
 
 /* ==========================
@@ -1008,11 +1011,14 @@ footer p{
         padding:0 15px 25px;
     }
 
-    .video-grid{
-    .video-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
-}
+    ..video-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+   .video-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
 
 .video-title{
     font-size:20px;
@@ -1051,8 +1057,10 @@ footer p{
     }
 
     .video-grid{
-        grid-template-columns:repeat(2,1fr);
-        gap:20px;
+        grid-template-columns:1fr;
+        gap:25px;
+        max-width:850px;
+        margin:auto;
     }
 
     .video-title{
@@ -1076,10 +1084,11 @@ footer p{
     }
 
     .video-grid{
-        grid-template-columns:repeat(2,1fr);
-        gap:24px;
+        grid-template-columns:1fr;
+        gap:30px;
+        max-width:850px;
+        margin:auto;
     }
-
     .video-title{
         font-size:18px;
     }
