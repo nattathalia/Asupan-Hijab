@@ -1011,7 +1011,7 @@ footer p{
         padding:0 15px 25px;
     }
 
-    ..video-grid{
+    .video-grid{
         grid-template-columns:1fr;
         gap:20px;
     }
@@ -1122,9 +1122,13 @@ footer p{
     }
 
     .video-grid{
-        grid-template-columns:repeat(2,1fr);
-        gap:28px;
+        grid-template-columns:1fr;
+        gap:30px;
+        max-width:850px;
+        margin:auto;
     }
+
+}
 
     .video-frame iframe{
         height:300px;
