@@ -24,18 +24,15 @@
 
 <!-- OneSignal -->
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-
 <script>
-window.OneSignalDeferred = window.OneSignalDeferred || [];
-
-OneSignalDeferred.push(async function (OneSignal) {
-
-  await OneSignal.init({
-    appId: "28e7496c-8076-4025-9816-b8fc49c398d3",
-
-    notifyButton: {
-      enable: true
-    }
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "19a6ac8b-4f36-4f5d-9f02-a4dfb06cc4b1",
+      safari_web_id: "web.onesignal.auto.4cf0d27e-fe33-43e6-b134-272c9aaf00b9",
+      notifyButton: {
+        enable: true,
+      },
   });
 
   setTimeout(async () => {
