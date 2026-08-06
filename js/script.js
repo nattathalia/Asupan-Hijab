@@ -1,4 +1,3 @@
-
 // ===============================
 // Sidebar Menu
 // ===============================
@@ -72,18 +71,18 @@ function renderVideos() {
         card.className = "video-card";
 
         card.innerHTML = `
-            <div class="video-title">
-                ${video.title}
-            </div>
+    <div class="video-title">
+        ${video.title}
+    </div>
 
-            <div class="video-frame">
-                <iframe
-                    src="${video.embed}"
-                    loading="lazy"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        `;
+    <div class="video-frame">
+        <iframe
+            src="${video.embed}"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+    </div>
+`;
 
         container.appendChild(card);
 
