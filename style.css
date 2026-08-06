@@ -948,7 +948,8 @@ footer p{
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background:#8;
+    background:#888;
+}
 }
 /* ==========================
    ANIMASI
@@ -1016,16 +1017,17 @@ footer p{
     }
 
     .video-grid{
+    .video-grid{
     grid-template-columns:repeat(2,1fr);
     gap:15px;
 }
 
-    .video-title{
+.video-title{
     font-size:16px;
     padding:0;
 }
 
-   .video-frame iframe{
+.video-frame iframe{
     height:140px;
 }
 
