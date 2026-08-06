@@ -303,10 +303,6 @@ flex-wrap:wrap;
 
 }
 
-.pagination button:hover{
-background:#333;
-}
-
 #pageInfo{
 font-weight:600;
 font-size:15px;
