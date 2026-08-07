@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -17,24 +18,173 @@
 <body data-page="remaja">
 
 <div id="overlay"></div>
+    
+<!-- ================= SIDEBAR ================= -->
 
-<div id="sidebar">
+<div id="sidebar" class="sidebar">
 
-<div class="sidebar-header">
-<h2>Kategori</h2>
+    <div class="sidebar-header">
+        <h2>Kategori</h2>
+        <p>Pilih Menu</p>
+    </div>
+
+    <div class="menu-list">
+
+        <a href="index.html" class="menu-item">
+            <img src="https://nattathalia.github.io/Asupan-Hijab/home.png" class="menu-logo" alt="Home">
+            <span>Home</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="sekolah.html" class="menu-item">
+            <img src="https://nattathalia.github.io/Asupan-Hijab/sekolah.png" class="menu-logo" alt="Sekolah">
+            <span>Sekolah</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="remaja.html" class="menu-item">
+            <img src="https://nattathalia.github.io/Asupan-Hijab/remaja.png" class="menu-logo" alt="Remaja">
+            <span>Remaja</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="favorit.html" class="menu-item">
+            <img src="https://nattathalia.github.io/Asupan-Hijab/favorit.png" class="menu-logo" alt="Favorit">
+            <span>Favorit</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="bule.html" class="menu-item">
+            <img src="https://nattathalia.github.io/Asupan-Hijab/bule.png" class="menu-logo" alt="Bule">
+            <span>Bule</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="pronstar.html" class="menu-item">
+            <img src="https://nattathalia.github.io/Asupan-Hijab/pronstar.png" class="menu-logo" alt="Pronstar">
+            <span>Pronstar</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+    </div>
+
 </div>
+  <style>
+/* ===============================
+   SIDEBAR MODERN
+================================= */
 
-<a href="index.html">Home</a>
-<a href="sekolah.html">Sekolah</a>
-<a href="remaja.html">Remaja</a>
-<a href="favorit.html">Favorit</a>
-<a href="bule.html">Bule</a>
-<a href="pronstar.html">Pronstar⭐</a>
+.sidebar{
+    position:fixed;
+    top:0;
+    left:-290px;
+    width:280px;
+    height:100%;
+    background:linear-gradient(180deg,#0d47a1,#1976d2);
+    overflow-y:auto;
+    transition:.35s;
+    z-index:9999;
+    box-shadow:8px 0 25px rgba(0,0,0,.35);
+}
 
-</div>
+.sidebar.active{
+    left:0;
+}
 
+.sidebar-header{
+    padding:28px 20px;
+    text-align:center;
+    color:#fff;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.sidebar-header h2{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.sidebar-header p{
+    font-size:14px;
+    opacity:.9;
+}
+
+.menu-list{
+    padding:18px;
+}
+
+.menu-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background:#fff;
+    color:#222;
+    text-decoration:none;
+    border-radius:18px;
+    padding:13px 15px;
+    margin-bottom:14px;
+    box-shadow:0 6px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.menu-item:hover{
+    transform:translateX(8px);
+    background:#eef5ff;
+    box-shadow:0 8px 18px rgba(0,0,0,.22);
+}
+
+.menu-logo{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #0d47a1;
+    flex-shrink:0;
+}
+
+.menu-item span{
+    flex:1;
+    font-size:17px;
+    font-weight:600;
+}
+
+.menu-item .fa-chevron-right{
+    color:#0d47a1;
+    font-size:15px;
+}
+
+/* Scrollbar */
+
+.sidebar::-webkit-scrollbar{
+    width:8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background:#ffffff66;
+    border-radius:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.sidebar{
+    width:260px;
+    left:-270px;
+}
+
+.menu-logo{
+    width:45px;
+    height:45px;
+}
+
+.menu-item span{
+    font-size:16px;
+}
+</style>
 
 <header>
+}
 
 <button id="menuBtn">
 <i class="fa-solid fa-bars"></i>
@@ -51,7 +201,7 @@
 
 <section class="hero">
 <h1>Video Remaja</h1>
-<p>Kumpulan video kategori remaja.</p>
+<p>Kumpulan video kategori Remaja.</p>
 </section>
 
 
