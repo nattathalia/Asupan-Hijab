@@ -426,37 +426,37 @@ main h2{
     <div class="menu-list">
 
         <a href="index.html" class="menu-item">
-            <i class="fa-solid fa-house"></i>
+            <img src="https://nattathalia.github.io/Asupan-Hijab/home.png" class="menu-logo" alt="Home">
             <span>Home</span>
             <i class="fa-solid fa-chevron-right"></i>
         </a>
 
         <a href="sekolah.html" class="menu-item">
-            <i class="fa-solid fa-school"></i>
+            <img src="https://nattathalia.github.io/Asupan-Hijab/sekolah.png" class="menu-logo" alt="Sekolah">
             <span>Sekolah</span>
             <i class="fa-solid fa-chevron-right"></i>
         </a>
 
         <a href="remaja.html" class="menu-item">
-            <i class="fa-solid fa-user-group"></i>
+            <img src="https://nattathalia.github.io/Asupan-Hijab/remaja.png" class="menu-logo" alt="Remaja">
             <span>Remaja</span>
             <i class="fa-solid fa-chevron-right"></i>
         </a>
 
         <a href="favorit.html" class="menu-item">
-            <i class="fa-solid fa-heart"></i>
+            <img src="https://nattathalia.github.io/Asupan-Hijab/favorit.png" class="menu-logo" alt="Favorit">
             <span>Favorit</span>
             <i class="fa-solid fa-chevron-right"></i>
         </a>
 
         <a href="bule.html" class="menu-item">
-            <i class="fa-solid fa-earth-americas"></i>
+            <img src="https://nattathalia.github.io/Asupan-Hijab/bule.png" class="menu-logo" alt="Bule">
             <span>Bule</span>
             <i class="fa-solid fa-chevron-right"></i>
         </a>
 
         <a href="pronstar.html" class="menu-item">
-            <i class="fa-solid fa-star"></i>
+            <img src="https://nattathalia.github.io/Asupan-Hijab/pronstar.png" class="menu-logo" alt="Pronstar">
             <span>Pronstar</span>
             <i class="fa-solid fa-chevron-right"></i>
         </a>
@@ -464,12 +464,9 @@ main h2{
     </div>
 
 </div>
-
-<style>
-
-/*==============================
-SIDEBAR MODERN
-==============================*/
+/* ===============================
+   SIDEBAR MODERN
+================================= */
 
 .sidebar{
     position:fixed;
@@ -489,72 +486,63 @@ SIDEBAR MODERN
 }
 
 .sidebar-header{
-    padding:30px 20px;
+    padding:25px;
     text-align:center;
+    color:#fff;
     border-bottom:1px solid rgba(255,255,255,.2);
 }
 
 .sidebar-header h2{
-    color:#fff;
     font-size:24px;
     margin-bottom:5px;
 }
 
 .sidebar-header p{
-    color:#ddd;
     font-size:14px;
+    opacity:.9;
 }
 
 .menu-list{
-    padding:18px 12px;
+    padding:15px;
 }
 
 .menu-item{
     display:flex;
     align-items:center;
-    justify-content:space-between;
     text-decoration:none;
-    color:#fff;
-    background:rgba(255,255,255,.10);
-    border:1px solid rgba(255,255,255,.15);
-    backdrop-filter:blur(10px);
+    background:#ffffff;
+    color:#222;
     border-radius:18px;
-    padding:16px 18px;
+    padding:12px;
     margin-bottom:14px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
     transition:.3s;
 }
 
 .menu-item:hover{
-    background:#ffffff;
-    color:#0d47a1;
     transform:translateX(6px);
-    box-shadow:0 8px 20px rgba(0,0,0,.25);
+    background:#f5f8ff;
 }
 
-.menu-item i:first-child{
-    width:34px;
-    height:34px;
+.menu-logo{
+    width:48px;
+    height:48px;
     border-radius:50%;
-    background:#ffffff;
-    color:#0d47a1;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:16px;
+    object-fit:cover;
+    border:3px solid #0d47a1;
+    margin-right:15px;
 }
 
 .menu-item span{
     flex:1;
-    margin-left:15px;
-    font-size:16px;
+    font-size:17px;
     font-weight:600;
 }
 
-.menu-item i:last-child{
-    font-size:14px;
+.menu-item .fa-chevron-right{
+    color:#0d47a1;
+    font-size:16px;
 }
-
-</style>
 <!-- ================= HEADER ================= -->
 
 <header>
