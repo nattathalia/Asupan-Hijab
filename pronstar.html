@@ -471,14 +471,14 @@ main h2{
 .sidebar{
     position:fixed;
     top:0;
-    left:-280px;
-    width:270px;
+    left:-290px;
+    width:280px;
     height:100%;
-    background:linear-gradient(180deg,#0d47a1,#1565c0);
+    background:linear-gradient(180deg,#0d47a1,#1976d2);
     overflow-y:auto;
     transition:.35s;
     z-index:9999;
-    box-shadow:5px 0 20px rgba(0,0,0,.35);
+    box-shadow:8px 0 25px rgba(0,0,0,.35);
 }
 
 .sidebar.active{
@@ -486,7 +486,7 @@ main h2{
 }
 
 .sidebar-header{
-    padding:25px;
+    padding:28px 20px;
     text-align:center;
     color:#fff;
     border-bottom:1px solid rgba(255,255,255,.2);
@@ -494,6 +494,7 @@ main h2{
 
 .sidebar-header h2{
     font-size:24px;
+    font-weight:700;
     margin-bottom:5px;
 }
 
@@ -503,34 +504,36 @@ main h2{
 }
 
 .menu-list{
-    padding:15px;
+    padding:18px;
 }
 
 .menu-item{
     display:flex;
     align-items:center;
-    text-decoration:none;
-    background:#ffffff;
+    gap:15px;
+    background:#fff;
     color:#222;
+    text-decoration:none;
     border-radius:18px;
-    padding:12px;
+    padding:13px 15px;
     margin-bottom:14px;
-    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    box-shadow:0 6px 15px rgba(0,0,0,.15);
     transition:.3s;
 }
 
 .menu-item:hover{
-    transform:translateX(6px);
-    background:#f5f8ff;
+    transform:translateX(8px);
+    background:#eef5ff;
+    box-shadow:0 8px 18px rgba(0,0,0,.22);
 }
 
 .menu-logo{
-    width:48px;
-    height:48px;
+    width:50px;
+    height:50px;
     border-radius:50%;
     object-fit:cover;
     border:3px solid #0d47a1;
-    margin-right:15px;
+    flex-shrink:0;
 }
 
 .menu-item span{
@@ -541,7 +544,38 @@ main h2{
 
 .menu-item .fa-chevron-right{
     color:#0d47a1;
+    font-size:15px;
+}
+
+/* Scrollbar */
+
+.sidebar::-webkit-scrollbar{
+    width:8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background:#ffffff66;
+    border-radius:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.sidebar{
+    width:260px;
+    left:-270px;
+}
+
+.menu-logo{
+    width:45px;
+    height:45px;
+}
+
+.menu-item span{
     font-size:16px;
+}
+
 }
 <!-- ================= HEADER ================= -->
 
