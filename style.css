@@ -1,544 +1,5 @@
 /* ==========================
-   ASUPAN HIJAB
-========================== */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-background:#ffffff;
-color:#111111;
-overflow-x:hidden;
-}
-
-/* Overlay */
-
-#overlay{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.45);
-display:none;
-z-index:998;
-}
-
-#overlay.active{
-display:block;
-}
-
-/* Sidebar */
-
-#sidebar{
-position:fixed;
-top:0;
-left:-260px;
-width:260px;
-height:100%;
-background:#ffffff;
-box-shadow:2px 0 15px rgba(0,0,0,.12);
-transition:.3s;
-z-index:999;
-overflow-y:auto;
-}
-
-#sidebar.active{
-left:0;
-}
-
-.sidebar-header{
-padding:25px 20px;
-font-size:22px;
-font-weight:600;
-border-bottom:1px solid #e5e5e5;
-}
-
-#sidebar a{
-display:block;
-padding:16px 20px;
-text-decoration:none;
-font-size:16px;
-color:#222;
-transition:.3s;
-}
-
-#sidebar a:hover{
-background:#f5f5f5;
-padding-left:28px;
-}
-
-/* ==========================
-   HEADER
-========================== */
-
-header{
-position:sticky;
-top:0;
-left:0;
-width:100%;
-height:90px;
-background:#ffffff;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:0 20px;
-box-shadow:0 2px 10px rgba(0,0,0,.08);
-z-index:1000;
-}
-
-#menuBtn{
-background:none;
-border:none;
-font-size:34px;
-cursor:pointer;
-color:#111;
-width:50px;
-height:50px;
-display:flex;
-align-items:center;
-justify-content:center;
-}
-
-.logo{
-flex:1;
-display:flex;
-justify-content:center;
-align-items:center;
-}
-
-.logo img{
-height:80px;
-width:auto;
-max-width:100%;
-display:block;
-object-fit:contain;
-}
-
-.blank{
-width:50px;
-height:50px;
-}
-
-/* Hero */
-
-.hero{
-padding:35px 20px;
-text-align:center;
-}
-
-.hero h1{
-font-size:30px;
-font-weight:700;
-margin-bottom:12px;
-}
-
-.hero p{
-font-size:15px;
-line-height:1.8;
-color:#555;
-max-width:700px;
-margin:auto;
-}
-
-/* Search */
-
-.search-area{
-padding:0 20px 30px;
-}
-
-.search-box{
-display:flex;
-align-items:center;
-background:#f4f4f4;
-border-radius:50px;
-padding:0 18px;
-box-shadow:0 2px 6px rgba(0,0,0,.05);
-}
-
-.search-box i{
-font-size:18px;
-color:#666;
-}
-
-.search-box input{
-flex:1;
-border:none;
-outline:none;
-background:none;
-padding:15px;
-font-size:15px;
-}
-
-/* Video */
-
-main{
-max-width:1200px;
-margin:auto;
-padding:0 15px;
-}
-
-/* ==========================
-   VIDEO GRID
-========================== */
-
-.video-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:25px;
-    max-width:850px;
-    margin:20px auto 0;
-}
-
-/* ==========================
-   VIDEO CARD
-========================== */
-
-.video-card{
-    background:transparent;
-    box-shadow:none;
-    border:none;
-    padding:0;
-}
-
-/* ==========================
-   JUDUL VIDEO
-========================== */
-
-.video-title{
-    background:none;
-    border:none;
-    padding:0;
-    margin-bottom:12px;
-    font-size:28px;
-    font-weight:700;
-    text-align:center;
-    color:#111;
-}
-
-/* ==========================
-   FRAME VIDEO
-========================== */
-
-.video-frame{
-    border:3px solid #222;
-    border-radius:4px;
-    overflow:hidden;
-    background:#fff;
-}
-
-.video-frame iframe{
-    width:100%;
-    height:220px;
-    display:block;
-    border:none;
-}
-.video-info{
-padding:14px;
-}
-
-.video-desc{
-font-size:13px;
-line-height:1.6;
-color:#666;
-}
-
-/* Pagination */
-
-.pagination{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:12px;
-padding:35px 20px;
-flex-wrap:wrap;
-}
-
-.pagination{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:8px;
-    margin:35px 0;
-}
-
-.pagination button{
-
-    width:42px;
-    height:42px;
-
-    background:#111;
-
-    color:#fff;
-
-    border:none;
-
-    border-radius:6px;
-
-    font-size:15px;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-}
-
-.pagination button.active{
-
-    background:#ff2d55;
-
-}
-
-.pagination button:hover{
-
-    background:#333;
-
-}
-
-#pageInfo{
-font-weight:600;
-font-size:15px;
-  }
-/* ==========================
-   FOOTER
-========================== */
-
-footer{
-background:#fafafa;
-padding:40px 20px;
-text-align:center;
-margin-top:40px;
-border-top:1px solid #e5e5e5;
-}
-
-.footer-logo{
-display:flex;
-justify-content:center;
-align-items:center;
-margin-bottom:15px;
-}
-
-.footer-logo img{
-height:70px;
-width:auto;
-object-fit:contain;
-}
-
-footer p{
-font-size:14px;
-color:#666;
-line-height:1.8;
-}
-
-/* Scrollbar */
-
-::-webkit-scrollbar{
-width:8px;
-}
-
-::-webkit-scrollbar-track{
-background:#f2f2f2;
-}
-
-::-webkit-scrollbar-thumb{
-background:#bdbdbd;
-border-radius:20px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-background:#888;
-}
-
-/* Animasi */
-
-.video-card,
-.search-box,
-.pagination button,
-#sidebar a{
-transition:.3s ease;
-}
-
-/* Responsive HP */
-
-@media (max-width:768px){
-
-.video-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:18px;
-
-}
-
-.video-title{
-
-    font-size:20px;
-
-    margin-bottom:8px;
-
-}
-
-.video-frame iframe{
-
-    height:140px;
-
-}
-
-.pagination button{
-
-    width:40px;
-
-    height:40px;
-
-}
-
-}
-
-header{
-height:90px;
-padding:0 15px;
-}
-
-#menuBtn{
-font-size:32px;
-}
-
-.logo img{
-height:80px;
-}
-
-.blank{
-width:50px;
-}
-
-.hero{
-padding:25px 15px;
-}
-
-.hero h1{
-font-size:24px;
-}
-
-.hero p{
-font-size:14px;
-}
-
-.search-area{
-padding:0 15px 25px;
-}
-
-.video-grid{
-grid-template-columns:1fr;
-gap:16px;
-}
-
-.video-card iframe{
-height:220px;
-}
-
-.video-title{
-font-size:15px;
-}
-
-.video-desc{
-font-size:13px;
-}
-
-.pagination{
-gap:8px;
-}
-
-.pagination button{
-padding:10px 16px;
-font-size:13px;
-}
-
-.footer-logo img{
-height:60px;
-}
-
-}
-
-/* Tablet */
-
-@media(min-width:769px) and (max-width:999px){
-
-main{
-max-width:900px;
-}
-
-.video-grid{
-grid-template-columns:repeat(2,1fr);
-gap:18px;
-}
-
-.video-card iframe{
-height:210px;
-}
-
-}
-
-/* Desktop */
-
-@media(min-width:1000px){
-
-main{
-max-width:1250px;
-}
-
-.video-grid{
-grid-template-columns:repeat(2,1fr);
-gap:22px;
-}
-
-.video-card iframe{
-height:260px;
-}
-
-.hero h1{
-font-size:32px;
-}
-
-.hero p{
-font-size:16px;
-}
-
-.footer-logo img{
-height:75px;
-}
-
-}
-
-/* Efek Fokus */
-
-input:focus{
-outline:none;
-}
-
-button{
-font-family:'Poppins',sans-serif;
-}
-
-img{
-max-width:100%;
-display:block;
-}
-
-iframe{
-border:0;
-  }
-
-/* ==========================
-   RESET
+   ASUPAN HIJAB - STYLE.CSS
 ========================== */
 
 *{
@@ -553,8 +14,8 @@ html{
 }
 
 body{
-    background:#ffffff;
-    color:#111111;
+    background:#fff;
+    color:#111;
     overflow-x:hidden;
 }
 
@@ -568,18 +29,19 @@ iframe{
     display:block;
 }
 
-button{
-    font-family:'Poppins',sans-serif;
-    cursor:pointer;
-}
-
+button,
 input{
     font-family:'Poppins',sans-serif;
+}
+
+button{
+    cursor:pointer;
 }
 
 input:focus{
     outline:none;
 }
+
 
 /* ==========================
    OVERLAY
@@ -587,8 +49,7 @@ input:focus{
 
 #overlay{
     position:fixed;
-    top:0;
-    left:0;
+    inset:0;
     width:100%;
     height:100%;
     background:rgba(0,0,0,.45);
@@ -600,6 +61,7 @@ input:focus{
     display:block;
 }
 
+
 /* ==========================
    SIDEBAR
 ========================== */
@@ -610,11 +72,11 @@ input:focus{
     left:-260px;
     width:260px;
     height:100%;
-    background:#ffffff;
+    background:#fff;
     box-shadow:2px 0 15px rgba(0,0,0,.12);
     transition:.3s ease;
     overflow-y:auto;
-    z-index:999;
+    z-index:9999;
 }
 
 #sidebar.active{
@@ -638,13 +100,14 @@ input:focus{
     color:#222;
     text-decoration:none;
     font-size:15px;
-    transition:.3s;
+    transition:.3s ease;
 }
 
 #sidebar a:hover{
     background:#f5f5f5;
     padding-left:28px;
 }
+
 
 /* ==========================
    HEADER
@@ -656,7 +119,7 @@ header{
     left:0;
     width:100%;
     height:90px;
-    background:#ffffff;
+    background:#fff;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -675,6 +138,11 @@ header{
     display:flex;
     align-items:center;
     justify-content:center;
+    transition:.3s ease;
+}
+
+#menuBtn:hover{
+    transform:rotate(90deg);
 }
 
 .logo{
@@ -694,6 +162,7 @@ header{
     width:50px;
     height:50px;
 }
+
 
 /* ==========================
    HERO
@@ -719,6 +188,7 @@ header{
     color:#666;
 }
 
+
 /* ==========================
    SEARCH
 ========================== */
@@ -736,6 +206,11 @@ header{
     border-radius:50px;
     padding:0 18px;
     box-shadow:0 2px 8px rgba(0,0,0,.05);
+    transition:.3s ease;
+}
+
+.search-box:focus-within{
+    box-shadow:0 0 0 3px rgba(13,110,253,.18);
 }
 
 .search-box i{
@@ -746,22 +221,13 @@ header{
 .search-box input{
     flex:1;
     border:none;
+    outline:none;
     background:transparent;
     padding:15px;
     font-size:15px;
     color:#111;
 }
 
-/* ==========================
-   ANIMASI
-========================== */
-
-#sidebar,
-#sidebar a,
-.search-box,
-#menuBtn{
-    transition:.3s ease;
-  }
 
 /* ==========================
    MAIN
@@ -773,18 +239,19 @@ main{
     padding:0 15px 30px;
 }
 
+
 /* ==========================
    VIDEO GRID
 ========================== */
 
 .video-grid{
-display:grid;
-grid-template-columns:1fr;
-gap:25px;
-align-items:start;
-max-width:850px;
-margin:auto;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+    max-width:850px;
+    margin:20px auto 0;
 }
+
 
 /* ==========================
    VIDEO CARD
@@ -797,12 +264,14 @@ margin:auto;
     border-radius:0;
     overflow:visible;
     text-align:center;
-    transition:.3s;
+    transition:.3s ease;
 }
 
 .video-card:hover{
     transform:translateY(-3px);
 }
+
+
 /* ==========================
    JUDUL VIDEO
 ========================== */
@@ -818,8 +287,9 @@ margin:auto;
     color:#111;
 }
 
+
 /* ==========================
-   FRAME VIDEO
+   VIDEO FRAME
 ========================== */
 
 .video-frame{
@@ -834,11 +304,11 @@ margin:auto;
     width:100%;
     aspect-ratio:16/9;
     display:block;
-    border:none;
 }
 
+
 /* ==========================
-   DESKRIPSI (OPSIONAL)
+   VIDEO INFO
 ========================== */
 
 .video-info{
@@ -851,6 +321,7 @@ margin:auto;
     color:#666;
 }
 
+
 /* ==========================
    PAGINATION
 ========================== */
@@ -859,42 +330,65 @@ margin:auto;
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:10px;
+    gap:8px;
     flex-wrap:wrap;
-    margin:40px 0;
+    margin:35px 15px;
 }
 
 .pagination button{
-    min-width:46px;
-    height:46px;
     border:none;
-    border-radius:8px;
-    background:#111;
+    cursor:pointer;
+    padding:10px 14px;
+    border-radius:10px;
+    background:#1976d2;
     color:#fff;
     font-size:14px;
     font-weight:600;
-    cursor:pointer;
-    transition:.3s;
+    transition:.25s ease;
 }
 
-
-.pagination button.active{
-    background:#ff2d55;
+.pagination button:hover{
+    background:#0d47a1;
+    transform:translateY(-2px);
 }
 
 .pagination button:disabled{
     opacity:.45;
     cursor:not-allowed;
+    transform:none;
 }
 
-#pageInfo{
+.page-numbers{
     display:flex;
     align-items:center;
-    gap:8px;
+    justify-content:center;
+    gap:6px;
     flex-wrap:wrap;
-    font-size:15px;
-    font-weight:600;
 }
+
+.page-number{
+    min-width:38px;
+    height:38px;
+    padding:0 10px !important;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px !important;
+}
+
+.page-number.active{
+    background:#0d47a1 !important;
+    box-shadow:
+        0 3px 0 #07346f,
+        0 5px 10px rgba(0,0,0,.2);
+}
+
+.page-dots{
+    color:#555;
+    padding:0 3px;
+    font-weight:700;
+}
+
 
 /* ==========================
    FOOTER
@@ -926,6 +420,7 @@ footer p{
     line-height:1.8;
 }
 
+
 /* ==========================
    SCROLLBAR
 ========================== */
@@ -946,49 +441,21 @@ footer p{
 ::-webkit-scrollbar-thumb:hover{
     background:#888;
 }
-/* ==========================
-   ANIMASI
-========================== */
 
-.video-card,
-.video-frame,
-.pagination button,
-.search-box,
-#sidebar,
-#sidebar a,
-#menuBtn{
-    transition:all .3s ease;
-}
-
-.video-card:hover{
-    transform:translateY(-5px);
-}
-
-.pagination button:hover{
-    transform:translateY(-2px);
-}
-
-.search-box:focus-within{
-    box-shadow:0 0 0 3px rgba(13,110,253,.18);
-}
-
-#menuBtn:hover{
-    transform:rotate(90deg);
-}
-
-#sidebar a:hover{
-    padding-left:28px;
-}
 
 /* ==========================
    MOBILE
 ========================== */
 
-@media (max-width:768px){
+@media(max-width:768px){
 
     header{
         height:80px;
         padding:0 15px;
+    }
+
+    #menuBtn{
+        font-size:30px;
     }
 
     .logo img{
@@ -1015,42 +482,42 @@ footer p{
         grid-template-columns:1fr;
         gap:20px;
     }
-   .video-grid{
-        grid-template-columns:1fr;
-        gap:20px;
+
+    .video-title{
+        font-size:20px;
+        margin-bottom:8px;
     }
 
-.video-title{
-    font-size:20px;
-    margin-bottom:8px;
-}
-
-.video-frame iframe{
-    aspect-ratio:16/9;
-    height:auto;
-}
+    .video-frame iframe{
+        aspect-ratio:16/9;
+        height:auto;
+    }
 
     .pagination{
-        gap:8px;
+        gap:5px;
     }
 
     .pagination button{
-        min-width:42px;
-        height:42px;
-        font-size:13px;
+        padding:9px 10px;
+        font-size:12px;
+    }
+
+    .page-number{
+        min-width:34px;
+        height:34px;
     }
 
     .footer-logo img{
         height:60px;
     }
-
 }
+
 
 /* ==========================
    TABLET
 ========================== */
 
-@media (min-width:769px) and (max-width:999px){
+@media(min-width:769px) and (max-width:999px){
 
     main{
         max-width:900px;
@@ -1058,26 +525,21 @@ footer p{
 
     .video-grid{
         grid-template-columns:1fr;
-        gap:25px;
         max-width:850px;
-        margin:auto;
-    }
-
-    .video-title{
-        font-size:17px;
+        gap:25px;
     }
 
     .video-frame iframe{
         height:230px;
     }
-
 }
+
 
 /* ==========================
    DESKTOP
 ========================== */
 
-@media (min-width:1000px){
+@media(min-width:1000px){
 
     main{
         max-width:1280px;
@@ -1085,12 +547,8 @@ footer p{
 
     .video-grid{
         grid-template-columns:1fr;
-        gap:30px;
         max-width:850px;
-        margin:auto;
-    }
-    .video-title{
-        font-size:18px;
+        gap:30px;
     }
 
     .video-frame iframe{
@@ -1108,14 +566,14 @@ footer p{
     .footer-logo img{
         height:72px;
     }
-
 }
+
 
 /* ==========================
    LARGE DESKTOP
 ========================== */
 
-@media (min-width:1400px){
+@media(min-width:1400px){
 
     main{
         max-width:1400px;
@@ -1123,18 +581,15 @@ footer p{
 
     .video-grid{
         grid-template-columns:1fr;
-        gap:30px;
         max-width:850px;
-        margin:auto;
+        gap:30px;
     }
-
-}
 
     .video-frame iframe{
         height:300px;
     }
-
 }
+
 
 /* ==========================
    PRINT
@@ -1157,82 +612,4 @@ footer p{
         box-shadow:none;
         border:1px solid #ddd;
     }
-
-}
-
-/* ===============================
-   PAGINATION
-================================= */
-
-.pagination{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:8px;
-    flex-wrap:wrap;
-    margin:30px 15px;
-}
-
-.pagination button{
-    border:none;
-    cursor:pointer;
-    padding:10px 14px;
-    border-radius:10px;
-    background:#1976d2;
-    color:#fff;
-    font-family:'Poppins',sans-serif;
-    font-size:14px;
-    font-weight:600;
-    transition:.25s;
-}
-
-.pagination button:hover{
-    background:#0d47a1;
-    transform:translateY(-2px);
-}
-
-.pagination button:disabled{
-    opacity:.45;
-    cursor:not-allowed;
-    transform:none;
-}
-
-.page-numbers{
-    display:flex;
-    align-items:center;
-    gap:6px;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.page-number{
-    min-width:38px;
-    height:38px;
-    padding:0 10px !important;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:10px !important;
-}
-
-.page-number.active{
-    background:#0d47a1 !important;
-}
-
-@media(max-width:600px){
-
-    .pagination{
-        gap:5px;
-    }
-
-    .pagination button{
-        padding:9px 10px;
-        font-size:12px;
-    }
-
-    .page-number{
-        min-width:34px;
-        height:34px;
-    }
-
 }
