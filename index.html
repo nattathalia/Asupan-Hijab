@@ -1,526 +1,928 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="referrer" content="no-referrer-when-downgrade" />
-  
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="referrer"
+      content="no-referrer-when-downgrade">
+
 <title>Asupan Hijab</title>
 
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="shortcut icon" href="favicon.png">
-<link rel="apple-touch-icon" href="favicon.png">
+<!-- ===============================
+     FAVICON
+================================ -->
 
-<link rel="stylesheet" href="style.css">
+<link rel="icon"
+      type="image/png"
+      href="favicon.png">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="shortcut icon"
+      href="favicon.png">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon"
+      href="favicon.png">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-<!-- OneSignal -->
-<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<!-- ===============================
+     CSS UTAMA
+================================ -->
+
+<link rel="stylesheet"
+      href="style.css">
+
+
+<!-- ===============================
+     GOOGLE FONT
+================================ -->
+
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+
+
+<!-- ===============================
+     FONT AWESOME
+================================ -->
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<!-- ===============================
+     ONESIGNAL
+================================ -->
+
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
+        defer></script>
+
 <script>
-  window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(async function(OneSignal) {
+
+window.OneSignalDeferred =
+window.OneSignalDeferred || [];
+
+OneSignalDeferred.push(
+async function(OneSignal) {
+
     await OneSignal.init({
-      appId: "19a6ac8b-4f36-4f5d-9f02-a4dfb06cc4b1",
-      safari_web_id: "web.onesignal.auto.4cf0d27e-fe33-43e6-b134-272c9aaf00b9",
-      notifyButton: {
-        enable: true,
-      },
-  });
 
-  setTimeout(async () => {
-    const permission = await OneSignal.Notifications.permission;
+        appId:
+        "19a6ac8b-4f36-4f5d-9f02-a4dfb06cc4b1",
 
-    if (permission !== "granted") {
-      OneSignal.Slidedown.promptPush();
-    }
-  }, 2000);
+        safari_web_id:
+        "web.onesignal.auto.4cf0d27e-fe33-43e6-b134-272c9aaf00b9",
+
+        notifyButton: {
+            enable: true
+        }
+
+    });
+
+
+    setTimeout(
+    async function(){
+
+        const permission =
+        await OneSignal.Notifications.permission;
+
+        if(permission !== "granted"){
+
+            OneSignal.Slidedown.promptPush();
+
+        }
+
+    }, 2000);
 
 });
+
 </script>
 
-</head>
 
-<body data-page="bule">
+<!-- ===============================
+     CSS SIDEBAR
+================================ -->
 
-<div id="overlay"></div>
-  
-  <script>
-/* ===============================
-   SIDEBAR MODERN
+<style>
+
+/* =================================
+   SIDEBAR
 ================================= */
 
 .sidebar{
+
     position:fixed;
+
     top:0;
     left:-290px;
+
     width:280px;
     height:100%;
-    background:linear-gradient(180deg,#0d47a1,#1976d2);
-    overflow-y:auto;
-    transition:.35s;
-    z-index:9999;
-    box-shadow:8px 0 25px rgba(0,0,0,.35);
-}
 
-.sidebar.active{
-    left:0;
-}
-
-.sidebar-header{
-    padding:28px 20px;
-    text-align:center;
-    color:#fff;
-    border-bottom:1px solid rgba(255,255,255,.2);
-}
-
-.sidebar-header h2{
-    font-size:24px;
-    font-weight:700;
-    margin-bottom:5px;
-}
-
-.sidebar-header p{
-    font-size:14px;
-    opacity:.9;
-}
-
-.menu-list{
-    padding:18px;
-}
-
-/* ===============================
-   SIDEBAR MODERN FOTO
-================================= */
-
-.sidebar{
-    position:fixed;
-    top:0;
-    left:-290px;
-    width:280px;
-    height:100%;
-    background:linear-gradient(180deg,#0d47a1,#1976d2);
-    overflow-y:auto;
-    transition:.35s;
-    z-index:9999;
-    box-shadow:8px 0 25px rgba(0,0,0,.35);
-}
-
-.sidebar.active{
-    left:0;
-}
-
-/* HEADER SIDEBAR */
-
-.sidebar-header{
-    padding:28px 20px;
-    text-align:center;
-    color:#fff;
-    border-bottom:1px solid rgba(255,255,255,.2);
-}
-
-.sidebar-header h2{
-    font-size:24px;
-    font-weight:700;
-    margin-bottom:5px;
-}
-
-.sidebar-header p{
-    font-size:14px;
-    opacity:.9;
-}
-
-/* LIST MENU */
-
-.menu-list{
-    padding:18px;
-}
-
-/* MENU BERBENTUK FOTO */
-
-.menu-item{
-    position:relative;
-    display:block;
-    height:105px;
-    margin-bottom:15px;
-    border-radius:18px;
-    overflow:hidden;
-    text-decoration:none;
-    box-shadow:0 6px 15px rgba(0,0,0,.25);
-    transition:.3s ease;
-    background:#222;
-}
-
-/* FOTO MENU */
-
-.menu-logo{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    border:0;
-    border-radius:0;
-    transition:.4s ease;
-}
-
-/* LAPISAN GELAP DI ATAS FOTO */
-
-.menu-item::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(
+    background:
+    linear-gradient(
         180deg,
-        rgba(0,0,0,.10),
-        rgba(0,0,0,.65)
+        #0d47a1,
+        #1976d2
     );
-    z-index:1;
+
+    overflow-y:auto;
+
+    transition:
+    left .35s ease;
+
+    z-index:9999;
+
+    box-shadow:
+    8px 0 25px
+    rgba(0,0,0,.35);
+
 }
 
-/* TULISAN DI ATAS FOTO */
 
-.menu-item span{
-    position:absolute;
-    left:18px;
-    bottom:15px;
-    z-index:2;
-    color:#fff;
-    font-size:18px;
-    font-weight:700;
-    text-shadow:0 2px 6px rgba(0,0,0,.8);
+.sidebar.active{
+
+    left:0;
+
 }
 
-/* ICON PANAH */
 
-.menu-item .fa-chevron-right{
-    position:absolute;
-    right:18px;
-    bottom:18px;
-    z-index:2;
-    color:#fff;
-    font-size:16px;
-    text-shadow:0 2px 5px rgba(0,0,0,.8);
-}
-
-/* EFEK HOVER */
-
-.menu-item:hover{
-    transform:translateY(-3px);
-    box-shadow:0 10px 22px rgba(0,0,0,.35);
-}
-
-.menu-item:hover .menu-logo{
-    transform:scale(1.08);
-}
-
-/* SCROLLBAR */
-
-.sidebar::-webkit-scrollbar{
-    width:8px;
-}
-
-.sidebar::-webkit-scrollbar-thumb{
-    background:#ffffff66;
-    border-radius:20px;
-}
-
-/* ===============================
-   HEADER KATEGORI 3D
-================================ */
+/* =================================
+   HEADER KATEGORI
+================================= */
 
 .sidebar-header{
+
     padding:22px 15px;
-    border-bottom:1px solid rgba(255,255,255,.15);
+
+    border-bottom:
+    1px solid
+    rgba(255,255,255,.15);
+
 }
+
+
+/* =================================
+   KOTAK KATEGORI 3D
+================================= */
 
 .category-3d-box{
+
     position:relative;
+
     width:100%;
+
     min-height:78px;
 
     display:flex;
+
     align-items:center;
 
     padding:12px 16px;
+
     box-sizing:border-box;
 
     border-radius:20px;
 
-    background:linear-gradient(
+    background:
+    linear-gradient(
         145deg,
         #ffffff,
         #e6e6e6
     );
 
     box-shadow:
-        0 10px 0 #b8b8b8,
-        0 15px 25px rgba(0,0,0,.35),
-        inset 0 2px 3px rgba(255,255,255,.9);
+
+    0 10px 0 #b8b8b8,
+
+    0 15px 25px
+    rgba(0,0,0,.35),
+
+    inset 0 2px 3px
+    rgba(255,255,255,.9);
 
     overflow:hidden;
+
 }
 
+
+/* =================================
+   CAHAYA KATEGORI
+================================= */
+
+.category-3d-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-60%;
+    left:-100%;
+
+    width:70%;
+    height:200%;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.8),
+        transparent
+    );
+
+    transform:
+    rotate(25deg);
+
+    animation:
+    categoryShine 4s infinite;
+
+}
+
+
+/* =================================
+   ICON KATEGORI
+================================= */
+
 .category-icon{
+
+    position:relative;
+
+    z-index:2;
+
     width:50px;
     height:50px;
 
     display:flex;
+
     align-items:center;
     justify-content:center;
 
     border-radius:15px;
 
-    background:linear-gradient(
+    background:
+    linear-gradient(
         145deg,
         #1976d2,
         #0d47a1
     );
 
     color:#fff;
+
     font-size:23px;
 
     box-shadow:
-        0 5px 0 #07346f,
-        0 8px 15px rgba(0,0,0,.3);
+
+    0 5px 0 #07346f,
+
+    0 8px 15px
+    rgba(0,0,0,.3);
 
     flex-shrink:0;
+
 }
+
+
+/* =================================
+   TEKS KATEGORI
+================================= */
 
 .category-text{
+
+    position:relative;
+
+    z-index:2;
+
     margin-left:14px;
+
 }
 
+
 .category-text h2{
+
     margin:0;
 
-    font-family:'Poppins',sans-serif;
+    font-family:
+    'Poppins',
+    sans-serif;
+
     font-size:21px;
+
     font-weight:700;
 
     color:#123c70;
 
     text-shadow:
-        1px 1px 0 #fff,
-        2px 3px 4px rgba(0,0,0,.2);
+
+    1px 1px 0 #fff,
+
+    2px 3px 4px
+    rgba(0,0,0,.2);
+
 }
 
-.category-text p{
-    margin:2px 0 0;
 
-    font-family:'Poppins',sans-serif;
+.category-text p{
+
+    margin:
+    2px 0 0;
+
+    font-family:
+    'Poppins',
+    sans-serif;
+
     font-size:12px;
+
     font-weight:500;
 
     color:#555;
+
     letter-spacing:.5px;
+
 }
 
-@media(max-width:768px){
 
-    .sidebar-header{
-        padding:18px 14px;
-    }
+/* =================================
+   MENU LIST
+================================= */
 
-    .category-3d-box{
-        min-height:70px;
-        border-radius:18px;
-    }
+.menu-list{
 
-    .category-icon{
-        width:44px;
-        height:44px;
-        font-size:20px;
-    }
+    padding:18px;
 
-    .category-text h2{
-        font-size:19px;
-    }
 }
 
-/* RESPONSIVE */
+
+/* =================================
+   MENU FOTO
+================================= */
+
+.menu-item{
+
+    position:relative;
+
+    display:block;
+
+    height:105px;
+
+    margin-bottom:15px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    background:#222;
+
+    box-shadow:
+    0 6px 15px
+    rgba(0,0,0,.25);
+
+    transition:
+    .3s ease;
+
+}
+
+
+/* =================================
+   FOTO
+================================= */
+
+.menu-logo{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border:0;
+
+    border-radius:0;
+
+    transition:
+    .4s ease;
+
+}
+
+
+/* =================================
+   LAPISAN GELAP
+================================= */
+
+.menu-item::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(0,0,0,.10),
+        rgba(0,0,0,.65)
+    );
+
+    z-index:1;
+
+}
+
+
+/* =================================
+   TEKS MENU
+================================= */
+
+.menu-item span{
+
+    position:absolute;
+
+    left:18px;
+    bottom:15px;
+
+    z-index:2;
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    font-family:
+    'Poppins',
+    sans-serif;
+
+    text-shadow:
+    0 2px 6px
+    rgba(0,0,0,.8);
+
+}
+
+
+/* =================================
+   ICON PANAH
+================================= */
+
+.menu-item
+.fa-chevron-right{
+
+    position:absolute;
+
+    right:18px;
+    bottom:18px;
+
+    z-index:2;
+
+    color:#fff;
+
+    font-size:16px;
+
+    text-shadow:
+    0 2px 5px
+    rgba(0,0,0,.8);
+
+}
+
+
+/* =================================
+   EFEK MENU
+================================= */
+
+.menu-item:hover{
+
+    transform:
+    translateY(-3px);
+
+    box-shadow:
+    0 10px 22px
+    rgba(0,0,0,.35);
+
+}
+
+
+.menu-item:hover
+.menu-logo{
+
+    transform:
+    scale(1.08);
+
+}
+
+
+/* =================================
+   ANIMASI CAHAYA
+================================= */
+
+@keyframes categoryShine{
+
+    0%{
+        left:-100%;
+    }
+
+    50%{
+        left:130%;
+    }
+
+    100%{
+        left:130%;
+    }
+
+}
+
+
+/* =================================
+   SCROLLBAR
+================================= */
+
+.sidebar::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+
+.sidebar::-webkit-scrollbar-thumb{
+
+    background:
+    #ffffff66;
+
+    border-radius:20px;
+
+}
+
+
+/* =================================
+   RESPONSIVE HP
+================================= */
 
 @media(max-width:768px){
 
     .sidebar{
+
         width:260px;
+
         left:-270px;
+
     }
+
+
+    .sidebar-header{
+
+        padding:
+        18px 14px;
+
+    }
+
+
+    .category-3d-box{
+
+        min-height:70px;
+
+        border-radius:18px;
+
+    }
+
+
+    .category-icon{
+
+        width:44px;
+        height:44px;
+
+        font-size:20px;
+
+    }
+
+
+    .category-text h2{
+
+        font-size:19px;
+
+    }
+
 
     .menu-item{
+
         height:95px;
+
     }
 
+
     .menu-item span{
+
         font-size:16px;
+
     }
+
 }
 
 </style>
 
 </head>
 
+
 <body data-page="hijab">
+
+
+<!-- ===============================
+     OVERLAY
+================================= -->
 
 <div id="overlay"></div>
 
-<!-- ================= SIDEBAR ================= -->
 
-<div id="sidebar" class="sidebar">
+<!-- ===============================
+     SIDEBAR
+================================= -->
+
+<div id="sidebar"
+     class="sidebar">
+
+
+    <!-- HEADER KATEGORI -->
 
     <div class="sidebar-header">
 
         <div class="category-3d-box">
 
+
             <div class="category-icon">
+
                 <i class="fa-solid fa-layer-group"></i>
+
             </div>
 
+
             <div class="category-text">
+
                 <h2>Kategori</h2>
+
                 <p>Pilih Menu</p>
+
             </div>
+
 
         </div>
 
     </div>
 
+
+    <!-- MENU -->
+
     <div class="menu-list">
 
-        <a href="index.html" class="menu-item">
-            <img src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
-                 class="menu-logo"
-                 alt="Home">
+
+        <!-- HOME -->
+
+        <a href="index.html"
+           class="menu-item">
+
+            <img
+            src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+            class="menu-logo"
+            alt="Home">
+
             <span>Home</span>
+
             <i class="fa-solid fa-chevron-right"></i>
+
         </a>
 
-        <a href="sekolah.html" class="menu-item">
-            <img src="https://asupanhijab.xyz/sekolah.jpg"
-                 class="menu-logo"
-                 alt="Sekolah">
+
+        <!-- SEKOLAH -->
+
+        <a href="sekolah.html"
+           class="menu-item">
+
+            <img
+            src="https://asupanhijab.xyz/sekolah.jpg"
+            class="menu-logo"
+            alt="Sekolah">
+
             <span>Sekolah</span>
+
             <i class="fa-solid fa-chevron-right"></i>
+
         </a>
 
-        <a href="remaja.html" class="menu-item">
-            <img src="https://asupanhijab.xyz/muda.jpg"
-                 class="menu-logo"
-                 alt="Muda 18+">
+
+        <!-- MUDA -->
+
+        <a href="remaja.html"
+           class="menu-item">
+
+            <img
+            src="https://asupanhijab.xyz/muda.jpg"
+            class="menu-logo"
+            alt="Muda">
+
             <span>Muda</span>
+
             <i class="fa-solid fa-chevron-right"></i>
+
         </a>
 
-        <a href="favorit.html" class="menu-item">
-            <img src="https://asupanhijab.xyz/publik.jpg"
-                 class="menu-logo"
-                 alt="Publik">
+
+        <!-- PUBLIK -->
+
+        <a href="favorit.html"
+           class="menu-item">
+
+            <img
+            src="https://asupanhijab.xyz/publik.jpg"
+            class="menu-logo"
+            alt="Publik">
+
             <span>Publik</span>
+
             <i class="fa-solid fa-chevron-right"></i>
+
         </a>
 
-        <a href="bule.html" class="menu-item">
-            <img src="https://asupanhijab.xyz/hijab.jpg"
-                 class="menu-logo"
-                 alt="Hijab">
+
+        <!-- HIJAB -->
+
+        <a href="bule.html"
+           class="menu-item">
+
+            <img
+            src="https://asupanhijab.xyz/hijab.jpg"
+            class="menu-logo"
+            alt="Hijab">
+
             <span>Hijab</span>
+
             <i class="fa-solid fa-chevron-right"></i>
+
         </a>
 
-        <a href="pronstar.html" class="menu-item">
-            <img src="https://asupanhijab.xyz/pronstar.jpg"
-                 class="menu-logo"
-                 alt="Pronstar">
+
+        <!-- PRONSTAR -->
+
+        <a href="pronstar.html"
+           class="menu-item">
+
+            <img
+            src="https://asupanhijab.xyz/pronstar.jpg"
+            class="menu-logo"
+            alt="Pronstar">
+
             <span>Pronstar</span>
+
             <i class="fa-solid fa-chevron-right"></i>
+
         </a>
+
 
     </div>
 
 </div>
-</style>
+
+
+<!-- ===============================
+     HEADER
+================================= -->
 
 <header>
 
 
-<button id="menuBtn">
-<i class="fa-solid fa-bars"></i>
-</button>
+    <button id="menuBtn">
 
-<div class="logo">
-<img src="Asupan Hijab.png.jpg">
-</div>
+        <i class="fa-solid fa-bars"></i>
 
-<div class="blank"></div>
+    </button>
+
+
+    <div class="logo">
+
+        <img
+        src="Asupan Hijab.png.jpg"
+        alt="Asupan Hijab">
+
+    </div>
+
+
+    <div class="blank"></div>
+
 
 </header>
 
 
+<!-- ===============================
+     HERO
+================================= -->
+
 <section class="hero">
-<h1>Selamat Datang</h1>
-<p>Website Kumpulan Vidio Dewasa Yang Sangat Sexual.</p>
+
+    <h1>Selamat Datang</h1>
+
+    <p>
+        Website Kumpulan Vidio Tutorial Hijab.
+    </p>
+
 </section>
 
+
+<!-- ===============================
+     SEARCH
+================================= -->
 
 <section class="search-area">
 
-<div class="search-box">
+    <div class="search-box">
 
-<i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
 
-<input 
-id="searchInput"
-type="text"
-placeholder="Cari video...">
+        <input
+        id="searchInput"
+        type="text"
+        placeholder="Cari video...">
 
-</div>
+    </div>
 
 </section>
 
 
+<!-- ===============================
+     VIDEO
+================================= -->
+
 <main>
 
-<div id="videoContainer" class="video-grid"></div>
+    <div
+    id="videoContainer"
+    class="video-grid">
+    </div>
 
 </main>
 
 
+<!-- ===============================
+     PAGINATION
+================================= -->
+
 <div class="pagination">
 
-<button id="prevBtn">
-Sebelumnya
-</button>
+    <button id="prevBtn">
+        Sebelumnya
+    </button>
 
-<span id="pageInfo">
-Halaman 1
-</span>
 
-<button id="nextBtn">
-Berikutnya
-</button>
+    <span id="pageInfo">
+        Halaman 1
+    </span>
+
+
+    <button id="nextBtn">
+        Berikutnya
+    </button>
 
 </div>
 
+
+<!-- ===============================
+     FOOTER
+================================= -->
 
 <footer>
 
-<div class="footer-logo">
-<img src="Asupan Hijab.png.jpg">
-</div>
+    <div class="footer-logo">
 
-<p>© 2026 Asupan Hijab</p>
+        <img
+        src="Asupan Hijab.png.jpg"
+        alt="Asupan Hijab">
+
+    </div>
+
+
+    <p>
+        © 2026 Asupan Hijab
+    </p>
 
 </footer>
 
+
+<!-- ===============================
+     JAVASCRIPT
+================================= -->
+
 <script src="js/data.js"></script>
+
 <script src="js/script.js"></script>
 
+
 </body>
-  </html>
+
+</html>
