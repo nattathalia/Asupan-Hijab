@@ -322,73 +322,236 @@ main{
 }
 
 
-/* ==========================
+/* ===============================
    PAGINATION
-========================== */
+================================= */
 
 .pagination{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:8px;
-    flex-wrap:wrap;
-    margin:35px 15px;
-}
-
-.pagination button{
-    border:none;
-    cursor:pointer;
-    padding:10px 14px;
-    border-radius:10px;
-    background:#1976d2;
-    color:#fff;
-    font-size:14px;
-    font-weight:600;
-    transition:.25s ease;
-}
-
-.pagination button:hover{
-    background:#0d47a1;
-    transform:translateY(-2px);
-}
-
-.pagination button:disabled{
-    opacity:.45;
-    cursor:not-allowed;
-    transform:none;
-}
-
-.page-numbers{
-    display:flex;
-    align-items:center;
-    justify-content:center;
     gap:6px;
     flex-wrap:wrap;
+    margin:45px 15px;
 }
+
+/* ===============================
+   SEMUA TOMBOL
+================================= */
+
+.pagination button{
+
+    height:58px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#1685d8;
+
+    color:#ffffff;
+
+    padding:0 25px;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
+    box-shadow:none;
+
+}
+
+/* Hover */
+
+.pagination button:hover{
+
+    background:#0875c9;
+
+    transform:translateY(-2px);
+
+}
+
+/* Disabled */
+
+.pagination button:disabled{
+
+    opacity:.45;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+}
+
+/* ===============================
+   NOMOR HALAMAN
+================================= */
+
+.page-numbers{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:0;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===============================
+   NOMOR 1, 2, 3, dst
+================================= */
 
 .page-number{
-    min-width:38px;
-    height:38px;
-    padding:0 10px !important;
+
+    min-width:58px;
+
+    height:58px;
+
+    padding:0 16px;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
-    border-radius:10px !important;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#1685d8;
+
+    color:#ffffff;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
 }
+
+/* Hover nomor */
+
+.page-number:hover{
+
+    background:#0875c9;
+
+    transform:translateY(-2px);
+
+}
+
+/* ===============================
+   HALAMAN AKTIF
+================================= */
 
 .page-number.active{
-    background:#0d47a1 !important;
-    box-shadow:
-        0 3px 0 #07346f,
-        0 5px 10px rgba(0,0,0,.2);
+
+    background:#91c9ed;
+
+    color:#ffffff;
+
+    cursor:default;
+
+    transform:none;
+
 }
+
+/* ===============================
+   TITIK ...
+================================= */
 
 .page-dots{
-    color:#555;
-    padding:0 3px;
+
+    min-width:58px;
+
+    height:58px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#ffffff;
+
+    background:#91c9ed;
+
+    border-radius:18px;
+
+    font-size:24px;
+
     font-weight:700;
+
 }
 
+/* ===============================
+   MOBILE
+================================= */
+
+@media(max-width:600px){
+
+    .pagination{
+
+        gap:4px;
+
+        margin:30px 10px;
+
+    }
+
+    .pagination button{
+
+        height:45px;
+
+        padding:0 12px;
+
+        border-radius:14px;
+
+        font-size:13px;
+
+    }
+
+    .page-number{
+
+        min-width:45px;
+
+        height:45px;
+
+        padding:0 10px;
+
+        border-radius:14px;
+
+        font-size:14px;
+
+    }
+
+    .page-dots{
+
+        min-width:45px;
+
+        height:45px;
+
+        border-radius:14px;
+
+        font-size:18px;
+
+    }
+
+}
 
 /* ==========================
    FOOTER
