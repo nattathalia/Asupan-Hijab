@@ -1,1 +1,324 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Muda 18+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+/* ===============================
+   SIDEBAR MODERN FOTO
+================================= */
+
+.sidebar{
+    position:fixed;
+    top:0;
+    left:-290px;
+    width:280px;
+    height:100%;
+    background:linear-gradient(180deg,#0d47a1,#1976d2);
+    overflow-y:auto;
+    transition:.35s;
+    z-index:9999;
+    box-shadow:8px 0 25px rgba(0,0,0,.35);
+}
+
+.sidebar.active{
+    left:0;
+}
+
+/* HEADER SIDEBAR */
+
+.sidebar-header{
+    padding:28px 20px;
+    text-align:center;
+    color:#fff;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.sidebar-header h2{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.sidebar-header p{
+    font-size:14px;
+    opacity:.9;
+}
+
+/* LIST MENU */
+
+.menu-list{
+    padding:18px;
+}
+
+/* MENU BERBENTUK FOTO */
+
+.menu-item{
+    position:relative;
+    display:block;
+    height:105px;
+    margin-bottom:15px;
+    border-radius:18px;
+    overflow:hidden;
+    text-decoration:none;
+    box-shadow:0 6px 15px rgba(0,0,0,.25);
+    transition:.3s ease;
+    background:#222;
+}
+
+/* FOTO MENU */
+
+.menu-logo{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border:0;
+    border-radius:0;
+    transition:.4s ease;
+}
+
+/* LAPISAN GELAP DI ATAS FOTO */
+
+.menu-item::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        180deg,
+        rgba(0,0,0,.10),
+        rgba(0,0,0,.65)
+    );
+    z-index:1;
+}
+
+/* TULISAN DI ATAS FOTO */
+
+.menu-item span{
+    position:absolute;
+    left:18px;
+    bottom:15px;
+    z-index:2;
+    color:#fff;
+    font-size:18px;
+    font-weight:700;
+    text-shadow:0 2px 6px rgba(0,0,0,.8);
+}
+
+/* ICON PANAH */
+
+.menu-item .fa-chevron-right{
+    position:absolute;
+    right:18px;
+    bottom:18px;
+    z-index:2;
+    color:#fff;
+    font-size:16px;
+    text-shadow:0 2px 5px rgba(0,0,0,.8);
+}
+
+/* EFEK HOVER */
+
+.menu-item:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 22px rgba(0,0,0,.35);
+}
+
+.menu-item:hover .menu-logo{
+    transform:scale(1.08);
+}
+
+/* SCROLLBAR */
+
+.sidebar::-webkit-scrollbar{
+    width:8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background:#ffffff66;
+    border-radius:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .sidebar{
+        width:260px;
+        left:-270px;
+    }
+
+    .menu-item{
+        height:95px;
+    }
+
+    .menu-item span{
+        font-size:16px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body data-page="muda">
+
+<div id="overlay"></div>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div id="sidebar" class="sidebar">
+
+    <div class="sidebar-header">
+        <h2>Kategori</h2>
+        <p>Pilih Menu</p>
+    </div>
+
+    <div class="menu-list">
+
+        <a href="index.html" class="menu-item">
+            <img src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                 class="menu-logo"
+                 alt="Home">
+            <span>Home</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="sekolah.html" class="menu-item">
+            <img src="https://asupanhijab.xyz/sekolah.jpg"
+                 class="menu-logo"
+                 alt="Sekolah">
+            <span>Sekolah</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="remaja.html" class="menu-item">
+            <img src="https://asupanhijab.xyz/muda.jpg"
+                 class="menu-logo"
+                 alt="Muda 18+">
+            <span>Muda</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="favorit.html" class="menu-item">
+            <img src="https://asupanhijab.xyz/publik.jpg"
+                 class="menu-logo"
+                 alt="Publik">
+            <span>Publik</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="bule.html" class="menu-item">
+            <img src="https://asupanhijab.xyz/hijab.jpg"
+                 class="menu-logo"
+                 alt="Hijab">
+            <span>Hijab</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="pronstar.html" class="menu-item">
+            <img src="https://asupanhijab.xyz/pronstar.jpg"
+                 class="menu-logo"
+                 alt="Pronstar">
+            <span>Pronstar</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+
+<header>
+
+<button id="menuBtn">
+    <i class="fa-solid fa-bars"></i>
+</button>
+
+<div class="logo">
+    <img src="Asupan Hijab.png.jpg">
+</div>
+
+<div class="blank"></div>
+
+</header>
+
+
+<section class="hero">
+
+<h1>Video Muda 18+</h1>
+
+<p>Kumpulan video kategori Muda 18+.</p>
+
+</section>
+
+
+<section class="search-area">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+id="searchInput"
+type="text"
+placeholder="Cari video...">
+
+</div>
+
+</section>
+
+
+<main>
+
+<div id="videoContainer" class="video-grid"></div>
+
+</main>
+
+
+<div class="pagination">
+
+<button id="prevBtn">
+Sebelumnya
+</button>
+
+<span id="pageInfo">
+Halaman 1
+</span>
+
+<button id="nextBtn">
+Berikutnya
+</button>
+
+</div>
+
+
+<footer>
+
+<div class="footer-logo">
+<img src="Asupan Hijab.png.jpg">
+</div>
+
+<p>© 2026 Asupan Hijab</p>
+
+</footer>
+
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
