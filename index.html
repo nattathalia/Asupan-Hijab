@@ -966,23 +966,25 @@ async function(OneSignal) {
     font-weight:700;
 }
 
-@media(max-width:600px){
+<!-- ===============================
+     PAGINATION
+================================= -->
 
-    .pagination{
-        gap:5px;
-    }
+<div class="pagination">
 
-    .pagination button{
-        padding:9px 10px;
-        font-size:12px;
-    }
+    <button id="prevBtn" type="button">
+        <i class="fa-solid fa-chevron-left"></i>
+        Sebelumnya
+    </button>
 
-    .page-number{
-        min-width:34px;
-        height:34px;
-    }
+    <div id="pageNumbers" class="page-numbers"></div>
 
-}
+    <button id="nextBtn" type="button">
+        Berikutnya
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+</div>
 <!-- ===============================
      FOOTER
 ================================= -->
@@ -1005,15 +1007,8 @@ async function(OneSignal) {
 </footer>
 
 
-<!-- ===============================
-     JAVASCRIPT
-================================= -->
-
 <script src="js/data.js"></script>
-
 <script src="js/script.js"></script>
 
-
 </body>
-
 </html>
