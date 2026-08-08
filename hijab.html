@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Hijab</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+
+<body data-page="hijab">
+
+
+<!-- =====================================================
+     OVERLAY
+===================================================== -->
+
+<div id="overlay"></div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<div id="sidebar" class="sidebar">
+
+
+    <!-- SIDEBAR HEADER -->
+
+    <div class="sidebar-header">
+
+        <div class="category-3d-box">
+
+            <div class="category-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div class="category-text">
+
+                <h2>Kategori</h2>
+
+                <p>Pilih Menu</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MENU -->
+
+    <div class="menu-list">
+
+
+        <a href="index.html"
+           class="menu-item">
+
+            <img
+            src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+            class="menu-logo"
+            alt="Home">
+
+            <span>Home</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <a href="sekolah.html"
+           class="menu-item">
+
+            <img
+            src="https://asupanhijab.xyz/sekolah.jpg"
+            class="menu-logo"
+            alt="Sekolah">
+
+            <span>Sekolah</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <a href="muda.html"
+           class="menu-item">
+
+            <img
+            src="https://asupanhijab.xyz/muda.jpg"
+            class="menu-logo"
+            alt="Muda">
+
+            <span>Muda</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <a href="publik.html"
+           class="menu-item">
+
+            <img
+            src="https://asupanhijab.xyz/publik.jpg"
+            class="menu-logo"
+            alt="Publik">
+
+            <span>Publik</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <a href="hijab.html"
+           class="menu-item">
+
+            <img
+            src="https://asupanhijab.xyz/hijab.jpg"
+            class="menu-logo"
+            alt="Hijab">
+
+            <span>Hijab</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <a href="pronstar.html"
+           class="menu-item">
+
+            <img
+            src="https://asupanhijab.xyz/pronstar.jpg"
+            class="menu-logo"
+            alt="Pronstar">
+
+            <span>Pronstar</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+
+    <button
+    id="menuBtn"
+    type="button"
+    aria-label="Buka menu">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+    <div class="logo">
+
+        <img
+        src="Asupan Hijab.png.jpg"
+        alt="Asupan Hijab">
+
+    </div>
+
+
+    <div class="blank"></div>
+
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <h1>Video Hijab</h1>
+
+    <p>
+        Kumpulan video kategori Hijab.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     SEARCH
+===================================================== -->
+
+<section class="search-area">
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+        id="searchInput"
+        type="search"
+        autocomplete="off"
+        placeholder="Cari video...">
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MAIN VIDEO
+===================================================== -->
+
+<main>
+
+    <div
+    id="videoContainer"
+    class="video-grid">
+    </div>
+
+</main>
+
+
+<!-- =====================================================
+     PAGINATION
+===================================================== -->
+
+<nav
+class="pagination"
+aria-label="Navigasi halaman">
+
+
+    <!-- SEBELUMNYA -->
+
+    <button
+    id="prevBtn"
+    class="pagination-main"
+    type="button">
+
+        <i class="fa-solid fa-chevron-left"></i>
+
+        <span>Sebelumnya</span>
+
+    </button>
+
+
+    <!-- NOMOR HALAMAN -->
+
+    <div
+    id="pageNumbers"
+    class="page-numbers">
+
+    </div>
+
+
+    <!-- BERIKUTNYA -->
+
+    <button
+    id="nextBtn"
+    class="pagination-main"
+    type="button">
+
+        <span>Berikutnya</span>
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+    </button>
+
+
+</nav>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <div class="footer-logo">
+
+        <img
+        src="Asupan Hijab.png.jpg"
+        alt="Asupan Hijab">
+
+    </div>
+
+
+    <p>
+        © 2026 Asupan Hijab
+    </p>
+
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="js/data.js"></script>
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+  </html>
