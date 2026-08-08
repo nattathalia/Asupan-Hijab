@@ -1159,3 +1159,80 @@ footer p{
     }
 
 }
+
+/* ===============================
+   PAGINATION
+================================= */
+
+.pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    flex-wrap:wrap;
+    margin:30px 15px;
+}
+
+.pagination button{
+    border:none;
+    cursor:pointer;
+    padding:10px 14px;
+    border-radius:10px;
+    background:#1976d2;
+    color:#fff;
+    font-family:'Poppins',sans-serif;
+    font-size:14px;
+    font-weight:600;
+    transition:.25s;
+}
+
+.pagination button:hover{
+    background:#0d47a1;
+    transform:translateY(-2px);
+}
+
+.pagination button:disabled{
+    opacity:.45;
+    cursor:not-allowed;
+    transform:none;
+}
+
+.page-numbers{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.page-number{
+    min-width:38px;
+    height:38px;
+    padding:0 10px !important;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px !important;
+}
+
+.page-number.active{
+    background:#0d47a1 !important;
+}
+
+@media(max-width:600px){
+
+    .pagination{
+        gap:5px;
+    }
+
+    .pagination button{
+        padding:9px 10px;
+        font-size:12px;
+    }
+
+    .page-number{
+        min-width:34px;
+        height:34px;
+    }
+
+}
