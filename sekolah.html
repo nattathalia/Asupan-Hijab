@@ -12,65 +12,10 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-</head>
+<style>
 
-<body data-page="sekolah">
-
-<div id="overlay"></div>
-    
-<!-- ================= SIDEBAR ================= -->
-
-<div id="sidebar" class="sidebar">
-
-    <div class="sidebar-header">
-        <h2>Kategori</h2>
-        <p>Pilih Menu</p>
-    </div>
-
-    <div class="menu-list">
-
-        <a href="index.html" class="menu-item">
-            <img src="https://nattathalia.github.io/Asupan-Hijab/home.png" class="menu-logo" alt="Home">
-            <span>Home</span>
-            <i class="fa-solid fa-chevron-right"></i>
-        </a>
-
-        <a href="sekolah.html" class="menu-item">
-            <img src="https://asupanhijab.xyz/sekolah.jpg" class="menu-logo" alt="Sekolah">
-            <span>Sekolah</span>
-            <i class="fa-solid fa-chevron-right"></i>
-        </a>
-
-        <a href="remaja.html" class="menu-item">
-            <img src="https://nattathalia.github.io/Asupan-Hijab/remaja.png" class="menu-logo" alt="Remaja">
-            <span>Remaja</span>
-            <i class="fa-solid fa-chevron-right"></i>
-        </a>
-
-        <a href="favorit.html" class="menu-item">
-            <img src="https://nattathalia.github.io/Asupan-Hijab/favorit.png" class="menu-logo" alt="Favorit">
-            <span>Favorit</span>
-            <i class="fa-solid fa-chevron-right"></i>
-        </a>
-
-        <a href="bule.html" class="menu-item">
-            <img src="https://nattathalia.github.io/Asupan-Hijab/bule.png" class="menu-logo" alt="Bule">
-            <span>Bule</span>
-            <i class="fa-solid fa-chevron-right"></i>
-        </a>
-
-        <a href="pronstar.html" class="menu-item">
-            <img src="https://nattathalia.github.io/Asupan-Hijab/pronstar.png" class="menu-logo" alt="Pronstar">
-            <span>Pronstar</span>
-            <i class="fa-solid fa-chevron-right"></i>
-        </a>
-
-    </div>
-
-</div>
-  <style>
 /* ===============================
-   SIDEBAR MODERN
+   SIDEBAR MODERN FOTO
 ================================= */
 
 .sidebar{
@@ -90,6 +35,8 @@
     left:0;
 }
 
+/* HEADER SIDEBAR */
+
 .sidebar-header{
     padding:28px 20px;
     text-align:center;
@@ -108,51 +55,91 @@
     opacity:.9;
 }
 
+/* LIST MENU */
+
 .menu-list{
     padding:18px;
 }
 
+/* MENU BERBENTUK FOTO */
+
 .menu-item{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    background:#fff;
-    color:#222;
-    text-decoration:none;
+    position:relative;
+    display:block;
+    height:105px;
+    margin-bottom:15px;
     border-radius:18px;
-    padding:13px 15px;
-    margin-bottom:14px;
-    box-shadow:0 6px 15px rgba(0,0,0,.15);
-    transition:.3s;
+    overflow:hidden;
+    text-decoration:none;
+    box-shadow:0 6px 15px rgba(0,0,0,.25);
+    transition:.3s ease;
+    background:#222;
 }
 
-.menu-item:hover{
-    transform:translateX(8px);
-    background:#eef5ff;
-    box-shadow:0 8px 18px rgba(0,0,0,.22);
-}
+/* FOTO MENU */
 
 .menu-logo{
-    width:50px;
-    height:50px;
-    border-radius:50%;
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
     object-fit:cover;
-    border:3px solid #0d47a1;
-    flex-shrink:0;
+    border:0;
+    border-radius:0;
+    transition:.4s ease;
 }
+
+/* LAPISAN GELAP DI ATAS FOTO */
+
+.menu-item::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        180deg,
+        rgba(0,0,0,.10),
+        rgba(0,0,0,.65)
+    );
+    z-index:1;
+}
+
+/* TULISAN DI ATAS FOTO */
 
 .menu-item span{
-    flex:1;
-    font-size:17px;
-    font-weight:600;
+    position:absolute;
+    left:18px;
+    bottom:15px;
+    z-index:2;
+    color:#fff;
+    font-size:18px;
+    font-weight:700;
+    text-shadow:0 2px 6px rgba(0,0,0,.8);
 }
+
+/* ICON PANAH */
 
 .menu-item .fa-chevron-right{
-    color:#0d47a1;
-    font-size:15px;
+    position:absolute;
+    right:18px;
+    bottom:18px;
+    z-index:2;
+    color:#fff;
+    font-size:16px;
+    text-shadow:0 2px 5px rgba(0,0,0,.8);
 }
 
-/* Scrollbar */
+/* EFEK HOVER */
+
+.menu-item:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 22px rgba(0,0,0,.35);
+}
+
+.menu-item:hover .menu-logo{
+    transform:scale(1.08);
+}
+
+/* SCROLLBAR */
 
 .sidebar::-webkit-scrollbar{
     width:8px;
@@ -163,33 +150,229 @@
     border-radius:20px;
 }
 
-/* Responsive */
+/* ===============================
+   HEADER KATEGORI 3D
+================================ */
+
+.sidebar-header{
+    padding:22px 15px;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.category-3d-box{
+    position:relative;
+    width:100%;
+    min-height:78px;
+
+    display:flex;
+    align-items:center;
+
+    padding:12px 16px;
+    box-sizing:border-box;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        145deg,
+        #ffffff,
+        #e6e6e6
+    );
+
+    box-shadow:
+        0 10px 0 #b8b8b8,
+        0 15px 25px rgba(0,0,0,.35),
+        inset 0 2px 3px rgba(255,255,255,.9);
+
+    overflow:hidden;
+}
+
+.category-icon{
+    width:50px;
+    height:50px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:15px;
+
+    background:linear-gradient(
+        145deg,
+        #1976d2,
+        #0d47a1
+    );
+
+    color:#fff;
+    font-size:23px;
+
+    box-shadow:
+        0 5px 0 #07346f,
+        0 8px 15px rgba(0,0,0,.3);
+
+    flex-shrink:0;
+}
+
+.category-text{
+    margin-left:14px;
+}
+
+.category-text h2{
+    margin:0;
+
+    font-family:'Poppins',sans-serif;
+    font-size:21px;
+    font-weight:700;
+
+    color:#123c70;
+
+    text-shadow:
+        1px 1px 0 #fff,
+        2px 3px 4px rgba(0,0,0,.2);
+}
+
+.category-text p{
+    margin:2px 0 0;
+
+    font-family:'Poppins',sans-serif;
+    font-size:12px;
+    font-weight:500;
+
+    color:#555;
+    letter-spacing:.5px;
+}
 
 @media(max-width:768px){
 
-.sidebar{
-    width:260px;
-    left:-270px;
+    .sidebar-header{
+        padding:18px 14px;
+    }
+
+    .category-3d-box{
+        min-height:70px;
+        border-radius:18px;
+    }
+
+    .category-icon{
+        width:44px;
+        height:44px;
+        font-size:20px;
+    }
+
+    .category-text h2{
+        font-size:19px;
+    }
 }
 
-.menu-logo{
-    width:45px;
-    height:45px;
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .sidebar{
+        width:260px;
+        left:-270px;
+    }
+
+    .menu-item{
+        height:95px;
+    }
+
+    .menu-item span{
+        font-size:16px;
+    }
 }
 
-.menu-item span{
-    font-size:16px;
-}
 </style>
+
+</head>
+
+<body data-page="sekolah">
+
+<div id="overlay"></div>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div id="sidebar" class="sidebar">
+
+    <div class="sidebar-header">
+
+        <div class="category-3d-box">
+
+            <div class="category-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div class="category-text">
+                <h2>Kategori</h2>
+                <p>Pilih Menu</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="menu-list">
+
+        <a href="index.html" class="menu-item">
+            <img src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                 class="menu-logo"
+                 alt="Home">
+            <span>Home</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="sekolah.html" class="menu-item">
+            <img src="https://asupanhijab.xyz/sekolah.jpg"
+                 class="menu-logo"
+                 alt="Sekolah">
+            <span>Sekolah</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="remaja.html" class="menu-item">
+            <img src="https://asupanhijab.xyz/muda.jpg"
+                 class="menu-logo"
+                 alt="Muda 18+">
+            <span>Muda</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="favorit.html" class="menu-item">
+            <img src="https://asupanhijab.xyz/publik.jpg"
+                 class="menu-logo"
+                 alt="Publik">
+            <span>Publik</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="bule.html" class="menu-item">
+            <img src="https://asupanhijab.xyz/hijab.jpg"
+                 class="menu-logo"
+                 alt="Hijab">
+            <span>Hijab</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="pronstar.html" class="menu-item">
+            <img src="https://asupanhijab.xyz/pronstar.jpg"
+                 class="menu-logo"
+                 alt="Pronstar">
+            <span>Pronstar</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
 
 <header>
 
 <button id="menuBtn">
-<i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-bars"></i>
 </button>
 
 <div class="logo">
-<img src="Asupan Hijab.png.jpg">
+    <img src="Asupan Hijab.png.jpg">
 </div>
 
 <div class="blank"></div>
@@ -198,8 +381,11 @@
 
 
 <section class="hero">
+
 <h1>Video Sekolah</h1>
+
 <p>Kumpulan video kategori Sekolah.</p>
+
 </section>
 
 
@@ -209,7 +395,7 @@
 
 <i class="fa-solid fa-magnifying-glass"></i>
 
-<input 
+<input
 id="searchInput"
 type="text"
 placeholder="Cari video...">
@@ -252,6 +438,7 @@ Berikutnya
 <p>© 2026 Asupan Hijab</p>
 
 </footer>
+
 
 <script src="js/data.js"></script>
 <script src="js/script.js"></script>
