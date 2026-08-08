@@ -232,7 +232,7 @@ const videos =  {
 },
 ],
 
-  remaja: [
+  muda: [
 {
   title:"Bokep bocil kampung",
   embed:
@@ -285,7 +285,7 @@ const videos =  {
 },
 ],
 
-  bule: [
+  hijab: [
 {
   title:"Gadis Muslim disemprot sperma",
   embed:"https://luluvdo.com/e/pqt6vfbtoz8e"
@@ -346,7 +346,7 @@ const videos =  {
   "https://luluvdo.com/e/5p02q9p55jzw"
 },
 ],
-    favorit : [
+    publik : [
 {
   title: "Bokep Indo Hijab Kacamata SMA Batik Colmek",
   embed:
