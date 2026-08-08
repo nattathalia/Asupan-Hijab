@@ -1,0 +1,1206 @@
+/* =========================================================
+   ASUPAN HIJAB - STYLE.CSS
+   VERSI GABUNGAN & RAPiH
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff;
+    color:#111;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+iframe{
+    border:0;
+    display:block;
+}
+
+button,
+input{
+    font-family:'Poppins',sans-serif;
+}
+
+button{
+    cursor:pointer;
+}
+
+button:focus,
+input:focus{
+    outline:none;
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+#overlay{
+    position:fixed;
+    inset:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+    display:none;
+    z-index:998;
+}
+
+#overlay.active{
+    display:block;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+#sidebar{
+    position:fixed;
+    top:0;
+    left:-280px;
+    width:280px;
+    height:100%;
+    background:#fff;
+    box-shadow:4px 0 20px rgba(0,0,0,.18);
+    transition:left .35s ease;
+    overflow-y:auto;
+    z-index:9999;
+}
+
+#sidebar.active{
+    left:0;
+}
+
+
+/* =========================================================
+   SIDEBAR HEADER
+========================================================= */
+
+.sidebar-header{
+    padding:20px;
+    border-bottom:1px solid #ececec;
+}
+
+.sidebar-header h2{
+    font-size:22px;
+    font-weight:700;
+    color:#111;
+}
+
+
+/* =========================================================
+   SIDEBAR LINK
+========================================================= */
+
+#sidebar a{
+    display:block;
+    padding:16px 20px;
+    color:#222;
+    text-decoration:none;
+    font-size:15px;
+    transition:.3s ease;
+}
+
+#sidebar a:hover{
+    background:#f5f5f5;
+    padding-left:28px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+    position:sticky;
+    top:0;
+    left:0;
+    width:100%;
+    height:90px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 20px;
+
+    background:#fff;
+
+    box-shadow:
+    0 2px 10px rgba(0,0,0,.08);
+
+    z-index:900;
+}
+
+
+/* =========================================================
+   MENU BUTTON
+========================================================= */
+
+#menuBtn{
+    width:50px;
+    height:50px;
+
+    border:none;
+    background:transparent;
+
+    color:#111;
+
+    font-size:32px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:.3s ease;
+}
+
+#menuBtn:hover{
+    transform:rotate(90deg);
+}
+
+
+/* =========================================================
+   HEADER LOGO
+========================================================= */
+
+.logo{
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100%;
+}
+
+.logo img{
+    width:auto;
+    height:70px;
+    max-width:180px;
+    object-fit:contain;
+}
+
+
+/* =========================================================
+   HEADER BAGIAN KANAN
+========================================================= */
+
+.blank{
+    width:50px;
+    height:50px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    padding:35px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:30px;
+    font-weight:700;
+    color:#111;
+    margin-bottom:12px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+
+    font-size:15px;
+    line-height:1.8;
+
+    color:#666;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.search-area{
+    max-width:700px;
+    margin:0 auto 30px;
+    padding:0 20px;
+}
+
+.search-box{
+    display:flex;
+    align-items:center;
+
+    background:#f4f4f4;
+
+    border-radius:50px;
+
+    padding:0 18px;
+
+    box-shadow:
+    0 2px 8px rgba(0,0,0,.05);
+
+    transition:.3s ease;
+}
+
+.search-box:focus-within{
+    box-shadow:
+    0 0 0 3px rgba(13,110,253,.18);
+}
+
+.search-box i{
+    font-size:18px;
+    color:#777;
+}
+
+.search-box input{
+    flex:1;
+
+    border:none;
+    outline:none;
+
+    background:transparent;
+
+    padding:15px;
+
+    font-size:15px;
+
+    color:#111;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+main{
+    width:100%;
+    max-width:1280px;
+
+    margin:auto;
+
+    padding:0 15px 30px;
+}
+
+
+/* =========================================================
+   VIDEO GRID
+========================================================= */
+
+.video-grid{
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:25px;
+
+    max-width:850px;
+
+    margin:20px auto 0;
+}
+
+
+/* =========================================================
+   VIDEO CARD
+========================================================= */
+
+.video-card{
+    background:transparent;
+
+    border:none;
+
+    box-shadow:none;
+
+    border-radius:0;
+
+    overflow:visible;
+
+    text-align:center;
+
+    transition:.3s ease;
+}
+
+.video-card:hover{
+    transform:translateY(-3px);
+}
+
+
+/* =========================================================
+   VIDEO TITLE
+========================================================= */
+
+.video-title{
+    margin-bottom:10px;
+
+    padding:0;
+
+    background:none;
+
+    border:none;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    text-align:center;
+
+    color:#111;
+}
+
+
+/* =========================================================
+   VIDEO FRAME
+========================================================= */
+
+.video-frame{
+    width:100%;
+
+    border:4px solid #222;
+
+    border-radius:3px;
+
+    overflow:hidden;
+
+    background:#fff;
+}
+
+.video-frame iframe{
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    display:block;
+}
+
+
+/* =========================================================
+   VIDEO INFO
+========================================================= */
+
+.video-info{
+    padding:15px;
+}
+
+.video-desc{
+    font-size:14px;
+
+    line-height:1.7;
+
+    color:#666;
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.pagination{
+    width:100%;
+    max-width:1100px;
+
+    margin:40px auto;
+
+    padding:0 15px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:0;
+
+    overflow:hidden;
+}
+
+
+/* =========================================================
+   SEMUA TOMBOL PAGINATION
+========================================================= */
+
+.pagination button{
+    border:none;
+
+    background:#1685d8;
+
+    color:#fff;
+
+    font-family:'Poppins',sans-serif;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    transition:
+        background .25s ease,
+        transform .25s ease;
+
+    flex:0 0 auto;
+}
+
+
+/* =========================================================
+   TOMBOL SEBELUMNYA
+========================================================= */
+
+#prevBtn{
+    height:58px;
+
+    min-width:165px;
+
+    padding:0 20px;
+
+    gap:8px;
+
+    border-radius:
+        16px 0 0 16px;
+
+    font-size:15px;
+}
+
+
+/* =========================================================
+   TOMBOL BERIKUTNYA
+========================================================= */
+
+#nextBtn{
+    height:58px;
+
+    min-width:165px;
+
+    padding:0 20px;
+
+    gap:8px;
+
+    border-radius:
+        0 16px 16px 0;
+
+    font-size:15px;
+}
+
+
+/* =========================================================
+   CONTAINER NOMOR HALAMAN
+
+   BISA DIGESER HORIZONTAL
+========================================================= */
+
+#pageNumbers{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    gap:0;
+
+    flex:0 1 auto;
+
+    max-width:600px;
+
+    overflow-x:auto;
+
+    overflow-y:hidden;
+
+    flex-wrap:nowrap;
+
+    scrollbar-width:none;
+
+    -webkit-overflow-scrolling:touch;
+}
+
+#pageNumbers::-webkit-scrollbar{
+    display:none;
+}
+
+
+/* =========================================================
+   KOTAK NOMOR HALAMAN
+========================================================= */
+
+.page-number{
+    flex:0 0 58px;
+
+    width:58px;
+    min-width:58px;
+
+    height:58px;
+
+    padding:0;
+
+    border:none;
+
+    border-radius:0;
+
+    background:#1685d8;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:
+        background .25s ease,
+        transform .25s ease;
+}
+
+
+/* =========================================================
+   NOMOR HALAMAN AKTIF
+========================================================= */
+
+.page-number.active{
+    background:#91c9ed;
+
+    color:#fff;
+
+    cursor:default;
+
+    transform:none;
+}
+
+
+/* =========================================================
+   HOVER NOMOR
+========================================================= */
+
+.page-number:not(.active):hover{
+    background:#0875c9;
+
+    transform:translateY(-2px);
+}
+
+
+/* =========================================================
+   TITIK ...
+========================================================= */
+
+.page-dots{
+    flex:0 0 58px;
+
+    width:58px;
+    min-width:58px;
+
+    height:58px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    background:#1685d8;
+
+    color:#fff;
+
+    font-size:20px;
+
+    font-weight:700;
+}
+
+
+/* =========================================================
+   HOVER TOMBOL
+========================================================= */
+
+.pagination button:not(:disabled):hover{
+    background:#0875c9;
+
+    transform:translateY(-2px);
+}
+
+
+/* =========================================================
+   BUTTON DISABLED
+========================================================= */
+
+.pagination button:disabled{
+    background:#91c9ed;
+
+    color:#fff;
+
+    opacity:1;
+
+    cursor:not-allowed;
+
+    transform:none;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    width:100%;
+
+    max-width:900px;
+
+    margin:25px auto 20px;
+
+    padding:16px 20px;
+
+    text-align:center;
+
+    background:#fafafa;
+
+    border:
+        1px solid #e5e5e5;
+
+    border-radius:14px;
+
+    box-shadow:
+        0 3px 12px rgba(0,0,0,.05);
+}
+
+
+/* =========================================================
+   FOOTER LOGO
+   UKURAN MENGIKUTI LOGO HEADER
+========================================================= */
+
+.footer-logo{
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:7px;
+}
+
+.footer-logo img{
+    width:auto;
+
+    height:70px;
+
+    max-width:180px;
+
+    object-fit:contain;
+}
+
+
+/* =========================================================
+   FOOTER TEXT
+========================================================= */
+
+footer p{
+    margin:0;
+
+    font-size:12px;
+
+    color:#666;
+
+    line-height:1.5;
+}
+
+
+/* =========================================================
+   SCROLLBAR WEBSITE
+========================================================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f2f2f2;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#bdbdbd;
+
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#888;
+}
+
+
+/* =========================================================
+   MOBILE <= 768PX
+========================================================= */
+
+@media(max-width:768px){
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header{
+        height:80px;
+
+        padding:0 15px;
+    }
+
+    #menuBtn{
+        width:45px;
+        height:45px;
+
+        font-size:28px;
+    }
+
+    .logo img{
+        height:60px;
+
+        max-width:155px;
+    }
+
+    .blank{
+        width:45px;
+        height:45px;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero{
+        padding:25px 15px;
+    }
+
+    .hero h1{
+        font-size:24px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+
+    /* =========================
+       SEARCH
+    ========================= */
+
+    .search-area{
+        padding:0 15px 25px;
+    }
+
+
+    /* =========================
+       VIDEO
+    ========================= */
+
+    .video-grid{
+        grid-template-columns:1fr;
+
+        gap:20px;
+    }
+
+    .video-title{
+        font-size:20px;
+
+        margin-bottom:8px;
+    }
+
+    .video-frame iframe{
+        aspect-ratio:16/9;
+
+        height:auto;
+    }
+
+
+    /* =========================
+       PAGINATION HP
+    ========================= */
+
+    .pagination{
+        width:100%;
+
+        margin:30px auto;
+
+        padding:0 8px;
+
+        justify-content:center;
+
+        overflow:hidden;
+    }
+
+
+    /* =========================
+       PREVIOUS / NEXT
+    ========================= */
+
+    #prevBtn,
+    #nextBtn{
+        height:45px;
+
+        min-width:105px;
+
+        padding:0 10px;
+
+        font-size:11px;
+
+        gap:5px;
+
+        flex:0 0 auto;
+    }
+
+    #prevBtn{
+        border-radius:
+            12px 0 0 12px;
+    }
+
+    #nextBtn{
+        border-radius:
+            0 12px 12px 0;
+    }
+
+
+    /* =========================
+       NOMOR HALAMAN
+    ========================= */
+
+    #pageNumbers{
+        flex:1 1 auto;
+
+        max-width:
+            calc(100vw - 226px);
+
+        overflow-x:auto;
+
+        justify-content:flex-start;
+    }
+
+    .page-number{
+        flex:0 0 44px;
+
+        width:44px;
+        min-width:44px;
+
+        height:45px;
+
+        font-size:14px;
+    }
+
+    .page-dots{
+        flex:0 0 44px;
+
+        width:44px;
+        min-width:44px;
+
+        height:45px;
+
+        font-size:16px;
+    }
+
+
+    /* =========================
+       FOOTER HP
+    ========================= */
+
+    footer{
+        width:
+            calc(100% - 24px);
+
+        max-width:none;
+
+        margin:
+            20px auto 15px;
+
+        padding:
+            12px 15px;
+
+        border-radius:12px;
+    }
+
+    .footer-logo{
+        margin-bottom:5px;
+    }
+
+    .footer-logo img{
+        height:60px;
+
+        max-width:155px;
+    }
+
+    footer p{
+        font-size:11px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE KECIL <= 480PX
+========================================================= */
+
+@media(max-width:480px){
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header{
+        height:75px;
+    }
+
+    .logo img{
+        height:55px;
+
+        max-width:140px;
+    }
+
+    #menuBtn{
+        width:42px;
+        height:42px;
+
+        font-size:25px;
+    }
+
+    .blank{
+        width:42px;
+        height:42px;
+    }
+
+
+    /* =========================
+       PAGINATION HP KECIL
+    ========================= */
+
+    .pagination{
+        padding:0 5px;
+
+        margin:
+            25px auto;
+    }
+
+    #prevBtn,
+    #nextBtn{
+        min-width:82px;
+
+        height:42px;
+
+        padding:0 7px;
+
+        font-size:10px;
+
+        gap:4px;
+    }
+
+    #prevBtn{
+        border-radius:
+            11px 0 0 11px;
+    }
+
+    #nextBtn{
+        border-radius:
+            0 11px 11px 0;
+    }
+
+    #pageNumbers{
+        max-width:
+            calc(100vw - 174px);
+    }
+
+    .page-number{
+        flex:0 0 40px;
+
+        width:40px;
+        min-width:40px;
+
+        height:42px;
+
+        font-size:13px;
+    }
+
+    .page-dots{
+        flex:0 0 40px;
+
+        width:40px;
+        min-width:40px;
+
+        height:42px;
+
+        font-size:15px;
+    }
+
+
+    /* =========================
+       FOOTER HP KECIL
+    ========================= */
+
+    footer{
+        width:
+            calc(100% - 20px);
+
+        margin:
+            18px auto 12px;
+
+        padding:
+            10px 12px;
+    }
+
+    .footer-logo img{
+        height:55px;
+
+        max-width:140px;
+    }
+
+    footer p{
+        font-size:10px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET 769PX - 999PX
+========================================================= */
+
+@media(min-width:769px) and (max-width:999px){
+
+    main{
+        max-width:900px;
+    }
+
+    .video-grid{
+        grid-template-columns:1fr;
+
+        max-width:850px;
+
+        gap:25px;
+    }
+
+    .video-frame iframe{
+        height:230px;
+    }
+
+    #pageNumbers{
+        max-width:450px;
+    }
+
+    #prevBtn,
+    #nextBtn{
+        min-width:135px;
+    }
+
+}
+
+
+/* =========================================================
+   DESKTOP >= 1000PX
+========================================================= */
+
+@media(min-width:1000px){
+
+    main{
+        max-width:1280px;
+    }
+
+    .video-grid{
+        grid-template-columns:1fr;
+
+        max-width:850px;
+
+        gap:30px;
+    }
+
+    .video-frame iframe{
+        height:260px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    #pageNumbers{
+        max-width:600px;
+    }
+
+}
+
+
+/* =========================================================
+   LARGE DESKTOP >= 1400PX
+========================================================= */
+
+@media(min-width:1400px){
+
+    main{
+        max-width:1400px;
+    }
+
+    .video-grid{
+        grid-template-columns:1fr;
+
+        max-width:850px;
+
+        gap:30px;
+    }
+
+    .video-frame iframe{
+        height:300px;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print{
+
+    #sidebar,
+    #menuBtn,
+    .search-area,
+    .pagination{
+        display:none !important;
+    }
+
+    body{
+        background:#fff;
+    }
+
+    .video-card{
+        box-shadow:none;
+
+        border:
+            1px solid #ddd;
+    }
+
+}
