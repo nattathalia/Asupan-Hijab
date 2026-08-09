@@ -130,6 +130,7 @@ const models = [
 ====================================================== */
 
 const categories = [
+const categories = [
 
     {
         id: "semua",
@@ -152,12 +153,21 @@ const categories = [
     },
 
     {
-        id: "hijab",
-        name: "Hijab"
+        id: "thailand",
+        name: "Thailand"
+    },
+
+    {
+        id: "vietnam",
+        name: "Vietnam"
+    },
+
+    {
+        id: "lebanon",
+        name: "Lebanon"
     }
 
 ];
-
 
 /* ======================================================
    KATEGORI AKTIF
