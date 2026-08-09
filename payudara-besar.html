@@ -1389,7 +1389,7 @@ main h2{
 
 <div class="region-category">
 
-    <a href="asia.html" class="region-btn active">
+    <a href="asia.html" class="region-btn">
         Asia
     </a>
 
@@ -1409,8 +1409,8 @@ main h2{
         Payudara Besar
     </a>
 
-    <a href="hijab.html" class="region-btn">
-        Hijab
+    <a href="hijaber.html" class="region-btn">
+        Hijaber
     </a>
 
     <a href="pirang.html" class="region-btn">
@@ -3338,6 +3338,39 @@ menuItems.forEach(function(item){
 
         }
     );
+
+});
+
+/* ======================================================
+   AKTIFKAN TOMBOL SESUAI HALAMAN
+====================================================== */
+
+const currentPage =
+    window.location.pathname
+    .split("/")
+    .pop()
+    .toLowerCase();
+
+const regionButtons =
+    document.querySelectorAll(".region-btn");
+
+regionButtons.forEach(function(button){
+
+    const buttonPage =
+        button.getAttribute("href")
+        .split("/")
+        .pop()
+        .toLowerCase();
+
+    if(buttonPage === currentPage){
+
+        button.classList.add("active");
+
+    }else{
+
+        button.classList.remove("active");
+
+    }
 
 });
 
