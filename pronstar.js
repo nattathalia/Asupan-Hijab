@@ -125,6 +125,48 @@ const models = [
 ];
 
 /* ======================================================
+   KATEGORI
+====================================================== */
+const categories = [
+
+    {
+        id: "semua",
+        name: "Semua"
+    },
+
+    {
+        id: "asia",
+        name: "Asia"
+    },
+
+    {
+        id: "jepang",
+        name: "Jepang"
+    },
+
+    {
+        id: "korea",
+        name: "Korea"
+    },
+
+    {
+        id: "thailand",
+        name: "Thailand"
+    },
+
+    {
+        id: "vietnam",
+        name: "Vietnam"
+    },
+
+    {
+        id: "lebanon",
+        name: "Lebanon"
+    }
+
+];
+
+/* ======================================================
    KATEGORI AKTIF
 ====================================================== */
 
