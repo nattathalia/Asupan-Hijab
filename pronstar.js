@@ -128,7 +128,7 @@ const models = [
    KATEGORI
 ====================================================== */
 const categories = [
-
+const categories = [
     {
         id: "semua",
         name: "Semua"
