@@ -5,7 +5,7 @@
 const models = [
 
     {
-        id: 1,
+        id, 
 
         name: "Lil Black",
 
@@ -37,7 +37,7 @@ const models = [
   }, 
 
     {
-        id: 2,
+        id, 
 
         name: "May Thai",
 
@@ -69,7 +69,7 @@ const models = [
 
 
     {
-        id: 3,
+        id, 
 
         name: "Model Korea 1",
 
@@ -98,7 +98,7 @@ const models = [
 
 
     {
-        id: 4,
+        id,
 
         name: "Model Hijab 1",
 
