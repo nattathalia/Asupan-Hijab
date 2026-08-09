@@ -380,6 +380,7 @@ function renderCategories(){
 ====================================================== */
 
 function createModelCard(model){
+function createModelCard(model){
 
     const card =
         document.createElement("article");
