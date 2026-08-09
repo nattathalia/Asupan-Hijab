@@ -454,8 +454,8 @@ function createModelCard(
             </p>
 
             p>
-                <b>Ukuran Payudara:</b>
-                ${escapeHTML(breast.size)}
+                <b>Payudara:</b>
+                ${escapeHTML(model.breast)}
             </p>
 
 
