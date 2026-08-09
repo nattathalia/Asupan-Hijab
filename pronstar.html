@@ -178,8 +178,11 @@
      KATEGORI
 ====================================================== -->
 
-<section class="region-category"
-         aria-label="Filter kategori">
+<section
+    id="categoryButtons"
+    class="region-category"
+    aria-label="Filter kategori">
+</section>
 
     <button class="region-btn active"
             data-category="Semua"
@@ -266,24 +269,21 @@
 ====================================================== -->
 
 <main>
+<main>
 
-    <h2>Daftar Profil</h2>
+    <h2 id="resultTitle">
+        Semua — 0 Profil
+    </h2>
 
-    <!--
-        DATA DARI pronstar.js
-        AKAN DITAMPILKAN DI SINI
-    -->
-
-    <div id="pronstarContainer"
-         class="pronstar-container">
-
+    <div
+        id="modelContainer"
+        class="model-container">
     </div>
 
-
-    <!-- PESAN JIKA DATA TIDAK DITEMUKAN -->
-
-    <div id="emptyMessage"
-         class="empty-message">
+    <div
+        id="emptyMessage"
+        class="empty-message"
+        style="display:none;">
 
         <i class="fa-solid fa-circle-exclamation"></i>
 
