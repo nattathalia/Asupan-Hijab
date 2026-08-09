@@ -71,6 +71,118 @@ body{
     flex-direction:column;
 }
 
+/* ======================================================
+   KATEGORI NEGARA
+====================================================== */
+
+.region-category{
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    padding:0 10px;
+
+    margin-top:25px;
+    margin-bottom:10px;
+}
+
+
+/* ======================================================
+   TOMBOL NEGARA
+====================================================== */
+
+.region-btn{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    width:auto;
+    min-width:0;
+
+    padding:11px 18px;
+
+    border-radius:14px;
+
+    background:#fff;
+
+    color:#0d47a1;
+
+    border:2px solid #0d47a1;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    line-height:1.2;
+
+    text-decoration:none;
+
+    white-space:nowrap;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,.15);
+
+    transition:.25s ease;
+}
+
+
+/* ======================================================
+   HOVER
+====================================================== */
+
+.region-btn:hover{
+    transform:translateY(-3px);
+
+    background:#0d47a1;
+
+    color:#fff;
+
+    box-shadow:
+        0 7px 16px rgba(0,0,0,.25);
+}
+
+
+/* ======================================================
+   NEGARA AKTIF
+====================================================== */
+
+.region-btn.active{
+    background:#0d47a1;
+
+    color:#fff;
+
+    box-shadow:
+        0 6px 15px rgba(13,71,161,.35);
+}
+
+
+/* ======================================================
+   HP
+====================================================== */
+
+@media(max-width:500px){
+
+    .region-category{
+        gap:8px;
+        padding:0 8px;
+    }
+
+    .region-btn{
+        padding:9px 13px;
+        font-size:12px;
+        border-radius:12px;
+    }
+
+}
 
 /* ======================================================
    OVERLAY
@@ -491,7 +603,86 @@ header{
     opacity:.95;
 }
 
+/* ======================================================
+KATEGORI WILAYAH
+====================================================== */
 
+.region-category{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+gap:12px;
+padding:22px 20px 5px;
+}
+
+.region-btn{
+display:inline-block;
+
+width:auto;
+min-width:0;
+
+padding:11px 24px;
+
+border-radius:12px;
+
+background:#ffffff;
+color:#0d47a1;
+
+border:2px solid #0d47a1;
+
+font-family:'Poppins',sans-serif;
+font-size:15px;
+font-weight:600;
+
+text-decoration:none;
+text-align:center;
+
+box-shadow:
+    0 4px 10px rgba(0,0,0,.15);
+
+transition:
+    transform .25s ease,
+    background .25s ease,
+    color .25s ease,
+    box-shadow .25s ease;
+
+}
+
+.region-btn:hover{
+transform:translateY(-3px);
+
+background:#0d47a1;
+color:#fff;
+
+box-shadow:
+    0 7px 16px rgba(0,0,0,.25);
+
+}
+
+.region-btn.active{
+background:#0d47a1;
+color:#fff;
+
+box-shadow:
+    0 5px 14px rgba(13,71,161,.35);
+
+}
+
+@media(max-width:500px){
+
+.region-category{
+    gap:9px;
+    padding:18px 15px 3px;
+}
+
+.region-btn{
+    padding:9px 18px;
+    font-size:14px;
+    border-radius:10px;
+}
+
+}
 /* ======================================================
    SEARCH
 ====================================================== */
@@ -1078,19 +1269,70 @@ main h2{
 
 <div class="region-category">
 
-    <a href="asia.html" class="region-btn active">
-        <i class="fa-solid fa-earth-asia"></i>
-        Asia
+    <!-- ======================================================
+     KATEGORI NEGARA
+====================================================== -->
+
+<div class="region-category">
+
+    <a href="indonesia.html" class="region-btn active">
+        Indonesia
     </a>
 
-    <a href="eropa.html" class="region-btn">
-        <i class="fa-solid fa-earth-europe"></i>
-        Eropa
+    <a href="jepang.html" class="region-btn">
+        Jepang
     </a>
 
-    <a href="amerika.html" class="region-btn">
-        <i class="fa-solid fa-earth-americas"></i>
-        Amerika
+    <a href="korea-selatan.html" class="region-btn">
+        Korea Selatan
+    </a>
+
+    <a href="china.html" class="region-btn">
+        China
+    </a>
+
+    <a href="thailand.html" class="region-btn">
+        Thailand
+    </a>
+
+    <a href="filipina.html" class="region-btn">
+        Filipina
+    </a>
+
+    <a href="vietnam.html" class="region-btn">
+        Vietnam
+    </a>
+
+    <a href="malaysia.html" class="region-btn">
+        Malaysia
+    </a>
+
+    <a href="singapura.html" class="region-btn">
+        Singapura
+    </a>
+
+    <a href="india.html" class="region-btn">
+        India
+    </a>
+
+    <a href="amerika-serikat.html" class="region-btn">
+        Amerika Serikat
+    </a>
+
+    <a href="kanada.html" class="region-btn">
+        Kanada
+    </a>
+
+    <a href="inggris.html" class="region-btn">
+        Inggris
+    </a>
+
+    <a href="jerman.html" class="region-btn">
+        Jerman
+    </a>
+
+    <a href="prancis.html" class="region-btn">
+        Prancis
     </a>
 
 </div>
