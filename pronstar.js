@@ -28,8 +28,8 @@ const models = [
        height:
             "5′ 0″ (152 cm)", 
       
-       breast:
-            "26 D",
+       breastSize:
+           "26 D",
 
         active:
             "2018 - sekarang",
@@ -60,8 +60,8 @@ const models = [
        height:
             "6′ 0″ (160 cm)", 
        
-       breast:
-            "27 D",
+       breastSize:
+             "27 D",
 
         active:
             "2019 - sekarang",
@@ -453,10 +453,10 @@ function createModelCard(
                 ${escapeHTML(model.height)}
             </p>
 
-            p>
-                <b>Payudara:</b>
-                ${escapeHTML(model.breast)}
-            </p>
+            <p>
+    <b>Ukuran:</b>
+    ${escapeHTML(model.breastSize)}
+</p>
 
 
             <p>
