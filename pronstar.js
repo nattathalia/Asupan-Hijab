@@ -7,10 +7,10 @@ const models = [
     {
         id: 1,
 
-        name: "Model Asia 1",
+        name: "Lil Black",
 
         photo:
-            "https://asupanhijab.xyz/model-1.jpg",
+            "https://asupanhijab.xyz/Luna-Okko.jpg",
 
         categories: [
             "asia"
