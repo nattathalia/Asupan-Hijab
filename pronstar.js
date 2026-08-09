@@ -393,14 +393,11 @@ function createModelCard(
             "article"
         );
 
-
     card.className =
         "model-card";
 
-
     card.dataset.id =
         model.id;
-
 
     card.innerHTML = `
 
@@ -434,68 +431,44 @@ function createModelCard(
 
 
             <p>
-
                 <b>Lahir:</b>
-
-                ${escapeHTML(
-                    model.birth
-                )}
-
+                ${escapeHTML(model.birth)}
             </p>
 
 
             <p>
-
-                <b>Kebangsaan:</b>
-
-                ${escapeHTML(
-                    model.country
-                )}
-
+                <b>Negara:</b>
+                ${escapeHTML(model.country)}
             </p>
 
 
             <p>
-
-                <b>Profesi:</b>
-
-                ${escapeHTML(
-                    model.profession
-                )}
-
+                <b>Berat:</b>
+                ${escapeHTML(model.weight)}
             </p>
 
 
             <p>
+                <b>Tinggi:</b>
+                ${escapeHTML(model.height)}
+            </p>
 
+            p>
+                <b>Ukuran Payudara:</b>
+                ${escapeHTML(breast.size)}
+            </p>
+
+
+            <p>
                 <b>Tahun Aktif:</b>
-
-                ${escapeHTML(
-                    model.active
-                )}
-
+                ${escapeHTML(model.active)}
             </p>
-
-
-            <p>
-
-                <b>Deskripsi:</b>
-
-                ${escapeHTML(
-                    model.description
-                )}
-
-            </p>
-
-        </div>
 
     `;
-
 
     return card;
 
 }
-
 
 /* ======================================================
    FILTER MODEL
