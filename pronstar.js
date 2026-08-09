@@ -379,31 +379,19 @@ function renderCategories(){
    BUAT CARD MODEL
 ====================================================== */
 
-function createModelCard(
-    model,
-    number
-){
+function createModelCard(model){
 
     const card =
-        document.createElement(
-            "article"
-        );
+        document.createElement("article");
 
     card.className =
         "model-card";
 
-    card.dataset.id =
-        model.id;
-
     card.innerHTML = `
 
         <div class="model-title">
-
-            #${number}
             ${escapeHTML(model.name)}
-
         </div>
-
 
         <div class="model-photo">
 
@@ -411,13 +399,10 @@ function createModelCard(
                 src="${escapeHTML(model.photo)}"
                 alt="${escapeHTML(model.name)}"
                 loading="lazy"
-                onerror="
-                    this.style.display='none';
-                "
+                onerror="this.style.display='none';"
             >
 
         </div>
-
 
         <div class="model-info">
 
@@ -425,48 +410,42 @@ function createModelCard(
                 Profil dan Biodata
             </h3>
 
-
             <p>
                 <b>Lahir:</b>
                 ${escapeHTML(model.birth)}
             </p>
-
 
             <p>
                 <b>Negara:</b>
                 ${escapeHTML(model.country)}
             </p>
 
-
             <p>
                 <b>Berat:</b>
                 ${escapeHTML(model.weight)}
             </p>
-
 
             <p>
                 <b>Tinggi:</b>
                 ${escapeHTML(model.height)}
             </p>
 
-
             <p>
                 <b>Ukuran:</b>
                 ${escapeHTML(model.breastSize)}
             </p>
-
 
             <p>
                 <b>Tahun Aktif:</b>
                 ${escapeHTML(model.active)}
             </p>
 
+        </div>
+
     `;
 
     return card;
-
 }
-
 /* ======================================================
    FILTER MODEL
 ====================================================== */
