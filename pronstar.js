@@ -453,10 +453,10 @@ function createModelCard(
                 ${escapeHTML(model.height)}
             </p>
 
-            <p>
-    <b>Ukuran:</b>
-    ${escapeHTML(model.breastSize)}
-</p>
+            <p>       
+               <b>Ukuran:</b>
+               ${escapeHTML(model.breastSize)}
+           </p>
 
 
             <p>
