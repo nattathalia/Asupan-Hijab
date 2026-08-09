@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daftar pronstar | Asupan Hijab</title>
+
+    <meta name="description"
+          content="Daftar pronstar lengkap dengan profil, biodata, negara asal, profesi, dan deskripsi.">
+
+    <meta name="author" content="Asupan Hijab">
+
+    <meta name="theme-color" content="#0d47a1">
+
+    <link rel="icon"
+          href="https://asupanhijab.nattathalia630.workers.dev/Asupan%20Hijab.png.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="model.css">
+</head>
+
+<body>
+
+<!-- ======================================================
+     OVERLAY
+====================================================== -->
+
+<div id="overlay"></div>
+
+
+<!-- ======================================================
+     SIDEBAR
+====================================================== -->
+
+<aside id="sidebar" class="sidebar">
+
+    <div class="sidebar-header">
+
+        <div class="category-3d-box">
+
+            <div class="category-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div class="category-text">
+                <h2>Kategori</h2>
+                <p>Pilih Menu</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="menu-list">
+
+        <a href="index.html" class="menu-item">
+            <img
+                src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                class="menu-logo"
+                alt="Home">
+
+            <span>Home</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+
+        <a href="sekolah.html" class="menu-item">
+            <img
+                src="https://asupanhijab.xyz/sekolah.jpg"
+                class="menu-logo"
+                alt="Sekolah">
+
+            <span>Sekolah</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+
+        <a href="muda.html" class="menu-item">
+            <img
+                src="https://asupanhijab.xyz/muda.jpg"
+                class="menu-logo"
+                alt="Muda">
+
+            <span>Muda</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+
+        <a href="publik.html" class="menu-item">
+            <img
+                src="https://asupanhijab.xyz/publik.jpg"
+                class="menu-logo"
+                alt="Publik">
+
+            <span>Publik</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+
+        <a href="hijab.html" class="menu-item">
+            <img
+                src="https://asupanhijab.xyz/hijab.jpg"
+                class="menu-logo"
+                alt="Hijab">
+
+            <span>Hijab</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+    </div>
+
+</aside>
+
+
+<!-- ======================================================
+     HEADER
+====================================================== -->
+
+<header>
+
+    <button
+        id="menuBtn"
+        aria-label="Buka menu">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+    <div class="logo">
+
+        <img
+            src="https://asupanhijab.nattathalia630.workers.dev/Asupan%20Hijab.png.jpg"
+            alt="Logo Asupan Hijab">
+
+    </div>
+
+
+    <div class="blank"></div>
+
+</header>
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section class="hero">
+
+    <h1>Daftar Model</h1>
+
+    <p>
+        Kumpulan pronstar dengan profil, biodata,
+        negara asal, profesi, deskripsi,
+        dan galeri foto.
+    </p>
+
+</section>
+
+
+<!-- ======================================================
+     KATEGORI
+====================================================== -->
+
+<section class="category-section">
+
+    <div
+        id="categoryButtons"
+        class="region-category">
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     SEARCH
+====================================================== -->
+
+<section class="search-area">
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari nama pronstar..."
+            autocomplete="off">
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     MAIN
+====================================================== -->
+
+<main>
+
+    <h2 id="resultTitle">
+        Semua Model
+    </h2>
+
+
+    <!-- MODEL AKAN DIBUAT OTOMATIS OLEH pronstar.js -->
+
+    <div id="modelContainer"></div>
+
+
+    <!-- PESAN JIKA TIDAK ADA HASIL -->
+
+    <div
+        id="emptyMessage"
+        class="empty-message"
+        style="display:none;">
+
+        <i class="fa-solid fa-circle-info"></i>
+
+        <h3>Model tidak ditemukan</h3>
+
+        <p>
+            Coba gunakan kategori atau kata pencarian lainnya.
+        </p>
+
+    </div>
+
+</main>
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer class="footer">
+
+    <img
+        src="https://asupanhijab.nattathalia630.workers.dev/Asupan%20Hijab.png.jpg"
+        alt="Logo Asupan Hijab">
+
+    <p>
+        © 2026 Asupan Hijab. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="pronstar.js"></script>
+
+</body>
+</html>
