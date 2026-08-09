@@ -10,57 +10,60 @@ const models = [
         name: "Lil Black",
 
         photo:
-            "https://asupanhijab.xyz/Luna-Okko.jpg",
+            "https://asupanhijab.xyz/lil%20black.jpg",
 
         categories: [
             "asia"
         ],
 
         birth:
-            "12 Januari 1998",
+            "17.8.1996 (Usia: 29)",
 
         country:
-            "Indonesia",
+            "Japan",
+       
+        height:
+            "98 lbs (44 kg)", 
 
-        profession:
-            "Model",
+       height:
+            "5′ 0″ (152 cm)", 
+        breast size:
+            "26 D",
 
         active:
             "2018 - sekarang",
 
-        description:
-            "Model dengan pengalaman di bidang fashion dan fotografi."
-    },
-
+  }, 
 
     {
         id: 2,
 
-        name: "Model Asia 2",
+        name: "May Thai",
 
         photo:
-            "https://asupanhijab.xyz/model-2.jpg",
+            "https://asupanhijab.xyz/may%20thai.jpg",
 
         categories: [
-            "asia",
-            "jepang"
+            "asia"
         ],
 
         birth:
             "20 Maret 1997",
 
         country:
-            "Jepang",
+            "Thailand",
 
-        profession:
-            "Model",
+        height:
+            "110 lbs (60 kg)", 
+
+       height:
+            "6′ 0″ (160 cm)", 
+        breast size:
+            "27 D",
 
         active:
             "2019 - sekarang",
-
-        description:
-            "Model yang aktif dalam bidang fashion dan pemotretan."
-    },
+     }, 
 
 
     {
@@ -73,7 +76,6 @@ const models = [
 
         categories: [
             "asia",
-            "korea"
         ],
 
         birth:
@@ -135,33 +137,33 @@ const categories = [
     },
 
     {
+        id: "muda 18+",
+        name: "Muda 18+"
+    },
+
+    {
         id: "asia",
         name: "Asia"
     },
 
     {
-        id: "jepang",
-        name: "Jepang"
+        id: "arap",
+        name: "Arap"
     },
 
     {
-        id: "korea",
-        name: "Korea"
+        id: "pirang",
+        name: "Pirang"
     },
 
     {
-        id: "thailand",
-        name: "Thailand"
+        id: "pantat besar",
+        name: "Pantat Besar"
     },
 
     {
-        id: "vietnam",
-        name: "Vietnam"
-    },
-
-    {
-        id: "lebanon",
-        name: "Lebanon"
+        id: "payudara besar",
+        name: "Payudara Besar"
     }
 
 ];
