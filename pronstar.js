@@ -60,7 +60,7 @@ const models = [
        height:
             "6′ 0″ (160 cm)", 
        
-       "breast size":
+       breast:
             "27 D",
 
         active:
