@@ -22,12 +22,13 @@ const models = [
         country:
             "Japan",
        
-        height:
+        weight:
             "98 lbs (44 kg)", 
 
        height:
             "5′ 0″ (152 cm)", 
-        breast size:
+      
+       "breast size":
             "26 D",
 
         active:
@@ -53,12 +54,13 @@ const models = [
         country:
             "Thailand",
 
-        height:
+        weight:
             "110 lbs (60 kg)", 
 
        height:
             "6′ 0″ (160 cm)", 
-        breast size:
+       
+       "breast size":
             "27 D",
 
         active:
