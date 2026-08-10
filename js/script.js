@@ -749,57 +749,127 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 /* ======================================================
-   FOOTER OTOMATIS
-   Footer akan muncul otomatis di semua halaman
+   FOOTER OTOMATIS SEMUA HALAMAN
+   index.html
+   muda.html
+   hijab.html
+   sekolah.html
+   publik.html
+   pronstar.html
 ====================================================== */
 
 function loadFooter(){
+
+    /* ==============================================
+       CEGAH FOOTER GANDA
+    ============================================== */
+
+    const oldFooter =
+        document.querySelector(".footer");
+
+    if(oldFooter){
+        oldFooter.remove();
+    }
+
+
+    /* ==============================================
+       FOOTER HTML
+    ============================================== */
 
     const footerHTML = `
 
         <footer class="footer">
 
-            <div class="footer-container">
+            <div class="footer-inner">
 
-                <!-- LOGO -->
-                <div class="footer-logo">
+
+                <!-- ==============================
+                     LOGO
+                ============================== -->
+
+                <a
+                    href="index.html"
+                    class="footer-logo"
+                    aria-label="Asupan Hijab"
+                >
 
                     <img
-                        src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
-                        alt="Asupan Hijab">
-                        
-                <!-- MENU FOOTER -->
-                <div class="footer-menu">
+                        src="Asupan Hijab.png.jpg"
+                        alt="Asupan Hijab"
+                    >
 
-                    <h3>Menu</h3
-                    
+                </a>
+
+
+                <!-- ==============================
+                     MENU FOOTER
+                ============================== -->
+
+                <nav class="footer-links">
+
                     <a href="tentang.html">
+
                         <i class="fa-solid fa-circle-info"></i>
-                        Tentang Kami
+
+                        <span>
+                            Tentang Kami
+                        </span>
+
                     </a>
+
 
                     <a href="kontak.html">
+
                         <i class="fa-solid fa-envelope"></i>
-                        Kontak
+
+                        <span>
+                            Kontak
+                        </span>
+
                     </a>
+
 
                     <a href="privasi.html">
+
                         <i class="fa-solid fa-shield-halved"></i>
-                        Kebijakan Privasi
+
+                        <span>
+                            Kebijakan Privasi
+                        </span>
+
                     </a>
+
 
                     <a href="syarat.html">
+
                         <i class="fa-solid fa-file-contract"></i>
-                        Syarat & Ketentuan
+
+                        <span>
+                            Syarat & Ketentuan
+                        </span>
+
                     </a>
 
+                </nav>
+
+
+                <!-- ==============================
+                     GARIS
+                ============================== -->
+
+                <div class="footer-divider"></div>
+
+
+                <!-- ==============================
+                     COPYRIGHT
+                ============================== -->
+
+                <div class="footer-copy">
+
+                    © 2026 Asupan Hijab.
+                    All Rights Reserved.
+
                 </div>
-
-            </div>
-
-                <p>
-                    © 2026 Asupan Hijab. All Rights Reserved.
-                </p>
 
             </div>
 
@@ -808,24 +878,9 @@ function loadFooter(){
     `;
 
 
-    /*
-       Cari footer lama.
-       Kalau ada, hapus agar tidak terjadi
-       footer ganda.
-    */
-
-    const oldFooter =
-        document.querySelector("footer");
-
-
-    if(oldFooter){
-        oldFooter.remove();
-    }
-
-
-    /*
-       Masukkan footer ke bagian paling bawah BODY
-    */
+    /* ==============================================
+       MASUKKAN FOOTER KE PALING BAWAH BODY
+    ============================================== */
 
     document.body.insertAdjacentHTML(
         "beforeend",
@@ -836,7 +891,7 @@ function loadFooter(){
 
 
 /* ======================================================
-   JALANKAN FOOTER
+   JALANKAN FOOTER OTOMATIS
 ====================================================== */
 
 if(
