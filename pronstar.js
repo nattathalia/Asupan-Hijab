@@ -181,7 +181,7 @@ const models = [
     },
 
    {
-        name: "SaikaKawakita",
+        name: "Saika Kawakita",
 
         photo:
             "https://asupanhijab.xyz/SaikaKawakita.jpg", 
@@ -239,7 +239,7 @@ const models = [
     },
 
    {
-        name: "RihoFujimori",
+        name: "Riho Fujimori",
 
         photo:
             "https://asupanhijab.xyz/RihoFujimori4.jpg", 
@@ -268,10 +268,10 @@ const models = [
     },
 
    {
-        name: "Lulu Chun",
+        name: "Akari Mitani",
 
         photo:
-            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+            "https://asupanhijab.xyz/AkariMitani.jpg", 
 
         categories: [
             "asia"
@@ -281,19 +281,19 @@ const models = [
             "14.1.2001 (Usia: 25)",
 
         country:
-            "China",
+            "Jepang",
 
         weight:
-            "95 lbs (43 kg)",
+            "100 lbs (45 kg)",
 
         height:
-            "5′ 0″ (152 cm)",
+            "5′ 5″ (166 cm)",
 
         breastSize:
             "32 D",
 
         active:
-            "2020 - sekarang",
+            "2016 - sekarang",
     },
 
    {
