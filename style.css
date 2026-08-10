@@ -1204,3 +1204,237 @@ footer p{
     }
 
 }
+
+/* ======================================================
+   FOOTER OTOMATIS
+====================================================== */
+
+.footer{
+    width:100%;
+    margin-top:50px;
+    padding:45px 20px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d47a1,
+            #1976d2
+        );
+
+    color:#fff;
+
+    box-shadow:
+        0 -5px 20px rgba(0,0,0,.12);
+}
+
+
+.footer-container{
+    width:100%;
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        minmax(0,1.5fr)
+        minmax(200px,1fr);
+
+    gap:50px;
+}
+
+
+/* ======================================================
+   FOOTER LOGO
+====================================================== */
+
+.footer-logo{
+    text-align:left;
+}
+
+
+.footer-logo img{
+    width:75px;
+    height:75px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    margin-bottom:12px;
+
+    border:
+        3px solid
+        rgba(255,255,255,.8);
+
+    box-shadow:
+        0 5px 15px
+        rgba(0,0,0,.3);
+}
+
+
+.footer-logo h3{
+    margin:0 0 8px;
+
+    font-size:22px;
+
+    font-weight:700;
+}
+
+
+.footer-logo p{
+    max-width:500px;
+
+    margin:0;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    color:
+        rgba(255,255,255,.85);
+}
+
+
+/* ======================================================
+   MENU FOOTER
+====================================================== */
+
+.footer-menu{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+}
+
+
+.footer-menu h3{
+    margin:0 0 8px;
+
+    font-size:20px;
+}
+
+
+.footer-menu a{
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    width:max-content;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    transition:
+        .25s ease;
+}
+
+
+.footer-menu a i{
+    width:20px;
+
+    text-align:center;
+}
+
+
+.footer-menu a:hover{
+    transform:
+        translateX(5px);
+
+    color:#bbdefb;
+}
+
+
+/* ======================================================
+   GARIS
+====================================================== */
+
+.footer-line{
+    width:100%;
+    max-width:1100px;
+
+    height:1px;
+
+    margin:35px auto 20px;
+
+    background:
+        rgba(255,255,255,.25);
+}
+
+
+/* ======================================================
+   FOOTER BOTTOM
+====================================================== */
+
+.footer-bottom{
+    width:100%;
+    max-width:1100px;
+
+    margin:auto;
+
+    text-align:center;
+}
+
+
+.footer-bottom p{
+    margin:5px 0;
+
+    font-size:13px;
+
+    color:
+        rgba(255,255,255,.8);
+}
+
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media(max-width:768px){
+
+    .footer{
+        padding:
+            35px 20px 20px;
+    }
+
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+
+        gap:30px;
+
+    }
+
+
+    .footer-logo{
+        text-align:center;
+    }
+
+
+    .footer-logo p{
+        margin:auto;
+    }
+
+
+    .footer-menu{
+        align-items:center;
+    }
+
+
+    .footer-menu h3{
+        text-align:center;
+    }
+
+
+    .footer-menu a{
+        justify-content:center;
+    }
+
+}
