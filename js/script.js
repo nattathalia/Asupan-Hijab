@@ -750,12 +750,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
 /* ======================================================
    FOOTER OTOMATIS SEMUA HALAMAN
-   index.html
-   muda.html
-   hijab.html
-   sekolah.html
-   publik.html
-   pronstar.html
 ====================================================== */
 
 function loadFooter(){
@@ -773,7 +767,7 @@ function loadFooter(){
 
 
     /* ==============================================
-       FOOTER HTML
+       FOOTER
     ============================================== */
 
     const footerHTML = `
@@ -784,7 +778,7 @@ function loadFooter(){
 
 
                 <!-- ==============================
-                     LOGO
+                     SATU LOGO FOOTER
                 ============================== -->
 
                 <a
@@ -806,6 +800,7 @@ function loadFooter(){
                 ============================== -->
 
                 <nav class="footer-links">
+
 
                     <a href="tentang.html">
 
@@ -850,6 +845,7 @@ function loadFooter(){
 
                     </a>
 
+
                 </nav>
 
 
@@ -871,6 +867,7 @@ function loadFooter(){
 
                 </div>
 
+
             </div>
 
         </footer>
@@ -879,7 +876,7 @@ function loadFooter(){
 
 
     /* ==============================================
-       MASUKKAN FOOTER KE PALING BAWAH BODY
+       MASUKKAN FOOTER KE PALING BAWAH
     ============================================== */
 
     document.body.insertAdjacentHTML(
@@ -891,7 +888,7 @@ function loadFooter(){
 
 
 /* ======================================================
-   JALANKAN FOOTER OTOMATIS
+   JALANKAN OTOMATIS
 ====================================================== */
 
 if(
