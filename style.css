@@ -1361,31 +1361,8 @@ footer p{
 
     height:1px;
 
-    margin:35px auto 20px;
-
-    background:
-        rgba(255,255,255,.25);
-}
-
-
-/* ======================================================
-   FOOTER BOTTOM
-====================================================== */
-
-.footer-bottom{
-    width:100%;
-    max-width:1100px;
-
-    margin:auto;
-
-    text-align:center;
-}
-
-
-.footer-bottom p{
 /* =========================================================
-   FOOTER OTOMATIS
-   BERLAKU UNTUK SEMUA HALAMAN
+   FOOTER
 ========================================================= */
 
 .footer{
@@ -1407,7 +1384,7 @@ footer p{
 
     box-shadow:
         0 -5px 20px
-        rgba(0,0,0,.12);
+        rgba(0,0,0,.15);
 
 }
 
@@ -1422,7 +1399,7 @@ footer p{
 
     max-width:600px;
 
-    margin:0 auto;
+    margin:auto;
 
     text-align:center;
 
@@ -1430,16 +1407,18 @@ footer p{
 
 
 /* =========================================================
-   LOGO
+   LOGO FOOTER
+   SATU LOGO
+   BENTUK LANDSCAPE / MEMANJANG
 ========================================================= */
 
 .footer-logo{
 
-    width:90px;
+    width:220px;
 
     height:90px;
 
-    margin:0 auto 25px;
+    margin:0 auto 28px;
 
     display:flex;
 
@@ -1458,23 +1437,27 @@ footer p{
 
 .footer-logo img{
 
-    width:90px;
+    width:220px;
 
     height:90px;
 
-    object-fit:cover;
-
     display:block;
 
-    border-radius:20px;
+    object-fit:cover;
+
+    border-radius:16px;
 
     border:
         3px solid
         rgba(255,255,255,.9);
 
     box-shadow:
-        0 7px 20px
-        rgba(0,0,0,.35);
+
+        0 8px 20px
+        rgba(0,0,0,.35),
+
+        inset 0 0 0 1px
+        rgba(255,255,255,.2);
 
     transition:
         transform .3s ease,
@@ -1490,10 +1473,12 @@ footer p{
 .footer-logo:hover img{
 
     transform:
-        scale(1.05);
+        translateY(-3px)
+        scale(1.02);
 
     box-shadow:
-        0 10px 25px
+
+        0 12px 28px
         rgba(0,0,0,.45);
 
 }
@@ -1519,7 +1504,293 @@ footer p{
 
 
 /* =========================================================
-   TOMBOL FOOTER
+   TOMBOL MENU
+========================================================= */
+
+.footer-links a{
+
+    width:100%;
+
+    max-width:380px;
+
+    min-height:52px;
+
+    padding:
+        12px 18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    gap:14px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    background:
+        rgba(255,255,255,.10);
+
+    border:
+        1px solid
+        rgba(255,255,255,.20);
+
+    border-radius:13px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    box-shadow:
+        0 3px 8px
+        rgba(0,0,0,.10);
+
+    transition:
+        all .25s ease;
+
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.footer-links a i{
+
+    width:24px;
+
+    min-width:24px;
+
+    text-align:center;
+
+    font-size:18px;
+
+}
+
+
+/* =========================================================
+   TEKS
+========================================================= */
+
+.footer-links a span{
+
+    text-align:left;
+
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.footer-links a:hover{
+
+    background:
+        rgba(255,255,255,.20);
+
+    transform:
+        translateX(5px);
+
+    box-shadow:
+        0 6px 15px
+        rgba(0,0,0,.18);
+
+}
+
+
+/* =========================================================
+   GARIS
+========================================================= */
+
+.footer-divider{
+
+    width:100%;
+
+    height:1px;
+
+    margin:
+        30px 0 18px;
+
+    background:
+        rgba(255,255,255,.25);
+
+}
+
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.footer-copy{
+
+    font-size:11px;
+
+    line-height:1.6;
+
+    color:
+        rgba(255,255,255,.75);
+
+}
+
+
+/* =========================================================
+   HP
+========================================================= */
+
+@media(max-width:768px){
+
+    .footer{
+
+        padding:
+            35px 15px 18px;
+
+    }
+
+
+    /* LOGO LANDSCAPE */
+
+    .footer-logo{
+
+        width:190px;
+
+        height:78px;
+
+        margin-bottom:23px;
+
+    }
+
+
+    .footer-logo img{
+
+        width:190px;
+
+        height:78px;
+
+        border-radius:14px;
+
+    }
+
+
+    /* MENU */
+
+    .footer-links{
+
+        gap:9px;
+
+    }
+
+
+    .footer-links a{
+
+        width:100%;
+
+        max-width:350px;
+
+        min-height:48px;
+
+        padding:
+            11px 15px;
+
+        font-size:13px;
+
+    }
+
+
+    .footer-links a i{
+
+        font-size:17px;
+
+    }
+
+
+    .footer-divider{
+
+        margin:
+            25px 0 15px;
+
+    }
+
+}
+
+
+/* =========================================================
+   HP KECIL
+========================================================= */
+
+@media(max-width:480px){
+
+    .footer{
+
+        padding:
+            30px 12px 15px;
+
+    }
+
+
+    .footer-logo{
+
+        width:170px;
+
+        height:70px;
+
+        margin-bottom:20px;
+
+    }
+
+
+    .footer-logo img{
+
+        width:170px;
+
+        height:70px;
+
+        border-radius:13px;
+
+    }
+
+
+    .footer-links a{
+
+        max-width:330px;
+
+        min-height:46px;
+
+        padding:
+            10px 13px;
+
+        font-size:12px;
+
+    }
+
+
+    .footer-links a i{
+
+        width:22px;
+
+        min-width:22px;
+
+        font-size:16px;
+
+    }
+
+
+    .footer-divider{
+
+        margin:
+            22px 0 13px;
+
+    }
+
+
+    .footer-copy{
+
+        font-size:10px;
+
+    }
+
+   }   TOMBOL FOOTER
 ========================================================= */
 
 .footer-links a{
@@ -1628,177 +1899,3 @@ footer p{
         rgba(255,255,255,.25);
 
 }
-
-
-/* =========================================================
-   COPYRIGHT
-========================================================= */
-
-.footer-copy{
-
-    font-size:11px;
-
-    line-height:1.6;
-
-    color:
-        rgba(255,255,255,.75);
-
-}
-
-
-/* =========================================================
-   HP
-========================================================= */
-
-@media(max-width:768px){
-
-    .footer{
-
-        margin-top:40px;
-
-        padding:
-            35px 15px 18px;
-
-    }
-
-
-    .footer-logo{
-
-        width:75px;
-
-        height:75px;
-
-        margin-bottom:22px;
-
-    }
-
-
-    .footer-logo img{
-
-        width:75px;
-
-        height:75px;
-
-        border-radius:17px;
-
-    }
-
-
-    .footer-links{
-
-        gap:9px;
-
-    }
-
-
-    .footer-links a{
-
-        max-width:350px;
-
-        min-height:48px;
-
-        padding:
-            11px 16px;
-
-        font-size:13px;
-
-    }
-
-
-    .footer-links a i{
-
-        font-size:17px;
-
-    }
-
-
-    .footer-divider{
-
-        margin:
-            25px 0 15px;
-
-    }
-
-
-    .footer-copy{
-
-        font-size:10px;
-
-    }
-
-}
-
-
-/* =========================================================
-   HP KECIL
-========================================================= */
-
-@media(max-width:480px){
-
-    .footer{
-
-        padding:
-            30px 12px 15px;
-
-    }
-
-
-    .footer-logo{
-
-        width:65px;
-
-        height:65px;
-
-        margin-bottom:20px;
-
-    }
-
-
-    .footer-logo img{
-
-        width:65px;
-
-        height:65px;
-
-        border-radius:15px;
-
-    }
-
-
-    .footer-links a{
-
-        width:100%;
-
-        max-width:330px;
-
-        min-height:46px;
-
-        padding:
-            10px 14px;
-
-        border-radius:10px;
-
-        font-size:12px;
-
-    }
-
-
-    .footer-links a i{
-
-        width:22px;
-
-        min-width:22px;
-
-        font-size:16px;
-
-    }
-
-
-    .footer-divider{
-
-        margin:
-            22px 0 13px;
-
-    }
-
-   }
