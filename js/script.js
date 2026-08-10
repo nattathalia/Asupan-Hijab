@@ -883,12 +883,195 @@ function loadFooter(){
         "beforeend",
         footerHTML
     );
+/* ======================================================
+   FOOTER OTOMATIS SEMUA HALAMAN
+   INDEX
+   MUDA
+   HIJAB
+   SEKOLAH
+   PUBLIK
+   PRONSTAR
+====================================================== */
+
+function loadFooter(){
+
+    /* ==================================================
+       HAPUS SEMUA FOOTER LAMA
+       AGAR TIDAK ADA FOOTER GANDA
+    ================================================== */
+
+    document
+        .querySelectorAll("footer")
+        .forEach(function(footer){
+
+            footer.remove();
+
+        });
+
+
+    /* ==================================================
+       HAPUS CONTAINER FOOTER LAMA
+       JIKA ADA
+    ================================================== */
+
+    document
+        .querySelectorAll(
+            ".footer-old, .old-footer, .footer-container"
+        )
+        .forEach(function(element){
+
+            element.remove();
+
+        });
+
+
+    /* ==================================================
+       HTML FOOTER BARU
+    ================================================== */
+
+    const footerHTML = `
+
+        <footer class="footer">
+
+            <div class="footer-inner">
+
+
+                <!-- ==================================
+                     SATU LOGO SAJA
+                     LANDSCAPE / MEMANJANG
+                =================================== -->
+
+                <a
+                    href="index.html"
+                    class="footer-logo"
+                    aria-label="Asupan Hijab"
+                >
+
+                    <img
+                        src="Asupan Hijab.png.jpg"
+                        alt="Asupan Hijab"
+                    >
+
+                </a>
+
+
+                <!-- ==================================
+                     MENU FOOTER
+                =================================== -->
+
+                <nav
+                    class="footer-links"
+                    aria-label="Menu Footer"
+                >
+
+
+                    <!-- TENTANG -->
+
+                    <a href="tentang.html">
+
+                        <i
+                            class="fa-solid fa-circle-info"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Tentang Kami
+                        </span>
+
+                    </a>
+
+
+                    <!-- KONTAK -->
+
+                    <a href="kontak.html">
+
+                        <i
+                            class="fa-solid fa-envelope"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Kontak
+                        </span>
+
+                    </a>
+
+
+                    <!-- PRIVASI -->
+
+                    <a href="privasi.html">
+
+                        <i
+                            class="fa-solid fa-shield-halved"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Kebijakan Privasi
+                        </span>
+
+                    </a>
+
+
+                    <!-- SYARAT -->
+
+                    <a href="syarat.html">
+
+                        <i
+                            class="fa-solid fa-file-contract"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Syarat & Ketentuan
+                        </span>
+
+                    </a>
+
+
+                </nav>
+
+
+                <!-- ==================================
+                     GARIS
+                =================================== -->
+
+                <div class="footer-divider"></div>
+
+
+                <!-- ==================================
+                     COPYRIGHT
+                =================================== -->
+
+                <div class="footer-copy">
+
+                    © 2026 Asupan Hijab.
+                    All Rights Reserved.
+
+                </div>
+
+
+            </div>
+
+        </footer>
+
+    `;
+
+
+    /* ==================================================
+       MASUKKAN FOOTER KE PALING BAWAH BODY
+    ================================================== */
+
+    document.body.insertAdjacentHTML(
+        "beforeend",
+        footerHTML
+    );
 
 }
 
 
 /* ======================================================
-   JALANKAN OTOMATIS
+   JALANKAN FOOTER OTOMATIS
 ====================================================== */
 
 if(
