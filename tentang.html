@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Tentang Kami | Asupan Hijab</title>
+
+<meta name="description"
+      content="Tentang Asupan Hijab, informasi mengenai website, tujuan, dan kontak kami.">
+
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff;
+    color:#111;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+button{
+    font-family:'Poppins',sans-serif;
+    cursor:pointer;
+}
+
+button:focus{
+    outline:none;
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+#overlay{
+    position:fixed;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.45);
+
+    display:none;
+
+    z-index:9998;
+}
+
+#overlay.active{
+    display:block;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar{
+    position:fixed;
+
+    top:0;
+    left:-290px;
+
+    width:280px;
+    height:100%;
+
+    background:linear-gradient(
+        180deg,
+        #0d47a1,
+        #1976d2
+    );
+
+    overflow-y:auto;
+
+    transition:left .35s ease;
+
+    z-index:9999;
+
+    box-shadow:
+        8px 0 25px rgba(0,0,0,.35);
+}
+
+.sidebar.active{
+    left:0;
+}
+
+
+/* =========================================================
+   SIDEBAR HEADER
+========================================================= */
+
+.sidebar-header{
+    padding:22px 15px;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.15);
+}
+
+
+/* =========================================================
+   CATEGORY BOX
+========================================================= */
+
+.category-3d-box{
+    position:relative;
+
+    width:100%;
+    min-height:78px;
+
+    display:flex;
+    align-items:center;
+
+    padding:12px 16px;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #e6e6e6
+        );
+
+    box-shadow:
+        0 10px 0 #b8b8b8,
+        0 15px 25px rgba(0,0,0,.35),
+        inset 0 2px 3px rgba(255,255,255,.9);
+
+    overflow:hidden;
+}
+
+
+/* =========================================================
+   CATEGORY ICON
+========================================================= */
+
+.category-icon{
+    width:50px;
+    height:50px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:15px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1976d2,
+            #0d47a1
+        );
+
+    color:#fff;
+
+    font-size:23px;
+
+    box-shadow:
+        0 5px 0 #07346f,
+        0 8px 15px rgba(0,0,0,.3);
+
+    flex-shrink:0;
+}
+
+
+/* =========================================================
+   CATEGORY TEXT
+========================================================= */
+
+.category-text{
+    margin-left:14px;
+}
+
+.category-text h2{
+    font-size:21px;
+    font-weight:700;
+
+    color:#123c70;
+
+    text-shadow:
+        1px 1px 0 #fff,
+        2px 3px 4px rgba(0,0,0,.2);
+}
+
+.category-text p{
+    margin-top:2px;
+
+    font-size:12px;
+    font-weight:500;
+
+    color:#555;
+
+    letter-spacing:.5px;
+}
+
+
+/* =========================================================
+   MENU LIST
+========================================================= */
+
+.menu-list{
+    padding:18px;
+}
+
+
+/* =========================================================
+   MENU ITEM
+========================================================= */
+
+.menu-item{
+    position:relative;
+
+    display:block;
+
+    width:100%;
+    height:90px;
+
+    margin-bottom:15px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    background:#222;
+
+    box-shadow:
+        0 6px 15px rgba(0,0,0,.25);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+
+/* =========================================================
+   MENU IMAGE
+========================================================= */
+
+.menu-logo{
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:
+        transform .4s ease;
+}
+
+
+/* =========================================================
+   MENU OVERLAY
+========================================================= */
+
+.menu-item::after{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.10),
+            rgba(0,0,0,.70)
+        );
+
+    z-index:1;
+}
+
+
+/* =========================================================
+   MENU TEXT
+========================================================= */
+
+.menu-item span{
+    position:absolute;
+
+    left:18px;
+    bottom:15px;
+
+    z-index:2;
+
+    color:#fff;
+
+    font-size:17px;
+    font-weight:700;
+
+    text-shadow:
+        0 2px 6px rgba(0,0,0,.8);
+}
+
+
+/* =========================================================
+   MENU ARROW
+========================================================= */
+
+.menu-item .fa-chevron-right{
+    position:absolute;
+
+    right:18px;
+    bottom:18px;
+
+    z-index:2;
+
+    color:#fff;
+
+    font-size:16px;
+}
+
+
+/* =========================================================
+   MENU HOVER
+========================================================= */
+
+.menu-item:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 10px 22px rgba(0,0,0,.35);
+}
+
+.menu-item:hover .menu-logo{
+    transform:scale(1.08);
+}
+
+
+/* =========================================================
+   SCROLLBAR SIDEBAR
+========================================================= */
+
+.sidebar::-webkit-scrollbar{
+    width:8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background:#ffffff66;
+    border-radius:20px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+    position:sticky;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:90px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 20px;
+
+    background:#fff;
+
+    box-shadow:
+        0 2px 10px rgba(0,0,0,.08);
+
+    z-index:900;
+}
+
+
+/* =========================================================
+   MENU BUTTON
+========================================================= */
+
+#menuBtn{
+    width:50px;
+    height:50px;
+
+    border:none;
+
+    background:transparent;
+
+    color:#111;
+
+    font-size:32px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:
+        transform .3s ease;
+}
+
+#menuBtn:hover{
+    transform:rotate(90deg);
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo{
+    flex:1;
+
+    height:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.logo img{
+    width:auto;
+
+    height:70px;
+
+    max-width:180px;
+
+    object-fit:contain;
+}
+
+
+/* =========================================================
+   HEADER RIGHT
+========================================================= */
+
+.blank{
+    width:50px;
+    height:50px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    padding:40px 20px 25px;
+
+    text-align:center;
+}
+
+.hero h1{
+    margin-bottom:12px;
+
+    font-size:32px;
+    font-weight:700;
+
+    color:#111;
+}
+
+.hero p{
+    max-width:720px;
+
+    margin:auto;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    color:#666;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+main{
+    width:100%;
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:
+        10px 15px 40px;
+}
+
+
+/* =========================================================
+   ABOUT CONTAINER
+========================================================= */
+
+.about-container{
+    width:100%;
+}
+
+
+/* =========================================================
+   ABOUT CARD
+========================================================= */
+
+.about-card{
+    width:100%;
+
+    margin-bottom:25px;
+
+    padding:28px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    border:1px solid #e9e9e9;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.07);
+}
+
+
+/* =========================================================
+   ABOUT CARD HEADER
+========================================================= */
+
+.about-card-header{
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:18px;
+}
+
+
+/* =========================================================
+   ABOUT ICON
+========================================================= */
+
+.about-icon{
+    width:55px;
+    height:55px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1976d2,
+            #0d47a1
+        );
+
+    color:#fff;
+
+    font-size:23px;
+
+    box-shadow:
+        0 5px 0 #07346f,
+        0 8px 15px rgba(0,0,0,.20);
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.about-card h2{
+    font-size:21px;
+
+    font-weight:700;
+
+    color:#123c70;
+}
+
+
+/* =========================================================
+   CARD TEXT
+========================================================= */
+
+.about-card p{
+    font-size:14px;
+
+    line-height:1.9;
+
+    color:#666;
+
+    margin-bottom:12px;
+}
+
+.about-card p:last-child{
+    margin-bottom:0;
+}
+
+
+/* =========================================================
+   FEATURE GRID
+========================================================= */
+
+.feature-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+
+    margin-top:20px;
+}
+
+
+/* =========================================================
+   FEATURE
+========================================================= */
+
+.feature-box{
+    padding:22px 18px;
+
+    text-align:center;
+
+    background:#f8faff;
+
+    border:1px solid #e5edf8;
+
+    border-radius:18px;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.feature-box:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.08);
+}
+
+.feature-box i{
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    width:50px;
+    height:50px;
+
+    margin:0 auto 12px;
+
+    border-radius:15px;
+
+    background:#1976d2;
+
+    color:#fff;
+
+    font-size:21px;
+}
+
+.feature-box h3{
+    margin-bottom:7px;
+
+    font-size:16px;
+
+    color:#123c70;
+}
+
+.feature-box p{
+    margin:0;
+
+    font-size:12px;
+
+    line-height:1.6;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-list{
+    display:grid;
+
+    gap:12px;
+
+    margin-top:18px;
+}
+
+.contact-item{
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:15px;
+
+    border-radius:14px;
+
+    background:#f7f7f7;
+}
+
+.contact-item i{
+    width:40px;
+    height:40px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:#1976d2;
+
+    color:#fff;
+
+    flex-shrink:0;
+}
+
+.contact-item strong{
+    display:block;
+
+    font-size:14px;
+
+    color:#222;
+}
+
+.contact-item span{
+    display:block;
+
+    margin-top:2px;
+
+    font-size:12px;
+
+    color:#777;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.home-button{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:8px;
+
+    margin-top:5px;
+
+    padding:13px 22px;
+
+    border-radius:12px;
+
+    background:#1976d2;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    box-shadow:
+        0 5px 0 #0d47a1;
+
+    transition:
+        transform .2s ease,
+        background .2s ease;
+}
+
+.home-button:hover{
+    background:#0d47a1;
+
+    transform:translateY(-2px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    width:100%;
+
+    margin-top:20px;
+
+    padding:
+        20px 15px 22px;
+
+    text-align:center;
+
+    background:#fafafa;
+
+    border-top:
+        1px solid #e5e5e5;
+}
+
+
+/* =========================================================
+   FOOTER LOGO
+========================================================= */
+
+.footer-logo{
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:8px;
+}
+
+.footer-logo img{
+    width:auto;
+
+    height:48px;
+
+    max-width:130px;
+
+    object-fit:contain;
+}
+
+
+/* =========================================================
+   FOOTER TEXT
+========================================================= */
+
+footer p{
+    font-size:12px;
+
+    line-height:1.6;
+
+    color:#666;
+}
+
+
+/* =========================================================
+   WEBSITE SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f2f2f2;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#bdbdbd;
+
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#888;
+}
+
+
+/* =========================================================
+   MOBILE <= 768PX
+========================================================= */
+
+@media(max-width:768px){
+
+    .sidebar{
+        width:260px;
+
+        left:-270px;
+    }
+
+    .sidebar-header{
+        padding:18px 14px;
+    }
+
+    .category-3d-box{
+        min-height:70px;
+
+        border-radius:18px;
+    }
+
+    .category-icon{
+        width:44px;
+        height:44px;
+
+        font-size:20px;
+    }
+
+    .category-text h2{
+        font-size:19px;
+    }
+
+    header{
+        height:80px;
+
+        padding:0 15px;
+    }
+
+    #menuBtn{
+        width:45px;
+        height:45px;
+
+        font-size:28px;
+    }
+
+    .logo img{
+        height:60px;
+
+        max-width:155px;
+    }
+
+    .blank{
+        width:45px;
+        height:45px;
+    }
+
+    .hero{
+        padding:28px 15px 20px;
+    }
+
+    .hero h1{
+        font-size:25px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    main{
+        padding:
+            5px 15px 30px;
+    }
+
+    .about-card{
+        padding:22px 18px;
+
+        border-radius:17px;
+    }
+
+    .about-card h2{
+        font-size:19px;
+    }
+
+    .about-card p{
+        font-size:13px;
+
+        line-height:1.8;
+    }
+
+    .feature-grid{
+        grid-template-columns:1fr;
+
+        gap:13px;
+    }
+
+    .feature-box{
+        padding:18px;
+    }
+
+    footer{
+        padding:
+            18px 15px 20px;
+    }
+
+    .footer-logo img{
+        height:42px;
+
+        max-width:120px;
+    }
+
+    footer p{
+        font-size:11px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE KECIL <= 480PX
+========================================================= */
+
+@media(max-width:480px){
+
+    header{
+        height:75px;
+    }
+
+    .logo img{
+        height:55px;
+
+        max-width:140px;
+    }
+
+    #menuBtn{
+        width:42px;
+        height:42px;
+
+        font-size:25px;
+    }
+
+    .blank{
+        width:42px;
+        height:42px;
+    }
+
+    .hero h1{
+        font-size:23px;
+    }
+
+    .about-card{
+        padding:20px 16px;
+    }
+
+    .about-card-header{
+        gap:12px;
+    }
+
+    .about-icon{
+        width:48px;
+        height:48px;
+
+        font-size:20px;
+    }
+
+    .about-card h2{
+        font-size:18px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(min-width:769px) and (max-width:999px){
+
+    main{
+        max-width:900px;
+    }
+
+    .feature-grid{
+        grid-template-columns:
+            repeat(3,1fr);
+    }
+
+}
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media(min-width:1000px){
+
+    main{
+        max-width:1000px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print{
+
+    #sidebar,
+    #menuBtn,
+    #overlay{
+        display:none !important;
+    }
+
+    body{
+        background:#fff;
+    }
+
+}
+
+
+/* =========================================================
+   END CSS
+========================================================= */
+
+</style>
+
+</head>
+
+
+<body data-page="tentang-kami">
+
+
+<!-- =========================================================
+     OVERLAY
+========================================================= -->
+
+<div id="overlay"></div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<div id="sidebar" class="sidebar">
+
+    <div class="sidebar-header">
+
+        <div class="category-3d-box">
+
+            <div class="category-icon">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+            </div>
+
+            <div class="category-text">
+
+                <h2>Menu</h2>
+
+                <p>Navigasi Website</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="menu-list">
+
+
+        <!-- HOME -->
+
+        <a
+            href="index.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                class="menu-logo"
+                alt="Home">
+
+            <span>Home</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- TENTANG KAMI -->
+
+        <a
+            href="tentang-kami.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                class="menu-logo"
+                alt="Tentang Kami">
+
+            <span>Tentang Kami</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- KONTAK -->
+
+        <a
+            href="kontak.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                class="menu-logo"
+                alt="Kontak">
+
+            <span>Kontak</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- KEBIJAKAN PRIVASI -->
+
+        <a
+            href="privacy-policy.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                class="menu-logo"
+                alt="Kebijakan Privasi">
+
+            <span>Privasi</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- DISCLAIMER -->
+
+        <a
+            href="disclaimer.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                class="menu-logo"
+                alt="Disclaimer">
+
+            <span>Disclaimer</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header>
+
+    <button
+        id="menuBtn"
+        type="button"
+        aria-label="Buka menu"
+        aria-controls="sidebar"
+        aria-expanded="false">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+    <div class="logo">
+
+        <img
+            src="Asupan Hijab.png.jpg"
+            alt="Asupan Hijab">
+
+    </div>
+
+
+    <div class="blank"></div>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+    <h1>
+        Tentang Kami
+    </h1>
+
+    <p>
+        Mengenal lebih dekat tentang website
+        dan tujuan kami dalam menyediakan
+        informasi yang bermanfaat bagi pengunjung.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main>
+
+    <div class="about-container">
+
+
+        <!-- =================================================
+             TENTANG WEBSITE
+        ================================================== -->
+
+        <section class="about-card">
+
+            <div class="about-card-header">
+
+                <div class="about-icon">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                </div>
+
+                <h2>
+                    Tentang Website Kami
+                </h2>
+
+            </div>
+
+
+            <p>
+
+                Selamat datang di website kami.
+
+                Website ini dibuat sebagai media
+                informasi dan tempat untuk menyajikan
+                berbagai konten yang mudah diakses
+                melalui perangkat desktop maupun mobile.
+
+            </p>
+
+
+            <p>
+
+                Kami berusaha menjaga tampilan website
+                tetap sederhana, cepat, responsif,
+                dan mudah digunakan oleh pengunjung.
+
+            </p>
+
+        </section>
+
+
+        <!-- =================================================
+             VISI & MISI
+        ================================================== -->
+
+        <section class="about-card">
+
+            <div class="about-card-header">
+
+                <div class="about-icon">
+
+                    <i class="fa-solid fa-bullseye"></i>
+
+                </div>
+
+                <h2>
+                    Visi dan Tujuan
+                </h2>
+
+            </div>
+
+
+            <p>
+
+                Tujuan kami adalah membangun sebuah
+                website yang memiliki navigasi sederhana,
+                informasi yang jelas, serta pengalaman
+                penggunaan yang nyaman.
+
+            </p>
+
+
+            <div class="feature-grid">
+
+
+                <div class="feature-box">
+
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+
+                    <h3>
+                        Responsif
+                    </h3>
+
+                    <p>
+                        Tampilan dirancang agar nyaman
+                        digunakan pada smartphone,
+                        tablet, dan komputer.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-box">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <h3>
+                        Sederhana
+                    </h3>
+
+                    <p>
+                        Navigasi dibuat sederhana agar
+                        pengunjung dapat menemukan
+                        informasi dengan mudah.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-box">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <h3>
+                        Pengunjung
+                    </h3>
+
+                    <p>
+                        Kami berusaha memberikan
+                        pengalaman penggunaan yang
+                        nyaman bagi setiap pengunjung.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             INFORMASI
+        ================================================== -->
+
+        <section class="about-card">
+
+            <div class="about-card-header">
+
+                <div class="about-icon">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                </div>
+
+                <h2>
+                    Komitmen Kami
+                </h2>
+
+            </div>
+
+
+            <p>
+
+                Kami terus melakukan pengembangan
+                dan perbaikan agar website dapat
+                memberikan pengalaman yang lebih baik.
+
+            </p>
+
+
+            <p>
+
+                Jika terdapat kesalahan informasi,
+                masalah teknis, atau hal lain yang
+                perlu diperbaiki, pengunjung dapat
+                menghubungi kami melalui halaman kontak.
+
+            </p>
+
+        </section>
+
+
+        <!-- =================================================
+             KONTAK
+        ================================================== -->
+
+        <section class="about-card">
+
+            <div class="about-card-header">
+
+                <div class="about-icon">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </div>
+
+                <h2>
+                    Hubungi Kami
+                </h2>
+
+            </div>
+
+
+            <p>
+
+                Untuk pertanyaan, saran, atau laporan
+                mengenai website, silakan gunakan
+                halaman kontak yang tersedia.
+
+            </p>
+
+
+            <div class="contact-list">
+
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+
+                        <strong>
+                            Email
+                        </strong>
+
+                        <span>
+                            Silakan isi alamat email resmi Anda
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <div>
+
+                        <strong>
+                            Website
+                        </strong>
+
+                        <span>
+                            asupanhijab.xyz
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             HOME BUTTON
+        ================================================== -->
+
+        <div
+            style="
+                text-align:center;
+                margin-top:25px;
+            ">
+
+            <a
+                href="index.html"
+                class="home-button">
+
+                <i class="fa-solid fa-house"></i>
+
+                Kembali ke Beranda
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        <img
+            src="Asupan Hijab.png.jpg"
+            alt="Asupan Hijab">
+
+    </div>
+
+
+    <p>
+        © 2026 Asupan Hijab
+    </p>
+
+
+    <p>
+        Semua hak dilindungi.
+    </p>
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT SIDEBAR
+========================================================= -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        const menuBtn =
+            document.getElementById(
+                "menuBtn"
+            );
+
+
+        const sidebar =
+            document.getElementById(
+                "sidebar"
+            );
+
+
+        const overlay =
+            document.getElementById(
+                "overlay"
+            );
+
+
+        function openSidebar(){
+
+            if(!sidebar || !overlay){
+
+                return;
+
+            }
+
+
+            sidebar.classList.add(
+                "active"
+            );
+
+
+            overlay.classList.add(
+                "active"
+            );
+
+
+            if(menuBtn){
+
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    "true"
+                );
+
+            }
+
+        }
+
+
+        function closeSidebar(){
+
+            if(!sidebar || !overlay){
+
+                return;
+
+            }
+
+
+            sidebar.classList.remove(
+                "active"
+            );
+
+
+            overlay.classList.remove(
+                "active"
+            );
+
+
+            if(menuBtn){
+
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            }
+
+        }
+
+
+        if(menuBtn){
+
+            menuBtn.addEventListener(
+                "click",
+                function(){
+
+                    if(
+                        sidebar &&
+                        sidebar.classList.contains(
+                            "active"
+                        )
+                    ){
+
+                        closeSidebar();
+
+                    }else{
+
+                        openSidebar();
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        if(overlay){
+
+            overlay.addEventListener(
+                "click",
+                closeSidebar
+            );
+
+        }
+
+
+        /*
+         * Tutup sidebar ketika
+         * link menu diklik
+         */
+
+        const menuLinks =
+            document.querySelectorAll(
+                ".menu-item"
+            );
+
+
+        menuLinks.forEach(
+            function(link){
+
+                link.addEventListener(
+                    "click",
+                    function(){
+
+                        closeSidebar();
+
+                    }
+                );
+
+            }
+        );
+
+
+        /*
+         * Tombol ESC
+         */
+
+        document.addEventListener(
+            "keydown",
+            function(event){
+
+                if(
+                    event.key === "Escape"
+                ){
+
+                    closeSidebar();
+
+                }
+
+            }
+        );
+
+    }
+);
+
+</script>
+
+
+</body>
+
+  </html>
