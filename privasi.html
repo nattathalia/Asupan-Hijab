@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+      content="Kebijakan Privasi Asupan Hijab menjelaskan bagaimana informasi pengguna diperlakukan saat mengakses website.">
+
+<meta name="robots"
+      content="index, follow">
+
+<title>Kebijakan Privasi | Asupan Hijab</title>
+
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff;
+    color:#111;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+button{
+    font-family:'Poppins',sans-serif;
+    cursor:pointer;
+}
+
+button:focus{
+    outline:none;
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+#overlay{
+    position:fixed;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.45);
+
+    display:none;
+
+    z-index:9998;
+}
+
+#overlay.active{
+    display:block;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar{
+    position:fixed;
+
+    top:0;
+    left:-290px;
+
+    width:280px;
+    height:100%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #0d47a1,
+            #1976d2
+        );
+
+    overflow-y:auto;
+
+    transition:left .35s ease;
+
+    z-index:9999;
+
+    box-shadow:
+        8px 0 25px rgba(0,0,0,.35);
+}
+
+.sidebar.active{
+    left:0;
+}
+
+
+/* =========================================================
+   SIDEBAR HEADER
+========================================================= */
+
+.sidebar-header{
+    padding:22px 15px;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.15);
+}
+
+
+/* =========================================================
+   CATEGORY BOX
+========================================================= */
+
+.category-3d-box{
+    position:relative;
+
+    width:100%;
+    min-height:78px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:12px 16px;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #e6e6e6
+        );
+
+    box-shadow:
+        0 10px 0 #b8b8b8,
+        0 15px 25px rgba(0,0,0,.35),
+        inset 0 2px 3px rgba(255,255,255,.9);
+
+    overflow:hidden;
+}
+
+
+/* =========================================================
+   CATEGORY ICON
+========================================================= */
+
+.category-icon{
+    width:50px;
+    height:50px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:15px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1976d2,
+            #0d47a1
+        );
+
+    color:#fff;
+
+    font-size:23px;
+
+    box-shadow:
+        0 5px 0 #07346f,
+        0 8px 15px rgba(0,0,0,.3);
+
+    flex-shrink:0;
+}
+
+
+/* =========================================================
+   CATEGORY TEXT
+========================================================= */
+
+.category-text{
+    margin-left:14px;
+}
+
+.category-text h2{
+    margin:0;
+
+    font-size:21px;
+    font-weight:700;
+
+    color:#123c70;
+
+    text-shadow:
+        1px 1px 0 #fff,
+        2px 3px 4px rgba(0,0,0,.2);
+}
+
+.category-text p{
+    margin:2px 0 0;
+
+    font-size:12px;
+    font-weight:500;
+
+    color:#555;
+
+    letter-spacing:.5px;
+}
+
+
+/* =========================================================
+   MENU LIST
+========================================================= */
+
+.menu-list{
+    padding:18px;
+}
+
+
+/* =========================================================
+   MENU ITEM
+========================================================= */
+
+.menu-item{
+    position:relative;
+
+    display:block;
+
+    width:100%;
+    height:105px;
+
+    margin-bottom:15px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    background:#222;
+
+    box-shadow:
+        0 6px 15px rgba(0,0,0,.25);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+
+/* =========================================================
+   MENU FOTO
+========================================================= */
+
+.menu-logo{
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border:0;
+
+    border-radius:0;
+
+    transition:
+        transform .4s ease;
+}
+
+
+/* =========================================================
+   MENU OVERLAY
+========================================================= */
+
+.menu-item::after{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.10),
+            rgba(0,0,0,.65)
+        );
+
+    z-index:1;
+}
+
+
+/* =========================================================
+   MENU TEXT
+========================================================= */
+
+.menu-item span{
+    position:absolute;
+
+    left:18px;
+    bottom:15px;
+
+    z-index:2;
+
+    color:#fff;
+
+    font-size:18px;
+    font-weight:700;
+
+    text-shadow:
+        0 2px 6px rgba(0,0,0,.8);
+}
+
+
+/* =========================================================
+   MENU ARROW
+========================================================= */
+
+.menu-item .fa-chevron-right{
+    position:absolute;
+
+    right:18px;
+    bottom:18px;
+
+    z-index:2;
+
+    color:#fff;
+
+    font-size:16px;
+
+    text-shadow:
+        0 2px 5px rgba(0,0,0,.8);
+}
+
+
+/* =========================================================
+   MENU HOVER
+========================================================= */
+
+.menu-item:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 10px 22px rgba(0,0,0,.35);
+}
+
+.menu-item:hover .menu-logo{
+    transform:scale(1.08);
+}
+
+
+/* =========================================================
+   SIDEBAR SCROLLBAR
+========================================================= */
+
+.sidebar::-webkit-scrollbar{
+    width:8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background:#ffffff66;
+    border-radius:20px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+    position:sticky;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 20px;
+
+    background:#fff;
+
+    box-shadow:
+        0 2px 10px rgba(0,0,0,.08);
+
+    z-index:900;
+}
+
+
+/* =========================================================
+   MENU BUTTON
+========================================================= */
+
+#menuBtn{
+    width:50px;
+    height:50px;
+
+    border:none;
+
+    background:transparent;
+
+    color:#111;
+
+    font-size:32px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    transition:
+        transform .3s ease;
+}
+
+#menuBtn:hover{
+    transform:rotate(90deg);
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo{
+    flex:1;
+
+    height:100%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+}
+
+.logo img{
+    width:auto;
+
+    height:70px;
+
+    max-width:180px;
+
+    object-fit:contain;
+}
+
+
+/* =========================================================
+   HEADER RIGHT
+========================================================= */
+
+.blank{
+    width:50px;
+    height:50px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    padding:35px 20px 20px;
+
+    text-align:center;
+}
+
+.hero h1{
+    margin-bottom:12px;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#111;
+}
+
+.hero p{
+    max-width:750px;
+
+    margin:auto;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    color:#666;
+}
+
+
+/* =========================================================
+   PRIVACY CONTAINER
+========================================================= */
+
+.privacy-container{
+    width:100%;
+
+    max-width:900px;
+
+    margin:10px auto 40px;
+
+    padding:0 20px;
+}
+
+
+/* =========================================================
+   PRIVACY CARD
+========================================================= */
+
+.privacy-card{
+    width:100%;
+
+    background:#fff;
+
+    border:1px solid #e8e8e8;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.07);
+}
+
+
+/* =========================================================
+   PRIVACY INTRO
+========================================================= */
+
+.privacy-intro{
+    padding:18px;
+
+    margin-bottom:25px;
+
+    border-left:4px solid #1976d2;
+
+    background:#f7faff;
+
+    border-radius:
+        0 12px 12px 0;
+}
+
+.privacy-intro p{
+    color:#555;
+
+    font-size:14px;
+
+    line-height:1.8;
+}
+
+
+/* =========================================================
+   PRIVACY SECTION
+========================================================= */
+
+.privacy-section{
+    margin-bottom:28px;
+}
+
+.privacy-section:last-child{
+    margin-bottom:0;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.privacy-section h2{
+    margin-bottom:10px;
+
+    color:#123c70;
+
+    font-size:21px;
+
+    font-weight:700;
+}
+
+.privacy-section h2 i{
+    margin-right:8px;
+
+    color:#1976d2;
+
+    font-size:18px;
+}
+
+
+/* =========================================================
+   SECTION TEXT
+========================================================= */
+
+.privacy-section p{
+    margin-bottom:10px;
+
+    color:#555;
+
+    font-size:14px;
+
+    line-height:1.85;
+}
+
+.privacy-section p:last-child{
+    margin-bottom:0;
+}
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.privacy-section ul{
+    margin:
+        10px 0 0 20px;
+
+    padding:0;
+}
+
+.privacy-section li{
+    margin-bottom:8px;
+
+    color:#555;
+
+    font-size:14px;
+
+    line-height:1.8;
+}
+
+.privacy-section li:last-child{
+    margin-bottom:0;
+}
+
+
+/* =========================================================
+   HIGHLIGHT BOX
+========================================================= */
+
+.info-box{
+    margin-top:15px;
+
+    padding:16px 18px;
+
+    background:#f5f5f5;
+
+    border-radius:12px;
+
+    border:1px solid #e5e5e5;
+}
+
+.info-box strong{
+    color:#123c70;
+}
+
+.info-box p{
+    margin:0;
+
+    font-size:13px;
+}
+
+
+/* =========================================================
+   LAST UPDATE
+========================================================= */
+
+.last-update{
+    margin-top:30px;
+
+    padding-top:20px;
+
+    border-top:
+        1px solid #e5e5e5;
+
+    text-align:center;
+
+    color:#777;
+
+    font-size:12px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    width:100%;
+
+    margin-top:35px;
+
+    padding:
+        20px 15px 22px;
+
+    text-align:center;
+
+    background:#fafafa;
+
+    border-top:
+        1px solid #e5e5e5;
+}
+
+
+/* =========================================================
+   FOOTER LOGO
+========================================================= */
+
+.footer-logo{
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:8px;
+}
+
+.footer-logo img{
+    width:auto;
+
+    height:48px;
+
+    max-width:130px;
+
+    object-fit:contain;
+}
+
+
+/* =========================================================
+   FOOTER TEXT
+========================================================= */
+
+footer p{
+    font-size:12px;
+
+    line-height:1.6;
+
+    color:#666;
+}
+
+
+/* =========================================================
+   WEBSITE SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f2f2f2;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#bdbdbd;
+
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#888;
+}
+
+
+/* =========================================================
+   MOBILE <= 768PX
+========================================================= */
+
+@media(max-width:768px){
+
+    .sidebar{
+        width:260px;
+
+        left:-270px;
+    }
+
+    .menu-item{
+        height:95px;
+    }
+
+    .menu-item span{
+        font-size:16px;
+    }
+
+    .sidebar-header{
+        padding:18px 14px;
+    }
+
+    .category-3d-box{
+        min-height:70px;
+
+        border-radius:18px;
+    }
+
+    .category-icon{
+        width:44px;
+        height:44px;
+
+        font-size:20px;
+    }
+
+    .category-text h2{
+        font-size:19px;
+    }
+
+    header{
+        height:80px;
+
+        padding:0 15px;
+    }
+
+    #menuBtn{
+        width:45px;
+        height:45px;
+
+        font-size:28px;
+    }
+
+    .logo img{
+        height:60px;
+
+        max-width:155px;
+    }
+
+    .blank{
+        width:45px;
+        height:45px;
+    }
+
+    .hero{
+        padding:25px 15px 15px;
+    }
+
+    .hero h1{
+        font-size:24px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .privacy-container{
+        padding:
+            0 15px;
+
+        margin-top:10px;
+    }
+
+    .privacy-card{
+        padding:22px 18px;
+
+        border-radius:15px;
+    }
+
+    .privacy-section{
+        margin-bottom:25px;
+    }
+
+    .privacy-section h2{
+        font-size:19px;
+    }
+
+    .privacy-section p,
+    .privacy-section li{
+        font-size:13px;
+
+        line-height:1.8;
+    }
+
+    .privacy-intro{
+        padding:15px;
+    }
+
+    footer{
+        padding:
+            18px 15px 20px;
+    }
+
+    .footer-logo img{
+        height:42px;
+
+        max-width:120px;
+    }
+
+    footer p{
+        font-size:11px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE KECIL <= 480PX
+========================================================= */
+
+@media(max-width:480px){
+
+    header{
+        height:75px;
+    }
+
+    .logo img{
+        height:55px;
+
+        max-width:140px;
+    }
+
+    #menuBtn{
+        width:42px;
+        height:42px;
+
+        font-size:25px;
+    }
+
+    .blank{
+        width:42px;
+        height:42px;
+    }
+
+    .privacy-container{
+        padding:
+            0 12px;
+    }
+
+    .privacy-card{
+        padding:
+            20px 15px;
+    }
+
+    .privacy-section h2{
+        font-size:18px;
+    }
+
+    .privacy-section p,
+    .privacy-section li{
+        font-size:12.5px;
+    }
+
+}
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media(min-width:1000px){
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .privacy-card{
+        padding:35px;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print{
+
+    #sidebar,
+    #menuBtn,
+    #overlay{
+        display:none !important;
+    }
+
+    body{
+        background:#fff;
+    }
+
+    header{
+        position:relative;
+
+        box-shadow:none;
+    }
+
+    .privacy-card{
+        box-shadow:none;
+
+        border:1px solid #ddd;
+    }
+
+}
+
+
+/* =========================================================
+   END CSS
+========================================================= */
+
+</style>
+
+</head>
+
+
+<body data-page="privasi">
+
+
+<!-- =========================================================
+     OVERLAY
+========================================================= -->
+
+<div id="overlay"></div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<div id="sidebar" class="sidebar">
+
+
+    <div class="sidebar-header">
+
+        <div class="category-3d-box">
+
+            <div class="category-icon">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+            </div>
+
+            <div class="category-text">
+
+                <h2>Kategori</h2>
+
+                <p>Pilih Menu</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="menu-list">
+
+
+        <!-- HOME -->
+
+        <a
+            href="index.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                class="menu-logo"
+                alt="Home">
+
+            <span>Home</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- SEKOLAH -->
+
+        <a
+            href="sekolah.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/sekolah.jpg"
+                class="menu-logo"
+                alt="Sekolah">
+
+            <span>Sekolah</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- MUDA -->
+
+        <a
+            href="muda.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/muda.jpg"
+                class="menu-logo"
+                alt="Muda">
+
+            <span>Muda</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- PUBLIK -->
+
+        <a
+            href="publik.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/publik.jpg"
+                class="menu-logo"
+                alt="Publik">
+
+            <span>Publik</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- HIJAB -->
+
+        <a
+            href="hijab.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/hijab.jpg"
+                class="menu-logo"
+                alt="Hijab">
+
+            <span>Hijab</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- PRONSTAR -->
+
+        <a
+            href="pronstar.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/pronstar.jpg"
+                class="menu-logo"
+                alt="Pronstar">
+
+            <span>Pronstar</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header>
+
+
+    <button
+        id="menuBtn"
+        type="button"
+        aria-label="Buka menu"
+        aria-controls="sidebar"
+        aria-expanded="false">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+    <div class="logo">
+
+        <img
+            src="Asupan Hijab.png.jpg"
+            alt="Asupan Hijab">
+
+    </div>
+
+
+    <div class="blank"></div>
+
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+    <h1>
+        Kebijakan Privasi
+    </h1>
+
+    <p>
+        Informasi mengenai bagaimana kami menghargai
+        dan menjaga privasi pengunjung website.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     PRIVACY CONTENT
+========================================================= -->
+
+<main class="privacy-container">
+
+
+    <article class="privacy-card">
+
+
+        <!-- INTRO -->
+
+        <div class="privacy-intro">
+
+            <p>
+                Selamat datang di Asupan Hijab.
+                Privasi pengunjung merupakan hal yang penting bagi kami.
+                Halaman ini menjelaskan secara umum mengenai informasi
+                yang dapat dikumpulkan ketika Anda mengakses website
+                dan bagaimana informasi tersebut digunakan.
+            </p>
+
+        </div>
+
+
+        <!-- 1 -->
+
+        <section class="privacy-section">
+
+            <h2>
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                1. Informasi yang Kami Kumpulkan
+
+            </h2>
+
+            <p>
+                Kami dapat menerima informasi teknis tertentu
+                ketika pengunjung mengakses website, seperti
+                jenis perangkat, browser, sistem operasi, alamat IP,
+                halaman yang dikunjungi, serta informasi teknis lainnya.
+            </p>
+
+            <p>
+                Informasi tersebut umumnya digunakan untuk membantu
+                memahami penggunaan website dan meningkatkan kualitas
+                layanan.
+            </p>
+
+        </section>
+
+
+        <!-- 2 -->
+
+        <section class="privacy-section">
+
+            <h2>
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                2. Informasi Penggunaan Website
+
+            </h2>
+
+            <p>
+                Kami dapat menggunakan data penggunaan secara umum
+                untuk mengetahui bagaimana pengunjung berinteraksi
+                dengan halaman website.
+            </p>
+
+            <ul>
+
+                <li>
+                    Mengetahui halaman yang paling sering dikunjungi.
+                </li>
+
+                <li>
+                    Membantu meningkatkan kecepatan dan kinerja website.
+                </li>
+
+                <li>
+                    Mengetahui masalah teknis yang mungkin terjadi.
+                </li>
+
+                <li>
+                    Meningkatkan pengalaman pengguna.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section class="privacy-section">
+
+            <h2>
+
+                <i class="fa-solid fa-cookie-bite"></i>
+
+                3. Cookie
+
+            </h2>
+
+            <p>
+                Website ini dapat menggunakan cookie atau teknologi
+                serupa untuk membantu memberikan pengalaman yang lebih
+                baik kepada pengunjung.
+            </p>
+
+            <p>
+                Cookie dapat digunakan untuk menyimpan preferensi
+                tertentu atau membantu sistem memahami penggunaan
+                website.
+            </p>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section class="privacy-section">
+
+            <h2>
+
+                <i class="fa-solid fa-rectangle-ad"></i>
+
+                4. Iklan dan Layanan Pihak Ketiga
+
+            </h2>
+
+            <p>
+                Website dapat menggunakan layanan pihak ketiga,
+                termasuk penyedia iklan, analitik, atau layanan
+                eksternal lainnya.
+            </p>
+
+            <p>
+                Penyedia layanan tersebut dapat menggunakan teknologi
+                seperti cookie atau identifier tertentu sesuai dengan
+                kebijakan privasi masing-masing.
+            </p>
+
+            <div class="info-box">
+
+                <p>
+                    <strong>Catatan:</strong>
+                    Kebijakan dan praktik privasi layanan pihak ketiga
+                    dapat berbeda dari kebijakan website ini.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section class="privacy-section">
+
+            <h2>
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                5. Keamanan Informasi
+
+            </h2>
+
+            <p>
+                Kami berupaya menjaga website dan informasi yang
+                tersedia melalui langkah-langkah keamanan yang wajar.
+            </p>
+
+            <p>
+                Namun, tidak ada metode transmisi atau penyimpanan
+                data melalui internet yang dapat dijamin sepenuhnya
+                aman.
+            </p>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section class="privacy-section">
+
+            <h2>
+
+                <i class="fa-solid fa-link"></i>
+
+                6. Tautan ke Website Lain
+
+            </h2>
+
+            <p>
+                Website ini dapat menyediakan tautan menuju website
+                atau layanan lain. Kami tidak bertanggung jawab atas
+                praktik privasi, isi, maupun kebijakan website pihak
+                ketiga tersebut.
+            </p>
+
+            <p>
+                Pengunjung disarankan membaca kebijakan privasi dari
+                website lain yang dikunjungi.
+            </p>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section class="privacy-section">
+
+            <h2>
+
+                <i class="fa-solid fa-user-shield"></i>
+
+                7. Privasi Pengunjung
+
+            </h2>
+
+            <p>
+                Kami menghargai privasi setiap pengunjung dan tidak
+                bermaksud mengumpulkan informasi pribadi secara tidak
+                wajar.
+            </p>
+
+            <p>
+                Apabila terdapat fitur tertentu yang meminta informasi
+                dari pengguna, informasi tersebut hanya digunakan
+                sebagaimana diperlukan untuk menyediakan fitur atau
+                layanan terkait.
+            </p>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section class="privacy-section">
+
+            <h2>
+
+                <i class="fa-solid fa-rotate"></i>
+
+                8. Perubahan Kebijakan Privasi
+
+            </h2>
+
+            <p>
+                Kebijakan Privasi ini dapat diperbarui dari waktu ke
+                waktu untuk menyesuaikan perubahan pada website,
+                layanan, teknologi, atau ketentuan yang berlaku.
+            </p>
+
+            <p>
+                Setiap perubahan akan ditampilkan pada halaman ini.
+            </p>
+
+        </section>
+
+
+        <!-- 9 -->
+
+        <section class="privacy-section">
+
+            <h2>
+
+                <i class="fa-solid fa-envelope"></i>
+
+                9. Hubungi Kami
+
+            </h2>
+
+            <p>
+                Apabila Anda memiliki pertanyaan mengenai Kebijakan
+                Privasi ini, silakan menghubungi kami melalui halaman
+                kontak yang tersedia di website.
+            </p>
+
+        </section>
+
+
+        <!-- LAST UPDATE -->
+
+        <div class="last-update">
+
+            Kebijakan Privasi terakhir diperbarui:
+            <strong>2026</strong>
+
+        </div>
+
+
+    </article>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+
+    <div class="footer-logo">
+
+        <img
+            src="Asupan Hijab.png.jpg"
+            alt="Asupan Hijab">
+
+    </div>
+
+
+    <p>
+        © 2026 Asupan Hijab
+    </p>
+
+    <p>
+        Semua hak dilindungi.
+    </p>
+
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT SIDEBAR
+========================================================= -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        const menuBtn =
+            document.getElementById(
+                "menuBtn"
+            );
+
+        const sidebar =
+            document.getElementById(
+                "sidebar"
+            );
+
+        const overlay =
+            document.getElementById(
+                "overlay"
+            );
+
+
+        /* =====================================================
+           OPEN SIDEBAR
+        ===================================================== */
+
+        function openSidebar(){
+
+            if(
+                !sidebar ||
+                !overlay
+            ){
+
+                return;
+
+            }
+
+
+            sidebar.classList.add(
+                "active"
+            );
+
+
+            overlay.classList.add(
+                "active"
+            );
+
+
+            if(menuBtn){
+
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    "true"
+                );
+
+            }
+
+        }
+
+
+        /* =====================================================
+           CLOSE SIDEBAR
+        ===================================================== */
+
+        function closeSidebar(){
+
+            if(
+                !sidebar ||
+                !overlay
+            ){
+
+                return;
+
+            }
+
+
+            sidebar.classList.remove(
+                "active"
+            );
+
+
+            overlay.classList.remove(
+                "active"
+            );
+
+
+            if(menuBtn){
+
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            }
+
+        }
+
+
+        /* =====================================================
+           MENU BUTTON
+        ===================================================== */
+
+        if(menuBtn){
+
+            menuBtn.addEventListener(
+                "click",
+                function(){
+
+                    if(
+                        sidebar &&
+                        sidebar.classList.contains(
+                            "active"
+                        )
+                    ){
+
+                        closeSidebar();
+
+                    }else{
+
+                        openSidebar();
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        /* =====================================================
+           OVERLAY
+        ===================================================== */
+
+        if(overlay){
+
+            overlay.addEventListener(
+                "click",
+                closeSidebar
+            );
+
+        }
+
+
+        /* =====================================================
+           CLOSE SIDEBAR WHEN LINK CLICKED
+        ===================================================== */
+
+        if(sidebar){
+
+            const links =
+                sidebar.querySelectorAll(
+                    "a"
+                );
+
+
+            links.forEach(
+                function(link){
+
+                    link.addEventListener(
+                        "click",
+                        closeSidebar
+                    );
+
+                }
+            );
+
+        }
+
+
+        /* =====================================================
+           ESC KEY
+        ===================================================== */
+
+        document.addEventListener(
+            "keydown",
+            function(event){
+
+                if(
+                    event.key === "Escape"
+                ){
+
+                    closeSidebar();
+
+                }
+
+            }
+        );
+
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
