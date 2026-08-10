@@ -747,3 +747,131 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 });
+
+/* ======================================================
+   FOOTER OTOMATIS
+   Footer akan muncul otomatis di semua halaman
+====================================================== */
+
+function loadFooter(){
+
+    const footerHTML = `
+
+        <footer class="footer">
+
+            <div class="footer-container">
+
+                <!-- LOGO -->
+                <div class="footer-logo">
+
+                    <img
+                        src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                        alt="Asupan Hijab">
+
+                    <h3>Asupan Hijab</h3>
+
+                    <p>
+                        Informasi, profil, dan konten umum yang disajikan
+                        secara informatif dan terstruktur.
+                    </p>
+
+                </div>
+
+
+                <!-- MENU FOOTER -->
+                <div class="footer-menu">
+
+                    <h3>Menu</h3
+                    
+                    <a href="tentang.html">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Tentang Kami
+                    </a>
+
+                    <a href="kontak.html">
+                        <i class="fa-solid fa-envelope"></i>
+                        Kontak
+                    </a>
+
+                    <a href="privasi.html">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Kebijakan Privasi
+                    </a>
+
+                    <a href="syarat.html">
+                        <i class="fa-solid fa-file-contract"></i>
+                        Syarat & Ketentuan
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- GARIS -->
+            <div class="footer-line"></div>
+
+
+            <!-- COPYRIGHT -->
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Asupan Hijab. All Rights Reserved.
+                </p>
+
+                <p>
+                    Dibuat untuk memberikan informasi yang mudah diakses.
+                </p>
+
+            </div>
+
+        </footer>
+
+    `;
+
+
+    /*
+       Cari footer lama.
+       Kalau ada, hapus agar tidak terjadi
+       footer ganda.
+    */
+
+    const oldFooter =
+        document.querySelector("footer");
+
+
+    if(oldFooter){
+        oldFooter.remove();
+    }
+
+
+    /*
+       Masukkan footer ke bagian paling bawah BODY
+    */
+
+    document.body.insertAdjacentHTML(
+        "beforeend",
+        footerHTML
+    );
+
+}
+
+
+/* ======================================================
+   JALANKAN FOOTER
+====================================================== */
+
+if(
+    document.readyState === "loading"
+){
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        loadFooter
+    );
+
+}else{
+
+    loadFooter();
+
+}
