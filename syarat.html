@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Syarat & Ketentuan | Asupan Hijab</title>
+
+<meta name="description"
+      content="Syarat dan Ketentuan penggunaan website Asupan Hijab.">
+
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff;
+    color:#111;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+button,
+input{
+    font-family:'Poppins',sans-serif;
+}
+
+button{
+    cursor:pointer;
+}
+
+button:focus,
+input:focus{
+    outline:none;
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+#overlay{
+    position:fixed;
+    inset:0;
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.45);
+
+    display:none;
+
+    z-index:9998;
+}
+
+#overlay.active{
+    display:block;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar{
+    position:fixed;
+
+    top:0;
+    left:-290px;
+
+    width:280px;
+    height:100%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #0d47a1,
+            #1976d2
+        );
+
+    overflow-y:auto;
+
+    transition:left .35s ease;
+
+    z-index:9999;
+
+    box-shadow:
+        8px 0 25px rgba(0,0,0,.35);
+}
+
+.sidebar.active{
+    left:0;
+}
+
+
+/* =========================================================
+   SIDEBAR HEADER
+========================================================= */
+
+.sidebar-header{
+    padding:22px 15px;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.15);
+}
+
+
+/* =========================================================
+   CATEGORY 3D BOX
+========================================================= */
+
+.category-3d-box{
+    position:relative;
+
+    width:100%;
+    min-height:78px;
+
+    display:flex;
+    align-items:center;
+
+    padding:12px 16px;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #e6e6e6
+        );
+
+    box-shadow:
+        0 10px 0 #b8b8b8,
+        0 15px 25px rgba(0,0,0,.35),
+        inset 0 2px 3px rgba(255,255,255,.9);
+
+    overflow:hidden;
+}
+
+
+/* =========================================================
+   CATEGORY ICON
+========================================================= */
+
+.category-icon{
+    width:50px;
+    height:50px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:15px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1976d2,
+            #0d47a1
+        );
+
+    color:#fff;
+
+    font-size:23px;
+
+    box-shadow:
+        0 5px 0 #07346f,
+        0 8px 15px rgba(0,0,0,.3);
+
+    flex-shrink:0;
+}
+
+
+/* =========================================================
+   CATEGORY TEXT
+========================================================= */
+
+.category-text{
+    margin-left:14px;
+}
+
+.category-text h2{
+    margin:0;
+
+    font-size:21px;
+    font-weight:700;
+
+    color:#123c70;
+
+    text-shadow:
+        1px 1px 0 #fff,
+        2px 3px 4px rgba(0,0,0,.2);
+}
+
+.category-text p{
+    margin:2px 0 0;
+
+    font-size:12px;
+    font-weight:500;
+
+    color:#555;
+
+    letter-spacing:.5px;
+}
+
+
+/* =========================================================
+   MENU LIST
+========================================================= */
+
+.menu-list{
+    padding:18px;
+}
+
+
+/* =========================================================
+   MENU ITEM
+========================================================= */
+
+.menu-item{
+    position:relative;
+
+    display:block;
+
+    width:100%;
+    height:105px;
+
+    margin-bottom:15px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    background:#222;
+
+    box-shadow:
+        0 6px 15px rgba(0,0,0,.25);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+
+/* =========================================================
+   MENU FOTO
+========================================================= */
+
+.menu-logo{
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border:0;
+
+    border-radius:0;
+
+    transition:
+        transform .4s ease;
+}
+
+
+/* =========================================================
+   MENU OVERLAY
+========================================================= */
+
+.menu-item::after{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.10),
+            rgba(0,0,0,.65)
+        );
+
+    z-index:1;
+}
+
+
+/* =========================================================
+   MENU TEXT
+========================================================= */
+
+.menu-item span{
+    position:absolute;
+
+    left:18px;
+    bottom:15px;
+
+    z-index:2;
+
+    color:#fff;
+
+    font-size:18px;
+    font-weight:700;
+
+    text-shadow:
+        0 2px 6px rgba(0,0,0,.8);
+}
+
+
+/* =========================================================
+   MENU ARROW
+========================================================= */
+
+.menu-item .fa-chevron-right{
+    position:absolute;
+
+    right:18px;
+    bottom:18px;
+
+    z-index:2;
+
+    color:#fff;
+
+    font-size:16px;
+
+    text-shadow:
+        0 2px 5px rgba(0,0,0,.8);
+}
+
+
+/* =========================================================
+   MENU HOVER
+========================================================= */
+
+.menu-item:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 10px 22px rgba(0,0,0,.35);
+}
+
+.menu-item:hover .menu-logo{
+    transform:scale(1.08);
+}
+
+
+/* =========================================================
+   SIDEBAR SCROLLBAR
+========================================================= */
+
+.sidebar::-webkit-scrollbar{
+    width:8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background:#ffffff66;
+    border-radius:20px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+    position:sticky;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:90px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 20px;
+
+    background:#fff;
+
+    box-shadow:
+        0 2px 10px rgba(0,0,0,.08);
+
+    z-index:900;
+}
+
+
+/* =========================================================
+   MENU BUTTON
+========================================================= */
+
+#menuBtn{
+    width:50px;
+    height:50px;
+
+    border:none;
+
+    background:transparent;
+
+    color:#111;
+
+    font-size:32px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:
+        transform .3s ease;
+}
+
+#menuBtn:hover{
+    transform:rotate(90deg);
+}
+
+
+/* =========================================================
+   LOGO HEADER
+========================================================= */
+
+.logo{
+    flex:1;
+
+    height:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.logo img{
+    width:auto;
+
+    height:70px;
+
+    max-width:180px;
+
+    object-fit:contain;
+}
+
+
+/* =========================================================
+   HEADER RIGHT
+========================================================= */
+
+.blank{
+    width:50px;
+    height:50px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    padding:35px 20px 20px;
+
+    text-align:center;
+}
+
+.hero h1{
+    margin-bottom:12px;
+
+    font-size:30px;
+    font-weight:700;
+
+    color:#111;
+}
+
+.hero p{
+    max-width:750px;
+
+    margin:auto;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    color:#666;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+main{
+    width:100%;
+
+    max-width:1000px;
+
+    margin:0 auto;
+
+    padding:
+        10px 20px 40px;
+}
+
+
+/* =========================================================
+   CONTENT BOX
+========================================================= */
+
+.content-box{
+    width:100%;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    border:1px solid #e5e5e5;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.07);
+}
+
+
+/* =========================================================
+   LAST UPDATED
+========================================================= */
+
+.updated{
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:25px;
+
+    padding:12px 15px;
+
+    border-radius:10px;
+
+    background:#f4f8fc;
+
+    color:#666;
+
+    font-size:13px;
+}
+
+.updated i{
+    color:#1976d2;
+}
+
+
+/* =========================================================
+   CONTENT TITLE
+========================================================= */
+
+.content-box h2{
+    margin-top:28px;
+    margin-bottom:12px;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#123c70;
+}
+
+.content-box h2:first-of-type{
+    margin-top:0;
+}
+
+
+/* =========================================================
+   CONTENT PARAGRAPH
+========================================================= */
+
+.content-box p{
+    margin-bottom:15px;
+
+    font-size:14px;
+
+    line-height:1.9;
+
+    color:#555;
+}
+
+
+/* =========================================================
+   CONTENT LIST
+========================================================= */
+
+.content-box ul{
+    margin:
+        10px 0 20px 22px;
+}
+
+.content-box li{
+    margin-bottom:10px;
+
+    padding-left:5px;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    color:#555;
+}
+
+
+/* =========================================================
+   INFO BOX
+========================================================= */
+
+.info-box{
+    margin:25px 0;
+
+    padding:18px;
+
+    border-left:
+        4px solid #1976d2;
+
+    background:#f5f9fd;
+
+    border-radius:
+        0 10px 10px 0;
+}
+
+.info-box p{
+    margin:0;
+
+    color:#555;
+}
+
+
+/* =========================================================
+   CONTACT BOX
+========================================================= */
+
+.contact-box{
+    margin-top:25px;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d47a1,
+            #1976d2
+        );
+
+    color:#fff;
+
+    box-shadow:
+        0 8px 20px rgba(13,71,161,.25);
+}
+
+.contact-box h3{
+    margin-bottom:8px;
+
+    font-size:18px;
+}
+
+.contact-box p{
+    margin:0;
+
+    color:#fff;
+
+    font-size:13px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    width:100%;
+
+    margin-top:20px;
+
+    padding:
+        20px 15px 22px;
+
+    text-align:center;
+
+    background:#fafafa;
+
+    border-top:
+        1px solid #e5e5e5;
+}
+
+
+/* =========================================================
+   FOOTER LOGO
+========================================================= */
+
+.footer-logo{
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:8px;
+}
+
+.footer-logo img{
+    width:auto;
+
+    height:48px;
+
+    max-width:130px;
+
+    object-fit:contain;
+}
+
+
+/* =========================================================
+   FOOTER TEXT
+========================================================= */
+
+footer p{
+    font-size:12px;
+
+    line-height:1.6;
+
+    color:#666;
+}
+
+
+/* =========================================================
+   WEBSITE SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f2f2f2;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#bdbdbd;
+
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#888;
+}
+
+
+/* =========================================================
+   MOBILE <= 768PX
+========================================================= */
+
+@media(max-width:768px){
+
+    .sidebar{
+        width:260px;
+
+        left:-270px;
+    }
+
+    .menu-item{
+        height:95px;
+    }
+
+    .menu-item span{
+        font-size:16px;
+    }
+
+    .sidebar-header{
+        padding:18px 14px;
+    }
+
+    .category-3d-box{
+        min-height:70px;
+
+        border-radius:18px;
+    }
+
+    .category-icon{
+        width:44px;
+        height:44px;
+
+        font-size:20px;
+    }
+
+    .category-text h2{
+        font-size:19px;
+    }
+
+    header{
+        height:80px;
+
+        padding:0 15px;
+    }
+
+    #menuBtn{
+        width:45px;
+        height:45px;
+
+        font-size:28px;
+    }
+
+    .logo img{
+        height:60px;
+
+        max-width:155px;
+    }
+
+    .blank{
+        width:45px;
+        height:45px;
+    }
+
+    .hero{
+        padding:25px 15px 15px;
+    }
+
+    .hero h1{
+        font-size:24px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    main{
+        padding:
+            10px 15px 30px;
+    }
+
+    .content-box{
+        padding:22px 18px;
+
+        border-radius:15px;
+    }
+
+    .content-box h2{
+        font-size:19px;
+
+        margin-top:24px;
+    }
+
+    .content-box p,
+    .content-box li{
+        font-size:13px;
+
+        line-height:1.8;
+    }
+
+    .updated{
+        font-size:12px;
+    }
+
+    .contact-box{
+        padding:17px;
+    }
+
+    footer{
+        padding:
+            18px 15px 20px;
+    }
+
+    .footer-logo img{
+        height:42px;
+
+        max-width:120px;
+    }
+
+    footer p{
+        font-size:11px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE KECIL <= 480PX
+========================================================= */
+
+@media(max-width:480px){
+
+    header{
+        height:75px;
+    }
+
+    .logo img{
+        height:55px;
+
+        max-width:140px;
+    }
+
+    #menuBtn{
+        width:42px;
+        height:42px;
+
+        font-size:25px;
+    }
+
+    .blank{
+        width:42px;
+        height:42px;
+    }
+
+    .hero{
+        padding:
+            22px 14px 12px;
+    }
+
+    .hero h1{
+        font-size:22px;
+    }
+
+    main{
+        padding:
+            8px 12px 25px;
+    }
+
+    .content-box{
+        padding:20px 15px;
+    }
+
+    .content-box h2{
+        font-size:18px;
+    }
+
+    .content-box p,
+    .content-box li{
+        font-size:12.5px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(min-width:769px) and (max-width:999px){
+
+    main{
+        max-width:900px;
+    }
+
+}
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media(min-width:1000px){
+
+    main{
+        max-width:1000px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media(min-width:1400px){
+
+    main{
+        max-width:1050px;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print{
+
+    #sidebar,
+    #menuBtn,
+    #overlay{
+        display:none !important;
+    }
+
+    body{
+        background:#fff;
+    }
+
+    header{
+        position:static;
+
+        box-shadow:none;
+    }
+
+    .content-box{
+        box-shadow:none;
+
+        border:0;
+    }
+
+}
+
+
+/* =========================================================
+   END CSS
+========================================================= */
+
+</style>
+
+</head>
+
+
+<body data-page="syarat">
+
+
+<!-- =========================================================
+     OVERLAY
+========================================================= -->
+
+<div id="overlay"></div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<div id="sidebar" class="sidebar">
+
+
+    <div class="sidebar-header">
+
+        <div class="category-3d-box">
+
+            <div class="category-icon">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+            </div>
+
+            <div class="category-text">
+
+                <h2>Kategori</h2>
+
+                <p>Pilih Menu</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="menu-list">
+
+
+        <!-- HOME -->
+
+        <a
+            href="index.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                class="menu-logo"
+                alt="Home">
+
+            <span>Home</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- SEKOLAH -->
+
+        <a
+            href="sekolah.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/sekolah.jpg"
+                class="menu-logo"
+                alt="Sekolah">
+
+            <span>Sekolah</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- MUDA -->
+
+        <a
+            href="muda.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/muda.jpg"
+                class="menu-logo"
+                alt="Muda">
+
+            <span>Muda</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- PUBLIK -->
+
+        <a
+            href="publik.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/publik.jpg"
+                class="menu-logo"
+                alt="Publik">
+
+            <span>Publik</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- HIJAB -->
+
+        <a
+            href="hijab.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/hijab.jpg"
+                class="menu-logo"
+                alt="Hijab">
+
+            <span>Hijab</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+        <!-- PRONSTAR -->
+
+        <a
+            href="pronstar.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/pronstar.jpg"
+                class="menu-logo"
+                alt="Pronstar">
+
+            <span>Pronstar</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header>
+
+
+    <button
+        id="menuBtn"
+        type="button"
+        aria-label="Buka menu"
+        aria-controls="sidebar"
+        aria-expanded="false">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+    <div class="logo">
+
+        <img
+            src="Asupan Hijab.png.jpg"
+            alt="Asupan Hijab">
+
+    </div>
+
+
+    <div class="blank"></div>
+
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+    <h1>
+        Syarat & Ketentuan
+    </h1>
+
+    <p>
+        Ketentuan penggunaan dan aturan layanan
+        website Asupan Hijab.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main>
+
+
+    <article class="content-box">
+
+
+        <!-- =================================================
+             UPDATE
+        ================================================== -->
+
+        <div class="updated">
+
+            <i class="fa-solid fa-calendar-days"></i>
+
+            <span>
+                Terakhir diperbarui: 10 Agustus 2026
+            </span>
+
+        </div>
+
+
+        <!-- =================================================
+             PENDAHULUAN
+        ================================================== -->
+
+        <h2>
+            1. Pendahuluan
+        </h2>
+
+        <p>
+            Selamat datang di Asupan Hijab. Dengan mengakses
+            dan menggunakan website ini, Anda dianggap telah
+            membaca, memahami, dan menyetujui Syarat & Ketentuan
+            yang berlaku.
+        </p>
+
+        <p>
+            Apabila Anda tidak menyetujui sebagian atau seluruh
+            ketentuan yang tercantum di halaman ini, mohon untuk
+            tidak menggunakan layanan website ini.
+        </p>
+
+
+        <!-- =================================================
+             PENGGUNAAN WEBSITE
+        ================================================== -->
+
+        <h2>
+            2. Penggunaan Website
+        </h2>
+
+        <p>
+            Website ini disediakan untuk memberikan informasi
+            dan layanan kepada pengunjung. Anda setuju untuk
+            menggunakan website secara bertanggung jawab dan
+            sesuai dengan hukum serta peraturan yang berlaku.
+        </p>
+
+        <ul>
+
+            <li>
+                Tidak menggunakan website untuk tujuan yang
+                melanggar hukum.
+            </li>
+
+            <li>
+                Tidak mencoba mengganggu keamanan atau
+                operasional website.
+            </li>
+
+            <li>
+                Tidak melakukan tindakan yang dapat merugikan
+                website atau pengguna lainnya.
+            </li>
+
+            <li>
+                Tidak menggunakan sistem website untuk melakukan
+                aktivitas otomatis yang berlebihan atau
+                mengganggu layanan.
+            </li>
+
+        </ul>
+
+
+        <!-- =================================================
+             KONTEN WEBSITE
+        ================================================== -->
+
+        <h2>
+            3. Konten Website
+        </h2>
+
+        <p>
+            Informasi, gambar, desain, teks, logo, dan elemen
+            lain yang tersedia di website dapat digunakan untuk
+            keperluan penyajian layanan website.
+        </p>
+
+        <p>
+            Kami berusaha menjaga agar informasi yang tersedia
+            tetap relevan dan diperbarui. Namun, kami tidak
+            menjamin bahwa seluruh informasi akan selalu lengkap,
+            akurat, atau bebas dari kesalahan.
+        </p>
+
+
+        <!-- =================================================
+             TAUTAN PIHAK KETIGA
+        ================================================== -->
+
+        <h2>
+            4. Tautan dan Layanan Pihak Ketiga
+        </h2>
+
+        <p>
+            Website dapat memuat tautan, iklan, atau layanan
+            yang berasal dari pihak ketiga. Pihak ketiga tersebut
+            dapat memiliki kebijakan dan ketentuan penggunaan
+            yang berbeda.
+        </p>
+
+        <p>
+            Kami tidak bertanggung jawab atas isi, kebijakan,
+            keamanan, atau praktik yang dilakukan oleh website
+            pihak ketiga.
+        </p>
+
+
+        <!-- =================================================
+             IKLAN
+        ================================================== -->
+
+        <h2>
+            5. Iklan
+        </h2>
+
+        <p>
+            Website dapat menampilkan iklan dari jaringan
+            periklanan pihak ketiga. Tampilan dan isi iklan
+            dapat berubah berdasarkan sistem penyedia iklan.
+        </p>
+
+        <p>
+            Setiap transaksi atau interaksi yang dilakukan
+            pengguna dengan pihak pengiklan merupakan tanggung
+            jawab pengguna dan pihak pengiklan tersebut.
+        </p>
+
+
+        <!-- =================================================
+             KETERSEDIAAN WEBSITE
+        ================================================== -->
+
+        <h2>
+            6. Ketersediaan Layanan
+        </h2>
+
+        <p>
+            Kami berusaha menjaga website agar dapat diakses
+            dengan baik. Namun, website dapat mengalami gangguan
+            sementara karena pemeliharaan, pembaruan sistem,
+            masalah hosting, jaringan, atau faktor lain di luar
+            kendali kami.
+        </p>
+
+        <div class="info-box">
+
+            <p>
+                <i class="fa-solid fa-circle-info"></i>
+                Kami tidak menjamin bahwa website akan selalu
+                tersedia tanpa gangguan atau kesalahan.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             BATAS TANGGUNG JAWAB
+        ================================================== -->
+
+        <h2>
+            7. Batas Tanggung Jawab
+        </h2>
+
+        <p>
+            Sejauh diizinkan oleh hukum yang berlaku, kami tidak
+            bertanggung jawab atas kerugian yang timbul akibat
+            penggunaan atau ketidakmampuan menggunakan website,
+            termasuk gangguan teknis atau layanan pihak ketiga.
+        </p>
+
+
+        <!-- =================================================
+             PERUBAHAN
+        ================================================== -->
+
+        <h2>
+            8. Perubahan Syarat & Ketentuan
+        </h2>
+
+        <p>
+            Kami dapat memperbarui atau mengubah Syarat &
+            Ketentuan ini sewaktu-waktu apabila diperlukan.
+            Perubahan akan berlaku setelah diperbarui pada
+            halaman ini.
+        </p>
+
+        <p>
+            Penggunaan website setelah adanya perubahan berarti
+            Anda menerima ketentuan yang telah diperbarui.
+        </p>
+
+
+        <!-- =================================================
+             HUKUM YANG BERLAKU
+        ================================================== -->
+
+        <h2>
+            9. Hukum yang Berlaku
+        </h2>
+
+        <p>
+            Syarat & Ketentuan ini ditafsirkan dan dilaksanakan
+            berdasarkan hukum yang berlaku di wilayah hukum
+            Republik Indonesia, sepanjang berlaku dan relevan
+            terhadap penggunaan website.
+        </p>
+
+
+        <!-- =================================================
+             HUBUNGI KAMI
+        ================================================== -->
+
+        <h2>
+            10. Hubungi Kami
+        </h2>
+
+        <p>
+            Apabila Anda memiliki pertanyaan mengenai Syarat &
+            Ketentuan ini, Anda dapat menghubungi pengelola
+            website melalui halaman kontak yang tersedia.
+        </p>
+
+
+        <div class="contact-box">
+
+            <h3>
+                <i class="fa-solid fa-envelope"></i>
+                Pertanyaan?
+            </h3>
+
+            <p>
+                Silakan kunjungi halaman Kontak untuk
+                mendapatkan informasi lebih lanjut.
+            </p>
+
+        </div>
+
+
+    </article>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+
+    <div class="footer-logo">
+
+        <img
+            src="Asupan Hijab.png.jpg"
+            alt="Asupan Hijab">
+
+    </div>
+
+
+    <p>
+        © 2026 Asupan Hijab. Semua hak dilindungi.
+    </p>
+
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT SIDEBAR
+========================================================= -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        const menuBtn =
+            document.getElementById(
+                "menuBtn"
+            );
+
+        const sidebar =
+            document.getElementById(
+                "sidebar"
+            );
+
+        const overlay =
+            document.getElementById(
+                "overlay"
+            );
+
+
+        /* ================================================
+           BUKA SIDEBAR
+        ================================================= */
+
+        function openSidebar(){
+
+            if(
+                !sidebar ||
+                !overlay
+            ){
+
+                return;
+
+            }
+
+
+            sidebar.classList.add(
+                "active"
+            );
+
+
+            overlay.classList.add(
+                "active"
+            );
+
+
+            if(menuBtn){
+
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    "true"
+                );
+
+            }
+
+        }
+
+
+        /* ================================================
+           TUTUP SIDEBAR
+        ================================================= */
+
+        function closeSidebar(){
+
+            if(
+                !sidebar ||
+                !overlay
+            ){
+
+                return;
+
+            }
+
+
+            sidebar.classList.remove(
+                "active"
+            );
+
+
+            overlay.classList.remove(
+                "active"
+            );
+
+
+            if(menuBtn){
+
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            }
+
+        }
+
+
+        /* ================================================
+           TOMBOL MENU
+        ================================================= */
+
+        if(menuBtn){
+
+            menuBtn.addEventListener(
+                "click",
+                function(){
+
+                    if(
+                        sidebar &&
+                        sidebar.classList.contains(
+                            "active"
+                        )
+                    ){
+
+                        closeSidebar();
+
+                    }else{
+
+                        openSidebar();
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        /* ================================================
+           OVERLAY
+        ================================================= */
+
+        if(overlay){
+
+            overlay.addEventListener(
+                "click",
+                closeSidebar
+            );
+
+        }
+
+
+        /* ================================================
+           ESCAPE KEY
+        ================================================= */
+
+        document.addEventListener(
+            "keydown",
+            function(event){
+
+                if(
+                    event.key === "Escape"
+                ){
+
+                    closeSidebar();
+
+                }
+
+            }
+        );
+
+
+        /* ================================================
+           LINK SIDEBAR
+        ================================================= */
+
+        if(sidebar){
+
+            const links =
+                sidebar.querySelectorAll(
+                    "a"
+                );
+
+
+            links.forEach(
+                function(link){
+
+                    link.addEventListener(
+                        "click",
+                        function(){
+
+                            closeSidebar();
+
+                        }
+                    );
+
+                }
+            );
+
+        }
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
