@@ -1539,87 +1539,6 @@ footer p{
 
     border-radius:13px;
 
-    font-size:14px;
-
-    font-weight:500;
-
-    box-shadow:
-        0 3px 8px
-        rgba(0,0,0,.10);
-
-    transition:
-        all .25s ease;
-
-}
-
-
-/* =========================================================
-   ICON
-========================================================= */
-
-.footer-links a i{
-
-    width:24px;
-
-    min-width:24px;
-
-    text-align:center;
-
-    font-size:18px;
-
-}
-
-
-/* =========================================================
-   TEKS
-========================================================= */
-
-.footer-links a span{
-
-    text-align:left;
-
-}
-
-
-/* =========================================================
-   HOVER
-========================================================= */
-
-.footer-links a:hover{
-
-    background:
-        rgba(255,255,255,.20);
-
-    transform:
-        translateX(5px);
-
-    box-shadow:
-        0 6px 15px
-        rgba(0,0,0,.18);
-
-}
-
-
-/* =========================================================
-   GARIS
-========================================================= */
-
-.footer-divider{
-
-    width:100%;
-
-    height:1px;
-
-    margin:
-        30px 0 18px;
-
-    background:
-        rgba(255,255,255,.25);
-
-}
-
-
-/* =========================================================
    COPYRIGHT
 ========================================================= */
 
@@ -1794,12 +1713,175 @@ footer p{
 ========================================================= */
 
 .footer-links a{
+/* =========================================================
+   ASUPAN HIJAB - FOOTER OTOMATIS
+   SATU FOOTER
+   SATU LOGO
+   LOGO LANDSCAPE / MEMANJANG
+========================================================= */
+
+
+/* =========================================================
+   FOOTER UTAMA
+========================================================= */
+
+.footer{
 
     width:100%;
 
-    max-width:360px;
+    margin-top:50px;
 
-    min-height:50px;
+    padding:45px 20px 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d47a1,
+            #1976d2
+        );
+
+    color:#fff;
+
+    box-shadow:
+        0 -5px 20px
+        rgba(0,0,0,.15);
+
+}
+
+
+/* =========================================================
+   FOOTER INNER
+========================================================= */
+
+.footer-inner{
+
+    width:100%;
+
+    max-width:600px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+}
+
+
+/* =========================================================
+   LOGO FOOTER
+   SATU LOGO
+   LANDSCAPE / PANJANG
+========================================================= */
+
+.footer-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:220px;
+
+    height:90px;
+
+    margin:0 auto 28px;
+
+    padding:0;
+
+    text-decoration:none;
+
+}
+
+
+/* =========================================================
+   FOTO LOGO
+========================================================= */
+
+.footer-logo img{
+
+    display:block;
+
+    width:220px;
+
+    height:90px;
+
+    max-width:none;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    border-radius:16px;
+
+    border:
+        3px solid
+        rgba(255,255,255,.95);
+
+    background:#fff;
+
+    box-shadow:
+
+        0 8px 22px
+        rgba(0,0,0,.35),
+
+        0 0 0 1px
+        rgba(255,255,255,.15);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+/* =========================================================
+   EFEK LOGO
+========================================================= */
+
+.footer-logo:hover img{
+
+    transform:
+        translateY(-3px)
+        scale(1.02);
+
+    box-shadow:
+
+        0 12px 30px
+        rgba(0,0,0,.45);
+
+}
+
+
+/* =========================================================
+   MENU FOOTER
+========================================================= */
+
+.footer-links{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+/* =========================================================
+   TOMBOL FOOTER
+========================================================= */
+
+.footer-links a{
+
+    width:100%;
+
+    max-width:380px;
+
+    min-height:52px;
 
     padding:
         12px 18px;
@@ -1821,16 +1903,20 @@ footer p{
 
     border:
         1px solid
-        rgba(255,255,255,.18);
+        rgba(255,255,255,.20);
 
-    border-radius:12px;
+    border-radius:13px;
 
     font-size:14px;
 
     font-weight:500;
 
+    box-shadow:
+        0 3px 8px
+        rgba(0,0,0,.10);
+
     transition:
-        .25s ease;
+        all .25s ease;
 
 }
 
@@ -1841,9 +1927,9 @@ footer p{
 
 .footer-links a i{
 
-    width:25px;
+    width:24px;
 
-    min-width:25px;
+    min-width:24px;
 
     text-align:center;
 
@@ -1853,7 +1939,7 @@ footer p{
 
 
 /* =========================================================
-   TEKS
+   TEKS MENU
 ========================================================= */
 
 .footer-links a span{
@@ -1864,7 +1950,7 @@ footer p{
 
 
 /* =========================================================
-   HOVER
+   HOVER MENU
 ========================================================= */
 
 .footer-links a:hover{
@@ -1873,17 +1959,17 @@ footer p{
         rgba(255,255,255,.20);
 
     transform:
-        translateY(-2px);
+        translateX(5px);
 
     box-shadow:
-        0 5px 15px
+        0 6px 15px
         rgba(0,0,0,.18);
 
 }
 
 
 /* =========================================================
-   GARIS
+   GARIS FOOTER
 ========================================================= */
 
 .footer-divider{
@@ -1899,3 +1985,202 @@ footer p{
         rgba(255,255,255,.25);
 
 }
+
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.footer-copy{
+
+    font-size:11px;
+
+    line-height:1.6;
+
+    color:
+        rgba(255,255,255,.80);
+
+}
+
+
+/* =========================================================
+   PASTIKAN FOOTER LAMA TIDAK MUNCUL
+========================================================= */
+
+/*
+   Footer otomatis menggunakan class .footer.
+   Elemen footer lain yang bukan .footer akan
+   dihapus oleh JavaScript.
+*/
+
+body > footer:not(.footer){
+
+    display:none !important;
+
+}
+
+
+/* =========================================================
+   HP <= 768PX
+========================================================= */
+
+@media(max-width:768px){
+
+    .footer{
+
+        margin-top:40px;
+
+        padding:
+            35px 15px 18px;
+
+    }
+
+
+    /* LOGO LANDSCAPE */
+
+    .footer-logo{
+
+        width:190px;
+
+        height:78px;
+
+        margin-bottom:23px;
+
+    }
+
+
+    .footer-logo img{
+
+        width:190px;
+
+        height:78px;
+
+        border-radius:14px;
+
+    }
+
+
+    /* MENU */
+
+    .footer-links{
+
+        gap:9px;
+
+    }
+
+
+    .footer-links a{
+
+        width:100%;
+
+        max-width:350px;
+
+        min-height:48px;
+
+        padding:
+            11px 15px;
+
+        font-size:13px;
+
+    }
+
+
+    .footer-links a i{
+
+        width:23px;
+
+        min-width:23px;
+
+        font-size:17px;
+
+    }
+
+
+    .footer-divider{
+
+        margin:
+            25px 0 15px;
+
+    }
+
+}
+
+
+/* =========================================================
+   HP KECIL <= 480PX
+========================================================= */
+
+@media(max-width:480px){
+
+    .footer{
+
+        margin-top:35px;
+
+        padding:
+            30px 12px 15px;
+
+    }
+
+
+    .footer-logo{
+
+        width:170px;
+
+        height:70px;
+
+        margin-bottom:20px;
+
+    }
+
+
+    .footer-logo img{
+
+        width:170px;
+
+        height:70px;
+
+        border-radius:13px;
+
+    }
+
+
+    .footer-links a{
+
+        max-width:330px;
+
+        min-height:46px;
+
+        padding:
+            10px 13px;
+
+        font-size:12px;
+
+    }
+
+
+    .footer-links a i{
+
+        width:22px;
+
+        min-width:22px;
+
+        font-size:16px;
+
+    }
+
+
+    .footer-divider{
+
+        margin:
+            22px 0 13px;
+
+    }
+
+
+    .footer-copy{
+
+        font-size:10px;
+
+    }
+
+   }
