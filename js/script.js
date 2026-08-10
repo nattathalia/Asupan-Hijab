@@ -767,17 +767,7 @@ function loadFooter(){
                     <img
                         src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
                         alt="Asupan Hijab">
-
-                    <h3>Asupan Hijab</h3>
-
-                    <p>
-                        Informasi, profil, dan konten umum yang disajikan
-                        secara informatif dan terstruktur.
-                    </p>
-
-                </div>
-
-
+                        
                 <!-- MENU FOOTER -->
                 <div class="footer-menu">
 
@@ -807,20 +797,8 @@ function loadFooter(){
 
             </div>
 
-
-            <!-- GARIS -->
-            <div class="footer-line"></div>
-
-
-            <!-- COPYRIGHT -->
-            <div class="footer-bottom">
-
                 <p>
                     © 2026 Asupan Hijab. All Rights Reserved.
-                </p>
-
-                <p>
-                    Dibuat untuk memberikan informasi yang mudah diakses.
                 </p>
 
             </div>
