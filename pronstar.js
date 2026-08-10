@@ -297,104 +297,104 @@ const models = [
     },
 
    {
-        name: "Lulu Chun",
+        name: "Mao Hamasaki",
 
         photo:
-            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+            "https://asupanhijab.xyz/MaoHamasaki.jpg", 
 
         categories: [
             "asia"
         ],
 
         birth:
-            "14.1.2001 (Usia: 25)",
+            "10.1.1991 (Usia: 35)",
 
         country:
-            "China",
+            "Jepang",
 
         weight:
-            "95 lbs (43 kg)",
+            "100 lbs (45 kg)",
 
         height:
-            "5′ 0″ (152 cm)",
+            "7′ 0″ (158 cm)",
 
         breastSize:
             "32 D",
 
         active:
-            "2020 - sekarang",
+            "2017 - sekarang",
     },
 
    {
-        name: "Lulu Chun",
+        name: "Mahiro Tadai",
 
         photo:
-            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+            "https://asupanhijab.xyz/MahiroTadai.jpg", 
 
         categories: [
             "asia"
         ],
 
         birth:
-            "14.1.2001 (Usia: 25)",
+            "14.1.1998 (Usia: 27)",
 
         country:
-            "China",
+            "Jepang",
 
         weight:
-            "95 lbs (43 kg)",
+            "100 lbs (45 kg)",
 
         height:
-            "5′ 0″ (152 cm)",
+            "6′ 0″ (160 cm)",
 
         breastSize:
-            "32 D",
+            "28 D",
 
         active:
-            "2020 - sekarang",
+            "2019 - sekarang",
     },
 
    {
-        name: "Lulu Chun",
+        name: "Aimi Yoshikawa",
 
         photo:
-            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+            "https://asupanhijab.xyz/Aimi-Yoshikawa.jpg", 
 
         categories: [
             "asia"
         ],
 
         birth:
-            "14.1.2001 (Usia: 25)",
+            "27.10.1999(Usia: 27)",
 
         country:
-            "China",
+            "Jepang",
 
         weight:
-            "95 lbs (43 kg)",
+            "100 lbs (50 kg)",
 
         height:
-            "5′ 0″ (152 cm)",
+            "6′ 0″ (160 cm)",
 
         breastSize:
-            "32 D",
+            "30 D",
 
         active:
-            "2020 - sekarang",
+            "2018 - sekarang",
     },
 
    {
-        name: "Lulu Chun",
+        name: "Reiko Kobayakawa",
 
         photo:
-            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+            "https://asupanhijab.xyz/Reiko-Kobayakawa.jpg", 
 
         categories: [
             "asia"
         ],
 
         birth:
-            "14.1.2001 (Usia: 25)",
+            "14.12.1990 (Usia: 36)",
 
         country:
             "China",
@@ -409,7 +409,7 @@ const models = [
             "32 D",
 
         active:
-            "2020 - sekarang",
+            "2017 - sekarang",
     },
 
    {
