@@ -65,62 +65,559 @@ const models = [
 
 
     {
-        name: "Model Korea 1",
+        name: "Lulu Chun",
 
         photo:
-            "https://asupanhijab.xyz/model-3.jpg",
+            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
 
         categories: [
             "asia"
         ],
 
         birth:
-            "5 Mei 1999",
+            "14.1.2001 (Usia: 25)",
 
         country:
-            "Korea Selatan",
+            "China",
 
-        profession:
-            "Model",
+        weight:
+            "95 lbs (43 kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "32 D",
 
         active:
             "2020 - sekarang",
-
-        description:
-            "Model fashion dan kreator konten."
     },
 
-
     {
-        name: "Model Hijab 1",
+        name: "Kendra Spade",
 
         photo:
-            "https://asupanhijab.xyz/may%20thai.jpg",
+            "https://asupanhijab.xyz/Kendra-Spade.jpg", 
 
         categories: [
-            "asia",
-            "hijab"
+            "asia"
         ],
 
         birth:
-            "10 Oktober 1998",
+            "14.1.2001 (Usia: 25)",
 
         country:
-            "Indonesia",
+            "Pilipina",
 
-        profession:
-            "Model Fashion",
+        weight:
+            "129 lbs (59 kg)",
+
+        height:
+            "5′ 4″ (163 cm)",
+
+        breastSize:
+            "28 D",
 
         active:
-            "2019 - sekarang",
+            "2017 - sekarang",
+    },
 
-        description:
-            "Model yang aktif dalam dunia fashion dan modest wear."
-    }
+    {
+        name: "Marica-Hase.jpeg",
+
+        photo:
+            "https://asupanhijab.xyz/Marica-Hase.jpeg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "26.9.1981 (Usia: 44)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "95 lbs (43kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "27 D",
+
+        active:
+            "2017 - sekarang",
+    },
+
+   {
+        name: "Eimi Fukada",
+
+        photo:
+            "https://asupanhijab.xyz/Eimi-Fukada.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "18.03.1998 (Usia: 28)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "90 lbs (41 kg)",
+
+        height:
+            "5′ 2″ (158 cm)",
+
+        breastSize:
+            "28 D",
+
+        active:
+            "2017 - sekarang",
+    },
+
+   {
+        name: "SaikaKawakita",
+
+        photo:
+            "https://asupanhijab.xyz/SaikaKawakita.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "18.03.1998 (Usia: 28)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "100 lbs (45 kg)",
+
+        height:
+            "5′ 2″ (158 cm)",
+
+        breastSize:
+            "28 D",
+
+        active:
+            "2018 - sekarang",
+    },
+
+   {
+        name: "Mia Nanasawa",
+
+        photo:
+            "https://asupanhijab.xyz/Mia-Nanasawa.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "13.12.1998 (Usia: 27)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "93 lbs (42 kg)",
+
+        height:
+            "5′ 0″ (155 cm)",
+
+        breastSize:
+            "30 D",
+
+        active:
+            "2018 - sekarang",
+    },
+
+   {
+        name: "RihoFujimori",
+
+        photo:
+            "https://asupanhijab.xyz/RihoFujimori4.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "03.12.1996 (Usia: 29",
+
+        country:
+            "Jepang",
+
+        weight:
+            "98 lbs (45 kg)",
+
+        height:
+            "6′ 0″ (160 cm)",
+
+        breastSize:
+            "28 D",
+
+        active:
+            "2017 - sekarang",
+    },
+
+   {
+        name: "Lulu Chun",
+
+        photo:
+            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "14.1.2001 (Usia: 25)",
+
+        country:
+            "China",
+
+        weight:
+            "95 lbs (43 kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "32 D",
+
+        active:
+            "2020 - sekarang",
+    },
+
+   {
+        name: "Lulu Chun",
+
+        photo:
+            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "14.1.2001 (Usia: 25)",
+
+        country:
+            "China",
+
+        weight:
+            "95 lbs (43 kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "32 D",
+
+        active:
+            "2020 - sekarang",
+    },
+
+   {
+        name: "Lulu Chun",
+
+        photo:
+            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "14.1.2001 (Usia: 25)",
+
+        country:
+            "China",
+
+        weight:
+            "95 lbs (43 kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "32 D",
+
+        active:
+            "2020 - sekarang",
+    },
+
+   {
+        name: "Lulu Chun",
+
+        photo:
+            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "14.1.2001 (Usia: 25)",
+
+        country:
+            "China",
+
+        weight:
+            "95 lbs (43 kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "32 D",
+
+        active:
+            "2020 - sekarang",
+    },
+
+   {
+        name: "Lulu Chun",
+
+        photo:
+            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "14.1.2001 (Usia: 25)",
+
+        country:
+            "China",
+
+        weight:
+            "95 lbs (43 kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "32 D",
+
+        active:
+            "2020 - sekarang",
+    },
+
+   {
+        name: "Lulu Chun",
+
+        photo:
+            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "14.1.2001 (Usia: 25)",
+
+        country:
+            "China",
+
+        weight:
+            "95 lbs (43 kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "32 D",
+
+        active:
+            "2020 - sekarang",
+    },
+
+   {
+        name: "Lulu Chun",
+
+        photo:
+            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "14.1.2001 (Usia: 25)",
+
+        country:
+            "China",
+
+        weight:
+            "95 lbs (43 kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "32 D",
+
+        active:
+            "2020 - sekarang",
+    },
+
+   
+{
+        name: "Lulu Chun",
+
+        photo:
+            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "14.1.2001 (Usia: 25)",
+
+        country:
+            "China",
+
+        weight:
+            "95 lbs (43 kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "32 D",
+
+        active:
+            "2020 - sekarang",
+    },
+
+   {
+        name: "Lulu Chun",
+
+        photo:
+            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "14.1.2001 (Usia: 25)",
+
+        country:
+            "China",
+
+        weight:
+            "95 lbs (43 kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "32 D",
+
+        active:
+            "2020 - sekarang",
+    },
+
+   {
+        name: "Lulu Chun",
+
+        photo:
+            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "14.1.2001 (Usia: 25)",
+
+        country:
+            "China",
+
+        weight:
+            "95 lbs (43 kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "32 D",
+
+        active:
+            "2020 - sekarang",
+    },
+
+   {
+        name: "Lulu Chun",
+
+        photo:
+            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "14.1.2001 (Usia: 25)",
+
+        country:
+            "China",
+
+        weight:
+            "95 lbs (43 kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "32 D",
+
+        active:
+            "2020 - sekarang",
+    },
+
+   
+{
+        name: "Lulu Chun",
+
+        photo:
+            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "14.1.2001 (Usia: 25)",
+
+        country:
+            "China",
+
+        weight:
+            "95 lbs (43 kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "32 D",
+
+        active:
+            "2020 - sekarang",
+    },
 
 ];
-
-
 /* ======================================================
    KATEGORI
 ====================================================== */
