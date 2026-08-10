@@ -656,76 +656,6 @@ main{
     transform:none;
 }
 
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer{
-    width:100%;
-
-    max-width:900px;
-
-    margin:25px auto 20px;
-
-    padding:16px 20px;
-
-    text-align:center;
-
-    background:#fafafa;
-
-    border:
-        1px solid #e5e5e5;
-
-    border-radius:14px;
-
-    box-shadow:
-        0 3px 12px rgba(0,0,0,.05);
-}
-
-
-/* =========================================================
-   FOOTER LOGO
-   UKURAN MENGIKUTI LOGO HEADER
-========================================================= */
-
-.footer-logo{
-    width:100%;
-
-    display:flex;
-
-    justify-content:center;
-    align-items:center;
-
-    margin-bottom:7px;
-}
-
-.footer-logo img{
-    width:auto;
-
-    height:70px;
-
-    max-width:180px;
-
-    object-fit:contain;
-}
-
-
-/* =========================================================
-   FOOTER TEXT
-========================================================= */
-
-footer p{
-    margin:0;
-
-    font-size:12px;
-
-    color:#666;
-
-    line-height:1.5;
-}
-
-
 /* =========================================================
    SCROLLBAR WEBSITE
 ========================================================= */
@@ -918,42 +848,6 @@ footer p{
     }
 
 
-    /* =========================
-       FOOTER HP
-    ========================= */
-
-    footer{
-        width:
-            calc(100% - 24px);
-
-        max-width:none;
-
-        margin:
-            20px auto 15px;
-
-        padding:
-            12px 15px;
-
-        border-radius:12px;
-    }
-
-    .footer-logo{
-        margin-bottom:5px;
-    }
-
-    .footer-logo img{
-        height:60px;
-
-        max-width:155px;
-    }
-
-    footer p{
-        font-size:11px;
-    }
-
-}
-
-
 /* =========================================================
    MOBILE KECIL <= 480PX
 ========================================================= */
@@ -1047,35 +941,6 @@ footer p{
 
         font-size:15px;
     }
-
-
-    /* =========================
-       FOOTER HP KECIL
-    ========================= */
-
-    footer{
-        width:
-            calc(100% - 20px);
-
-        margin:
-            18px auto 12px;
-
-        padding:
-            10px 12px;
-    }
-
-    .footer-logo img{
-        height:55px;
-
-        max-width:140px;
-    }
-
-    footer p{
-        font-size:10px;
-    }
-
-}
-
 
 /* =========================================================
    TABLET 769PX - 999PX
@@ -1197,151 +1062,6 @@ footer p{
             1px solid #ddd;
     }
 
-}
-
-/* ======================================================
-   FOOTER OTOMATIS
-====================================================== */
-
-.footer{
-    width:100%;
-    margin-top:50px;
-    padding:45px 20px 20px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #0d47a1,
-            #1976d2
-        );
-
-    color:#fff;
-
-    box-shadow:
-        0 -5px 20px rgba(0,0,0,.12);
-}
-
-
-.footer-container{
-    width:100%;
-    max-width:1100px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:
-        minmax(0,1.5fr)
-        minmax(200px,1fr);
-
-    gap:50px;
-}
-
-
-/* ======================================================
-   FOOTER LOGO
-====================================================== */
-
-.footer-logo{
-    text-align:left;
-}
-
-
-.footer-logo img{
-    width:75px;
-    height:75px;
-
-    object-fit:cover;
-
-    border-radius:18px;
-
-    margin-bottom:12px;
-
-    border:
-        3px solid
-        rgba(255,255,255,.8);
-
-    box-shadow:
-        0 5px 15px
-        rgba(0,0,0,.3);
-}
-
-
-.footer-logo h3{
-    margin:0 0 8px;
-
-    font-size:22px;
-
-    font-weight:700;
-}
-
-
-.footer-logo p{
-    max-width:500px;
-
-    margin:0;
-
-    font-size:14px;
-
-    line-height:1.8;
-
-    color:
-        rgba(255,255,255,.85);
-}
-
-
-/* ======================================================
-   MENU FOOTER
-====================================================== */
-
-.footer-menu{
-    display:flex;
-
-    flex-direction:column;
-
-    gap:10px;
-}
-
-
-.footer-menu h3{
-    margin:0 0 8px;
-
-    font-size:20px;
-}
-
-
-.footer-menu a{
-    display:flex;
-
-    align-items:center;
-
-    gap:10px;
-
-    width:max-content;
-
-    color:#fff;
-
-    text-decoration:none;
-
-    font-size:14px;
-
-    transition:
-        .25s ease;
-}
-
-
-.footer-menu a i{
-    width:20px;
-
-    text-align:center;
-}
-
-
-.footer-menu a:hover{
-    transform:
-        translateX(5px);
-
-    color:#bbdefb;
 }
 
 
@@ -2358,128 +2078,369 @@ body > footer:not(.footer){
 
     }
 
+/* =========================================================
+   ASUPAN HIJAB - FOOTER
+   VERSI FINAL
+========================================================= */
 
-    /* MENU */
+.footer{
+    width:100%;
+    margin-top:45px;
+    padding:20px 15px 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d47a1,
+            #1976d2
+        );
+
+    color:#fff;
+
+    box-shadow:
+        0 -4px 15px rgba(0,0,0,.12);
+}
+
+
+/* =========================================================
+   CONTAINER FOOTER
+========================================================= */
+
+.footer-inner{
+    width:100%;
+    max-width:700px;
+
+    margin:0 auto;
+
+    text-align:center;
+}
+
+
+/* =========================================================
+   LOGO FOOTER
+   LANDSCAPE SEPERTI PADA FOTO
+========================================================= */
+
+.footer-logo{
+    width:100%;
+    max-width:480px;
+
+    height:auto;
+
+    margin:0 auto 20px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+}
+
+
+/* =========================================================
+   GAMBAR LOGO FOOTER
+========================================================= */
+
+.footer-logo img{
+    display:block;
+
+    width:100%;
+    max-width:480px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    object-position:center;
+
+    border:3px solid #fff;
+
+    border-radius:2px;
+
+    background:#fff;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.25);
+}
+
+
+/* =========================================================
+   LINK FOOTER
+========================================================= */
+
+.footer-links{
+    width:100%;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:5px 10px;
+
+    margin-top:5px;
+}
+
+
+/* =========================================================
+   LINK
+========================================================= */
+
+.footer-links a{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:4px;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    text-decoration:none;
+
+    background:transparent;
+
+    border:none;
+
+    padding:3px 0;
+
+    transition:
+        color .2s ease,
+        transform .2s ease;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.footer-links a i{
+    font-size:15px;
+
+    width:auto;
+}
+
+
+/* =========================================================
+   PEMBATAS LINK
+========================================================= */
+
+.footer-links a:not(:last-child)::after{
+    content:"";
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.footer-links a:hover{
+    color:#bbdefb;
+
+    transform:translateY(-1px);
+}
+
+
+/* =========================================================
+   GARIS PEMISAH
+========================================================= */
+
+.footer-divider{
+    width:100%;
+
+    height:1px;
+
+    margin:10px 0 8px;
+
+    background:
+        rgba(255,255,255,.20);
+}
+
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.footer-copy{
+    margin:0;
+
+    font-size:13px;
+
+    line-height:1.6;
+
+    color:#fff;
+
+    text-align:center;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:768px){
+
+    .footer{
+        margin-top:35px;
+
+        padding:
+            15px 10px 12px;
+    }
+
+
+    .footer-inner{
+        max-width:100%;
+    }
+
+
+    /* LOGO */
+
+    .footer-logo{
+        width:100%;
+
+        max-width:480px;
+
+        margin:
+            0 auto 15px;
+    }
+
+
+    .footer-logo img{
+        width:100%;
+
+        max-width:480px;
+
+        height:auto;
+
+        border:
+            3px solid #fff;
+
+        border-radius:2px;
+    }
+
+
+    /* LINK */
 
     .footer-links{
+        gap:
+            2px 8px;
 
-        gap:9px;
-
+        margin-top:2px;
     }
 
 
     .footer-links a{
-
-        width:100%;
-
-        max-width:350px;
-
-        min-height:48px;
-
-        padding:
-            11px 15px;
-
         font-size:13px;
 
+        padding:2px 0;
+
+        gap:3px;
     }
 
 
     .footer-links a i{
-
-        width:23px;
-
-        min-width:23px;
-
-        font-size:17px;
-
+        font-size:13px;
     }
 
 
+    /* DIVIDER */
+
     .footer-divider{
-
         margin:
-            25px 0 15px;
+            8px 0 6px;
+    }
 
+
+    /* COPYRIGHT */
+
+    .footer-copy{
+        font-size:12px;
     }
 
 }
 
 
 /* =========================================================
-   HP KECIL <= 480PX
+   HP KECIL
 ========================================================= */
 
 @media(max-width:480px){
 
     .footer{
-
-        margin-top:35px;
+        margin-top:30px;
 
         padding:
-            30px 12px 15px;
-
+            12px 8px 10px;
     }
 
 
     .footer-logo{
+        width:100%;
 
-        width:170px;
+        max-width:100%;
 
-        height:70px;
-
-        margin-bottom:20px;
-
+        margin-bottom:12px;
     }
 
 
     .footer-logo img{
+        width:100%;
 
-        width:170px;
+        max-width:100%;
 
-        height:70px;
+        height:auto;
 
-        border-radius:13px;
+        border-width:2px;
+    }
 
+
+    .footer-links{
+        gap:
+            1px 6px;
     }
 
 
     .footer-links a{
+        font-size:11px;
 
-        max-width:330px;
-
-        min-height:46px;
-
-        padding:
-            10px 13px;
-
-        font-size:12px;
-
+        gap:2px;
     }
 
 
     .footer-links a i{
-
-        width:22px;
-
-        min-width:22px;
-
-        font-size:16px;
-
+        font-size:11px;
     }
 
 
     .footer-divider{
-
         margin:
-            22px 0 13px;
-
+            7px 0 5px;
     }
 
 
     .footer-copy{
-
         font-size:10px;
-
     }
 
-   }
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print{
+
+    .footer{
+        display:none !important;
+    }
+
+}
