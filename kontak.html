@@ -1,0 +1,2713 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Kontak Kami | Asupan Hijab</title>
+
+<meta name="description"
+      content="Hubungi Asupan Hijab untuk pertanyaan, saran, laporan masalah, dan informasi lainnya.">
+
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff;
+
+    color:#111;
+
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+
+    display:block;
+}
+
+button,
+input,
+textarea{
+    font-family:'Poppins',sans-serif;
+}
+
+button{
+    cursor:pointer;
+}
+
+button:focus,
+input:focus,
+textarea:focus{
+    outline:none;
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+#overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    background:
+        rgba(0,0,0,.45);
+
+    display:none;
+
+    z-index:9998;
+}
+
+#overlay.active{
+
+    display:block;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar{
+
+    position:fixed;
+
+    top:0;
+    left:-290px;
+
+    width:280px;
+    height:100%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #0d47a1,
+            #1976d2
+        );
+
+    overflow-y:auto;
+
+    transition:
+        left .35s ease;
+
+    z-index:9999;
+
+    box-shadow:
+        8px 0 25px
+        rgba(0,0,0,.35);
+}
+
+.sidebar.active{
+
+    left:0;
+}
+
+
+/* =========================================================
+   SIDEBAR HEADER
+========================================================= */
+
+.sidebar-header{
+
+    padding:
+        22px 15px;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.15);
+}
+
+
+/* =========================================================
+   CATEGORY 3D BOX
+========================================================= */
+
+.category-3d-box{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:78px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:
+        12px 16px;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #e6e6e6
+        );
+
+    box-shadow:
+        0 10px 0 #b8b8b8,
+        0 15px 25px
+        rgba(0,0,0,.35),
+        inset 0 2px 3px
+        rgba(255,255,255,.9);
+
+    overflow:hidden;
+}
+
+
+/* =========================================================
+   CATEGORY ICON
+========================================================= */
+
+.category-icon{
+
+    width:50px;
+    height:50px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:15px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1976d2,
+            #0d47a1
+        );
+
+    color:#fff;
+
+    font-size:23px;
+
+    box-shadow:
+        0 5px 0 #07346f,
+        0 8px 15px
+        rgba(0,0,0,.3);
+
+    flex-shrink:0;
+}
+
+
+/* =========================================================
+   CATEGORY TEXT
+========================================================= */
+
+.category-text{
+
+    margin-left:14px;
+}
+
+.category-text h2{
+
+    margin:0;
+
+    font-size:21px;
+
+    font-weight:700;
+
+    color:#123c70;
+
+    text-shadow:
+        1px 1px 0 #fff,
+        2px 3px 4px
+        rgba(0,0,0,.2);
+}
+
+.category-text p{
+
+    margin:
+        2px 0 0;
+
+    font-size:12px;
+
+    font-weight:500;
+
+    color:#555;
+
+    letter-spacing:.5px;
+}
+
+
+/* =========================================================
+   MENU LIST
+========================================================= */
+
+.menu-list{
+
+    padding:18px;
+}
+
+
+/* =========================================================
+   MENU ITEM
+========================================================= */
+
+.menu-item{
+
+    position:relative;
+
+    display:block;
+
+    width:100%;
+    height:90px;
+
+    margin-bottom:15px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    background:#222;
+
+    box-shadow:
+        0 6px 15px
+        rgba(0,0,0,.25);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+
+/* =========================================================
+   MENU FOTO
+========================================================= */
+
+.menu-logo{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border:0;
+
+    transition:
+        transform .4s ease;
+}
+
+
+/* =========================================================
+   MENU OVERLAY
+========================================================= */
+
+.menu-item::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.10),
+            rgba(0,0,0,.70)
+        );
+
+    z-index:1;
+}
+
+
+/* =========================================================
+   MENU TEXT
+========================================================= */
+
+.menu-item span{
+
+    position:absolute;
+
+    left:18px;
+    bottom:15px;
+
+    z-index:2;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    text-shadow:
+        0 2px 6px
+        rgba(0,0,0,.8);
+}
+
+
+/* =========================================================
+   MENU ARROW
+========================================================= */
+
+.menu-item .fa-chevron-right{
+
+    position:absolute;
+
+    right:18px;
+    bottom:18px;
+
+    z-index:2;
+
+    color:#fff;
+
+    font-size:16px;
+
+    text-shadow:
+        0 2px 5px
+        rgba(0,0,0,.8);
+}
+
+
+/* =========================================================
+   MENU HOVER
+========================================================= */
+
+.menu-item:hover{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 10px 22px
+        rgba(0,0,0,.35);
+}
+
+.menu-item:hover .menu-logo{
+
+    transform:
+        scale(1.08);
+}
+
+
+/* =========================================================
+   SIDEBAR SCROLLBAR
+========================================================= */
+
+.sidebar::-webkit-scrollbar{
+
+    width:8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+
+    background:
+        #ffffff66;
+
+    border-radius:20px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+
+    position:sticky;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:space-between;
+
+    padding:
+        0 20px;
+
+    background:#fff;
+
+    box-shadow:
+        0 2px 10px
+        rgba(0,0,0,.08);
+
+    z-index:900;
+}
+
+
+/* =========================================================
+   MENU BUTTON
+========================================================= */
+
+#menuBtn{
+
+    width:50px;
+    height:50px;
+
+    border:none;
+
+    background:transparent;
+
+    color:#111;
+
+    font-size:32px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    transition:
+        transform .3s ease;
+}
+
+#menuBtn:hover{
+
+    transform:
+        rotate(90deg);
+}
+
+
+/* =========================================================
+   LOGO HEADER
+========================================================= */
+
+.logo{
+
+    flex:1;
+
+    height:100%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+}
+
+.logo img{
+
+    width:auto;
+
+    height:70px;
+
+    max-width:180px;
+
+    object-fit:contain;
+}
+
+
+/* =========================================================
+   HEADER RIGHT
+========================================================= */
+
+.blank{
+
+    width:50px;
+    height:50px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+
+    padding:
+        40px 20px 25px;
+
+    text-align:center;
+}
+
+.hero h1{
+
+    margin-bottom:12px;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:#111;
+}
+
+.hero p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    color:#666;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+main{
+
+    width:100%;
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:
+        10px 15px 40px;
+}
+
+
+/* =========================================================
+   CONTACT CONTAINER
+========================================================= */
+
+.contact-container{
+
+    width:100%;
+}
+
+
+/* =========================================================
+   CONTACT CARD
+========================================================= */
+
+.contact-card{
+
+    width:100%;
+
+    margin-bottom:25px;
+
+    padding:28px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    border:
+        1px solid #e9e9e9;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.07);
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.contact-card-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:18px;
+}
+
+
+/* =========================================================
+   CARD ICON
+========================================================= */
+
+.contact-icon{
+
+    width:55px;
+    height:55px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1976d2,
+            #0d47a1
+        );
+
+    color:#fff;
+
+    font-size:23px;
+
+    box-shadow:
+        0 5px 0 #07346f,
+        0 8px 15px
+        rgba(0,0,0,.20);
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.contact-card h2{
+
+    font-size:21px;
+
+    font-weight:700;
+
+    color:#123c70;
+}
+
+
+/* =========================================================
+   CARD TEXT
+========================================================= */
+
+.contact-card > p{
+
+    font-size:14px;
+
+    line-height:1.9;
+
+    color:#666;
+
+    margin-bottom:12px;
+}
+
+.contact-card > p:last-child{
+
+    margin-bottom:0;
+}
+
+
+/* =========================================================
+   CONTACT INFORMATION GRID
+========================================================= */
+
+.contact-info-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:20px;
+}
+
+
+/* =========================================================
+   INFORMATION BOX
+========================================================= */
+
+.info-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:18px;
+
+    background:#f7f9fc;
+
+    border:
+        1px solid #e6edf5;
+
+    border-radius:17px;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.info-box:hover{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,.07);
+}
+
+
+/* =========================================================
+   INFO ICON
+========================================================= */
+
+.info-icon{
+
+    width:48px;
+    height:48px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:14px;
+
+    background:#1976d2;
+
+    color:#fff;
+
+    font-size:19px;
+}
+
+
+/* =========================================================
+   INFO TEXT
+========================================================= */
+
+.info-text strong{
+
+    display:block;
+
+    font-size:14px;
+
+    color:#222;
+}
+
+.info-text span{
+
+    display:block;
+
+    margin-top:3px;
+
+    font-size:12px;
+
+    color:#777;
+
+    word-break:break-word;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.contact-form{
+
+    margin-top:20px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group{
+
+    margin-bottom:17px;
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:7px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:#333;
+}
+
+
+/* =========================================================
+   INPUT & TEXTAREA
+========================================================= */
+
+.form-group input,
+.form-group textarea{
+
+    width:100%;
+
+    border:
+        1px solid #ddd;
+
+    border-radius:13px;
+
+    background:#fafafa;
+
+    color:#111;
+
+    padding:
+        13px 15px;
+
+    font-size:13px;
+
+    transition:
+        border .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+}
+
+.form-group input{
+
+    height:48px;
+}
+
+.form-group textarea{
+
+    min-height:145px;
+
+    resize:vertical;
+
+    line-height:1.7;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+    background:#fff;
+
+    border-color:#1976d2;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(25,118,210,.12);
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.submit-btn{
+
+    width:100%;
+
+    min-height:50px;
+
+    border:none;
+
+    border-radius:13px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1976d2,
+            #0d47a1
+        );
+
+    color:#fff;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    box-shadow:
+        0 5px 0 #07346f;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+.submit-btn:hover{
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 7px 0 #07346f;
+}
+
+.submit-btn:active{
+
+    transform:
+        translateY(2px);
+
+    box-shadow:
+        0 2px 0 #07346f;
+}
+
+
+/* =========================================================
+   NOTICE
+========================================================= */
+
+.notice{
+
+    margin-top:17px;
+
+    padding:14px 16px;
+
+    border-radius:13px;
+
+    background:#f4f8fc;
+
+    border:
+        1px solid #dfeaf5;
+
+    color:#666;
+
+    font-size:12px;
+
+    line-height:1.7;
+}
+
+.notice i{
+
+    color:#1976d2;
+
+    margin-right:5px;
+}
+
+
+/* =========================================================
+   QUICK CONTACT
+========================================================= */
+
+.quick-contact{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:15px;
+
+    margin-top:20px;
+}
+
+.quick-box{
+
+    padding:20px 15px;
+
+    text-align:center;
+
+    border-radius:17px;
+
+    background:#f8faff;
+
+    border:
+        1px solid #e4edf8;
+
+    text-decoration:none;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.quick-box:hover{
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 10px 22px
+        rgba(0,0,0,.08);
+}
+
+.quick-box i{
+
+    width:48px;
+    height:48px;
+
+    margin:
+        0 auto 10px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:14px;
+
+    background:#1976d2;
+
+    color:#fff;
+
+    font-size:20px;
+}
+
+.quick-box strong{
+
+    display:block;
+
+    color:#123c70;
+
+    font-size:14px;
+}
+
+.quick-box span{
+
+    display:block;
+
+    margin-top:4px;
+
+    color:#777;
+
+    font-size:11px;
+}
+
+
+/* =========================================================
+   HOME BUTTON
+========================================================= */
+
+.home-button-area{
+
+    text-align:center;
+
+    margin-top:25px;
+}
+
+.home-button{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:8px;
+
+    padding:
+        13px 22px;
+
+    border-radius:12px;
+
+    background:#1976d2;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    box-shadow:
+        0 5px 0 #0d47a1;
+
+    transition:
+        transform .2s ease,
+        background .2s ease;
+}
+
+.home-button:hover{
+
+    background:#0d47a1;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:
+        20px 15px 22px;
+
+    text-align:center;
+
+    background:#fafafa;
+
+    border-top:
+        1px solid #e5e5e5;
+}
+
+
+/* =========================================================
+   FOOTER LOGO
+========================================================= */
+
+.footer-logo{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:8px;
+}
+
+.footer-logo img{
+
+    width:auto;
+
+    height:48px;
+
+    max-width:130px;
+
+    object-fit:contain;
+}
+
+
+/* =========================================================
+   FOOTER TEXT
+========================================================= */
+
+footer p{
+
+    font-size:12px;
+
+    line-height:1.6;
+
+    color:#666;
+}
+
+
+/* =========================================================
+   WEBSITE SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar{
+
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f2f2f2;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#bdbdbd;
+
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#888;
+}
+
+
+/* =========================================================
+   MOBILE <= 768PX
+========================================================= */
+
+@media(max-width:768px){
+
+    .sidebar{
+
+        width:260px;
+
+        left:-270px;
+    }
+
+
+    .sidebar-header{
+
+        padding:
+            18px 14px;
+    }
+
+
+    .category-3d-box{
+
+        min-height:70px;
+
+        border-radius:18px;
+    }
+
+
+    .category-icon{
+
+        width:44px;
+        height:44px;
+
+        font-size:20px;
+    }
+
+
+    .category-text h2{
+
+        font-size:19px;
+    }
+
+
+    header{
+
+        height:80px;
+
+        padding:
+            0 15px;
+    }
+
+
+    #menuBtn{
+
+        width:45px;
+        height:45px;
+
+        font-size:28px;
+    }
+
+
+    .logo img{
+
+        height:60px;
+
+        max-width:155px;
+    }
+
+
+    .blank{
+
+        width:45px;
+        height:45px;
+    }
+
+
+    .hero{
+
+        padding:
+            28px 15px 20px;
+    }
+
+
+    .hero h1{
+
+        font-size:25px;
+    }
+
+
+    .hero p{
+
+        font-size:14px;
+    }
+
+
+    main{
+
+        padding:
+            5px 15px 30px;
+    }
+
+
+    .contact-card{
+
+        padding:
+            22px 18px;
+
+        border-radius:17px;
+    }
+
+
+    .contact-card h2{
+
+        font-size:19px;
+    }
+
+
+    .contact-card > p{
+
+        font-size:13px;
+
+        line-height:1.8;
+    }
+
+
+    .contact-info-grid{
+
+        grid-template-columns:1fr;
+
+        gap:12px;
+    }
+
+
+    .quick-contact{
+
+        grid-template-columns:1fr;
+
+        gap:12px;
+    }
+
+
+    .quick-box{
+
+        display:flex;
+
+        align-items:center;
+
+        text-align:left;
+
+        gap:13px;
+
+        padding:15px;
+    }
+
+
+    .quick-box i{
+
+        margin:0;
+
+        flex-shrink:0;
+    }
+
+
+    .quick-box span{
+
+        margin-top:3px;
+    }
+
+
+    footer{
+
+        padding:
+            18px 15px 20px;
+    }
+
+
+    .footer-logo img{
+
+        height:42px;
+
+        max-width:120px;
+    }
+
+
+    footer p{
+
+        font-size:11px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE KECIL <= 480PX
+========================================================= */
+
+@media(max-width:480px){
+
+    header{
+
+        height:75px;
+    }
+
+
+    .logo img{
+
+        height:55px;
+
+        max-width:140px;
+    }
+
+
+    #menuBtn{
+
+        width:42px;
+        height:42px;
+
+        font-size:25px;
+    }
+
+
+    .blank{
+
+        width:42px;
+        height:42px;
+    }
+
+
+    .hero h1{
+
+        font-size:23px;
+    }
+
+
+    .contact-card{
+
+        padding:
+            20px 16px;
+    }
+
+
+    .contact-card-header{
+
+        gap:12px;
+    }
+
+
+    .contact-icon{
+
+        width:48px;
+        height:48px;
+
+        font-size:20px;
+    }
+
+
+    .contact-card h2{
+
+        font-size:18px;
+    }
+
+
+    .info-box{
+
+        padding:14px;
+    }
+
+
+    .info-icon{
+
+        width:43px;
+        height:43px;
+
+        font-size:17px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(min-width:769px)
+and (max-width:999px){
+
+    main{
+
+        max-width:900px;
+    }
+
+}
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media(min-width:1000px){
+
+    main{
+
+        max-width:1000px;
+    }
+
+
+    .hero h1{
+
+        font-size:34px;
+    }
+
+
+    .hero p{
+
+        font-size:16px;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print{
+
+    #sidebar,
+    #menuBtn,
+    #overlay{
+
+        display:none !important;
+    }
+
+
+    body{
+
+        background:#fff;
+    }
+
+}
+
+
+/* =========================================================
+   END CSS
+========================================================= */
+
+</style>
+
+</head>
+
+
+<body data-page="kontak">
+
+
+<!-- =========================================================
+     OVERLAY
+========================================================= -->
+
+<div id="overlay"></div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<div id="sidebar" class="sidebar">
+
+
+    <div class="sidebar-header">
+
+        <div class="category-3d-box">
+
+            <div class="category-icon">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+            </div>
+
+
+            <div class="category-text">
+
+                <h2>Menu</h2>
+
+                <p>Navigasi Website</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="menu-list">
+
+
+        <!-- HOME -->
+
+        <a
+            href="index.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                class="menu-logo"
+                alt="Home">
+
+            <span>
+                Home
+            </span>
+
+            <i
+                class="fa-solid fa-chevron-right">
+            </i>
+
+        </a>
+
+
+        <!-- TENTANG KAMI -->
+
+        <a
+            href="tentang-kami.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                class="menu-logo"
+                alt="Tentang Kami">
+
+            <span>
+                Tentang Kami
+            </span>
+
+            <i
+                class="fa-solid fa-chevron-right">
+            </i>
+
+        </a>
+
+
+        <!-- KONTAK -->
+
+        <a
+            href="kontak.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                class="menu-logo"
+                alt="Kontak">
+
+            <span>
+                Kontak
+            </span>
+
+            <i
+                class="fa-solid fa-chevron-right">
+            </i>
+
+        </a>
+
+
+        <!-- PRIVACY -->
+
+        <a
+            href="privacy-policy.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                class="menu-logo"
+                alt="Kebijakan Privasi">
+
+            <span>
+                Privasi
+            </span>
+
+            <i
+                class="fa-solid fa-chevron-right">
+            </i>
+
+        </a>
+
+
+        <!-- DISCLAIMER -->
+
+        <a
+            href="disclaimer.html"
+            class="menu-item">
+
+            <img
+                src="https://asupanhijab.xyz/Asupan%20Hijab.png.jpg"
+                class="menu-logo"
+                alt="Disclaimer">
+
+            <span>
+                Disclaimer
+            </span>
+
+            <i
+                class="fa-solid fa-chevron-right">
+            </i>
+
+        </a>
+
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header>
+
+
+    <button
+        id="menuBtn"
+        type="button"
+        aria-label="Buka menu"
+        aria-controls="sidebar"
+        aria-expanded="false">
+
+        <i
+            class="fa-solid fa-bars">
+        </i>
+
+    </button>
+
+
+    <div class="logo">
+
+        <img
+            src="Asupan Hijab.png.jpg"
+            alt="Asupan Hijab">
+
+    </div>
+
+
+    <div class="blank"></div>
+
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+    <h1>
+        Hubungi Kami
+    </h1>
+
+
+    <p>
+
+        Jika Anda memiliki pertanyaan,
+        saran, atau ingin melaporkan masalah
+        terkait website, silakan hubungi kami
+        melalui informasi yang tersedia.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main>
+
+    <div class="contact-container">
+
+
+        <!-- =================================================
+             INFORMASI KONTAK
+        ================================================== -->
+
+        <section class="contact-card">
+
+
+            <div class="contact-card-header">
+
+
+                <div class="contact-icon">
+
+                    <i
+                        class="fa-solid fa-address-book">
+                    </i>
+
+                </div>
+
+
+                <h2>
+                    Informasi Kontak
+                </h2>
+
+
+            </div>
+
+
+            <p>
+
+                Kami terbuka untuk menerima
+                pertanyaan, masukan, maupun
+                laporan mengenai website.
+
+            </p>
+
+
+            <div class="contact-info-grid">
+
+
+                <!-- EMAIL -->
+
+                <div class="info-box">
+
+
+                    <div class="info-icon">
+
+                        <i
+                            class="fa-solid fa-envelope">
+                        </i>
+
+                    </div>
+
+
+                    <div class="info-text">
+
+                        <strong>
+                            Email
+                        </strong>
+
+                        <span>
+                            email@asupanhijab.xyz
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- WEBSITE -->
+
+                <div class="info-box">
+
+
+                    <div class="info-icon">
+
+                        <i
+                            class="fa-solid fa-globe">
+                        </i>
+
+                    </div>
+
+
+                    <div class="info-text">
+
+                        <strong>
+                            Website
+                        </strong>
+
+                        <span>
+                            asupanhijab.xyz
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- WAKTU -->
+
+                <div class="info-box">
+
+
+                    <div class="info-icon">
+
+                        <i
+                            class="fa-solid fa-clock">
+                        </i>
+
+                    </div>
+
+
+                    <div class="info-text">
+
+                        <strong>
+                            Waktu Respons
+                        </strong>
+
+                        <span>
+                            Senin - Minggu
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- LOKASI -->
+
+                <div class="info-box">
+
+
+                    <div class="info-icon">
+
+                        <i
+                            class="fa-solid fa-location-dot">
+                        </i>
+
+                    </div>
+
+
+                    <div class="info-text">
+
+                        <strong>
+                            Lokasi
+                        </strong>
+
+                        <span>
+                            Indonesia
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FORM KONTAK
+        ================================================== -->
+
+        <section class="contact-card">
+
+
+            <div class="contact-card-header">
+
+
+                <div class="contact-icon">
+
+                    <i
+                        class="fa-solid fa-paper-plane">
+                    </i>
+
+                </div>
+
+
+                <h2>
+                    Kirim Pesan
+                </h2>
+
+
+            </div>
+
+
+            <p>
+
+                Isi formulir di bawah ini untuk
+                mengirim pesan kepada kami.
+
+            </p>
+
+
+            <form
+                id="contactForm"
+                class="contact-form">
+
+
+                <!-- NAMA -->
+
+                <div class="form-group">
+
+                    <label
+                        for="name">
+
+                        Nama
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Masukkan nama Anda"
+                        autocomplete="name"
+                        required>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label
+                        for="email">
+
+                        Email
+
+                    </label>
+
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Masukkan alamat email"
+                        autocomplete="email"
+                        required>
+
+                </div>
+
+
+                <!-- SUBJEK -->
+
+                <div class="form-group">
+
+                    <label
+                        for="subject">
+
+                        Subjek
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="Subjek pesan"
+                        required>
+
+                </div>
+
+
+                <!-- PESAN -->
+
+                <div class="form-group">
+
+                    <label
+                        for="message">
+
+                        Pesan
+
+                    </label>
+
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Tuliskan pesan Anda..."
+                        required></textarea>
+
+                </div>
+
+
+                <!-- BUTTON -->
+
+                <button
+                    type="submit"
+                    class="submit-btn">
+
+                    <i
+                        class="fa-solid fa-paper-plane">
+                    </i>
+
+                    Kirim Pesan
+
+                </button>
+
+
+            </form>
+
+
+            <div class="notice">
+
+                <i
+                    class="fa-solid fa-circle-info">
+                </i>
+
+                Form ini menyiapkan pesan untuk
+                dikirim melalui aplikasi email.
+                Pastikan alamat email tujuan sudah
+                diganti dengan email resmi Anda.
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =================================================
+             CARA MENGHUBUNGI
+        ================================================== -->
+
+        <section class="contact-card">
+
+
+            <div class="contact-card-header">
+
+
+                <div class="contact-icon">
+
+                    <i
+                        class="fa-solid fa-comments">
+                    </i>
+
+                </div>
+
+
+                <h2>
+                    Pilihan Kontak
+                </h2>
+
+
+            </div>
+
+
+            <p>
+
+                Pilih metode yang paling nyaman
+                untuk menghubungi kami.
+
+            </p>
+
+
+            <div class="quick-contact">
+
+
+                <!-- EMAIL -->
+
+                <a
+                    href="mailto:email@asupanhijab.xyz"
+                    class="quick-box">
+
+
+                    <i
+                        class="fa-solid fa-envelope">
+                    </i>
+
+
+                    <div>
+
+                        <strong>
+                            Email
+                        </strong>
+
+                        <span>
+                            Kirim email
+                        </span>
+
+                    </div>
+
+
+                </a>
+
+
+                <!-- WEBSITE -->
+
+                <a
+                    href="index.html"
+                    class="quick-box">
+
+
+                    <i
+                        class="fa-solid fa-house">
+                    </i>
+
+
+                    <div>
+
+                        <strong>
+                            Website
+                        </strong>
+
+                        <span>
+                            Kembali ke halaman utama
+                        </span>
+
+                    </div>
+
+
+                </a>
+
+
+                <!-- INFO -->
+
+                <a
+                    href="tentang-kami.html"
+                    class="quick-box">
+
+
+                    <i
+                        class="fa-solid fa-circle-info">
+                    </i>
+
+
+                    <div>
+
+                        <strong>
+                            Tentang Kami
+                        </strong>
+
+                        <span>
+                            Informasi website
+                        </span>
+
+                    </div>
+
+
+                </a>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =================================================
+             CATATAN
+        ================================================== -->
+
+        <section class="contact-card">
+
+
+            <div class="contact-card-header">
+
+
+                <div class="contact-icon">
+
+                    <i
+                        class="fa-solid fa-shield-halved">
+                    </i>
+
+                </div>
+
+
+                <h2>
+                    Laporan Masalah
+                </h2>
+
+
+            </div>
+
+
+            <p>
+
+                Jika Anda menemukan tautan yang
+                bermasalah, kesalahan informasi,
+                atau masalah teknis pada website,
+                silakan sertakan informasi yang
+                cukup agar kami dapat memeriksanya.
+
+            </p>
+
+
+            <p>
+
+                Untuk laporan teknis, sebaiknya
+                sertakan alamat halaman yang
+                mengalami masalah dan penjelasan
+                singkat mengenai kendalanya.
+
+            </p>
+
+
+        </section>
+
+
+        <!-- =================================================
+             HOME BUTTON
+        ================================================== -->
+
+        <div class="home-button-area">
+
+
+            <a
+                href="index.html"
+                class="home-button">
+
+                <i
+                    class="fa-solid fa-house">
+                </i>
+
+                Kembali ke Beranda
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+
+    <div class="footer-logo">
+
+        <img
+            src="Asupan Hijab.png.jpg"
+            alt="Asupan Hijab">
+
+    </div>
+
+
+    <p>
+        © 2026 Asupan Hijab
+    </p>
+
+
+    <p>
+        Semua hak dilindungi.
+    </p>
+
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+
+        /* =================================================
+           SIDEBAR
+        ================================================= */
+
+
+        const menuBtn =
+            document.getElementById(
+                "menuBtn"
+            );
+
+
+        const sidebar =
+            document.getElementById(
+                "sidebar"
+            );
+
+
+        const overlay =
+            document.getElementById(
+                "overlay"
+            );
+
+
+        function openSidebar(){
+
+
+            if(
+                !sidebar ||
+                !overlay
+            ){
+
+                return;
+
+            }
+
+
+            sidebar.classList.add(
+                "active"
+            );
+
+
+            overlay.classList.add(
+                "active"
+            );
+
+
+            if(menuBtn){
+
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    "true"
+                );
+
+            }
+
+        }
+
+
+        function closeSidebar(){
+
+
+            if(
+                !sidebar ||
+                !overlay
+            ){
+
+                return;
+
+            }
+
+
+            sidebar.classList.remove(
+                "active"
+            );
+
+
+            overlay.classList.remove(
+                "active"
+            );
+
+
+            if(menuBtn){
+
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            }
+
+        }
+
+
+        if(menuBtn){
+
+            menuBtn.addEventListener(
+                "click",
+                function(){
+
+
+                    if(
+                        sidebar &&
+                        sidebar.classList.contains(
+                            "active"
+                        )
+                    ){
+
+                        closeSidebar();
+
+                    }else{
+
+                        openSidebar();
+
+                    }
+
+
+                }
+            );
+
+        }
+
+
+        if(overlay){
+
+            overlay.addEventListener(
+                "click",
+                closeSidebar
+            );
+
+        }
+
+
+        /* =================================================
+           MENU LINK
+        ================================================= */
+
+
+        const menuLinks =
+            document.querySelectorAll(
+                ".menu-item"
+            );
+
+
+        menuLinks.forEach(
+            function(link){
+
+
+                link.addEventListener(
+                    "click",
+                    function(){
+
+                        closeSidebar();
+
+                    }
+                );
+
+
+            }
+        );
+
+
+        /* =================================================
+           ESC
+        ================================================= */
+
+
+        document.addEventListener(
+            "keydown",
+            function(event){
+
+
+                if(
+                    event.key === "Escape"
+                ){
+
+                    closeSidebar();
+
+                }
+
+
+            }
+        );
+
+
+        /* =================================================
+           CONTACT FORM
+        ================================================= */
+
+
+        const contactForm =
+            document.getElementById(
+                "contactForm"
+            );
+
+
+        if(contactForm){
+
+            contactForm.addEventListener(
+                "submit",
+                function(event){
+
+
+                    event.preventDefault();
+
+
+                    const name =
+                        document
+                        .getElementById(
+                            "name"
+                        )
+                        .value
+                        .trim();
+
+
+                    const email =
+                        document
+                        .getElementById(
+                            "email"
+                        )
+                        .value
+                        .trim();
+
+
+                    const subject =
+                        document
+                        .getElementById(
+                            "subject"
+                        )
+                        .value
+                        .trim();
+
+
+                    const message =
+                        document
+                        .getElementById(
+                            "message"
+                        )
+                        .value
+                        .trim();
+
+
+                    if(
+                        !name ||
+                        !email ||
+                        !subject ||
+                        !message
+                    ){
+
+                        alert(
+                            "Silakan lengkapi semua kolom terlebih dahulu."
+                        );
+
+                        return;
+
+                    }
+
+
+                    /*
+                     * GANTI EMAIL INI
+                     * dengan email tujuan Anda.
+                     */
+
+                    const tujuan =
+                        "email@asupanhijab.xyz";
+
+
+                    const body =
+                        "Nama: " +
+                        name +
+                        "\n\n" +
+
+                        "Email: " +
+                        email +
+                        "\n\n" +
+
+                        "Pesan:\n" +
+                        message;
+
+
+                    const mailto =
+                        "mailto:" +
+                        tujuan +
+
+                        "?subject=" +
+                        encodeURIComponent(
+                            subject
+                        ) +
+
+                        "&body=" +
+                        encodeURIComponent(
+                            body
+                        );
+
+
+                    window.location.href =
+                        mailto;
+
+
+                }
+            );
+
+        }
+
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
