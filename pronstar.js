@@ -12,6 +12,7 @@ const models = [
 
         categories: [
             "asia"
+           "muda"
         ],
 
         birth:
@@ -42,6 +43,7 @@ const models = [
 
         categories: [
             "asia"
+            "muda"
         ],
 
         birth:
@@ -72,6 +74,7 @@ const models = [
 
         categories: [
             "asia"
+            "muda"
         ],
 
         birth:
@@ -101,6 +104,7 @@ const models = [
 
         categories: [
             "asia"
+            "pantat besar"
         ],
 
         birth:
