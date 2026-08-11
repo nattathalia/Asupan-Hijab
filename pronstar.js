@@ -1140,6 +1140,257 @@ const models = [
         active:
             "2016 - sekarang"
     },
+   {
+
+          name: "London Keyes",
+
+        photo:
+            "https://asupanhijab.xyz/London-Keyes.jpg", 
+
+        categories: [
+            "asia", 
+            "pantat besar", 
+            "payudara besar"
+        ],
+
+        birth:
+            "18.8.1989 (Usia: 36)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "129 lbs (59 kg)",
+
+        height:
+            "5′ 4″ (163 cm)",
+
+        breastSize:
+            "34 D",
+
+        active:
+            "2010 - sekarang"
+    }, 
+
+   {
+
+          name: "Maria Nagai",
+
+        photo:
+            "https://asupanhijab.xyz/MariaNagai.jpg", 
+
+        categories: [
+            "asia", 
+            "pantat besar", 
+            "muda 18+", 
+            "payudara besar"
+        ],
+
+        birth:
+            "18.12.1996 (Usia: 29)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "127 lbs (58 kg)",
+
+        height:
+            "5′ 3″ (160 cm)",
+
+        breastSize:
+            "36 D",
+
+        active:
+            "2016 - sekarang"
+    }, 
+   {
+
+          name: "Miho Ichiki",
+
+        photo:
+            "https://asupanhijab.xyz/Miho-Ichiki.jpg", 
+
+        categories: [
+            "asia", 
+            "payudara"
+        ],
+
+        birth:
+            "29.11.1992 (Usia: 33)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "105 lbs (45 kg)",
+
+        height:
+            "5′ 2″ (157 cm)",
+
+        breastSize:
+            "28 D",
+
+        active:
+            "2017 - sekarang"
+    }, 
+
+   {
+
+          name: "Mio Ishikawa",
+
+        photo:
+            "https://asupanhijab.xyz/MioIshikawa.jpg", 
+
+        categories: [
+            "asia", 
+            "muda 18+"
+        ],
+
+        birth:
+            "29.03.2002 (Usia: 24)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "100 lbs (45 kg)",
+
+        height:
+            "5′ 3″ (165 cm)",
+
+        breastSize:
+            "27 D",
+
+        active:
+            "2021 - sekarang"
+    }, 
+
+    {
+
+          name: "Rara Anzai",
+
+        photo:
+            "https://asupanhijab.xyz/Rara-Anzai.jpg", 
+
+        categories: [
+            "asia", 
+            "payudara besar"
+        ],
+
+        birth:
+            "01.03.1994 (Usia: 32)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "110 lbs (48 kg)",
+
+        height:
+            "6′ 3″ (169 cm)",
+
+        breastSize:
+            "36 D",
+
+        active:
+            "2015 - sekarang"
+    }, 
+
+    {
+
+          name: "Rei Kamiki",
+
+        photo:
+            "https://asupanhijab.xyz/ReiKamiki.jpg", 
+
+        categories: [
+            "asia", 
+            "payudara besar"
+            "muda 18+"
+        ],
+
+        birth:
+            "20.12.1999 (Usia: 26)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "125 lbs (57 kg)",
+
+        height:
+            "5′ 7″ (170 cm)",
+
+        breastSize:
+            "34 D",
+
+        active:
+            "2021 - sekarang"
+    }, 
+
+     {
+
+          name: "Remu Suzumori",
+
+        photo:
+            "https://asupanhijab.xyz/Remu-Suzumori.jpg", 
+
+        categories: [
+            "asia", 
+            "muda 18+"
+        ],
+
+        birth:
+            "03.12.1997 (Usia: 28)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "98 lbs (48 kg)",
+
+        height:
+            "5′ 2″ (163 cm)",
+
+        breastSize:
+            "26 D",
+
+        active:
+            "2019 - sekarang"
+    }, 
+
+      {
+
+          name: "Shoko Takahashi",
+
+        photo:
+            "https://asupanhijab.xyz/Shoko-Takahashi.jpg", 
+
+        categories: [
+            "asia", 
+            "payudara besar"
+        ],
+
+        birth:
+            "13.05.1993 (Usia: 33)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "120 lbs (50 kg)",
+
+        height:
+            "6′ 3″ (170 cm)",
+
+        breastSize:
+            "32 D",
+
+        active:
+            "2021 - sekarang"
+    }, 
+
 
 ];
 /* ======================================================
