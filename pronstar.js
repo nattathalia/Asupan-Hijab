@@ -710,7 +710,7 @@ const models = [
             "https://asupanhijab.xyz/Kurea-Hasumi.jpg", 
 
         categories: [
-            "asia", 
+            "asia"
         ],
 
         birth:
@@ -762,18 +762,252 @@ const models = [
             "2019 - sekarang"
     },
 {
-        name: "Yui Hatano",
+        name: "June Liu",
 
         photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
+            "https://asupanhijab.xyz/June-Liu.jpg", 
 
         categories: [
-            "asia", 
-            " pantat besar"
+            "asia"
         ],
 
         birth:
-            "24.05.1988 (Usia: 38)",
+            "29.3.1998 (Usia: 28)",
+
+        country:
+            "China",
+
+        weight:
+            "98 lbs (46 kg)",
+
+        height:
+            "5′ 7″ (170 cm)",
+
+        breastSize:
+            "28 D",
+
+        active:
+            "2019 - sekarang"
+    },
+{
+        name: "Brenna Sparks",
+
+        photo:
+            "https://asupanhijab.xyz/Brenna-Sparks.jpg", 
+
+        categories: [
+            "asia", 
+            "pantat besar"
+            "payudara besar"
+        ],
+
+        birth:
+            "2.2.1992 (Usia: 34)",
+
+        country:
+            "Laos",
+
+        weight:
+            "121 lbs (55 kg)",
+
+        height:
+            "5′ 5″ (165 cm)",
+
+        breastSize:
+            "32 D",
+
+        active:
+            "2016 - sekarang"
+    },
+{
+        name: "Jade Kush",
+
+        photo:
+            "https://asupanhijab.xyz/Jade-Kush.jpg", 
+
+        categories: [
+            "asia", 
+            "pantat besar", 
+            " muda 18+"
+        ],
+
+        birth:
+            "27.9.1998 (Usia: 27)",
+
+        country:
+            "China",
+
+        weight:
+            "5′ 0″ (152 cm)",
+
+        height:
+            "105 lbs (48 kg)",
+
+        breastSize:
+            "28 D",
+
+        active:
+            "2018 - sekarang"
+    },
+{
+        name: "Jasmine Grey",
+
+        photo:
+            "https://asupanhijab.xyz/Jasmine-Grey.jpg", 
+
+        categories: [
+            "asia", 
+            "pantat besar"
+        ],
+
+        birth:
+            "11.4.1995 (Usia: 31)",
+
+        country:
+            "Pilipina",
+
+        weight:
+            "90 lbs (41 kg)",
+
+        height:
+            "4′ 9″ (145 cm)",
+
+        breastSize:
+            "26 D",
+
+        active:
+            "2016 - sekarang"
+    },
+{
+        name: "Sharon Lee",
+
+        photo:
+            "https://asupanhijab.xyz/Sharon-Lee.jpg", 
+
+        categories: [
+            "asia", 
+            "pantat besar", 
+            "payudara besar"
+        ],
+
+        birth:
+            "2.8.1988 (Usia: 38)",
+
+        country:
+            "Vietnam",
+
+        weight:
+            "121 lbs (55 kg)",
+
+        height:
+            "5′ 7″ (170 cm)",
+
+        breastSize:
+            "35 D",
+
+        active:
+            "2018 - sekarang"
+    },
+{
+        name: "Ember Snow",
+
+        photo:
+            "https://asupanhijab.xyz/Ember-Snow.jpg", 
+
+        categories: [
+            "asia", 
+            "pantat besar"
+        ],
+
+        birth:
+            "27.2.1991 (Usia: 35)",
+
+        country:
+            "Pilipina",
+
+        weight:
+            "94 lbs (43 kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "30 D",
+
+        active:
+            "2017 - sekarang"
+    },
+{
+        name: "Nicole Doshi",
+
+        photo:
+            "https://asupanhijab.xyz/Nicole-Doshi.jpg", 
+
+        categories: [
+            "asia", 
+            "pantat besar", 
+            "payudara besar"
+        ],
+
+        birth:
+            "12.5.1995 (Usia: 31)",
+
+        country:
+            "China",
+
+        weight:
+            "114 lbs (52 kg)",
+
+        height:
+            "5′ 3″ (160 cm)",
+
+        breastSize:
+            "34 D",
+
+        active:
+            "2019 - sekarang"
+    },
+{
+        name: "Honey Gold",
+
+        photo:
+            "https://asupanhijab.xyz/Honey-Gold.jpg", 
+
+        categories: [
+            "asia", 
+            "pantat besar"
+        ],
+
+        birth:
+            "9.7.1993 (Usia: 33)",
+
+        country:
+            "Campuran",
+
+        weight:
+            "121 lbs (55 kg)",
+
+        height:
+            "5′ 4″ (163 cm)",
+
+        breastSize:
+            "28 D",
+
+        active:
+            "2017 - sekarang"
+    },
+{
+        name: "Ai Uehara",
+
+        photo:
+            "https://asupanhijab.xyz/Ai-Uehara.jpeg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "12.11.1992 (Usia: 33)",
 
         country:
             "Jepang",
@@ -782,7 +1016,7 @@ const models = [
             "98 lbs (45 kg)",
 
         height:
-            "5′ 3″ (163 cm)",
+            "5′ 1″ (155 cm)",
 
         breastSize:
             "28 D",
@@ -791,18 +1025,18 @@ const models = [
             "2016 - sekarang"
     },
 {
-        name: "Yui Hatano",
+        name: "Asa Akira",
 
         photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
+            "https://asupanhijab.xyz/Asa-Akira.jpeg", 
 
         categories: [
             "asia", 
-            " pantat besar"
+            "pantat besar"
         ],
 
         birth:
-            "24.05.1988 (Usia: 38)",
+            "03.01.1986 (Usia: 40)",
 
         country:
             "Jepang",
@@ -811,7 +1045,35 @@ const models = [
             "98 lbs (45 kg)",
 
         height:
-            "5′ 3″ (163 cm)",
+            "5′ 2″ (157 cm)",
+
+        breastSize:
+            "29 D",
+
+        active:
+            "2018 - sekarang"
+    },
+{
+        name: "Avery Black",
+
+        photo:
+            "https://asupanhijab.xyz/Avery-Black.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "17.6.1992 (Usia: 34)",
+
+        country:
+            "Pilipina",
+
+        weight:
+            "94 lbs (43 kg)",
+
+        height:
+            "4′ 11″ (150 cm)",
 
         breastSize:
             "28 D",
@@ -820,321 +1082,60 @@ const models = [
             "2016 - sekarang"
     },
 {
-        name: "Yui Hatano",
+        name: "Kana Momonogi",
 
         photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
+            "https://asupanhijab.xyz/Kana-Momonogi.jpg", 
 
         categories: [
             "asia", 
-            " pantat besar"
+            "muda 18+"
         ],
 
         birth:
-            "24.05.1988 (Usia: 38)",
+            "24.12.1996 (Usia: 29)",
 
         country:
             "Jepang",
 
         weight:
-            "98 lbs (45 kg)",
+            "5 lbs (47 kg)",
 
         height:
             "5′ 3″ (163 cm)",
 
         breastSize:
-            "28 D",
-
-        active:
-            "2016 - sekarang"
-    },
-{
-        name: "Yui Hatano",
-
-        photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
-
-        categories: [
-            "asia", 
-            " pantat besar"
-        ],
-
-        birth:
-            "24.05.1988 (Usia: 38)",
-
-        country:
-            "Jepang",
-
-        weight:
-            "98 lbs (45 kg)",
-
-        height:
-            "5′ 3″ (163 cm)",
-
-        breastSize:
-            "28 D",
-
-        active:
-            "2016 - sekarang"
-    },
-{
-        name: "Yui Hatano",
-
-        photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
-
-        categories: [
-            "asia", 
-            " pantat besar"
-        ],
-
-        birth:
-            "24.05.1988 (Usia: 38)",
-
-        country:
-            "Jepang",
-
-        weight:
-            "98 lbs (45 kg)",
-
-        height:
-            "5′ 3″ (163 cm)",
-
-        breastSize:
-            "28 D",
-
-        active:
-            "2016 - sekarang"
-    },
-{
-        name: "Yui Hatano",
-
-        photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
-
-        categories: [
-            "asia", 
-            " pantat besar"
-        ],
-
-        birth:
-            "24.05.1988 (Usia: 38)",
-
-        country:
-            "Jepang",
-
-        weight:
-            "98 lbs (45 kg)",
-
-        height:
-            "5′ 3″ (163 cm)",
-
-        breastSize:
-            "28 D",
-
-        active:
-            "2016 - sekarang"
-    },
-{
-        name: "Yui Hatano",
-
-        photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
-
-        categories: [
-            "asia", 
-            " pantat besar"
-        ],
-
-        birth:
-            "24.05.1988 (Usia: 38)",
-
-        country:
-            "Jepang",
-
-        weight:
-            "98 lbs (45 kg)",
-
-        height:
-            "5′ 3″ (163 cm)",
-
-        breastSize:
-            "28 D",
-
-        active:
-            "2016 - sekarang"
-    },
-{
-        name: "Yui Hatano",
-
-        photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
-
-        categories: [
-            "asia", 
-            " pantat besar"
-        ],
-
-        birth:
-            "24.05.1988 (Usia: 38)",
-
-        country:
-            "Jepang",
-
-        weight:
-            "98 lbs (45 kg)",
-
-        height:
-            "5′ 3″ (163 cm)",
-
-        breastSize:
-            "28 D",
-
-        active:
-            "2016 - sekarang"
-    },
-{
-        name: "Yui Hatano",
-
-        photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
-
-        categories: [
-            "asia", 
-            " pantat besar"
-        ],
-
-        birth:
-            "24.05.1988 (Usia: 38)",
-
-        country:
-            "Jepang",
-
-        weight:
-            "98 lbs (45 kg)",
-
-        height:
-            "5′ 3″ (163 cm)",
-
-        breastSize:
-            "28 D",
-
-        active:
-            "2016 - sekarang"
-    },
-{
-        name: "Yui Hatano",
-
-        photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
-
-        categories: [
-            "asia", 
-            " pantat besar"
-        ],
-
-        birth:
-            "24.05.1988 (Usia: 38)",
-
-        country:
-            "Jepang",
-
-        weight:
-            "98 lbs (45 kg)",
-
-        height:
-            "5′ 3″ (163 cm)",
-
-        breastSize:
-            "28 D",
-
-        active:
-            "2016 - sekarang"
-    },
-{
-        name: "Yui Hatano",
-
-        photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
-
-        categories: [
-            "asia", 
-            " pantat besar"
-        ],
-
-        birth:
-            "24.05.1988 (Usia: 38)",
-
-        country:
-            "Jepang",
-
-        weight:
-            "98 lbs (45 kg)",
-
-        height:
-            "5′ 3″ (163 cm)",
-
-        breastSize:
-            "28 D",
-
-        active:
-            "2016 - sekarang"
-    },
-{
-        name: "Yui Hatano",
-
-        photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
-
-        categories: [
-            "asia", 
-            " pantat besar"
-        ],
-
-        birth:
-            "24.05.1988 (Usia: 38)",
-
-        country:
-            "Jepang",
-
-        weight:
-            "98 lbs (45 kg)",
-
-        height:
-            "5′ 3″ (163 cm)",
-
-        breastSize:
-            "28 D",
+            "26 D",
 
         active:
             "2016 - sekarang"
     },
    
 {
-        name: "Yui Hatano",
+        name: "Katana",
 
         photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
+            "https://asupanhijab.xyz/Katana.jpg", 
 
         categories: [
             "asia", 
-            " pantat besar"
+            "pantat besar"
         ],
 
         birth:
-            "24.05.1988 (Usia: 38)",
+            "11.6.1995 (Usia: 31)",
 
         country:
-            "Jepang",
+            "China",
 
         weight:
-            "98 lbs (45 kg)",
+            "98 lbs (48 kg)",
 
         height:
-            "5′ 3″ (163 cm)",
+            "5′ 3″ (165 cm)",
 
         breastSize:
-            "28 D",
+            "30 D",
 
         active:
             "2016 - sekarang"
