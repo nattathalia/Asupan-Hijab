@@ -128,7 +128,7 @@ const models = [
     },
 
     {
-        name: "Marica-Hase.jpeg",
+        name: "Marica Hase",
 
         photo:
             "https://asupanhijab.xyz/Marica-Hase.jpeg", 
@@ -1482,7 +1482,177 @@ const models = [
         active:
             "2015 - sekarang"
     }, 
+{
+        name: "hongkongdoll",
 
+        photo:
+            "https://asupanhijab.xyz/hongkongdoll.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "16.08.1999 (Usia: 27)",
+
+        country:
+            "Hongkong",
+
+        weight:
+            "120 lbs (50 kg)",
+
+        height:
+            "5′ 6″ (167 cm)",
+
+        breastSize:
+            "28 D",
+
+        active:
+            "2015 - sekarang"
+    }, 
+{
+        name: "yua mikami",
+
+        photo:
+            "https://asupanhijab.xyz/yua-mikami.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "16.08.1993 (Usia: 32)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "120 lbs (50 kg)",
+
+        height:
+            "5′ 2″ (160 cm)",
+
+        breastSize:
+            "28 D",
+
+        active:
+            "2015 - sekarang"
+    }, 
+{
+        name: "yua mikami",
+
+        photo:
+            "https://asupanhijab.xyz/yua-mikami.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "16.08.1993 (Usia: 32)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "120 lbs (50 kg)",
+
+        height:
+            "5′ 2″ (160 cm)",
+
+        breastSize:
+            "28 D",
+
+        active:
+            "2015 - sekarang"
+    }, 
+
+{
+        name: "yua mikami",
+
+        photo:
+            "https://asupanhijab.xyz/yua-mikami.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "16.08.1993 (Usia: 32)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "120 lbs (50 kg)",
+
+        height:
+            "5′ 2″ (160 cm)",
+
+        breastSize:
+            "28 D",
+
+        active:
+            "2015 - sekarang"
+    }, 
+
+{
+        name: "yua mikami",
+
+        photo:
+            "https://asupanhijab.xyz/yua-mikami.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "16.08.1993 (Usia: 32)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "120 lbs (50 kg)",
+
+        height:
+            "5′ 2″ (160 cm)",
+
+        breastSize:
+            "28 D",
+
+        active:
+            "2015 - sekarang"
+    }, 
+{
+        name: "yua mikami",
+
+        photo:
+            "https://asupanhijab.xyz/yua-mikami.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "16.08.1993 (Usia: 32)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "120 lbs (50 kg)",
+
+        height:
+            "5′ 2″ (160 cm)",
+
+        breastSize:
+            "28 D",
+
+        active:
+            "2015 - sekarang"
+    }, 
+   
 ];
 /* ======================================================
    KATEGORI
