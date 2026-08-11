@@ -1391,6 +1391,125 @@ const models = [
             "2021 - sekarang"
     }, 
 
+    {
+        name: "Vina Sky",
+
+        photo:
+            "https://asupanhijab.xyz/Vina-Sky.jpg", 
+       
+        categories: [
+            "asia", 
+            "muda 18+"
+        ],
+
+        birth:
+            "14.3.1999 (Usia: 27)",
+
+        country:
+            "Vietnam",
+
+        weight:
+            "84 lbs (38 kg)",
+
+        height:
+            "5′ 0″ (152 cm)",
+
+        breastSize:
+            "26 D",
+
+        active:
+            "2019 - sekarang"
+    }, 
+
+{
+        name: "anri okita",
+
+        photo:
+            "https://asupanhijab.xyz/anri-okita.jpg", 
+
+        categories: [
+            "asia", 
+            "payudara besar"
+        ],
+
+        birth:
+            "28.10.1986 (Usia: 39)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "90 lbs (45 kg)",
+
+        height:
+            "5′ 6″ (168 cm)",
+
+        breastSize:
+            "34 D",
+
+        active:
+            "2016 - sekarang"
+    }, 
+
+{
+        name: "Shoko Takahashi",
+
+        photo:
+            "https://asupanhijab.xyz/Shoko-Takahashi.jpg", 
+
+        categories: [
+            "asia", 
+            "payudara besar"
+        ],
+
+        birth:
+            "13.05.1993 (Usia: 33)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "120 lbs (50 kg)",
+
+        height:
+            "6′ 3″ (170 cm)",
+
+        breastSize:
+            "32 D",
+
+        active:
+            "2021 - sekarang"
+    }, 
+
+
+{
+        name: "yua mikami",
+
+        photo:
+            "https://asupanhijab.xyz/yua-mikami.jpg", 
+
+        categories: [
+            "asia"
+        ],
+
+        birth:
+            "16.08.1993 (Usia: 32)",
+
+        country:
+            "Jepang",
+
+        weight:
+            "120 lbs (50 kg)",
+
+        height:
+            "5′ 2″ (160 cm)",
+
+        breastSize:
+            "28 D",
+
+        active:
+            "2015 - sekarang"
+    }, 
 
 ];
 /* ======================================================
