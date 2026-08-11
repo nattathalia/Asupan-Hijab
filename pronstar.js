@@ -1455,9 +1455,6 @@ const models = [
             "2016 - sekarang"
     }, 
 
-
-
-
 {
         name: "yua mikami",
 
@@ -1515,32 +1512,34 @@ const models = [
             "2015 - sekarang"
     }, 
 {
-        name: "yua mikami",
+        name: "Alina Angel",
 
         photo:
-            "https://asupanhijab.xyz/yua-mikami.jpg", 
+            "https://asupanhijab.xyz/AlinaAngel.jpg", 
 
         categories: [
-            "asia"
+            "arap", 
+             "pantat besar", 
+             "payudara besar"
         ],
 
         birth:
-            "16.08.1993 (Usia: 32)",
+            "11.11.1987 (Usia: 38)",
 
         country:
-            "Jepang",
+            "Irak",
 
         weight:
-            "120 lbs (50 kg)",
+            "138 lbs (63 kg)",
 
         height:
-            "5′ 2″ (160 cm)",
+            "5′ 7″ (170 cm)",
 
         breastSize:
-            "28 D",
+            "32 D",
 
         active:
-            "2015 - sekarang"
+            "2022 - sekarang"
     }, 
 {
         name: "Asa Akira",
@@ -1601,60 +1600,64 @@ const models = [
     }, 
 
 {
-        name: "yua mikami",
+        name: "Anissa Kate",
 
         photo:
-            "https://asupanhijab.xyz/yua-mikami.jpg", 
+            "https://asupanhijab.xyz/AnissaKate.jpg", 
 
         categories: [
-            "asia"
+            "arap", 
+            "pantat besar", 
+            "payudara besar"
         ],
 
         birth:
-            "16.08.1993 (Usia: 32)",
+            "07.05.1987 (Usia: 39)",
 
         country:
-            "Jepang",
+            "Mesir",
 
         weight:
-            "120 lbs (50 kg)",
+            "112 lbs (51 kg)",
 
         height:
-            "5′ 2″ (160 cm)",
+            "5′ 4″ (163 cm)",
 
         breastSize:
-            "28 D",
+            "34 D",
 
         active:
-            "2015 - sekarang"
+            "2022 - sekarang"
     }, 
 {
-        name: "yua mikami",
+        name: "Arabelle Raphael",
 
         photo:
-            "https://asupanhijab.xyz/yua-mikami.jpg", 
+            "https://asupanhijab.xyz/ArabelleRaphael.jpg", 
 
         categories: [
-            "asia"
+            "arap", 
+            "pantat besar", 
+            "payudara besar"
         ],
 
         birth:
-            "16.08.1993 (Usia: 32)",
+            "27.02.1989 (Usia: 37)",
 
         country:
-            "Jepang",
+            "Iran",
 
         weight:
-            "120 lbs (50 kg)",
+            "114 lbs (52 kg)",
 
         height:
-            "5′ 2″ (160 cm)",
+            "5′ 4″ (163 cm)",
 
         breastSize:
-            "28 D",
+            "32 D",
 
         active:
-            "2015 - sekarang"
+            "2018 - sekarang"
     }, 
    
 ];
