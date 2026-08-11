@@ -225,7 +225,7 @@ const models = [
 
         categories: [
             "asia",
-            "muda"
+            "muda 18+"
         ],
 
         birth:
