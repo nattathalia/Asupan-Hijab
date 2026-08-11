@@ -590,7 +590,7 @@ const models = [
 
         categories: [
             "asia", 
-            " pantat besar", 
+            "pantat besar", 
              "payudara besar"
         ],
 
@@ -622,7 +622,7 @@ const models = [
 
         categories: [
             "asia", 
-            " pantat besar"
+            "pantat besar"
         ],
 
         birth:
@@ -645,120 +645,121 @@ const models = [
     },
 
    {
-        name: "Yui Hatano",
+        name: "Alina Li",
 
         photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
+            "https://asupanhijab.xyz/Alina-Li.jpg", 
 
         categories: [
             "asia", 
-            " pantat besar"
+            "pantat besar"
         ],
 
         birth:
-            "24.05.1988 (Usia: 38)",
+            "8.9.1994 (Usia: 31)",
 
         country:
-            "Jepang",
+            "China",
 
         weight:
-            "98 lbs (45 kg)",
+            "110 lbs (50 kg)",
 
         height:
-            "5′ 3″ (163 cm)",
+            "5′ 7″ (170 cm)",
 
         breastSize:
             "28 D",
 
         active:
-            "2016 - sekarang"
+            "2015 - sekarang"
     },
 {
-        name: "Yui Hatano",
+        name: "Kinna Dior",
 
         photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
+            "https://asupanhijab.xyz/Kinna-Dior.jpg", 
 
         categories: [
             "asia", 
-            " pantat besar"
+            "pantat besar", 
+            "payudara besar"
         ],
 
         birth:
-            "24.05.1988 (Usia: 38)",
+            "17.11.1969 (Usia: 56)",
 
         country:
-            "Jepang",
+            "China",
 
         weight:
-            "98 lbs (45 kg)",
+            "110 lbs (48 kg)",
 
         height:
-            "5′ 3″ (163 cm)",
+            "6′ 4″ (169 cm)",
 
         breastSize:
-            "28 D",
+            "32 D",
 
         active:
-            "2016 - sekarang"
+            "2000 - sekarang"
     },
 {
-        name: "Yui Hatano",
+        name: "Kurea Hasumi",
 
         photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
+            "https://asupanhijab.xyz/Kurea-Hasumi.jpg", 
 
         categories: [
             "asia", 
-            " pantat besar"
         ],
 
         birth:
-            "24.05.1988 (Usia: 38)",
+            "03.12.1991 (Usia: 34)",
 
         country:
             "Jepang",
 
         weight:
-            "98 lbs (45 kg)",
+            "98 lbs (48 kg)",
 
         height:
-            "5′ 3″ (163 cm)",
+            " 6′ 4″ (168 cm)",
 
         breastSize:
             "28 D",
 
         active:
-            "2016 - sekarang"
+            "2014 - sekarang"
     },
 {
-        name: "Yui Hatano",
+        name: "HonjoSuzu.jpg",
 
         photo:
-            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
+            "https://asupanhijab.xyz/HonjoSuzu.jpg", 
 
         categories: [
             "asia", 
-            " pantat besar"
+            "pantat besar", 
+            "muda 18+"
         ],
 
         birth:
-            "24.05.1988 (Usia: 38)",
+            "11.07.1997 (Usia: 29)",
 
         country:
             "Jepang",
 
         weight:
-            "98 lbs (45 kg)",
+            "108 lbs (49 kg)",
 
         height:
             "5′ 3″ (163 cm)",
 
         breastSize:
-            "28 D",
+            "27 D",
 
         active:
-            "2016 - sekarang"
+            "2019 - sekarang"
     },
 {
         name: "Yui Hatano",
