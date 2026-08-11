@@ -467,7 +467,7 @@ const models = [
 
         categories: [
             "asia",
-            " payudara besar"
+            "payudara besar"
            
         ],
 
@@ -732,7 +732,7 @@ const models = [
             "2014 - sekarang"
     },
 {
-        name: "HonjoSuzu.jpg",
+        name: "Honjo Suzu",
 
         photo:
             "https://asupanhijab.xyz/HonjoSuzu.jpg", 
@@ -797,7 +797,7 @@ const models = [
 
         categories: [
             "asia", 
-            "pantat besar"
+            "pantat besar", 
             "payudara besar"
         ],
 
@@ -828,7 +828,7 @@ const models = [
         categories: [
             "asia", 
             "pantat besar", 
-            " muda 18+"
+            "muda 18+"
         ],
 
         birth:
@@ -838,10 +838,10 @@ const models = [
             "China",
 
         weight:
-            "5′ 0″ (152 cm)",
+            "105 lbs (48 kg)",
 
         height:
-            "105 lbs (48 kg)",
+            "5′ 0″ (152 cm)",
 
         breastSize:
             "28 D",
