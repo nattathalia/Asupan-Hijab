@@ -1103,7 +1103,7 @@ const models = [
             "Jepang",
 
         weight:
-            "5 lbs (47 kg)",
+            "105 lbs (47 kg)",
 
         height:
             "5′ 3″ (163 cm)",
