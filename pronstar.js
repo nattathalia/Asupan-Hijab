@@ -194,7 +194,7 @@ const models = [
 
         categories: [
             "asia", 
-            "muda 18+"
+            "muda 18+", 
             "payudara besar"
         ],
 
@@ -284,7 +284,7 @@ const models = [
             "https://asupanhijab.xyz/AkariMitani.jpg", 
 
         categories: [
-            "asia"
+            "asia", 
             "muda 18+"
         ],
 
