@@ -430,29 +430,30 @@ const models = [
     },
 
    {
-        name: "Lulu Chun",
+        name: "Eva Lovia",
 
         photo:
-            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+            "https://asupanhijab.xyz/Eva-Lovia.jpg", 
 
         categories: [
-            "asia"
+            "asia", 
+            "pantat besar"
         ],
 
         birth:
-            "14.1.2001 (Usia: 25)",
+            "29.5.1989 (Usia: 37)",
 
         country:
-            "China",
+            "Philipina",
 
         weight:
-            "95 lbs (43 kg)",
+            "105 lbs (50 kg)",
 
         height:
-            "5′ 0″ (152 cm)",
+            "6′ 0″ (169 cm)",
 
         breastSize:
-            "32 D",
+            "30 D",
 
         active:
             "2020 - sekarang",
@@ -484,7 +485,7 @@ const models = [
             "32 D",
 
         active:
-            "2020 - sekarang",
+            "2014 - sekarang",
     },
 
    
