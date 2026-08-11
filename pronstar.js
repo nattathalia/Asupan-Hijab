@@ -1539,61 +1539,61 @@ const models = [
             "2015 - sekarang"
     }, 
 {
-        name: "yua mikami",
+        name: "Asa Akira",
 
         photo:
-            "https://asupanhijab.xyz/yua-mikami.jpg", 
+            "https://asupanhijab.xyz/Asa-Akira.jpeg", 
 
         categories: [
             "asia"
         ],
 
         birth:
-            "16.08.1993 (Usia: 32)",
+            "3.1.1986 (Usia: 40)",
 
         country:
             "Jepang",
 
         weight:
-            "120 lbs (50 kg)",
+            "106 lbs (48 kg)",
 
         height:
-            "5′ 2″ (160 cm)",
+            "5′ 2″ (157 cm)",
 
         breastSize:
             "28 D",
 
         active:
-            "2015 - sekarang"
+            "2018 - sekarang"
     }, 
 
 {
-        name: "yua mikami",
+        name: "Luna-Okko.jpg",
 
         photo:
-            "https://asupanhijab.xyz/yua-mikami.jpg", 
+            "https://asupanhijab.xyz/Luna-Okko.jpg", 
 
         categories: [
             "asia"
         ],
 
         birth:
-            "16.08.1993 (Usia: 32)",
+            "4.12.1994 (Usia: 31)",
 
         country:
-            "Jepang",
+            "Vietnam",
 
         weight:
-            "120 lbs (50 kg)",
+            "88 lbs (40 kg)",
 
         height:
-            "5′ 2″ (160 cm)",
+            "5′ 2″ (157 cm)",
 
         breastSize:
             "28 D",
 
         active:
-            "2015 - sekarang"
+            "2020 - sekarang"
     }, 
 
 {
