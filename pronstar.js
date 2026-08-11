@@ -94,7 +94,7 @@ const models = [
             "32 D",
 
         active:
-            "2020 - sekarang",
+            "2020 - sekarang"
     },
 
     {
@@ -124,7 +124,7 @@ const models = [
             "28 D",
 
         active:
-            "2017 - sekarang",
+            "2017 - sekarang"
     },
 
     {
@@ -153,7 +153,7 @@ const models = [
             "27 D",
 
         active:
-            "2017 - sekarang",
+            "2017 - sekarang"
     },
 
    {
@@ -183,7 +183,7 @@ const models = [
             "28 D",
 
         active:
-            "2017 - sekarang",
+            "2017 - sekarang"
     },
 
    {
@@ -214,7 +214,7 @@ const models = [
             "28 D",
 
         active:
-            "2018 - sekarang",
+            "2018 - sekarang"
     },
 
    {
@@ -244,7 +244,7 @@ const models = [
             "30 D",
 
         active:
-            "2018 - sekarang",
+            "2018 - sekarang"
     },
 
    {
@@ -274,7 +274,7 @@ const models = [
             "28 D",
 
         active:
-            "2017 - sekarang",
+            "2017 - sekarang"
     },
 
    {
@@ -304,7 +304,7 @@ const models = [
             "26 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 
    {
@@ -334,7 +334,7 @@ const models = [
             "32 D",
 
         active:
-            "2017 - sekarang",
+            "2017 - sekarang"
     },
 
    {
@@ -365,7 +365,7 @@ const models = [
             "28 D",
 
         active:
-            "2019 - sekarang",
+            "2019 - sekarang"
     },
 
    {
@@ -396,7 +396,7 @@ const models = [
             "30 D",
 
         active:
-            "2018 - sekarang",
+            "2018 - sekarang"
     },
 
    {
@@ -426,7 +426,7 @@ const models = [
             "32 D",
 
         active:
-            "2017 - sekarang",
+            "2017 - sekarang"
     },
 
    {
@@ -456,7 +456,7 @@ const models = [
             "30 D",
 
         active:
-            "2015 - sekarang",
+            "2015 - sekarang"
     },
 
    {
@@ -487,7 +487,7 @@ const models = [
             "38 D",
 
         active:
-            "2013 - sekarang",
+            "2013 - sekarang"
     },
 
    
@@ -519,7 +519,7 @@ const models = [
             "32 D",
 
         active:
-            "2014 - sekarang",
+            "2014 - sekarang"
     },
 
    {
@@ -549,7 +549,7 @@ const models = [
             "30 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 
    {
@@ -579,7 +579,7 @@ const models = [
             "33 D",
 
         active:
-            "2019 - sekarang",
+            "2019 - sekarang"
     },
 
    {
@@ -610,7 +610,7 @@ const models = [
             "30 D",
 
         active:
-            "2017 - sekarang",
+            "2017 - sekarang"
     },
 
    
@@ -641,7 +641,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 
    {
@@ -671,7 +671,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 {
         name: "Yui Hatano",
@@ -700,7 +700,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 {
         name: "Yui Hatano",
@@ -729,7 +729,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 {
         name: "Yui Hatano",
@@ -758,7 +758,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 {
         name: "Yui Hatano",
@@ -787,7 +787,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 {
         name: "Yui Hatano",
@@ -816,7 +816,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 {
         name: "Yui Hatano",
@@ -845,7 +845,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 {
         name: "Yui Hatano",
@@ -874,7 +874,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 {
         name: "Yui Hatano",
@@ -903,7 +903,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 {
         name: "Yui Hatano",
@@ -932,7 +932,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 {
         name: "Yui Hatano",
@@ -961,7 +961,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 {
         name: "Yui Hatano",
@@ -990,7 +990,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 {
         name: "Yui Hatano",
@@ -1019,7 +1019,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 {
         name: "Yui Hatano",
@@ -1048,7 +1048,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 {
         name: "Yui Hatano",
@@ -1077,7 +1077,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 {
         name: "Yui Hatano",
@@ -1106,10 +1106,9 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
-            "2016 - sekarang",
-    },
+   
 {
         name: "Yui Hatano",
 
@@ -1137,7 +1136,7 @@ const models = [
             "28 D",
 
         active:
-            "2016 - sekarang",
+            "2016 - sekarang"
     },
 
 ];
