@@ -12,7 +12,7 @@ const models = [
 
         categories: [
             "asia", 
-           "muda"
+           "muda 18+"
         ],
 
         birth:
@@ -43,7 +43,7 @@ const models = [
 
         categories: [
             "asia", 
-            "muda"
+            "muda 18+"
         ],
 
         birth:
@@ -74,7 +74,8 @@ const models = [
 
         categories: [
             "asia", 
-            "muda"
+            "muda 18+", 
+            "pirang"
         ],
 
         birth:
@@ -162,7 +163,8 @@ const models = [
             "https://asupanhijab.xyz/Eimi-Fukada.jpg", 
 
         categories: [
-            "asia"
+            "asia", 
+            "payudara besar"
         ],
 
         birth:
@@ -191,7 +193,9 @@ const models = [
             "https://asupanhijab.xyz/SaikaKawakita.jpg", 
 
         categories: [
-            "asia"
+            "asia", 
+            "muda 18+"
+            "payudara besar"
         ],
 
         birth:
@@ -220,7 +224,8 @@ const models = [
             "https://asupanhijab.xyz/Mia-Nanasawa.jpg", 
 
         categories: [
-            "asia"
+            "asia",
+            "muda"
         ],
 
         birth:
@@ -249,7 +254,8 @@ const models = [
             "https://asupanhijab.xyz/RihoFujimori4.jpg", 
 
         categories: [
-            "asia"
+            "asia", 
+            "pantat besar"
         ],
 
         birth:
@@ -279,6 +285,7 @@ const models = [
 
         categories: [
             "asia"
+            "muda 18+"
         ],
 
         birth:
@@ -294,7 +301,7 @@ const models = [
             "5′ 5″ (166 cm)",
 
         breastSize:
-            "32 D",
+            "26 D",
 
         active:
             "2016 - sekarang",
@@ -307,7 +314,8 @@ const models = [
             "https://asupanhijab.xyz/MaoHamasaki.jpg", 
 
         categories: [
-            "asia"
+            "asia", 
+            "payudara besar"
         ],
 
         birth:
@@ -336,7 +344,9 @@ const models = [
             "https://asupanhijab.xyz/MahiroTadai.jpg", 
 
         categories: [
-            "asia"
+            "asia", 
+            "muda 18+", 
+            "pantat besar"
         ],
 
         birth:
@@ -365,7 +375,9 @@ const models = [
             "https://asupanhijab.xyz/Aimi-Yoshikawa.jpg", 
 
         categories: [
-            "asia"
+            "asia", 
+            "muda 18+", 
+            "payudra besar"
         ],
 
         birth:
@@ -394,7 +406,8 @@ const models = [
             "https://asupanhijab.xyz/Reiko-Kobayakawa.jpg", 
 
         categories: [
-            "asia"
+            "asia",
+            "pantat besar"
         ],
 
         birth:
