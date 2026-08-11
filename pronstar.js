@@ -530,7 +530,8 @@ const models = [
 
         categories: [
             "asia", 
-            "pantat besar"
+            "pantat besar", 
+            " pirang"
         ],
 
         birth:
@@ -652,7 +653,8 @@ const models = [
 
         categories: [
             "asia", 
-            "pantat besar"
+            "pantat besar", 
+            "pirang"
         ],
 
         birth:
@@ -682,7 +684,8 @@ const models = [
         categories: [
             "asia", 
             "pantat besar", 
-            "payudara besar"
+            "payudara besar", 
+            "pirang"
         ],
 
         birth:
@@ -946,7 +949,8 @@ const models = [
         categories: [
             "asia", 
             "pantat besar", 
-            "payudara besar"
+            "payudara besar", 
+            "pirang"
         ],
 
         birth:
