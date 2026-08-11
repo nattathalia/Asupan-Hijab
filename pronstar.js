@@ -456,36 +456,38 @@ const models = [
             "30 D",
 
         active:
-            "2020 - sekarang",
+            "2015 - sekarang",
     },
 
    {
-        name: "Lulu Chun",
+        name: "Hitomi Tanaka",
 
         photo:
-            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+            "https://asupanhijab.xyz/Hitomi-Tanaka.jpg", 
 
         categories: [
-            "asia"
+            "asia",
+            " payudara besar"
+           
         ],
 
         birth:
-            "14.1.2001 (Usia: 25)",
+            "18.7.1986 (Usia: 40)",
 
         country:
-            "China",
+            "Jepang",
 
         weight:
-            "95 lbs (43 kg)",
+            "110 lbs (50 kg)",
 
         height:
-            "5′ 0″ (152 cm)",
+            "5′ 1″ (155 cm)",
 
         breastSize:
-            "32 D",
+            "38 D",
 
         active:
-            "2014 - sekarang",
+            "2013 - sekarang",
     },
 
    
