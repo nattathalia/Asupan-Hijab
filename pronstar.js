@@ -11,7 +11,7 @@ const models = [
             "https://asupanhijab.xyz/lil%20black.jpg",
 
         categories: [
-            "asia"
+            "asia", 
            "muda"
         ],
 
@@ -42,7 +42,7 @@ const models = [
             "https://asupanhijab.xyz/may%20thai.jpg",
 
         categories: [
-            "asia"
+            "asia", 
             "muda"
         ],
 
@@ -73,7 +73,7 @@ const models = [
             "https://asupanhijab.xyz/Lulu-Chu.jpg", 
 
         categories: [
-            "asia"
+            "asia", 
             "muda"
         ],
 
@@ -103,7 +103,7 @@ const models = [
             "https://asupanhijab.xyz/Kendra-Spade.jpg", 
 
         categories: [
-            "asia"
+            "asia", 
             "pantat besar"
         ],
 
