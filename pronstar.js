@@ -492,32 +492,64 @@ const models = [
 
    
 {
-        name: "Lulu Chun",
+        name: "Mia Khalifa",
 
         photo:
-            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+            "https://asupanhijab.xyz/Mia-Khalifa.jpg", 
 
         categories: [
-            "asia"
+            "asia", 
+            " arap", 
+            "payudara besar"
         ],
 
         birth:
-            "14.1.2001 (Usia: 25)",
+            "10.02.1993 (Usia: 33)",
 
         country:
-            "China",
+            "Lebanon",
 
         weight:
-            "95 lbs (43 kg)",
+            "120 lbs (55 kg)",
 
         height:
-            "5′ 0″ (152 cm)",
+            "5′ 2″ (157 cm)",
 
         breastSize:
             "32 D",
 
         active:
-            "2020 - sekarang",
+            "2014 - sekarang",
+    },
+
+   {
+        name: "Kaylani Lei",
+
+        photo:
+            "https://asupanhijab.xyz/KaylaniLei.jpg", 
+
+        categories: [
+            "asia", 
+            "pantat besar"
+        ],
+
+        birth:
+            "1.8.1997 (Usia: 29)",
+
+        country:
+            "Thailand",
+
+        weight:
+            "103 lbs (47 kg)",
+
+        height:
+            "6′ 1″ (169 cm)",
+
+        breastSize:
+            "30 D",
+
+        active:
+            "2016 - sekarang",
     },
 
    {
@@ -550,91 +582,65 @@ const models = [
     },
 
    {
-        name: "Lulu Chun",
+        name: "Mayuki Ito",
 
         photo:
-            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+            "https://asupanhijab.xyz/Mayuki-Ito.jpg", 
 
         categories: [
-            "asia"
+            "asia", 
+            " pantat besar", 
+             "payudara besar"
         ],
 
         birth:
-            "14.1.2001 (Usia: 25)",
+            "30.11.1997 (Usia: 28)",
 
         country:
-            "China",
+            "Jepang",
 
         weight:
             "95 lbs (43 kg)",
 
         height:
-            "5′ 0″ (152 cm)",
+            "5′ 3″ (160 cm)",
 
         breastSize:
-            "32 D",
+            "30 D",
 
         active:
-            "2020 - sekarang",
-    },
-
-   {
-        name: "Lulu Chun",
-
-        photo:
-            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
-
-        categories: [
-            "asia"
-        ],
-
-        birth:
-            "14.1.2001 (Usia: 25)",
-
-        country:
-            "China",
-
-        weight:
-            "95 lbs (43 kg)",
-
-        height:
-            "5′ 0″ (152 cm)",
-
-        breastSize:
-            "32 D",
-
-        active:
-            "2020 - sekarang",
+            "2017 - sekarang",
     },
 
    
 {
-        name: "Lulu Chun",
+        name: "Yui Hatano",
 
         photo:
-            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+            "https://asupanhijab.xyz/Yui-Hatano.jpg", 
 
         categories: [
-            "asia"
+            "asia", 
+            " pantat besar"
         ],
 
         birth:
-            "14.1.2001 (Usia: 25)",
+            "24.05.1988 (Usia: 38)",
 
         country:
-            "China",
+            "Jepang",
 
         weight:
-            "95 lbs (43 kg)",
+            "98 lbs (45 kg)",
 
         height:
-            "5′ 0″ (152 cm)",
+            "5′ 3″ (163 cm)",
 
         breastSize:
-            "32 D",
+            "28 D",
 
         active:
-            "2020 - sekarang",
+            "2016 - sekarang",
     },
 
 ];
