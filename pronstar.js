@@ -553,32 +553,33 @@ const models = [
     },
 
    {
-        name: "Lulu Chun",
+        name: "Julia Boin",
 
         photo:
-            "https://asupanhijab.xyz/Lulu-Chu.jpg", 
+            "https://asupanhijab.xyz/Julia-Boin.jpg", 
 
         categories: [
-            "asia"
+            "asia", 
+           "payudara besar"
         ],
 
         birth:
-            "14.1.2001 (Usia: 25)",
+            "24.6.1999 (Usia: 27)",
 
         country:
-            "China",
+            "Jepang",
 
         weight:
-            "95 lbs (43 kg)",
+            "105 lbs (45 kg)",
 
         height:
-            "5′ 0″ (152 cm)",
+            "6′ 0″ (160 cm)",
 
         breastSize:
-            "32 D",
+            "33 D",
 
         active:
-            "2020 - sekarang",
+            "2019 - sekarang",
     },
 
    {
