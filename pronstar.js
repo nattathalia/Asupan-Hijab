@@ -259,7 +259,7 @@ const models = [
         ],
 
         birth:
-            "03.12.1996 (Usia: 29",
+            "03.12.1996 (Usia: 29)",
 
         country:
             "Jepang",
@@ -377,7 +377,7 @@ const models = [
         categories: [
             "asia", 
             "muda 18+", 
-            "payudra besar"
+            "payudara besar"
         ],
 
         birth:
@@ -414,7 +414,7 @@ const models = [
             "14.12.1990 (Usia: 36)",
 
         country:
-            "China",
+            "Jepang",
 
         weight:
             "95 lbs (43 kg)",
