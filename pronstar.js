@@ -1213,7 +1213,7 @@ const models = [
 
         categories: [
             "asia", 
-            "payudara"
+            "payudara besar"
         ],
 
         birth:
@@ -1306,7 +1306,7 @@ const models = [
 
         categories: [
             "asia", 
-            "payudara besar"
+            "payudara besar", 
             "muda 18+"
         ],
 
@@ -1451,35 +1451,7 @@ const models = [
             "2016 - sekarang"
     }, 
 
-{
-        name: "Shoko Takahashi",
 
-        photo:
-            "https://asupanhijab.xyz/Shoko-Takahashi.jpg", 
-
-        categories: [
-            "asia", 
-            "payudara besar"
-        ],
-
-        birth:
-            "13.05.1993 (Usia: 33)",
-
-        country:
-            "Jepang",
-
-        weight:
-            "120 lbs (50 kg)",
-
-        height:
-            "6′ 3″ (170 cm)",
-
-        breastSize:
-            "32 D",
-
-        active:
-            "2021 - sekarang"
-    }, 
 
 
 {
