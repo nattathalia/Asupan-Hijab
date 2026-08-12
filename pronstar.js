@@ -1571,7 +1571,7 @@ const models = [
     }, 
 
 {
-        name: "Luna-Okko.jpg",
+        name: "Luna Okko",
 
         photo:
             "https://asupanhijab.xyz/Luna-Okko.jpg", 
