@@ -9,34 +9,64 @@
     <priority>1.0</priority>
   </url>
 
-  <url>
-    <loc>https://asupanhijab.xyz/sekolah.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
+    <url>
+        <loc>https://asupanhijab.xyz/index.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
 
-  <url>
-    <loc>https://asupanhijab.xyz/muda.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
+    <url>
+        <loc>https://asupanhijab.xyz/syarat.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
 
-  <url>
-    <loc>https://asupanhijab.xyz/publik.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
+    <url>
+        <loc>https://asupanhijab.xyz/privasi.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
 
-  <url>
-    <loc>https://asupanhijab.xyz/hijab.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
+    <url>
+        <loc>https://asupanhijab.xyz/kontak.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
 
-  <url>
-    <loc>https://asupanhijab.xyz/pronstar.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
+    <url>
+        <loc>https://asupanhijab.xyz/tentang.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://asupanhijab.xyz/pronstar.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://asupanhijab.xyz/sekolah.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://asupanhijab.xyz/muda.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://asupanhijab.xyz/publik.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://asupanhijab.xyz/hijab.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
 </urlset>
