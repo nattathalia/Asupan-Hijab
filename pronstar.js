@@ -3436,11 +3436,161 @@ const models = [
             "https://asupanhijab.xyz/MollyLittle.jpg", 
       
         categories: [
-            "muda 18+"
+            "muda 18+", 
+             "pirang"
         ],
 
         birth:
             "11.10.2000 (Usia: 25)",
+
+        country:
+            "Kanada",
+
+        weight:
+            "95 lbs (49 kg)",
+
+        height:
+            " 5′ 3″ (160 cm)",
+
+        breastSize:
+            "26 D",
+
+        active:
+            "2022 - sekarang"
+    }, 
+
+   {
+        name: "Chloe Temple",
+
+        photo:
+            "https://asupanhijab.xyz/ChloeTemple.jpg", 
+      
+        categories: [
+            "muda 18+", 
+             "pirang"
+        ],
+
+        birth:
+            "30.06.1998 (Usia: 28)",
+
+        country:
+            "Amerika",
+
+        weight:
+            "105 lbs (45 kg)",
+
+        height:
+            " 5′ 3″ (165 cm)",
+
+        breastSize:
+            "26 D",
+
+        active:
+            "2020 - sekarang"
+    }, 
+
+   {
+        name: "Maya Bijou",
+
+        photo:
+            "https://asupanhijab.xyz/MayaBijou.jpg", 
+      
+        categories: [
+            "muda 18+", 
+             "pirang"
+        ],
+
+        birth:
+            "06.02.1998 (Usia: 28)",
+
+        country:
+            "Amerika",
+
+        weight:
+            "95 lbs (50 kg)",
+
+        height:
+            " 5′ 3″ (165 cm)",
+
+        breastSize:
+            "26 D",
+
+        active:
+            "2021 - sekarang"
+    }, 
+
+   {
+        name: "Kiara Cole",
+
+        photo:
+            "https://asupanhijab.xyz/KiaraCole.jpg", 
+      
+        categories: [
+            "muda 18+"
+        ],
+
+        birth:
+            "09.12.1997 (Usia: 28)",
+
+        country:
+            "Amerika",
+
+        weight:
+            "105 lbs (47 kg)",
+
+        height:
+            " 5′ 3″ (165 cm)",
+
+        breastSize:
+            "26 D",
+
+        active:
+            "2022 - sekarang"
+    }, 
+
+   {
+        name: "Hannah Hays",
+
+        photo:
+            "https://asupanhijab.xyz/HannahHays.jpg", 
+      
+        categories: [
+            "muda 18+", 
+             "pirang"
+        ],
+
+        birth:
+            "13.09.1998 (Usia: 27)",
+
+        country:
+            "Rusia",
+
+        weight:
+            "95 lbs (45 kg)",
+
+        height:
+            " 5′ 3″ (162 cm)",
+
+        breastSize:
+            "26 D",
+
+        active:
+            "2021 - sekarang"
+    }, 
+
+   {
+        name: "Anastasia Knight",
+
+        photo:
+            "https://asupanhijab.xyz/AnastasiaKnight.jpg", 
+      
+        categories: [
+            "muda 18+", 
+             "pirang"
+        ],
+
+        birth:
+            "24.09.1999 (Usia: 26)",
 
         country:
             "Kanada",
