@@ -3105,75 +3105,77 @@ const models = [
     }, 
 
    {
-        name: "Lolly Lips",
+        name: "Riley Reid",
 
         photo:
-            "https://asupanhijab.xyz/LollyLips.jpg", 
+            "https://asupanhijab.xyz/RileyReid.jpg", 
       
         categories: [
-            "muda 18+"
+            "muda 18+", 
+            "pirang"
         ],
 
         birth:
-            "11.10.2000 (Usia: 25)",
+            "09.07.1991 (Usia: 35)",
 
         country:
-            "Kanada",
+            "Amerika",
 
         weight:
-            "104 lbs (47 kg)",
+            "100 lbs (46 kg)",
 
         height:
-            " 5′ 3″ (161 cm)",
+            " 6′ 3″ (165 cm)",
 
         breastSize:
-            "29 D",
+            "28 D",
 
         active:
             "2019 - sekarang"
     }, 
 
    {
-        name: "Lolly Lips",
+        name: "Elsa Jean",
 
         photo:
-            "https://asupanhijab.xyz/LollyLips.jpg", 
+            "https://asupanhijab.xyz/ElsaJean.jpg", 
       
         categories: [
-            "muda 18+"
+            "muda 18+", 
+            "pirang"
         ],
 
         birth:
-            "11.10.2000 (Usia: 25)",
+            "01.09.1996 (Usia: 29)",
 
         country:
-            "Kanada",
+            "Amerika",
 
         weight:
-            "104 lbs (47 kg)",
+            "106 lbs (45 kg)",
 
         height:
-            " 5′ 3″ (161 cm)",
+            " 5′ 3″ (165 cm)",
 
         breastSize:
-            "29 D",
+            "28 D",
 
         active:
-            "2019 - sekarang"
+            "2018 - sekarang"
     }, 
 
    {
-        name: "Lolly Lips",
+        name: "Gina Valentina",
 
         photo:
-            "https://asupanhijab.xyz/LollyLips.jpg", 
+            "https://asupanhijab.xyz/GinaValentina.jpg", 
       
         categories: [
             "muda 18+"
         ],
 
         birth:
-            "11.10.2000 (Usia: 25)",
+            "18.02.1997 (Usia: 29)",
 
         country:
             "Kanada",
