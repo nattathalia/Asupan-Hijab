@@ -1029,33 +1029,33 @@ const models = [
             "2016 - sekarang"
     },
 {
-        name: "Asa Akira",
+        name: "Eva Elfie",
 
         photo:
-            "https://asupanhijab.xyz/Asa-Akira.jpeg", 
+            "https://asupanhijab.xyz/EvaElfie.jpeg", 
 
         categories: [
-            "asia", 
-            "pantat besar"
+            "muda 18+", 
+            "pirang"
         ],
 
         birth:
-            "03.01.1986 (Usia: 40)",
+            "27.5.2000 (Usia: 26)",
 
         country:
             "Jepang",
 
         weight:
-            "98 lbs (45 kg)",
+            "99 lbs (45 kg)",
 
         height:
-            "5′ 2″ (157 cm)",
+            " 5′ 4″ (163 cm)",
 
         breastSize:
-            "29 D",
+            "26 D",
 
         active:
-            "2018 - sekarang"
+            "2022 - sekarang"
     },
 {
         name: "Avery Black",
@@ -1845,34 +1845,33 @@ const models = [
     }, 
 
    {
-        name: "Arabelle Raphael",
+        name: "Sweetie",
 
         photo:
-            "https://asupanhijab.xyz/ArabelleRaphael.jpg", 
+            "https://asupanhijab.xyz/Sweetie.jpeg", 
 
         categories: [
-            "arap", 
-            "pantat besar", 
-            "payudara besar"
+            "muda 18+", 
+            "pirang"
         ],
 
         birth:
-            "27.02.1989 (Usia: 37)",
+            "25.6.2001 (Usia: 25)",
 
         country:
-            "Iran",
+            "rusia",
 
         weight:
-            "114 lbs (52 kg)",
+            "120 lbs (45 kg)",
 
         height:
-            "5′ 4″ (163 cm)",
+            "5′ 4″ (165 cm)",
 
         breastSize:
-            "32 D",
+            "26 D",
 
         active:
-            "2018 - sekarang"
+            "2020 - sekarang"
     }, 
 
    {
@@ -2033,406 +2032,392 @@ const models = [
     }, 
 
    {
-        name: "Arabelle Raphael",
+        name: "Autumn Falls",
 
         photo:
-            "https://asupanhijab.xyz/ArabelleRaphael.jpg", 
+            "https://asupanhijab.xyz/AutumnFalls.jpeg", 
 
         categories: [
-            "arap", 
-            "pantat besar", 
-            "payudara besar"
+            "muda 18+", 
+            "payudara besar", 
+            "arap"
         ],
 
         birth:
-            "27.02.1989 (Usia: 37)",
+            "4.8.2000 (Usia: 26)",
 
         country:
             "Iran",
 
         weight:
-            "114 lbs (52 kg)",
+            "125 lbs (57 kg)",
 
         height:
-            "5′ 4″ (163 cm)",
+            "5′ 3″ (160 cm)",
 
         breastSize:
-            "32 D",
+            "34 D",
 
         active:
-            "2018 - sekarang"
+            "2019 - sekarang"
     }, 
 {
-        name: "Arabelle Raphael",
+        name: "Gabbie Carter",
 
         photo:
-            "https://asupanhijab.xyz/ArabelleRaphael.jpg", 
+            "https://asupanhijab.xyz/GabbieCarter.jpg", 
 
         categories: [
-            "arap", 
-            "pantat besar", 
+            "Muda 18+",  
             "payudara besar"
         ],
 
         birth:
-            "27.02.1989 (Usia: 37)",
+            "4.8.2000 (Usia: 26)",
 
         country:
-            "Iran",
+            "Amerika",
 
         weight:
-            "114 lbs (52 kg)",
+            "121 lbs (55 kg)",
 
         height:
-            "5′ 4″ (163 cm)",
+            "5′ 7″ (170 cm)",
 
         breastSize:
-            "32 D",
+            "34 D",
 
         active:
-            "2018 - sekarang"
+            "2019 - sekarang"
     }, 
 
    {
-        name: "Arabelle Raphael",
-
+        name: "Hazel Moore", 
         photo:
-            "https://asupanhijab.xyz/ArabelleRaphael.jpg", 
+            "https://asupanhijab.xyz/HazelMoore.jpg", 
 
         categories: [
-            "arap", 
-            "pantat besar", 
-            "payudara besar"
+            "muda 18+", 
+            "pirang"
         ],
 
         birth:
-            "27.02.1989 (Usia: 37)",
+            "9.6.2000 (Usia: 26)",
 
         country:
-            "Iran",
+            "Francis",
 
         weight:
-            "114 lbs (52 kg)",
+            "121 lbs (55 kg)",
 
         height:
-            "5′ 4″ (163 cm)",
+            "5′ 7″ (170 cm)",
 
         breastSize:
-            "32 D",
+            "26 D",
 
         active:
-            "2018 - sekarang"
+            "2019 - sekarang"
     }, 
 
    {
-        name: "Arabelle Raphael",
+        name: "Blake Blossom",
 
         photo:
-            "https://asupanhijab.xyz/ArabelleRaphael.jpg", 
+            "https://asupanhijab.xyz/BlakeBlossom.jpg", 
 
         categories: [
-            "arap", 
+            "muda 18+", 
             "pantat besar", 
-            "payudara besar"
+            "pirang"
         ],
 
         birth:
-            "27.02.1989 (Usia: 37)",
+            "14.2.2000 (Usia: 26)",
 
         country:
-            "Iran",
+            "spayol",
 
         weight:
-            "114 lbs (52 kg)",
+            "118 lbs (54 kg)",
 
         height:
-            "5′ 4″ (163 cm)",
+            "5′ 7″ (170 cm)",
 
         breastSize:
-            "32 D",
+            "28 D",
 
         active:
-            "2018 - sekarang"
+            "2020 - sekarang"
     }, 
 
    {
-        name: "Arabelle Raphael",
+        name: "Melztube",
 
         photo:
-            "https://asupanhijab.xyz/ArabelleRaphael.jpg", 
+            "https://asupanhijab.xyz/Melztube.jpg", 
 
         categories: [
-            "arap", 
+            "muda 18+", 
             "pantat besar", 
             "payudara besar"
         ],
 
         birth:
-            "27.02.1989 (Usia: 37)",
+            "15.02.2005 (Usia: 21)",
 
         country:
-            "Iran",
+            "Venezuela",
 
         weight:
-            "114 lbs (52 kg)",
+            "130 lbs (59 kg)",
 
         height:
-            "5′ 4″ (163 cm)",
+            "5′ 0″ (152 cm)",
 
         breastSize:
             "32 D",
 
         active:
-            "2018 - sekarang"
+            "2022 - sekarang"
     }, 
 
    {
-        name: "Arabelle Raphael",
+        name: "Shaiden Rogue",
 
         photo:
-            "https://asupanhijab.xyz/ArabelleRaphael.jpg", 
+            "https://asupanhijab.xyz/ShaidenRogue.jpg", 
 
         categories: [
-            "arap", 
-            "pantat besar", 
-            "payudara besar"
+            "muda 18+"
         ],
 
         birth:
-            "27.02.1989 (Usia: 37)",
+            "20.3.2001 (Usia: 25)",
 
         country:
-            "Iran",
+            "Belgium",
 
         weight:
             "114 lbs (52 kg)",
 
         height:
-            "5′ 4″ (163 cm)",
+            "5′ 10″ (177 cm)",
 
         breastSize:
-            "32 D",
+            "28 D",
 
         active:
-            "2018 - sekarang"
+            "2019 - sekarang"
     }, 
 
    {
-        name: "Arabelle Raphael",
+        name: "Aria Lee",
 
         photo:
-            "https://asupanhijab.xyz/ArabelleRaphael.jpg", 
+            "https://asupanhijab.xyz/AriaLee.jpg", 
 
         categories: [
-            "arap", 
-            "pantat besar", 
-            "payudara besar"
+            "muda 18+"
         ],
 
         birth:
-            "27.02.1989 (Usia: 37)",
+            "7.6.2000 (Usia: 26)",
 
         country:
-            "Iran",
+            "Belanda",
 
         weight:
-            "114 lbs (52 kg)",
+            "121 lbs (55 kg)",
 
         height:
-            "5′ 4″ (163 cm)",
+            "5′ 2″ (157 cm)",
 
         breastSize:
-            "32 D",
+            "28 D",
 
         active:
-            "2018 - sekarang"
+            "2019 - sekarang"
     }, 
 
    {
-        name: "Arabelle Raphael",
+        name: "Kylie Rocket",
 
         photo:
-            "https://asupanhijab.xyz/ArabelleRaphael.jpg", 
+            "https://asupanhijab.xyz/KylieRocket.jpg", 
 
         categories: [
-            "arap", 
-            "pantat besar", 
-            "payudara besar"
+            "muda 18+"
         ],
 
         birth:
-            "27.02.1989 (Usia: 37)",
+            "11.4.2001 (Usia: 25)",
 
         country:
-            "Iran",
+            "Venezuela",
 
         weight:
-            "114 lbs (52 kg)",
+            "99 lbs (45 kg)",
 
         height:
-            "5′ 4″ (163 cm)",
+            "5′ 3″ (160 cm)",
 
         breastSize:
-            "32 D",
+            "28 D",
 
         active:
-            "2018 - sekarang"
+            "2020 - sekarang"
     }, 
 
    
    {
-        name: "Arabelle Raphael",
+        name: "Julie Jess",
 
         photo:
-            "https://asupanhijab.xyz/ArabelleRaphael.jpg", 
+            "https://asupanhijab.xyz/JulieJess.jpg", 
 
         categories: [
-            "arap", 
-            "pantat besar", 
-            "payudara besar"
+            "muda 18+", 
+            "pirang"
         ],
 
         birth:
-            "27.02.1989 (Usia: 37)",
+            "19.9.2001 (Usia: 24)",
 
         country:
-            "Iran",
+            "rusia",
 
         weight:
-            "114 lbs (52 kg)",
+            "86 lbs (40 kg)",
 
         height:
-            "5′ 4″ (163 cm)",
+            "5′ 9″ (175 cm)",
 
         breastSize:
-            "32 D",
+            "26 D",
 
         active:
-            "2018 - sekarang"
+            "2022 - sekarang"
     }, 
 
    {
-        name: "Arabelle Raphael",
+        name: "Rissa May",
 
         photo:
-            "https://asupanhijab.xyz/ArabelleRaphael.jpg", 
+            "https://asupanhijab.xyz/RissaMay.jpg", 
 
         categories: [
             "arap", 
-            "pantat besar", 
-            "payudara besar"
+            "payudara besar", 
+            "pirang"
         ],
 
         birth:
-            "27.02.1989 (Usia: 37)",
+            "14.01.2005 (Usia: 21)",
 
         country:
-            "Iran",
+            "Amerika",
 
         weight:
-            "114 lbs (52 kg)",
+            "125 lbs (57 kg)",
 
         height:
-            "5′ 4″ (163 cm)",
+            "5′ 4″ (162 cm)",
 
         breastSize:
             "32 D",
 
         active:
-            "2018 - sekarang"
+            "2023 - sekarang"
     }, 
 
    {
-        name: "Arabelle Raphael",
+        name: "Emma Fiore",
 
         photo:
-            "https://asupanhijab.xyz/ArabelleRaphael.jpg", 
+            "https://asupanhijab.xyz/EmmaFiore.jpg", 
 
         categories: [
-            "arap", 
-            "pantat besar", 
-            "payudara besar"
+            "muda 18+", 
+            "pirang"
         ],
 
         birth:
-            "27.02.1989 (Usia: 37)",
+            "11.5.2000 (Usia: 26)",
 
         country:
-            "Iran",
+            "ukraina",
 
         weight:
-            "114 lbs (52 kg)",
+            "100 lbs (45 kg)",
 
         height:
-            "5′ 4″ (163 cm)",
+            "5′ 4″ (165 cm)",
 
         breastSize:
-            "32 D",
+            "28 D",
 
         active:
-            "2018 - sekarang"
+            "2021 - sekarang"
     }, 
 
    {
-        name: "Arabelle Raphael",
+        name: "Liz Jordan",
 
         photo:
-            "https://asupanhijab.xyz/ArabelleRaphael.jpg", 
+            "https://asupanhijab.xyz/LizJordan.jpg", 
 
         categories: [
-            "arap", 
-            "pantat besar", 
-            "payudara besar"
+            "muda 18+", 
+            "pantat besar"
         ],
 
         birth:
-            "27.02.1989 (Usia: 37)",
+            "12.6.2001 (Usia: 25)",
 
         country:
-            "Iran",
+            "Amerika",
 
         weight:
-            "114 lbs (52 kg)",
+            "110 lbs (50 kg)",
 
         height:
             "5′ 4″ (163 cm)",
 
         breastSize:
-            "32 D",
+            "29 D",
 
         active:
-            "2018 - sekarang"
+            "2022 - sekarang"
     }, 
 
    {
-        name: "Arabelle Raphael",
+        name: "Lolly Lips",
 
         photo:
-            "https://asupanhijab.xyz/ArabelleRaphael.jpg", 
-
+            "https://asupanhijab.xyz/LollyLips.jpg", 
+      
         categories: [
-            "arap", 
-            "pantat besar", 
-            "payudara besar"
+            "muda 18+"
         ],
 
         birth:
-            "27.02.1989 (Usia: 37)",
+            "11.10.2000 (Usia: 25)",
 
         country:
-            "Iran",
+            "Kanada",
 
         weight:
-            "114 lbs (52 kg)",
+            "104 lbs (47 kg)",
 
         height:
-            "5′ 4″ (163 cm)",
+            " 5′ 3″ (161 cm)",
 
         breastSize:
-            "32 D",
+            "29 D",
 
         active:
-            "2018 - sekarang"
+            "2019 - sekarang"
     }, 
 ];
 /* ======================================================
