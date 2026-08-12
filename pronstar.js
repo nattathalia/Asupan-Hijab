@@ -3194,162 +3194,165 @@ const models = [
     }, 
 
    {
-        name: "Lolly Lips",
+        name: "Kenzie Reeves",
 
         photo:
-            "https://asupanhijab.xyz/LollyLips.jpg", 
+            "https://asupanhijab.xyz/KenzieReeves.jpg", 
       
         categories: [
             "muda 18+"
         ],
 
         birth:
-            "11.10.2000 (Usia: 25)",
-
+            "07.07.1997 (Usia: 29)", 
+      
         country:
-            "Kanada",
+            "Amerika",
 
         weight:
-            "104 lbs (47 kg)",
+            "100 lbs (45 kg)",
 
         height:
-            " 5′ 3″ (161 cm)",
+            " 5′ 3″ (165 cm)",
 
         breastSize:
-            "29 D",
+            "25 D",
 
         active:
-            "2019 - sekarang"
+            "2018 - sekarang"
     }, 
 
    {
-        name: "Lolly Lips",
+        name: "Jane WIlde",
 
         photo:
-            "https://asupanhijab.xyz/LollyLips.jpg", 
+            "https://asupanhijab.xyz/JaneWIlde.jpg", 
       
         categories: [
             "muda 18+"
         ],
 
         birth:
-            "11.10.2000 (Usia: 25)",
+            "23.09.1998 (Usia: 27)",
 
         country:
-            "Kanada",
+            "Jerman",
 
         weight:
-            "104 lbs (47 kg)",
+            "120 lbs (50 kg)",
 
         height:
-            " 5′ 3″ (161 cm)",
+            " 6′ 4″ (165 cm)",
 
         breastSize:
-            "29 D",
+            "30 D",
 
         active:
-            "2019 - sekarang"
+            "2020 - sekarang"
     }, 
 
    {
-        name: "Lolly Lips",
+        name: "Piper Perri",
 
         photo:
-            "https://asupanhijab.xyz/LollyLips.jpg", 
+            "https://asupanhijab.xyz/PiperPerri.jpg", 
       
         categories: [
-            "muda 18+"
+            "muda 18+", 
+            "pirang"
         ],
 
         birth:
-            "11.10.2000 (Usia: 25)",
+            "11.11.1994 (Usia: 31)",
 
         country:
-            "Kanada",
+            "Spanyol",
 
         weight:
-            "104 lbs (47 kg)",
+            "96 lbs (42 kg)",
 
         height:
-            " 5′ 3″ (161 cm)",
+            " 6′ 2″ (165 cm)",
 
         breastSize:
-            "29 D",
+            "25 D",
 
         active:
-            "2019 - sekarang"
+            "2018 - sekarang"
     }, 
 
    {
-        name: "Lolly Lips",
+        name: "Emma Hix",
 
         photo:
-            "https://asupanhijab.xyz/LollyLips.jpg", 
+            "https://asupanhijab.xyz/EmmaHix.jpg", 
       
         categories: [
-            "muda 18+"
+            "muda 18+", 
+            "pirang"
         ],
 
         birth:
-            "11.10.2000 (Usia: 25)",
+            "25.10.1997 (Usia: 28)",
 
         country:
-            "Kanada",
+            "Amerika",
 
         weight:
-            "104 lbs (47 kg)",
+            "115 lbs (48 kg)",
 
         height:
-            " 5′ 3″ (161 cm)",
+            " 5′ 3″ (167 cm)",
 
         breastSize:
-            "29 D",
+            "28 D",
 
         active:
-            "2019 - sekarang"
+            "2018 - sekarang"
     }, 
 
    {
-        name: "Lolly Lips",
+        name: "Vanna Bardot",
 
         photo:
-            "https://asupanhijab.xyz/LollyLips.jpg", 
+            "https://asupanhijab.xyz/VannaBardot.jpg", 
       
         categories: [
             "muda 18+"
         ],
 
         birth:
-            "11.10.2000 (Usia: 25)",
+            "03.02.1999 (Usia: 27)",
 
         country:
-            "Kanada",
+            "Kolombia",
 
         weight:
-            "104 lbs (47 kg)",
+            "111 lbs (49 kg)",
 
         height:
-            " 5′ 3″ (161 cm)",
+            " 6′ 4″ (165 cm)",
 
         breastSize:
-            "29 D",
+            "27 D",
 
         active:
-            "2019 - sekarang"
+            "2018 - sekarang"
     }, 
 
    {
-        name: "Lolly Lips",
+        name: "Janice Griffith",
 
         photo:
-            "https://asupanhijab.xyz/LollyLips.jpg", 
+            "https://asupanhijab.xyz/JaniceGriffith.jpg", 
       
         categories: [
-            "muda 18+"
+            "muda 18+", 
+            "pirang"
         ],
 
         birth:
-            "11.10.2000 (Usia: 25)",
+            "03.07.1995 (Usia: 31)",
 
         country:
             "Kanada",
@@ -3358,78 +3361,79 @@ const models = [
             "104 lbs (47 kg)",
 
         height:
-            " 5′ 3″ (161 cm)",
+            " 5′ 3″ (167 cm)",
 
         breastSize:
-            "29 D",
+            "28 D",
 
         active:
-            "2019 - sekarang"
+            "2018 - sekarang"
     }, 
 
    {
-        name: "Lolly Lips",
+        name: "Lexi Lore",
 
         photo:
-            "https://asupanhijab.xyz/LollyLips.jpg", 
+            "https://asupanhijab.xyz/LexiLore.jpg", 
       
         categories: [
-            "muda 18+"
+            "muda 18+", 
+            "pirang"
         ],
 
         birth:
-            "11.10.2000 (Usia: 25)",
+            "30.10.1998 (Usia: 27)",
 
         country:
-            "Kanada",
+            "Spanyol",
 
         weight:
-            "104 lbs (47 kg)",
+            "110 lbs (48 kg)",
 
         height:
-            " 5′ 3″ (161 cm)",
+            " 5′ 3″ (164 cm)",
 
         breastSize:
-            "29 D",
+            "25 D",
 
         active:
-            "2019 - sekarang"
+            "2018 - sekarang"
     }, 
 
    {
-        name: "Lolly Lips",
+        name: "Holly Hendrix",
 
         photo:
-            "https://asupanhijab.xyz/LollyLips.jpg", 
+            "https://asupanhijab.xyz/HollyHendrix.jpg", 
       
         categories: [
             "muda 18+"
         ],
 
         birth:
-            "11.10.2000 (Usia: 25)",
+            "20.04.1997 (Usia: 29)",
 
         country:
-            "Kanada",
+            "Venezuela",
 
         weight:
-            "104 lbs (47 kg)",
+            "109 lbs (45 kg)",
 
         height:
-            " 5′ 3″ (161 cm)",
+            " 5′ 3″ (168 cm)",
 
         breastSize:
-            "29 D",
+            "25 D",
 
         active:
-            "2019 - sekarang"
+            "2020 - sekarang"
     }, 
 
    {
-        name: "Lolly Lips",
+        name: "Molly Little",
 
         photo:
-            "https://asupanhijab.xyz/LollyLips.jpg", 
+            "https://asupanhijab.xyz/MollyLittle.jpg", 
       
         categories: [
             "muda 18+"
@@ -3442,16 +3446,16 @@ const models = [
             "Kanada",
 
         weight:
-            "104 lbs (47 kg)",
+            "95 lbs (49 kg)",
 
         height:
-            " 5′ 3″ (161 cm)",
+            " 5′ 3″ (160 cm)",
 
         breastSize:
-            "29 D",
+            "26 D",
 
         active:
-            "2019 - sekarang"
+            "2022 - sekarang"
     }, 
 ];
 /* ======================================================
