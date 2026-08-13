@@ -1,1 +1,272 @@
-https://asupanhijab.xyz/nonton.html?id=Pacaran
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Video</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+    background:#fff;
+    color:#111;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+    margin:30px auto;
+    padding:0 15px;
+}
+
+#videoTitle{
+    margin:0 0 20px;
+    text-align:center;
+    font-size:24px;
+}
+
+.video-frame{
+    width:100%;
+    aspect-ratio:16/9;
+    background:#000;
+    overflow:hidden;
+    border-radius:5px;
+}
+
+.video-frame iframe{
+    width:100%;
+    height:100%;
+    border:0;
+    display:block;
+}
+
+.message{
+    padding:50px 20px;
+    text-align:center;
+    color:#777;
+}
+
+@media(max-width:600px){
+    .container{
+        margin:20px auto;
+        padding:0 10px;
+    }
+
+    #videoTitle{
+        font-size:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 id="videoTitle">
+        Memuat video...
+    </h1>
+
+    <div id="videoContainer"></div>
+
+</div>
+
+<script src="js/data.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded",function(){
+
+    const params =
+        new URLSearchParams(
+            window.location.search
+        );
+
+    const requestedId =
+        params.get("id");
+
+    const titleElement =
+        document.getElementById(
+            "videoTitle"
+        );
+
+    const container =
+        document.getElementById(
+            "videoContainer"
+        );
+
+
+    if(
+        !requestedId
+    ){
+
+        titleElement.textContent =
+            "Video tidak ditemukan";
+
+        container.innerHTML =
+            '<div class="message">ID video tidak tersedia.</div>';
+
+        return;
+
+    }
+
+
+    if(
+        typeof videos === "undefined" ||
+        !videos
+    ){
+
+        titleElement.textContent =
+            "Data video tidak tersedia";
+
+        container.innerHTML =
+            '<div class="message">File js/data.js tidak berhasil dimuat.</div>';
+
+        return;
+
+    }
+
+
+    let foundVideo = null;
+
+
+    for(
+        const category in videos
+    ){
+
+        if(
+            !Array.isArray(
+                videos[category]
+            )
+        ){
+
+            continue;
+
+        }
+
+
+        const result =
+            videos[category].find(
+                function(video){
+
+                    return String(
+                        video.id || ""
+                    ).toLowerCase() ===
+                    String(
+                        requestedId
+                    ).toLowerCase();
+
+                }
+            );
+
+
+        if(result){
+
+            foundVideo =
+                result;
+
+            break;
+
+        }
+
+    }
+
+
+    if(!foundVideo){
+
+        titleElement.textContent =
+            "Video tidak ditemukan";
+
+        container.innerHTML =
+            '<div class="message">ID video "' +
+            requestedId +
+            '" tidak ditemukan di data.js.</div>';
+
+        return;
+
+    }
+
+
+    const title =
+        String(
+            foundVideo.title || "Video"
+        );
+
+
+    const embed =
+        String(
+            foundVideo.embed || ""
+        );
+
+
+    if(!embed){
+
+        titleElement.textContent =
+            title;
+
+        container.innerHTML =
+            '<div class="message">Link embed video tidak tersedia.</div>';
+
+        return;
+
+    }
+
+
+    titleElement.textContent =
+        title;
+
+
+    const frame =
+        document.createElement(
+            "div"
+        );
+
+    frame.className =
+        "video-frame";
+
+
+    const iframe =
+        document.createElement(
+            "iframe"
+        );
+
+
+    iframe.src =
+        embed;
+
+    iframe.title =
+        title;
+
+    iframe.setAttribute(
+        "allowfullscreen",
+        ""
+    );
+
+    iframe.setAttribute(
+        "loading",
+        "lazy"
+    );
+
+
+    frame.appendChild(
+        iframe
+    );
+
+
+    container.appendChild(
+        frame
+    );
+
+});
+
+</script>
+
+</body>
+</html>
