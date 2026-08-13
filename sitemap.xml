@@ -2,71 +2,92 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://asupanhijab.xyz/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-
+    <!-- HOME -->
     <url>
-        <loc>https://asupanhijab.xyz/index.html</loc>
+        <loc>https://asupanhijab.xyz/</loc>
+        <lastmod>2026-08-13</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
 
+    <!-- INDEX -->
     <url>
-        <loc>https://asupanhijab.xyz/syarat.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <loc>https://asupanhijab.xyz/index.html</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
     </url>
 
-    <url>
-        <loc>https://asupanhijab.xyz/privasi.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-
-    <url>
-        <loc>https://asupanhijab.xyz/kontak.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-
-    <url>
-        <loc>https://asupanhijab.xyz/tentang.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-
-    <url>
-        <loc>https://asupanhijab.xyz/pronstar.html</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
+    <!-- KATEGORI -->
     <url>
         <loc>https://asupanhijab.xyz/sekolah.html</loc>
+        <lastmod>2026-08-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://asupanhijab.xyz/muda.html</loc>
+        <lastmod>2026-08-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://asupanhijab.xyz/publik.html</loc>
+        <lastmod>2026-08-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://asupanhijab.xyz/hijab.html</loc>
+        <lastmod>2026-08-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://asupanhijab.xyz/pronstar.html</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- INFORMASI WEBSITE -->
+    <url>
+        <loc>https://asupanhijab.xyz/tentang.html</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://asupanhijab.xyz/kontak.html</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://asupanhijab.xyz/syarat.html</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://asupanhijab.xyz/privasi.html</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://asupanhijab.xyz/dmca.html</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
     </url>
 
 </urlset>
