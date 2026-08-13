@@ -363,7 +363,12 @@ document.addEventListener(
                         </div>
 
                     `;
-
+                   
+card.addEventListener("click", function () {
+    window.location.href =
+        "nonton.html?id=" +
+        encodeURIComponent(video.id);
+});
 
                     container.appendChild(
                         card
