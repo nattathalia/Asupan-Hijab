@@ -1,14 +1,4 @@
 /* =========================================================
-   ASUPAN HIJAB - SCRIPT.JS
-   SIDEBAR
-   SEARCH
-   VIDEO
-   PAGINATION
-   FOOTER OTOMATIS
-========================================================= */
-
-
-/* =========================================================
    DOM READY
 ========================================================= */
 
@@ -364,11 +354,16 @@ document.addEventListener(
 
                     `;
                    
-card.addEventListener("click", function () {
-    window.location.href =
-        "nonton.html?id=" +
-        encodeURIComponent(video.id);
-});
+card.querySelector(".video-title").addEventListener(
+    "click",
+    function(){
+
+        window.location.href =
+            "nonton.html?id=" +
+            encodeURIComponent(video.id);
+
+    }
+);
 
                     container.appendChild(
                         card
