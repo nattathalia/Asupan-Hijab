@@ -354,9 +354,20 @@ document.addEventListener(
 
                     `;
                    
-card.querySelector(".video-title").addEventListener(
+card.addEventListener(
     "click",
     function(){
+
+        if(!video.id){
+
+            console.error(
+                "Video tidak memiliki ID:",
+                video
+            );
+
+            return;
+
+        }
 
         window.location.href =
             "nonton.html?id=" +
