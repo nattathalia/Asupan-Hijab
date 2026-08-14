@@ -295,94 +295,79 @@ document.addEventListener(
 
             }
 
+currentVideos.forEach(
+    function(video){
 
-            /* =============================================
-               TAMPILKAN VIDEO
-            ============================================= */
+        const card =
+            document.createElement("div");
 
-            currentVideos.forEach(
-                function(video){
-
-                    const card =
-                        document.createElement(
-                            "div"
-                        );
+        card.className =
+            "video-card";
 
 
-                    card.className =
-                        "video-card";
+        const title =
+            String(
+                video.title ||
+                "Video"
+            ).trim();
 
 
-                    const title =
-                        String(
-                            video.title ||
-                            "Video"
-                        );
-
-
-                    const embed =
-                        String(
-                            video.embed ||
-                            ""
-                        );
-
-
-                    card.innerHTML = `
-
-                        <div class="video-title">
-
-                            ${title}
-
-                        </div>
-
-
-                        <div class="video-frame">
-
-                            <iframe
-
-                                src="${embed}"
-
-                                loading="lazy"
-
-                                allowfullscreen
-
-                                title="${title}"
-
-                            ></iframe>
-
-                        </div>
-
-                    `;
-                   
-card.addEventListener(
-    "click",
-    function(){
-
-        if(!video.id){
-
-            console.error(
-                "Video tidak memiliki ID:",
-                video
+        const embed =
+            String(
+                video.embed ||
+                ""
             );
 
-            return;
 
-        }
+        /* =========================================
+           ID = JUDUL VIDEO
+        ========================================= */
 
-        window.location.href =
+        const videoId =
+            String(
+                video.id ||
+                video.title ||
+                ""
+            ).trim();
+
+
+        const watchUrl =
             "nonton.html?id=" +
-            encodeURIComponent(video.id);
+            encodeURIComponent(videoId);
+
+
+        /* =========================================
+           CARD
+        ========================================= */
+
+        card.innerHTML = `
+
+            <a
+                href="${watchUrl}"
+                class="video-title"
+            >
+                ${title}
+            </a>
+
+
+            <div class="video-frame">
+
+                <iframe
+                    src="${embed}"
+                    loading="lazy"
+                    allowfullscreen
+                    title="${title}"
+                ></iframe>
+
+            </div>
+
+        `;
+
+
+        container.appendChild(card);
 
     }
 );
-
-                    container.appendChild(
-                        card
-                    );
-
-                }
-            );
-
 
             /* =============================================
                PAGINATION
