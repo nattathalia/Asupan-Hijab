@@ -1156,8 +1156,7 @@ if(!foundVideo){
                 "Video pilihan."
             );
 
-
-        /* =====================================================
+/* =====================================================
    TAMPILKAN KETERANGAN
 ===================================================== */
 
@@ -1192,60 +1191,135 @@ descriptionElement.textContent =
                 "div"
             );
 
+/* =====================================================
+   VIDEO TIDAK DITEMUKAN
+===================================================== */
 
-        frame.className =
-            "video-frame";
+if(!foundVideo){
 
+    heroTitle.textContent =
+        "Video tidak ditemukan";
 
-        /* =====================================================
-           BUAT IFRAME
-        ===================================================== */
+    descriptionElement.textContent =
+        "Video tidak tersedia.";
 
-        const iframe =
-            document.createElement(
-                "iframe"
-            );
+    container.innerHTML =
+        '<div class="message">' +
+        'Video tidak ditemukan.' +
+        '</div>';
 
+    return;
 
-        iframe.src =
-            embed;
-
-
-        iframe.title =
-            title;
-
-
-        iframe.loading =
-            "lazy";
+}
 
 
-        iframe.setAttribute(
-            "allowfullscreen",
-            ""
-        );
+/* =====================================================
+   DATA VIDEO
+===================================================== */
+
+const title =
+    String(
+        foundVideo.title ||
+        "Video"
+    );
+
+const embed =
+    String(
+        foundVideo.embed ||
+        foundVideo.url ||
+        ""
+    );
+
+const description =
+    String(
+        foundVideo.description ||
+        foundVideo.desc ||
+        "Video pilihan."
+    );
 
 
-        iframe.setAttribute(
-            "allow",
-            "autoplay; fullscreen; picture-in-picture"
-        );
+/* =====================================================
+   TAMPILKAN KETERANGAN
+===================================================== */
+
+heroTitle.textContent =
+    title;
+
+descriptionElement.textContent =
+    description;
 
 
-        /* =====================================================
-           MASUKKAN IFRAME
-        ===================================================== */
+/* =====================================================
+   CEK EMBED
+===================================================== */
 
-        frame.appendChild(
-            iframe
-        );
+if(!embed){
+
+    container.innerHTML =
+        '<div class="message">' +
+        'Link video tidak tersedia.' +
+        '</div>';
+
+    return;
+
+}
 
 
-        container.appendChild(
-            frame
-        );
+/* =====================================================
+   BUAT VIDEO FRAME
+===================================================== */
+
+const frame =
+    document.createElement(
+        "div"
+    );
+
+frame.className =
+    "video-frame";
+
+
+/* =====================================================
+   BUAT IFRAME
+===================================================== */
+
+const iframe =
+    document.createElement(
+        "iframe"
+    );
+
+iframe.src =
+    embed;
+
+iframe.title =
+    title;
+
+iframe.loading =
+    "lazy";
+
+iframe.setAttribute(
+    "allowfullscreen",
+    ""
+);
+
+iframe.setAttribute(
+    "allow",
+    "autoplay; fullscreen; picture-in-picture"
+);
+
+
+/* =====================================================
+   MASUKKAN IFRAME
+===================================================== */
+
+frame.appendChild(
+    iframe
+);
+
+container.appendChild(
+    frame
+);
 
     }
-
 );
 
 </script>
