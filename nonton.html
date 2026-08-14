@@ -838,7 +838,7 @@ header{
 
 
     <h1 id="heroTitle">
-        SIAPKAN TISU UNTUK LAP MU
+        SIAPKAN TISU UNTUK LAP SPERMA MU 💦
     </h1>
 
 
@@ -998,51 +998,48 @@ document.addEventListener(
         const requestedId =
             params.get("id");
 
-
-        /* =====================================================
-           ELEMENT
-        ===================================================== */
-
         
-        const heroTitle =
-            document.getElementById(
-                "heroTitle"
-            );
 
+/* =====================================================
+   ELEMENT
+===================================================== */
 
-        const descriptionElement =
-            document.getElementById(
-                "heroDescription"
-            );
+const heroTitle =
+    document.getElementById(
+        "heroTitle"
+    );
 
+const descriptionElement =
+    document.getElementById(
+        "heroDescription"
+    );
 
-        const container =
-            document.getElementById(
-                "videoContainer"
-            );
-
+const container =
+    document.getElementById(
+        "videoContainer"
+    );
 
         /* =====================================================
            CEK ID DAN DATA
         ===================================================== */
 
         if(
-            !requestedId ||
-            typeof videos === "undefined"
-        ){
+    !requestedId ||
+    typeof videos === "undefined"
+){
 
-            titleElement.textContent =
-                "Video tidak ditemukan";
+    heroTitle.textContent =
+        "Video tidak ditemukan";
 
+    descriptionElement.textContent =
+        "Data video tidak tersedia.";
 
-            heroTitle.textContent =
-                "Video tidak ditemukan";
+    container.innerHTML =
+        '<div class="message">' +
+        'Video tidak ditemukan.' +
+        '</div>';
 
-
-            descriptionElement.textContent =
-                "Data video tidak tersedia.";
-
-            return;
+    return;
 
         }
 
@@ -1115,27 +1112,22 @@ document.addEventListener(
         ===================================================== */
 
         if(!foundVideo){
+if(!foundVideo){
 
-            titleElement.textContent =
-                "Video tidak ditemukan";
+    heroTitle.textContent =
+        "Video tidak ditemukan";
 
+    descriptionElement.textContent =
+        "Video tidak tersedia.";
 
-            heroTitle.textContent =
-                "Video tidak ditemukan";
+    container.innerHTML =
+        '<div class="message">' +
+        'Video tidak ditemukan.' +
+        '</div>';
 
+    return;
 
-            descriptionElement.textContent =
-                "Video tidak tersedia.";
-
-
-            container.innerHTML =
-                '<div class="message">' +
-                'Video tidak ditemukan.' +
-                '</div>';
-
-            return;
-
-        }
+}
 
 
         /* =====================================================
@@ -1166,20 +1158,14 @@ document.addEventListener(
 
 
         /* =====================================================
-           TAMPILKAN JUDUL
-        ===================================================== */
+   TAMPILKAN KETERANGAN
+===================================================== */
 
-        titleElement.textContent =
-            title;
+heroTitle.textContent =
+    title;
 
-
-        heroTitle.textContent =
-            title;
-
-
-        descriptionElement.textContent =
-            description;
-
+descriptionElement.textContent =
+    description;
 
         /* =====================================================
            CEK EMBED
