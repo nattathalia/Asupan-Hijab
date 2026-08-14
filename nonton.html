@@ -1261,6 +1261,78 @@ if(!embed){
         '</div>';
 
     return;
+/* =====================================================
+   VIDEO TIDAK DITEMUKAN
+===================================================== */
+
+if(!foundVideo){
+
+    heroTitle.textContent =
+        "Video tidak ditemukan";
+
+    descriptionElement.textContent =
+        "Video tidak tersedia.";
+
+    container.innerHTML =
+        '<div class="message">' +
+        'Video tidak ditemukan.' +
+        '</div>';
+
+    return;
+
+}
+
+
+/* =====================================================
+   DATA VIDEO
+===================================================== */
+
+const title =
+    String(
+        foundVideo.title ||
+        "Video"
+    );
+
+
+const embed =
+    String(
+        foundVideo.embed ||
+        foundVideo.url ||
+        ""
+    );
+
+
+const description =
+    String(
+        foundVideo.description ||
+        foundVideo.desc ||
+        "Video pilihan."
+    );
+
+
+/* =====================================================
+   TAMPILKAN KETERANGAN
+===================================================== */
+
+heroTitle.textContent =
+    title;
+
+descriptionElement.textContent =
+    description;
+
+
+/* =====================================================
+   CEK EMBED
+===================================================== */
+
+if(!embed){
+
+    container.innerHTML =
+        '<div class="message">' +
+        'Link video tidak tersedia.' +
+        '</div>';
+
+    return;
 
 }
 
