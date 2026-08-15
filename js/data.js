@@ -634,5 +634,267 @@ const videos =  {
   embed:
   "https://luluvdo.com/e/lcghvu7n6v2e"
 }
- ]
+ ], 
+
+  movie: [
+
+    {
+      id: "agak-laen-2-menyala-pantiku",
+      title: "Agak Laen 2 Menyala Pantiku",
+      embed: "https://geo.dailymotion.com/player.html?video=xac6xym"
+    },
+
+    {
+      id: "janur-ireng",
+      title: "Janur Ireng",
+      embed: "https://geo.dailymotion.com/player.html?video=xagirri"
+    },
+
+    {
+      id: "dopamin",
+      title: "Dopamin",
+      embed: "https://geo.dailymotion.com/player.html?video=xa9o0t8"
+    },
+
+    {
+      id: "jalan-pulang",
+      title: "Jalan Pulang",
+      embed: "https://geo.dailymotion.com/player.html?video=x9v6h34"
+    },
+
+    {
+      id: "abadi-nan-jaya",
+      title: "Abadi Nan Jaya",
+      embed: "https://geo.dailymotion.com/player.html?video=x9wau2s"
+    },
+
+    {
+      id: "tarung-sarung",
+      title: "Tarung Sarung",
+      embed: "https://geo.dailymotion.com/player.html?video=x9sfdf8"
+    },
+
+    {
+      id: "tinggal-meninggal",
+      title: "Tinggal Meninggal",
+      embed: "https://geo.dailymotion.com/player.html?video=x9sbyfw"
+    },
+
+    {
+      id: "gundik",
+      title: "Gundik",
+      embed: "https://geo.dailymotion.com/player.html?video=x9sbof4"
+    },
+
+    {
+      id: "tanduk-setan",
+      title: "Tanduk Setan",
+      embed: "https://geo.dailymotion.com/player.html?video=x9rh692"
+    },
+
+    {
+      id: "a-normal-women",
+      title: "A Normal Women",
+      embed: "https://geo.dailymotion.com/player.html?video=x9q60pq"
+    },
+
+    {
+      id: "cluster-shok",
+      title: "Cluster Shok",
+      embed: "https://geo.dailymotion.com/player.html?video=x9pkaw8"
+    },
+
+    {
+      id: "s-line",
+      title: "S Line",
+      embed: "https://geo.dailymotion.com/player.html?video=x9n9hl2"
+    },
+
+    {
+      id: "sarung-untuk-bapa",
+      title: "Sarung Untuk Bapa",
+      embed: "https://geo.dailymotion.com/player.html?video=x9n0bni"
+    },
+
+    {
+      id: "siksa-kubur",
+      title: "Siksa Kubur",
+      embed: "https://geo.dailymotion.com/player.html?video=x9musos"
+    },
+
+    {
+      id: "gampang-cuan",
+      title: "Gampang Cuan",
+      embed: "https://geo.dailymotion.com/player.html?video=x9mrh3c"
+    },
+
+    {
+      id: "guna-guna-istri-muda",
+      title: "Guna Guna Istri Muda",
+      embed: "https://geo.dailymotion.com/player.html?video=x9mpat8"
+    },
+
+    {
+      id: "sebelum-7-hari",
+      title: "Sebelum 7 Hari",
+      embed: "https://geo.dailymotion.com/player.html?video=x9moou4"
+    },
+
+    {
+      id: "the-butterfly-house",
+      title: "The Butterfly House",
+      embed: "https://geo.dailymotion.com/player.html?video=x9mnt6c"
+    },
+
+    {
+      id: "ejakulasi-dini",
+      title: "Ejakulasi Dini",
+      embed: "https://geo.dailymotion.com/player.html?video=x9mmtx0"
+    },
+
+    {
+      id: "rumah-teteh",
+      title: "Rumah Teteh",
+      embed: "https://geo.dailymotion.com/player.html?video=x9mmn92"
+    },
+
+    {
+      id: "kaka-boss",
+      title: "Kaka Boss",
+      embed: "https://geo.dailymotion.com/player.html?video=x9mhknc"
+    },
+
+    {
+      id: "bangsal-isolasi",
+      title: "Bangsal Isolasi",
+      embed: "https://geo.dailymotion.com/player.html?video=x9mgcni"
+    },
+
+    {
+      id: "ketindihan",
+      title: "Ketindihan",
+      embed: "https://geo.dailymotion.com/player.html?video=x9mefrs"
+    },
+
+    {
+      id: "jatuh-cinta-seperti-di-film-film",
+      title: "Jatuh Cinta Seperti Di Flim Flim",
+      embed: "https://geo.dailymotion.com/player.html?video=x9m57ae"
+    },
+
+    {
+      id: "kisah-tanah-jawa-pocong-gundul",
+      title: "Kisah Tanah Jawa Pocong Gundul",
+      embed: "https://geo.dailymotion.com/player.html?video=x9lxney"
+    },
+
+    {
+      id: "pengantin-iblis",
+      title: "Pengatin Iblis",
+      embed: "https://geo.dailymotion.com/player.html?video=x9lph7c"
+    },
+
+    {
+      id: "perayaan-mati-rasa",
+      title: "Perayaan Mati Rasa",
+      embed: "https://geo.dailymotion.com/player.html?video=x9lpf3c"
+    },
+
+    {
+      id: "aku-tau-kapan-kamu-mati",
+      title: "Aku Tau Kapan Kamu Mati",
+      embed: "https://geo.dailymotion.com/player.html?video=x9loare"
+    },
+
+    {
+      id: "lampir",
+      title: "Lampir",
+      embed: "https://geo.dailymotion.com/player.html?video=x9lmkgs"
+    },
+
+    {
+      id: "paku-tanah-jawa",
+      title: "Paku Tanah Jawa",
+      embed: "https://geo.dailymotion.com/player.html?video=x9l1lmy"
+    },
+
+    {
+      id: "jabang-mayit",
+      title: "Jabang Mayit",
+      embed: "https://geo.dailymotion.com/player.html?video=x9l1g0i"
+    },
+
+    {
+      id: "para-betina-pengikut-iblis",
+      title: "Para Betina Pengikut Iblis",
+      embed: "https://geo.dailymotion.com/player.html?video=x9l079q"
+    },
+
+    {
+      id: "ancika-dilan-1995",
+      title: "Ancika Dilan 1995",
+      embed: "https://geo.dailymotion.com/player.html?video=x9kwwdm"
+    },
+
+    {
+      id: "rumah-dara",
+      title: "Rumah Dara",
+      embed: "https://geo.dailymotion.com/player.html?video=x9kf9wc"
+    },
+
+    {
+      id: "pengepungan-bukit-duri",
+      title: "Pengepungan Bukit Duri",
+      embed: "https://geo.dailymotion.com/player.html?video=x9jwaou"
+    },
+
+    {
+      id: "nur-asih",
+      title: "Nur Asih",
+      embed: "https://geo.dailymotion.com/player.html?video=x9jjwzo"
+    },
+
+    {
+      id: "almarhum",
+      title: "Almarhum",
+      embed: "https://geo.dailymotion.com/player.html?video=x9jdus4"
+    },
+
+    {
+      id: "sumala",
+      title: "Sumala",
+      embed: "https://geo.dailymotion.com/player.html?video=x9j559s"
+    },
+
+    {
+      id: "selesai",
+      title: "Selesai",
+      embed: "https://geo.dailymotion.com/player.html?video=x9io6p6"
+    },
+
+    {
+      id: "kemah-terlarang",
+      title: "Kemah Terlarang",
+      embed: "https://geo.dailymotion.com/player.html?video=x9h0uqq"
+    },
+
+    {
+      id: "wanita-ahli-neraka",
+      title: "Wanita Ahli Neraka",
+      embed: "https://geo.dailymotion.com/player.html?video=x9gnxos"
+    },
+
+    {
+      id: "dosen-goib",
+      title: "Dosen Goib",
+      embed: "https://geo.dailymotion.com/player.html?video=x9gk7ks"
+    },
+
+    {
+      id: "dusun-pocong",
+      title: "Dusun Pocong",
+      embed: "https://geo.dailymotion.com/player.html?video=x9g6878"
+    }
+
+  ]
    };
