@@ -39,6 +39,20 @@
         <priority>0.8</priority>
     </url>
 
+    <url>
+        <loc>https://asupanhijab.xyz/movie.html</loc>
+        <lastmod>2026-08-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://asupanhijab.xyz/pronstar.html</loc>
+        <lastmod>2026-08-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- INFORMASI WEBSITE -->
     <url>
         <loc>https://asupanhijab.xyz/tentang.html</loc>
