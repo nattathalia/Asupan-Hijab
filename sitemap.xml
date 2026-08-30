@@ -2,91 +2,64 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- HOME -->
     <url>
         <loc>https://asupanhijab.xyz/</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
+        <lastmod>2026-08-30</lastmod>
     </url>
 
-    <!-- KATEGORI -->
     <url>
         <loc>https://asupanhijab.xyz/sekolah.html</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2026-08-30</lastmod>
     </url>
 
     <url>
         <loc>https://asupanhijab.xyz/muda.html</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2026-08-30</lastmod>
     </url>
 
     <url>
         <loc>https://asupanhijab.xyz/publik.html</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2026-08-30</lastmod>
     </url>
 
     <url>
         <loc>https://asupanhijab.xyz/hijab.html</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2026-08-30</lastmod>
     </url>
 
     <url>
         <loc>https://asupanhijab.xyz/movie.html</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2026-08-30</lastmod>
     </url>
 
     <url>
         <loc>https://asupanhijab.xyz/pronstar.html</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2026-08-30</lastmod>
     </url>
 
-    <!-- INFORMASI WEBSITE -->
     <url>
         <loc>https://asupanhijab.xyz/tentang.html</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <lastmod>2026-08-30</lastmod>
     </url>
 
     <url>
         <loc>https://asupanhijab.xyz/kontak.html</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <lastmod>2026-08-30</lastmod>
     </url>
 
     <url>
         <loc>https://asupanhijab.xyz/syarat.html</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <lastmod>2026-08-30</lastmod>
     </url>
 
     <url>
         <loc>https://asupanhijab.xyz/privasi.html</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <lastmod>2026-08-30</lastmod>
     </url>
 
     <url>
         <loc>https://asupanhijab.xyz/dmca.html</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <lastmod>2026-08-30</lastmod>
     </url>
 
 </urlset>
