@@ -439,11 +439,6 @@ title:"main tete di bawah jembatan",
 embed:"https://luluvdo.com/e/in5vyl19wjn2"
 }, 
 {
-id:"Bokep Bocil", 
-title:"abg jilbab colmek enak banget", 
-embed:"https://luluvdo.com/e/egq195zivbf3p"
-}, 
-{
 id:"Colmek Pake Spidol", 
 title:"colmek pake spidol", 
 embed:"https://luluvdo.com/e/v79mja8gie4a"
