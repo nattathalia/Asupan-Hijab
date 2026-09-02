@@ -28,7 +28,7 @@ embed:"https://luluvdo.com/e/in5vyl19wjn2"
 {
 id:"Bokep Bocil", 
 title:"abg jilbab colmek enak banget", 
-embed:"https://luluvdo.com//egq195zivbf3p"
+embed:"https://luluvdo.com/e/egq195zivbf3p"
 }, 
 {
 id:"Colmek Pake Spidol", 
@@ -446,7 +446,7 @@ embed:"https://luluvdo.com/e/in5vyl19wjn2"
 {
 id:"Bokep Bocil", 
 title:"abg jilbab colmek enak banget", 
-embed:"https://luluvdo.com//egq195zivbf3p"
+embed:"https://luluvdo.com/e/egq195zivbf3p"
 }, 
 {
 id:"Colmek Pake Spidol", 
