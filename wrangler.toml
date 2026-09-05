@@ -1,4 +1,4 @@
-name = "asupanhijab"
+name = "asupan-hijab"
 compatibility_date = "2026-09-05"
 main = "worker.js"
 
